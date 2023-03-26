@@ -31,7 +31,6 @@ if (section1.is_conflicting(section2)):
 else:
     print("Sections 1 and 2 do not conflict")
 
-
 # course 1
 id = "CSCI3551"
 name = "Operating Systems"

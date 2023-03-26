@@ -11,12 +11,5 @@ class Course:
         self.section_choice = -1 # 1, 2, etc
         self.grade = 0 # A, B, C, D, F
     
-    def getSections(self) -> Section :
+    def getSections(self):
         return self.sections
-    
-    def getSection(self, i) -> Section : 
-        return self.sections[i]
-    
-    def getSectionsLen(self) -> int :
-        return len(self.sections)
-    

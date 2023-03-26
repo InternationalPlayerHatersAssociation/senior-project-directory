@@ -14,14 +14,17 @@ class Section:
     def getCrn(self):
         return self.CRN
     
-    def is_conflicting(self, other_section) -> bool: # need to add DAY
-        if self.start_time < other_section.start_time:
-            if self.end_time > other_section.start_time:
-                return True
-            else:
-                return False
-        else:
-            if self.start_time < other_section.end_time:
-                return True
-            else:
-                return False
+    def is_conflicting(self, other_section) -> bool:
+        for i in range(0,len(self.day)):
+            if self.day[i] in other_section.day:
+                if self.start_time < other_section.start_time:
+                    if self.end_time > other_section.start_time:
+                        return True
+                    else:
+                        return False
+                else:
+                    if self.start_time < other_section.end_time:
+                        return True
+                    else:
+                        return False
+                break

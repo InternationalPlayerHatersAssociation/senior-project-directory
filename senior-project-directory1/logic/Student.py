@@ -20,7 +20,7 @@ class Student:
         # calculate total # of combinations
         total = 1
         for i in range(0,course_num):
-            total *= len(self.getCourse(i)[2])
+            total *= len(self.getCourse(i).getSections())
 
         # initialize solutions matrix
         tmp_solutions = [[0 for x in range(course_num)] for y in range(total)]
@@ -28,7 +28,7 @@ class Student:
         # fill in matrix with every possible choice
         part = total
         for i in range(0,course_num): # iterate through courses
-            sec_num = len(self.getCourse(i)[2])
+            sec_num = len(self.getCourse(i).getSections())
             part = part // sec_num
             for k in range(0,total):
                 tmp_solutions[k][i] = ((k // part) % sec_num) + 1
@@ -47,8 +47,8 @@ class Student:
                 for k in range(j+1, course_num):
                     section1_index = tmp_solutions[i][j]
                     section2_index = tmp_solutions[i][k]
-                    section1 = self.course_requests[j][2][section1_index-1]
-                    section2 = self.course_requests[k][2][section2_index-1]
+                    section1 = self.getCourse(j).getSections()[section1_index-1]
+                    section2 = self.getCourse(k).getSections()[section2_index-1]
                     valid = valid and not(section1.is_conflicting(section2))
             if(valid):
                 self.solutions.append(tmp_solutions[i])
@@ -59,7 +59,7 @@ class Student:
         solution = self.solutions[self.solution_choice]
         for i in range(0,len(solution)):
             section_num = solution[i]
-            section = self.course_requests[i][2][section_num-1]
+            section = self.getCourse(i).getSections()[section_num-1]
             crns += str(section.getCrn()) + " "
         return crns
     
@@ -67,11 +67,10 @@ class Student:
         self.solution_choice = choice
 
     def getCourse(self, i) -> Course:
-        return self.course_requests[i]
+        course = self.course_requests[i]
+        c = Course(course[0], course[1], course[2], course[3], course[4])
+        return c
     
-    def getCourseLen(self) -> int:
-        return len(self.course_requests)
-
     def printSolutions(self):
         print("Solutions Matrix: \n")
         for i in self.solutions:
