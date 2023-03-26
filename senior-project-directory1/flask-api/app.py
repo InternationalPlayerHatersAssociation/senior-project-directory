@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:shannon@localhost:5432/class_schedule'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:N00k!e99123@localhost:5432/class_schedule'
 app.config['FLASK APP'] = app
 app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
 db.init_app(app)
