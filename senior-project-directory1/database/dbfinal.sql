@@ -9,7 +9,7 @@ CREATE TABLE "student" (
     "password" varchar(200)   NOT NULL,
     "major" int   NOT NULL,
     "minor" int   NULL,
-    "gpa" float   NOT NULL,
+    "gpa" float   NULL,
     CONSTRAINT "pk_student" PRIMARY KEY (
         "stuid"
      )
