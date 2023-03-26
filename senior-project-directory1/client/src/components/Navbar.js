@@ -29,7 +29,7 @@ const LoggedInLinks=()=>{
         
     <>
     <NavItem><NavLinks to="/">Home</NavLinks></NavItem>   
-    <NavItem><NavLinks to='/studentform'>Edit</NavLinks></NavItem>   
+    <NavItem><NavLinks to='/form'>Edit Form</NavLinks></NavItem>   
     <NavItemBtn>
                 {button ? (
                   <NavBtnLink to="/" onClick={()=>{logout()}}>

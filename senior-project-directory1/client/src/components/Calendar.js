@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import moment from 'moment';
 import { Container, Container2} from '../globalStyles';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { Calendar, momentLocalizer } from 'react-big-calendar'
+import { Calendar, momentLocalizer, Views, DateLocalizer} from 'react-big-calendar'
 import InfoSection from '../components/InfoSection';
 import {
     InfosSecCal,
@@ -39,7 +39,7 @@ const CalendarRender = ({primary,
                          events={myEvents}
                          startAccessor="start"
                          endAccessor="end"
-                         defaultView='week'
+                         defaultView='month'
                           style={{height:550,
                            width:600,
                          
