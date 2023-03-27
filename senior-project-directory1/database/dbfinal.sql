@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "student" (
-    "stuid" serial   NOT NULL,
+    "stuid" int   NOT NULL,
     "email" varchar(200)   NOT NULL,
     "password" varchar(200)   NOT NULL,
     "major" int   NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE "student" (
 );
 
 CREATE TABLE "degree_plan" (
-    "dp_id" serial   NOT NULL,
+    "dp_id" int   NOT NULL,
     "dpt_code" varchar(50)   NOT NULL,
     "name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_degree_plan" PRIMARY KEY (
@@ -29,21 +29,18 @@ CREATE TABLE "course_offering" (
     "course_id" int   NOT NULL,
     "time" time   NOT NULL,
     "days" varchar(5)   NOT NULL,
-    "delivery_type" varchar(100),
     "prof" varchar(50)   NOT NULL,
     "semester" varchar(50)   NOT NULL,
     "room_num" varchar(50)   NOT NULL,
-    "prereqs" varchar(50)[]   NOT NULL,
-    "coreqs" varchar(50)[]   NOT NULL,
     CONSTRAINT "pk_course_offering" PRIMARY KEY (
         "crn"
      )
 );
 
 CREATE TABLE "course_history" (
-    "id" serial   NOT NULL,
+    "id" int   NOT NULL,
     "stuid" int   NOT NULL,
-    "course_id" int   NOT NULL,
+    "course_id" varchar(10)   NOT NULL,
     "grade" varchar(2)   NOT NULL,
     CONSTRAINT "pk_course_history" PRIMARY KEY (
         "id"
@@ -51,7 +48,7 @@ CREATE TABLE "course_history" (
 );
 
 CREATE TABLE "courses_needed" (
-    "id" serial   NOT NULL,
+    "id" int   NOT NULL,
     "course_id" int   NOT NULL,
     "dp_id" int   NOT NULL,
     "type" varchar(10)   NOT NULL,
@@ -61,7 +58,7 @@ CREATE TABLE "courses_needed" (
 );
 
 CREATE TABLE "conflict" (
-    "cid" serial   NOT NULL,
+    "cid" int   NOT NULL,
     "stuid" int   NOT NULL,
     "name" varchar(50)   NOT NULL,
     "time" time   NOT NULL,
@@ -72,7 +69,7 @@ CREATE TABLE "conflict" (
 );
 
 CREATE TABLE "class_choices" (
-    "choice_id" serial   NOT NULL,
+    "choice_id" int   NOT NULL,
     "stuid" int   NOT NULL,
     "crn" int   NOT NULL,
     CONSTRAINT "pk_class_choices" PRIMARY KEY (
@@ -81,11 +78,20 @@ CREATE TABLE "class_choices" (
 );
 
 CREATE TABLE "course" (
-    "course_id" serial   NOT NULL,
+    "course_id" int   NOT NULL,
     "number" varchar(50)   NOT NULL,
     "name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_course" PRIMARY KEY (
         "course_id"
+     )
+);
+
+CREATE TABLE "prereqs" (
+    "pid" int   NOT NULL,
+    "parent_id" int   NOT NULL,
+    "course_id" int   NOT NULL,
+    CONSTRAINT "pk_prereqs" PRIMARY KEY (
+        "pid"
      )
 );
 
@@ -94,8 +100,6 @@ REFERENCES "degree_plan" ("dp_id");
 
 ALTER TABLE "student" ADD CONSTRAINT "fk_student_minor" FOREIGN KEY("minor")
 REFERENCES "degree_plan" ("dp_id");
-
-ALTER TABLE "student" ADD CONSTRAINT "uq_username" UNIQUE ("email");
 
 ALTER TABLE "course_offering" ADD CONSTRAINT "fk_course_offering_course_id" FOREIGN KEY("course_id")
 REFERENCES "course" ("course_id");
@@ -120,4 +124,10 @@ REFERENCES "student" ("stuid");
 
 ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_crn" FOREIGN KEY("crn")
 REFERENCES "course_offering" ("crn");
+
+ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_parent_id" FOREIGN KEY("parent_id")
+REFERENCES "course" ("course_id");
+
+ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_course_id" FOREIGN KEY("course_id")
+REFERENCES "course" ("course_id");
 
