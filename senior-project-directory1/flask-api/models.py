@@ -34,6 +34,7 @@ class Degree_Plan(db.Model):
 class course_history(db.Model):
    __tablename__ = 'course_history'
    dp_id = db.Column(db.Integer, primary_key = True)
+   hello = db.Column(db.Integer)
 
 
 # model of the course_needed table
