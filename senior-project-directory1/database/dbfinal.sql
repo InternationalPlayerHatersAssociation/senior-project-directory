@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "student" (
-    "stuid" int   NOT NULL,
+    "stuid" serial   NOT NULL,
     "email" varchar(200)   NOT NULL,
     "password" varchar(200)   NOT NULL,
     "major" int   NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE "student" (
 );
 
 CREATE TABLE "degree_plan" (
-    "dp_id" int   NOT NULL,
+    "dp_id" serial   NOT NULL,
     "dpt_code" varchar(50)   NOT NULL,
     "name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_degree_plan" PRIMARY KEY (
@@ -38,9 +38,9 @@ CREATE TABLE "course_offering" (
 );
 
 CREATE TABLE "course_history" (
-    "id" int   NOT NULL,
+    "id" serial   NOT NULL,
     "stuid" int   NOT NULL,
-    "course_id" varchar(10)   NOT NULL,
+    "course_id" int  NOT NULL,
     "grade" varchar(2)   NOT NULL,
     CONSTRAINT "pk_course_history" PRIMARY KEY (
         "id"
@@ -48,7 +48,7 @@ CREATE TABLE "course_history" (
 );
 
 CREATE TABLE "courses_needed" (
-    "id" int   NOT NULL,
+    "id" serial   NOT NULL,
     "course_id" int   NOT NULL,
     "dp_id" int   NOT NULL,
     "type" varchar(10)   NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE "courses_needed" (
 );
 
 CREATE TABLE "conflict" (
-    "cid" int   NOT NULL,
+    "cid" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "name" varchar(50)   NOT NULL,
     "time" time   NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE "conflict" (
 );
 
 CREATE TABLE "class_choices" (
-    "choice_id" int   NOT NULL,
+    "choice_id" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "crn" int   NOT NULL,
     CONSTRAINT "pk_class_choices" PRIMARY KEY (
@@ -78,7 +78,7 @@ CREATE TABLE "class_choices" (
 );
 
 CREATE TABLE "course" (
-    "course_id" int   NOT NULL,
+    "course_id" serial   NOT NULL,
     "number" varchar(50)   NOT NULL,
     "name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_course" PRIMARY KEY (
@@ -87,7 +87,7 @@ CREATE TABLE "course" (
 );
 
 CREATE TABLE "prereqs" (
-    "pid" int   NOT NULL,
+    "pid" serial   NOT NULL,
     "parent_id" int   NOT NULL,
     "course_id" int   NOT NULL,
     CONSTRAINT "pk_prereqs" PRIMARY KEY (
