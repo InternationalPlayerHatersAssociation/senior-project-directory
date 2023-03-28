@@ -30,3 +30,13 @@ class Degree_Plan(db.Model):
     dpt_code = db.Column(db.String(50), nullable = False)
     name = db.Column(db.String(50), nullable = False)
 
+#model of the course_history table
+class course_history(db.Model):
+   __tablename__ = 'course_history'
+   dp_id = db.Column(db.Integer, primary_key = True)
+
+
+# model of the course_needed table
+
+# model of the conflict table
+
