@@ -49,16 +49,20 @@ class Course_History(db.Model):
     stuid = db.Column(db.Interger, nullable = False)
     course_id = db.Column(db.Integer, nullable = False)
     grade = db.Column(db.String(2), nullable = False)
-    #history = relationship("History", backref = 'course_history', foreign_key = [stuid, course_id])
+    history = relationship("History", backref = 'course_history', foreign_key = [stuid, course_id])
 
 #model of the courses_needed table
 class Courses_Needed(db.Model):
     __tablename__ = 'courses_needed'
-    id = db.Column(db.Interger, nullable = False)
+    #need to specify the primary key
+    id = db.Column(db.Interger, primary_key = True)
     course_id = db.Column(db.Interger, nullable = False)
     dp_id = db.Column(db.Integer, nullable = False)
     type = db.Column(db.String(10), nullable = False)
-    needed = relationship("Needed", backref = 'courses_needed', foreign_key = [course_id, dp_id])
+    #need two relationships because the foreign keys come from different tables. it can only belong to the same relationship if the key is coming from the same table
+    course = relationship("Course", backref = 'courses_needed', foreign_key = [course_id])
+    plan = relationship("Degree_Plan", backref = 'courses_needed', foreign_key = [dp_id])
+    
 
 #model of the conflict_table
 class Conflict(db.Model):
