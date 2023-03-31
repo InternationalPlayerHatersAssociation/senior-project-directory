@@ -9,7 +9,7 @@ db = SQLAlchemy()
 #model of student table
 class Student(db.Model):
     __tablename__ = 'student'
-    stuid = db.Column(db.Integer,Identity(start=42, cycle=True),primary_key = True)
+    stuid = db.Column(db.Integer,primary_key = True)
     email = db.Column(db.String(200), unique = True, nullable = False)
     password_hash = db.Column(db.String(200), nullable = False)
     major = db.Column(db.Integer,db.ForeignKey('degree_plan.dp_id'), nullable = True)
@@ -34,7 +34,7 @@ class Degree_Plan(db.Model):
 class Course_Offering(db.Model):
     __tablename__ = 'course_offering'
     crn = db.Column(db.Integer, primary_key = True)
-    course_id = db.Column(db.Integer, nullable = False)
+    course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
     time = db.Column(db.Time, nullable = False)
     days = db.Column(db.String(5), nullable = False)
     prof = db.Column(db.String(50), nullable = False)
@@ -46,10 +46,10 @@ class Course_Offering(db.Model):
 class Course_History(db.Model):
     __tablename__ = 'course_history'
     id = db.Column(db.Integer, primary_key = True)
-    stuid = db.Column(db.Integer, nullable = False)
-    course_id = db.Column(db.Integer, nullable = False)
+    stuid = db.Column(db.Integer,db.ForeignKey('student.stuid'), nullable = False)
+    course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
     grade = db.Column(db.String(2), nullable = False)
-    student = relationship("Student", backref = 'course_history', foreign_key = [stuid])
+    student = relationship("Student", backref = 'course_history', foreign_keys = [stuid])
     course = relationship("Course", backref='course_history', foreign_keys=[course_id])
 
 #model of the courses_needed table
@@ -57,45 +57,45 @@ class Courses_Needed(db.Model):
     __tablename__ = 'courses_needed'
     #need to specify the primary key
     id = db.Column(db.Integer, primary_key = True)
-    course_id = db.Column(db.Integer, nullable = False)
-    dp_id = db.Column(db.Integer, nullable = False)
+    course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
+    dp_id = db.Column(db.Integer,db.ForeignKey('degree_plan.dp_id'), nullable = False)
     type = db.Column(db.String(10), nullable = False)
     #need two relationships because the foreign keys come from different tables. it can only belong to the same relationship if the key is coming from the same table
-    course = relationship("Course", backref = 'courses_needed', foreign_key = [course_id])
-    plan = relationship("Degree_Plan", backref = 'courses_needed', foreign_key = [dp_id])
+    course = relationship("Course", backref = 'courses_needed', foreign_keys = [course_id])
+    plan = relationship("Degree_Plan", backref = 'courses_needed', foreign_keys = [dp_id])
     
 
 #model of the conflict_table
 class Conflict(db.Model):
     __tablename__ = 'conflict'
-    cid = db.Column(db.Interger, primary_key = True)
-    stuid = db.Column(db.Interger, nullable = False)
+    cid = db.Column(db.Integer, primary_key = True)
+    stuid = db.Column(db.Integer,db.ForeignKey('student.stuid'), nullable = False)
     name = db.Column(db.String(50), nullable = False)
-    time = db.Column(db.time, nullable = False)
+    time = db.Column(db.Time, nullable = False)
     day = db.Column(db.String(10), nullable = False)
-    conflict = relationship("Student", backref = 'conflict', foreign_key = [stuid])
+    conflict = relationship("Student", backref = 'conflict', foreign_keys = [stuid])
 
 #model of the class_choices table
 class Class_Choices(db.Model):
     __tablename__ = 'class_choices'
     choice_id = db.Column(db.Integer, primary_key = True)
-    stuid = db.Column(db.Integer, nullable = False)
-    crn = db.Column(db.Integer, nullable = False)
-    student = relationship("Student", backref = 'class_choices', foreign_key = [stuid])
-    class_choice = relationship("Class_Offering", backref='class_choices', foreign_keys=[crn])
+    stuid = db.Column(db.Integer,db.ForeignKey('student.stuid'), nullable = False)
+    crn = db.Column(db.Integer,db.ForeignKey('course_offering.crn'), nullable = False)
+    student = relationship("Student", backref = 'class_choices', foreign_keys = [stuid])
+    class_choice = relationship("Course_Offering", backref='class_choices', foreign_keys=[crn])
     
 
 #model of the course table
-class Course(db.model):
+class Course(db.Model):
     __tablename__ = 'course'
     course_id = db.Column(db.Integer, primary_key = True)
     number = db.Column(db.String(50), nullable = False)
     name = db.Column(db.String(50), nullable =False)
 
 #model of the prereqs table
-class Prereqs(db.Model):
-    __tablename__ = 'prereqs'
-    pid = db.Column(db.Integer, primary_key = True)
-    parent_id = db.Column(db.Integer, nullable = False)
-    course_id = db.Column(db.Interger, nullable = False)
-    prereqs = relationship("Course", backref = 'prereqs', foreign_key = [parent_id, course_id])
+# class Prereqs(db.Model):
+#     __tablename__ = 'prereqs'
+#     pid = db.Column(db.Integer, primary_key = True)
+#     parent_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
+#     course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
+#     prereqs = relationship("Course", backref = 'prereqs', foreign_keys = [parent_id, course_id])
