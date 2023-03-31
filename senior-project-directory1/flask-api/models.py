@@ -31,7 +31,7 @@ class Degree_Plan(db.Model):
     name = db.Column(db.String(50), nullable = False)
 
 #model of the Course_Offerings table
-class Course_Offering(db.model):
+class Course_Offering(db.Model):
     __tablename__ = 'course_offering'
     crn = db.Column(db.Integer, primary_key = True)
     course_id = db.Column(db.Integer, nullable = False)
@@ -93,7 +93,7 @@ class Course(db.model):
     name = db.Column(db.String(50), nullable =False)
 
 #model of the prereqs table
-class Prereqs(db.model):
+class Prereqs(db.Model):
     __tablename__ = 'prereqs'
     pid = db.Column(db.Integer, primary_key = True)
     parent_id = db.Column(db.Integer, nullable = False)
