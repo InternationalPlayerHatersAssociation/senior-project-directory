@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
-import { useAuth,logout } from "../auth";
+import { useAuth,logout } from "../../auth";
 /*import Nav from 'react-bootstrap/Nav';*/
 
 
 import { FaBars, FaTimes} from 'react-icons/fa';
 import { IconContext} from 'react-icons/lib';
-import { Button} from '../globalStyles'
+import { Button} from '../../globalStyles'
 import { Nav, NavbarContainer, NavLogo, NavIcon,
    MobileIcon, NavMenu, NavItem, NavLinks, NavItemBtn, 
   NavBtnLink } from './Navbar.elements';

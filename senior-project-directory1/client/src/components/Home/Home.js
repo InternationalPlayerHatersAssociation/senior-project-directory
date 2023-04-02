@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../auth";
+import { useAuth } from "../../auth";
 import {homeObjOne} from './Home.Data';
-import InfoSection from '../components/InfoSection';
-import {InfoRow} from '../components/InfoSection.elements';
-import Calendar from "./Calendar";
+import InfoSection from '../InfoSection';
+import {InfoRow} from '../InfoSection.elements';
+import Calendar from "../Calendar/Calendar";
 
 
 

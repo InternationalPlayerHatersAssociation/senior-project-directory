@@ -3,13 +3,13 @@ import { Form, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { Container, Button } from "../globalStyles";
+import { Container, Button } from "../../globalStyles";
 import {
     InfosSecLogin,
     InfoRow,
     InfoColumn,
     TextWrapper,
-    } from './InfoSection.elements';
+    } from '../InfoSection.elements';
 
 const SignUp = ({
   lightBg}) => {
@@ -67,13 +67,9 @@ const SignUp = ({
   }, []);
 
   return (
-  <InfosSecLogin lightBg={lightBg}>
-    <Container>
-        <InfoRow>
-            <InfoColumn>
-                <TextWrapper>
     <div className="container">
-      <div className="form"></div>
+      <div className="form">
+      <form1>
       {show?
       <>
         <Alert variant="success" onClose={() => setShow(false)} dismissible>
@@ -84,17 +80,17 @@ const SignUp = ({
         <h1>Sign Up</h1>
 
       </>
-      : <h1>Sign Up</h1>
+      : <h2>Sign Up</h2>
       }
-      <form>
-        <br></br>
+      <form1>
+      
         <Form.Group>
-          <p><Form.Label>Email </Form.Label>
+          <p><label htmlFor="email">Email    </label>
           <Form.Control
             type="email"
             placeholder="youremail@gmail.com"
             {...register("email", { required: true, maxLength: 200 })}
-          /></p> <br></br>
+          /></p>
           {errors.email && (
             <p style={{ color: "red" }}>
               <small>Username is required</small>
@@ -103,12 +99,12 @@ const SignUp = ({
           )}
         </Form.Group>
         <Form.Group>
-          <p><Form.Label>Password  </Form.Label>
+          <p><label htmlFor="password">Password    </label>
           <Form.Control
             type="password"
             placeholder="*******************"
             {...register("password", { required: true, minLength: 8 })}
-          /></p><br></br>
+          /></p>
           {errors.password && (
             <p style={{ color: "red" }}>
               <small>Password is required</small>
@@ -122,7 +118,7 @@ const SignUp = ({
           )}
         </Form.Group>
         <Form.Group>
-          <Form.Label>Confirm Password </Form.Label>
+        <label htmlFor="confirmPassword">Confirm Password    </label>
           <Form.Control
             type="password"
             placeholder="*******************"
@@ -139,13 +135,13 @@ const SignUp = ({
             </p>
           )}
         </Form.Group>
-        <br></br>
+        <label htmlFor="choose">Academic Major</label> 
         <Form.Group>
-          <Form.Select
+          <Form.Select 
             aria-label="Choose Major"
             defaultValue=""
             {...register("major")}
-          >
+          size="lg">
             <option disabled value="">
               Select your major...
             </option>
@@ -156,30 +152,23 @@ const SignUp = ({
             ))}
           </Form.Select>
         </Form.Group>
-        <br></br><br></br>
         <Form.Group>
-          <Button as="sub" variant="primary" onClick={handleSubmit(submitForm)}>
-            Sign Up
-          </Button>
+        <input type ="submit1" value={"Sign Up"} onClick={handleSubmit(submitForm)} />
           {errors.major && (
             <p style={{ color: "red" }}>
               <small>Major is required</small>
             </p>
           )}
         </Form.Group>
-        <br></br>
         <Form.Group>
-          <small>
+         <h2><small>
             Already have an account?<Link to="/login"> Login here.</Link>
-          </small>
+          </small></h2> 
         </Form.Group>
-      </form>
-    </div>
-    </TextWrapper>
-    </InfoColumn>
-    </InfoRow>
-    </Container>
-    </InfosSecLogin>
+        </form1>
+        </form1>
+        </div>
+        </div>
 
 
   );

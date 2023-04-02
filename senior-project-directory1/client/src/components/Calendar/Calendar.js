@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import moment from 'moment';
-import { Container, Container2} from '../globalStyles';
+import { Container, Container2} from '../../globalStyles';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer, Views, DateLocalizer} from 'react-big-calendar'
-import InfoSection from '../components/InfoSection';
+import InfoSection from '../InfoSection';
 import {
     InfosSecCal,
     InfoRow,
@@ -12,8 +12,8 @@ import {
     Img,
     TextWrapper,
     InfoSec
-    } from './InfoSection.elements';
-import image from '../Images/kitten2-removebg-preview.png';
+    } from '../InfoSection.elements';
+import image from '../../Images/kitten2-removebg-preview.png';
 
 
 const localizer = momentLocalizer(moment);

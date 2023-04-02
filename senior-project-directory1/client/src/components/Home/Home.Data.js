@@ -9,7 +9,7 @@ export const homeObjOne = {
     headline: 'Created by PressPaws Inc.', 
     lightText: true, 
     topLine: "Registering for classes shouldn’t require its own degree plan",
-    img: require('../Images/Capture1-removebg-preview.png'),
+    img: require('../../Images/Capture1-removebg-preview.png'),
     alt: 'Image',
     start: ''
 };
@@ -25,7 +25,7 @@ export const homeObjTwo = {
     headline: 'Created by PressPaws Inc.', 
     lightText: false, 
     topLine: "She Ain't Much Yet But We're Tryin'",
-    img: require('../Images/3-removebg-preview.png'),
+    img: require('../../Images/3-removebg-preview.png'),
     alt: 'Image',
     start: 'true'
 };
@@ -50,12 +50,12 @@ export const homeObjFour = {
     headline: 'Created by PressPaws Inc.', 
     lightText: false, 
     topLine: "She Ain't Much Yet But We're Tryin'",
-    img: require('../Images/kitten2-removebg-preview.png'),
+    img: require('../../Images/kitten2-removebg-preview.png'),
     alt: 'Image',
     start: 'true'
 };
 
 export const homeObjFive = {
-    img: require('../Images/3-removebg-preview.png')
+    img: require('../../Images/3-removebg-preview.png')
 }
 
