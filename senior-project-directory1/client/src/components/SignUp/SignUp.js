@@ -82,6 +82,11 @@ const SignUp = ({
       </>
       : <h2>Sign Up</h2>
       }
+      
+      {/* <sImage>
+            <img src='../../img/Cat-Embroidery.png' alt='success-image' width='175px' />
+    </sImage>*/}
+
       <form1>
       
         <Form.Group>
@@ -161,14 +166,15 @@ const SignUp = ({
           )}
         </Form.Group>
         <Form.Group>
-         <h2><small>
+         <h3><small>
             Already have an account?<Link to="/login"> Login here.</Link>
-          </small></h2> 
+          </small></h3>
         </Form.Group>
         </form1>
-        </form1>
+        </form1>          </div>
+        
         </div>
-        </div>
+        
 
 
   );

@@ -7,10 +7,15 @@ import {useForm} from 'react-hook-form';
 import { login } from "../../auth";
 import { Container, Button } from "../../globalStyles";
 import {
-    InfosSecLogin,
+    InfoSec,
     InfoRow,
     InfoColumn,
     TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle,
+    ImgWrapper,
+    Img
     } from '../InfoSection.elements';
 
 import "../Form/Form.css"
@@ -48,10 +53,11 @@ const Login=({
          <div >
             <div className="form"></div>
             <div className="formContainer">
+           <h3><img src='../../img/Cat-Embroidery.png' alt='success-image' width='175px' /></h3>
 
             <form1>
             <h2>Login </h2><br></br>
-                <div>
+            <div>
                         <label htmlFor="email">Email    </label>
                         <input placeholder="youremail@gmail.com"
                          {...register('email', {required:true})}/>
@@ -68,6 +74,7 @@ const Login=({
                     </div>
                 </form1>
                 </div>
+
         </div>
 
     )
