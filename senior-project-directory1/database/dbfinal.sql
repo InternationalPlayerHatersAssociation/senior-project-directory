@@ -6,7 +6,7 @@
 CREATE TABLE "student" (
     "stuid" serial   NOT NULL,
     "email" varchar(200)   NOT NULL,
-    "password" varchar(200)   NOT NULL,
+    "password_hash" varchar(200)   NOT NULL,
     "major" int   NOT NULL,
     "minor" int   NULL,
     "gpa" float   NULL,
