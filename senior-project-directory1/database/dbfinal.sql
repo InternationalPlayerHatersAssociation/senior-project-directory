@@ -95,6 +95,16 @@ CREATE TABLE "prereqs" (
      )
 );
 
+
+CREATE TABLE "coreqs" (
+    "pid" serial   NOT NULL,
+    "parent_id" int   NOT NULL,
+    "course_id" int   NOT NULL,
+    CONSTRAINT "pk_coreqs" PRIMARY KEY (
+        "pid"
+     )
+);
+
 ALTER TABLE "student" ADD CONSTRAINT "fk_student_major" FOREIGN KEY("major")
 REFERENCES "degree_plan" ("dp_id");
 
@@ -129,5 +139,12 @@ ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_parent_id" FOREIGN KEY("parent_
 REFERENCES "course" ("course_id");
 
 ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_course_id" FOREIGN KEY("course_id")
+REFERENCES "course" ("course_id");
+
+
+ALTER TABLE "coreqs" ADD CONSTRAINT "fk_coreqs_parent_id" FOREIGN KEY("parent_id")
+REFERENCES "course" ("course_id");
+
+ALTER TABLE "coreqs" ADD CONSTRAINT "fk_coreqs_course_id" FOREIGN KEY("course_id")
 REFERENCES "course" ("course_id");
 
