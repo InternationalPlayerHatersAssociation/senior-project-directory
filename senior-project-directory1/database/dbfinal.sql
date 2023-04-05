@@ -1,4 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/qaCrUU
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
@@ -18,7 +18,7 @@ CREATE TABLE "student" (
 CREATE TABLE "degree_plan" (
     "dp_id" serial   NOT NULL,
     "dpt_code" varchar(50)   NOT NULL,
-    "name" varchar(50)   NOT NULL,
+    "name" varchar(100)   NOT NULL,
     CONSTRAINT "pk_degree_plan" PRIMARY KEY (
         "dp_id"
      )
@@ -26,12 +26,16 @@ CREATE TABLE "degree_plan" (
 
 CREATE TABLE "course_offering" (
     "crn" int   NOT NULL,
-    "course_id" int   NOT NULL,
-    "time" time   NOT NULL,
-    "days" varchar(5)   NOT NULL,
-    "prof" varchar(50)   NOT NULL,
-    "semester" varchar(50)   NOT NULL,
+    "course_id" int  NOT NULL,
+    "name" varchar(100) NOT NULL,
+    "days" varchar(50)   NOT NULL,
+    "start" varchar(50)   NOT NULL,
+    "end" varchar(50)   NOT NULL,
     "room_num" varchar(50)   NOT NULL,
+    "instructor" varchar(50)   NOT NULL,
+    "semester" varchar(50)   NOT NULL,
+    "mode" varchar(50)   NOT NULL,
+    "status" varchar(50)   NOT NULL
     CONSTRAINT "pk_course_offering" PRIMARY KEY (
         "crn"
      )
@@ -61,7 +65,8 @@ CREATE TABLE "conflict" (
     "cid" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "name" varchar(50)   NOT NULL,
-    "time" time   NOT NULL,
+    "start" time   NOT NULL,
+    "end" time   NOT NULL,
     "day" varchar(10)   NOT NULL,
     CONSTRAINT "pk_conflict" PRIMARY KEY (
         "cid"
@@ -79,31 +84,14 @@ CREATE TABLE "class_choices" (
 
 CREATE TABLE "course" (
     "course_id" serial   NOT NULL,
-    "number" varchar(50)   NOT NULL,
+    "number" varchar(100)   NOT NULL,
     "name" varchar(50)   NOT NULL,
     CONSTRAINT "pk_course" PRIMARY KEY (
         "course_id"
      )
 );
 
-CREATE TABLE "prereqs" (
-    "pid" serial   NOT NULL,
-    "parent_id" int   NOT NULL,
-    "course_id" int   NOT NULL,
-    CONSTRAINT "pk_prereqs" PRIMARY KEY (
-        "pid"
-     )
-);
 
-
-CREATE TABLE "coreqs" (
-    "pid" serial   NOT NULL,
-    "parent_id" int   NOT NULL,
-    "course_id" int   NOT NULL,
-    CONSTRAINT "pk_coreqs" PRIMARY KEY (
-        "pid"
-     )
-);
 
 ALTER TABLE "student" ADD CONSTRAINT "fk_student_major" FOREIGN KEY("major")
 REFERENCES "degree_plan" ("dp_id");
@@ -134,17 +122,3 @@ REFERENCES "student" ("stuid");
 
 ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_crn" FOREIGN KEY("crn")
 REFERENCES "course_offering" ("crn");
-
-ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_parent_id" FOREIGN KEY("parent_id")
-REFERENCES "course" ("course_id");
-
-ALTER TABLE "prereqs" ADD CONSTRAINT "fk_prereqs_course_id" FOREIGN KEY("course_id")
-REFERENCES "course" ("course_id");
-
-
-ALTER TABLE "coreqs" ADD CONSTRAINT "fk_coreqs_parent_id" FOREIGN KEY("parent_id")
-REFERENCES "course" ("course_id");
-
-ALTER TABLE "coreqs" ADD CONSTRAINT "fk_coreqs_course_id" FOREIGN KEY("course_id")
-REFERENCES "course" ("course_id");
-
