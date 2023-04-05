@@ -70,10 +70,11 @@ payload = {'ICANJAX': '1',
 def main():  # WGST, CSV files
 
     # course, semester, 1/0)
-    UHCL_CENG = ScrapeUHCL("CENG", "Spring 2023", True)
-    printSubject(UHCL_CENG)
-    CreateCSVSubject(UHCL_CENG)
-    # UHCLcat = MakeUHCLCatalog("Spring 2023", True)  # corereq | prereq
+    # UHCL_CENG = ScrapeUHCL("CENG", "Spring 2023", False)
+    # printSubject(UHCL_CENG)
+    # CreateCSVSubject(UHCL_CENG)
+    UHCLcat = MakeUHCLCatalog("Spring 2023", True)  # corereq | prereq
+    CreateCSVSubject(UHCLcat)
     # printSubject(UHCLcat["CENG"])
 
     # end of main
@@ -185,26 +186,27 @@ def Extract(driver, soup, subject, DE, year):  # win0divSSR_CLSRSLT_WRK_GROUPBOX
             EID_status = "Closed"
         if (CheckDIV(cereal, current, currenttitle) == True):
             title = cereal.find(
-                'div', id='win0divSSR_CLSRSLT_WRK_GROUPBOX2$'+str(currenttitle)).get_text()
-            title = title[0:60]
+                'div', id='win0divSSR_CLSRSLT_WRK_GROUPBOX2GP$'+str(currenttitle)).get_text()  # win0divSSR_CLSRSLT_WRK_GROUPBOX2GP$0
+            # title = title[0:110]  # 60
             title = title.strip()
             currenttitle += 1
             # print("class number is", current)
             corereq, prereq, other = DeepExtract(
                 driver, soup, subject, DE, current)
-            classes[EID_class] = [title, EID_section,
-                                  EID_time, EID_room, EID_instructor, EID_meetings, year, EID_instruction_mode, EID_status, corereq, prereq, other]
+            classes[EID_class] = {"Title": title, "Section": EID_section, "Time": EID_time, "Room": EID_room, "Instructor": EID_instructor,
+                                  "Meetings": EID_meetings, "Semester": year, "Mode": EID_instruction_mode, "Status": EID_status, "Core": corereq, "Pre": prereq, "Other": other}
         else:
             title = cereal.find(
-                'div', id='win0divSSR_CLSRSLT_WRK_GROUPBOX2$'+str(currenttitle)).get_text()
-            title = title[0:60]
+                'div', id='win0divSSR_CLSRSLT_WRK_GROUPBOX2GP$'+str(currenttitle)).get_text()  # win0divSSR_CLSRSLT_WRK_GROUPBOX2$
+            # title = title[0:110]  # 60 ECED 4325
             title = title.strip()
+
             # print(title)
             # print("class number is", current)
             corereq, prereq, other = DeepExtract(
                 driver, soup, subject, DE, current)
-            classes[EID_class] = [title, EID_section,
-                                  EID_time, EID_room, EID_instructor, EID_meetings, EID_instruction_mode, EID_status, corereq, prereq, other]
+            classes[EID_class] = {"Title": title, "Section": EID_section, "Time": EID_time, "Room": EID_room, "Instructor": EID_instructor,
+                                  "Meetings": EID_meetings, "Semester": year, "Mode": EID_instruction_mode, "Status": EID_status, "Core": corereq, "Pre": prereq, "Other": other}
 
     # class scraping to a dictionary
     return classes
@@ -346,11 +348,77 @@ def printSubject(classes):
         print(values)
     return
 
+# key = list(CENG.Keys())[0]
+# => 20082
+# len(CENG)
 
-def CreateCSVSubject(UHCL_Cat):
+
+def CreateCSVSubject(UHCLCatM):
     # Make a file that makes a cvs file
-    print("hi")
+    print("Creating CSV")
+    with open('UHCLCatalog.csv', 'w', newline='') as file:
+        fieldnames = ['CRN', 'Course Number', "Title",
+                      "Class Section",  "Days", "Start Time", "End Time", "Room", "Instructor", "Semester", "Mode", "Status", "Corerequirement(s)", "Prerequirement(s)"]
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        for key, value in UHCLCatM.items():
+            UHCLCat = UHCLCatM[key]
+            # print("-----")
+            # print(UHCLCat)
+            try:
+                for key, value in UHCLCat.items():
+                    writer.writerow(
+                        {'CRN': key,
+                         'Course Number': SplitTitleNum(UHCLCat[key]["Title"]),
+                         "Title": SplitTitleWord(UHCLCat[key]["Title"]),
+                         "Class Section": SplitSectionNum(UHCLCat[key]["Section"]),
+                         "Days": SplitTimeString(UHCLCat[key]["Time"], 0),
+                         "Start Time": SplitTimeString(UHCLCat[key]["Time"], 1),
+                         "End Time": SplitTimeString(UHCLCat[key]["Time"], 2),
+                         "Room": UHCLCat[key]["Room"],
+                         "Instructor": UHCLCat[key]["Instructor"],
+                         "Semester": UHCLCat[key]["Semester"],
+                         "Mode": UHCLCat[key]["Mode"],
+                         "Status": UHCLCat[key]["Status"],
+                         "Corerequirement(s)": UHCLCat[key]["Core"],
+                         "Prerequirement(s)": UHCLCat[key]["Pre"]
+
+                         })
+            except Exception as e:
+                time.sleep(0)
+    print("Done.")
     return
+
+
+def SplitTitleWord(String):
+    String = String[12:]
+    return String
+
+
+def SplitTitleNum(String):
+    String = String[0:9]
+    return String
+
+
+def SplitSectionNum(String):
+    String = String[0:2]
+    return String
+
+
+def SplitTimeString(string, selection):
+    days = re.findall(r'(?:Mo|Tu|We|Th|Fr|Sa|Su)+', string)
+    times = re.findall(r'\d{1,2}:\d{2}[AP]M', string)
+    if (len(days) == 0):
+        days = "TBD"
+    if (len(times) == 0):
+        times = "TDB"
+        return times
+    if (selection == 0):
+        return ''.join(days)
+    if (selection == 1):
+        return times[0]
+    if (selection == 2):
+        return times[1]
 
 
 def MakeUHCLCatalog(semester, DE):
