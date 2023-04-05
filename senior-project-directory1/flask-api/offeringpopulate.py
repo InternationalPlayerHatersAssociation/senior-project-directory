@@ -3,7 +3,7 @@ import psycopg2
 
 # Connect to the PostgreSQL database
 connection = psycopg2.connect(
-    dbname="class_schedule",
+    dbname="course_model",
     user="postgres",
     password="N00k!e99123",
     host="localhost",

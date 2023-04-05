@@ -10,7 +10,7 @@ import csv
 #             print(os.path.join(root, filename)) # prints the path of the file
 
 connection = psycopg2.connect(
-    dbname="class_schedule",
+    dbname="course_model",
     user="postgres",
     password="N00k!e99123",
     host="localhost",

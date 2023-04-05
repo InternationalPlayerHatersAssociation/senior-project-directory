@@ -27,15 +27,16 @@ CREATE TABLE "degree_plan" (
 CREATE TABLE "course_offering" (
     "crn" int   NOT NULL,
     "course_id" int  NOT NULL,
+    "course_code" varchar(50) NOT NULL,
     "name" varchar(100) NOT NULL,
     "days" varchar(50)   NOT NULL,
-    "start" varchar(50)   NOT NULL,
-    "end" varchar(50)   NOT NULL,
+    "start_time" varchar(50)   NOT NULL,
+    "end_time" varchar(50)   NOT NULL,
     "room_num" varchar(50)   NOT NULL,
     "instructor" varchar(50)   NOT NULL,
     "semester" varchar(50)   NOT NULL,
     "mode" varchar(50)   NOT NULL,
-    "status" varchar(50)   NOT NULL
+    "status" varchar(50)   NOT NULL,
     CONSTRAINT "pk_course_offering" PRIMARY KEY (
         "crn"
      )
@@ -55,6 +56,7 @@ CREATE TABLE "courses_needed" (
     "id" serial   NOT NULL,
     "course_id" int   NOT NULL,
     "dp_id" int   NOT NULL,
+    "hours" int NOT NULL,
     "type" varchar(10)   NOT NULL,
     CONSTRAINT "pk_courses_needed" PRIMARY KEY (
         "id"
@@ -83,8 +85,8 @@ CREATE TABLE "class_choices" (
 
 CREATE TABLE "course" (
     "course_id" serial   NOT NULL,
-    "number" varchar(100)   NOT NULL,
-    "name" varchar(50)   NOT NULL,
+    "number" varchar(50)   NOT NULL,
+    "name" varchar(100)   NOT NULL,
     CONSTRAINT "pk_course" PRIMARY KEY (
         "course_id"
      )
