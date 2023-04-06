@@ -43,7 +43,6 @@ class Scheduler:
 
         # initialize solutions matrix
         all_combos = [[0 for x in range(num_courses)] for y in range(num_total_combos)]
-        print("Matrix is "+ str(len(all_combos)) + " x " + str(len(all_combos[0])))
 
         # fill in matrix with every possible choice
         part = num_total_combos
@@ -52,7 +51,6 @@ class Scheduler:
             i+=1
             part = part // len(course)
             for k in range(0,num_total_combos):
-                print("k "+str(k)+" i "+str(i))
                 all_combos[k][i] = ((k // part) % len(course)) + 1
         return all_combos
     
@@ -60,10 +58,18 @@ class Scheduler:
         valid_combos = []
         all_combos = self.all_possible_combinations()
         for combo in all_combos:
-            print("combo: "+ str(combo))
             if self.check_valid_combination(combo):
                 valid_combos.append(combo)
         return valid_combos
+    
+    # choice is the index of the chosen class combination
+    # combos is the list of all valid combinations
+    def generate_crns(self, choice, all_combos):
+        crns = ""
+        combo = all_combos[choice]
+        for i in range(0, len(combo)): # i is index of class, value at i is index of section
+            crns += str(self.classes[i+1][combo[i]]["crn"]) + ","
+        return crns[:-1]
 
 section1 = {"crn": 11, "start": 900, "end": 1000, "day": "MW"}
 section2 = {"crn": 12, "start": 1000, "end": 1100, "day": "TH"}
@@ -76,10 +82,13 @@ class4 = {1: {"crn": 41, "start": 1200, "end": 1300, "day": "MW"}}
 
 classes = {1: class1, 2: class2, 3: class3, 4: class4}
 
-conflict1 = {"start": 800, "end": 1200, "day": "H"}
+conflict1 = {"start": 800, "end": 1000, "day": "H"}
 conflict2 = {"start": 1600, "end": 1900, "day": "MF"}
 conflicts = {1: conflict1, 2: conflict2}
 
 s = Scheduler(classes, conflicts)
-for combo in s.get_valid_combinations():
+my_combos = s.get_valid_combinations()
+for combo in my_combos:
     print(combo)
+
+print(s.generate_crns(0, my_combos))
