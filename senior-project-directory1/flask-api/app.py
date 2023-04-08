@@ -1,8 +1,10 @@
-from flask import Flask, request
-from models import db, Student, Degree_Plan
+from flask import Flask, request, session
+from models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices
 from flask_jwt_extended import JWTManager, create_access_token, create_refresh_token, jwt_required, get_jwt_identity
 from flask import jsonify
 from flask_cors import CORS
+from scheduler import Scheduler
+from flask_login import LoginManager, login_user
 
 
 app = Flask(__name__)
@@ -13,6 +15,10 @@ db.init_app(app)
 jwt = JWTManager(app)
 CORS(app)
 
+
+
+
+    
 #test api route
 @app.route('/helloworld', methods =["GET"])
 def helloworld():
@@ -45,8 +51,8 @@ def register():
 @app.route('/login', methods = ['POST'])
 def login():
     #get email and password from http request 
-    email = request.json.get('email')
-    password = request.json.get('password')
+    email = request.args.get('email')
+    password = request.args.get('password')
     #if email is not in json data return an error (should probably just check this on the front end before sending)
     if not email or not password:
         return jsonify({'message':'Please enter an email or password'})
@@ -58,8 +64,15 @@ def login():
     #create a json web token for user to access private pages
     access_token = create_access_token(identity = email)
     refresh_token = create_refresh_token(identity = email)
+    session['stuid'] = student.stuid
+    session['major'] = student.major
     #if user is valid provide token to access private pages
     return jsonify({"access_token": access_token, "refresh_token": refresh_token})
+
+@app.route('/logout')
+def logout():
+    session.clear()  # Clear the entire session
+    return jsonify({"message":"User has been logged out."})
 
 #create a refrese token to keep user logged in, in case the auth token expires
 @app.route('/refresh', methods = ["POST"])
@@ -76,6 +89,26 @@ def get_majors():
     major_list = [major[0] for major in majors]
     
     return jsonify(major_list)
+
+@app.route('/getcombos', methods=['POST'])
+def combos():
+    #classes = request.json.get('data')
+    classes = db.Session.query()
+    #scheduler = Scheduler()
+    
+@app.route('/get_major_classes', methods = ['GET'])
+def get_classes():
+    classes = db.session.query(Courses_Needed, Course)\
+    .join(Course, Courses_Needed.course_id == Course.course_id)\
+    .filter(Courses_Needed.dp_id == session['major'])\
+    .all()
+    
+    names = [course.name for _, course in classes]
+    
+    return jsonify(names = names)
+    
+    
+        
         
     
 

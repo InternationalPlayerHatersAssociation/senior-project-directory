@@ -1,4 +1,4 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/qaCrUU
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
@@ -67,8 +67,8 @@ CREATE TABLE "conflict" (
     "cid" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "name" varchar(50)   NOT NULL,
-    "start" time   NOT NULL,
-    "end" time   NOT NULL,
+    "start_time" varchar(50)   NOT NULL,
+    "end_time" varchar(50)   NOT NULL,
     "day" varchar(10)   NOT NULL,
     CONSTRAINT "pk_conflict" PRIMARY KEY (
         "cid"
