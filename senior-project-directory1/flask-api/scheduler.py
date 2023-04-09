@@ -34,25 +34,27 @@ class Scheduler:
         return True
     
     def all_possible_combinations(self):
-        
-        # calculate total # of combinations
         num_courses = len(self.classes)
         num_total_combos = 1
+        
         for course in self.classes.values():
-            num_total_combos *= len(course) # number of sections
+            num_total_combos *= len(course)  # number of sections
 
-        # initialize solutions matrix
-        all_combos = [[0 for x in range(num_courses)] for y in range(num_total_combos)]
+        all_combos = []
 
-        # fill in matrix with every possible choice
-        part = num_total_combos
-        i = -1
-        for course in self.classes.values(): # iterate through each class's section dictionaries
-            i+=1
-            part = part // len(course)
-            for k in range(0,num_total_combos):
-                all_combos[k][i] = ((k // part) % len(course)) + 1
+        def build_combos(index, current_combo):
+            if index >= num_courses:
+                all_combos.append(current_combo.copy())
+                return
+
+            for section_key in self.classes[index + 1].keys():
+                current_combo[index] = section_key
+                build_combos(index + 1, current_combo)
+
+        build_combos(0, [0] * num_courses)
+
         return all_combos
+
     
     def get_valid_combinations(self):
         valid_combos = []

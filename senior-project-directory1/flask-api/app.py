@@ -94,7 +94,6 @@ def find_combinations():
     data = request.json
     class_names = data['classes']
     conflicts_list = data['conflicts']
-    
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
     # Query the database for the courses
     course_data = []
