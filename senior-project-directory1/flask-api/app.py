@@ -69,6 +69,7 @@ def login():
     #if user is valid provide token to access private pages
     return jsonify({"access_token": access_token, "refresh_token": refresh_token})
 
+#destroy session token
 @app.route('/logout')
 def logout():
     session.clear()  # Clear the entire session
@@ -90,12 +91,14 @@ def get_majors():
     
     return jsonify(major_list)
 
+#todo
 @app.route('/getcombos', methods=['POST'])
 def combos():
-    #classes = request.json.get('data')
-    classes = db.Session.query()
+    classes = request.args.get('classes')
+    conflicts = request.args.get('conflicts')
     #scheduler = Scheduler()
-    
+
+#get classes belonging to users majors
 @app.route('/get_major_classes', methods = ['GET'])
 def get_classes():
     classes = db.session.query(Courses_Needed, Course)\
