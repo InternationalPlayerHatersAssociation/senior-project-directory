@@ -11,7 +11,7 @@ connection = psycopg2.connect(
 )
 cursor = connection.cursor()
 
-csv_file_path = "/Users/maxxfieldsmith/senior-project-directory/senior-project-directory1/flask-api/UHCLCatalog.csv"
+csv_file_path = "/Users/maxxfieldsmith/senior-project-directory/senior-project-directory1/database/UHCLCat.csv"
 # Read CSV file
 with open(csv_file_path, 'r') as file:
     csv_reader = csv.reader(file)
