@@ -4,7 +4,8 @@ from flask_jwt_extended import JWTManager, create_access_token, create_refresh_t
 from flask import jsonify
 from flask_cors import CORS
 from scheduler import Scheduler
-from flask_login import LoginManager, login_user
+from convert_course_data import convert_course_data
+
 
 
 app = Flask(__name__)
@@ -15,10 +16,6 @@ db.init_app(app)
 jwt = JWTManager(app)
 CORS(app)
 
-
-
-
-    
 #test api route
 @app.route('/helloworld', methods =["GET"])
 def helloworld():
@@ -91,12 +88,33 @@ def get_majors():
     
     return jsonify(major_list)
 
-#todo
-@app.route('/getcombos', methods=['POST'])
-def combos():
-    classes = request.args.get('classes')
-    conflicts = request.args.get('conflicts')
-    #scheduler = Scheduler()
+
+@app.route('/find_combinations', methods=['POST'])
+def find_combinations():
+    data = request.json
+    class_names = data['classes']
+    conflicts_list = data['conflicts']
+    
+    conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
+    # Query the database for the courses
+    course_data = []
+    for class_name in class_names:
+        course_data.extend(db.session.query(Course_Offering).filter_by(name=class_name).all())
+    formatted_classes = convert_course_data(course_data)
+    scheduler = Scheduler(formatted_classes, conflicts)
+    valid_combos = scheduler.get_valid_combinations()
+    
+    #Construct the JSON response
+    response_data = []
+    for combo in valid_combos:
+        crns = scheduler.generate_crns(valid_combos.index(combo), valid_combos)
+        crn_list = [int(crn) for crn in crns.split(',')]
+        rows = [course.__dict__ for course in course_data if course.crn in crn_list]
+        for row in rows:
+            row.pop('_sa_instance_state', None)
+        response_data.append(rows)
+
+    return jsonify(response_data)
 
 #get classes belonging to users majors
 @app.route('/get_major_classes', methods = ['GET'])

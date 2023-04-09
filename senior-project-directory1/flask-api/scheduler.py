@@ -26,10 +26,10 @@ class Scheduler:
     
     def check_valid_combination(self, combination):
         for i in range(0, len(combination)): # i is index of class, value at i is index of section
-            if self.conflict_with_user(self.classes[i+1][combination[i]]):
+            if self.conflict_with_user(self.classes[i + 1][combination[i]]):
                 return False
             for j in range(i+1, len(combination)):
-                if self.check_conflict(self.classes[i+1][combination[i]], self.classes[j+1][combination[j]]):
+                if self.check_conflict(self.classes[i + 1][combination[i]], self.classes[j + 1][combination[j]]):
                     return False
         return True
     
