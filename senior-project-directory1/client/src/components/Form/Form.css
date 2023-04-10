@@ -34,6 +34,20 @@
     font-size: x-large;
   }
 
+  h5 {
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: xx-large;
+  }
+
+  h6 {
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: x-large;
+  }
+
  sImage {
     display: block;
     font-weight: 100;
@@ -109,6 +123,8 @@
   input[type="submit1"] {
     -webkit-appearance: none;
   }
+  
+
   
  
   
