@@ -51,6 +51,31 @@ function Form() {
       setEndTime('');
     }
   };
+
+  const handleRemoveCompletedClass = (classInput) => {
+    setCompletedClasses((prevClasses) => {
+      const newClasses = prevClasses.filter((c) => c !== classInput);
+      return newClasses;
+    });
+  };
+
+  const handleRemovePlannedClass = (index) => {
+    setPlannedClasses((prevClasses) => {
+      const newClasses = [...prevClasses];
+      newClasses.splice(index, 1);
+      return newClasses;
+    });
+  };
+
+  const handleRemoveConflict = (index) => {
+    setConflicts((prevConflicts) => {
+      const newConflicts = [...prevConflicts];
+      newConflicts.splice(index, 1);
+      return newConflicts;
+    });
+  };
+  
+  
 //added
   const handleNext = () => {
     setStep(step + 1);
@@ -76,9 +101,15 @@ function Form() {
             <button onClick={handleAddCompletedClass}>Add</button>
           </div>
           <ul className="class-list">
-            {completedClasses.map((classInput, index) => (
-              <li key={index}>{classInput}</li>
-            ))}
+              {completedClasses.map((classInput) => (
+                <div className="class-listing" key={classInput}>
+                  <li>
+                    {classInput}
+                    <button onClick={() => handleRemoveCompletedClass(classInput)}>Remove</button>
+                  </li>
+                </div>
+              ))}
+            
           </ul>
           {/*added*/ }
           <button type="submit" className="submit-button" onClick={handleNext}>
@@ -108,7 +139,12 @@ function Form() {
           </div>
           <ul className="class-list">
             {plannedClasses.map((classInput, index) => (
-              <li key={index}>{classInput}</li>
+              <div className="class-listing" key={index}>
+                <li>
+                  {classInput}
+                  <button onClick={() => handleRemovePlannedClass(index)}>Remove</button>
+                </li>
+              </div>
             ))}
           </ul>
           <div>
@@ -160,9 +196,12 @@ function Form() {
       </div>
       <ul className="conflict-list">
         {conflicts.map((conflictInput, index) => (
+          <div className="class-listing">
           <li key={index}>{conflictInput}</li>
-        ))}
-      </ul>
+          <button onClick={() => handleRemoveConflict(index)}>Remove</button>
+        </div>
+      ))}
+    </ul>
       <div>
       <button type="submit" className="submit-button" onClick={handleBack}>
         Back
