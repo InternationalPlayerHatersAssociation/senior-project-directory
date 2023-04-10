@@ -58,9 +58,9 @@ function Form() {
       </div>
       <div className="form-steps">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="completed-classes">Completed Classes:</label>
+          <h4 htmlFor="completed-classes">Completed Classes:</h4>
           <div className="class-inputs">
-            <input type="text" id="completed-classes" placeholder="e.g. CS101" />
+            <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" />
             <button onClick={handleAddCompletedClass}>Add</button>
           </div>
           <ul className="class-list">
@@ -68,9 +68,9 @@ function Form() {
               <li key={index}>{classInput}</li>
             ))}
           </ul>
-          <label htmlFor="planned-classes">Planned Classes:</label>
+          <h4 htmlFor="planned-classes">Planned Classes:</h4>
           <div className="class-inputs">
-            <input type="text" id="planned-classes" placeholder="e.g. MATH201" />
+            <input type="text" id="planned-classes" placeholder="e.g. Senior Project" />
             <button onClick={handleAddPlannedClass}>Add</button>
           </div>
           <ul className="class-list">
@@ -78,7 +78,7 @@ function Form() {
               <li key={index}>{classInput}</li>
             ))}
           </ul>
-          <label htmlFor="conflicts">Schedule Conflicts:</label>
+          <h4 htmlFor="conflicts">Schedule Conflicts:</h4>
           <div className="conflict-inputs">
             <select value={day} onChange={(event) => setDay(event.target.value)}>
               <option value="">Select day</option>

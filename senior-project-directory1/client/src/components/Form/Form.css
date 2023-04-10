@@ -27,6 +27,13 @@
     text-align: center;
   }
 
+  h4 {
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: x-large;
+  }
+
  sImage {
     display: block;
     font-weight: 100;
