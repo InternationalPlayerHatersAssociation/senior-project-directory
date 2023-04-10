@@ -95,7 +95,7 @@ function Form() {
           value={startTime}
           onChange={(event) => setStartTime(event.target.value)}
         />
-        <span>-</span>
+        <span> - {'  '}  </span>
         <input
           type="time"
           value={endTime}
