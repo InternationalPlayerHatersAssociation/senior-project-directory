@@ -1,0 +1,1182 @@
+crn,course_code,name,days,start_time,end_time,room_num,instructor,semester,mode,status
+10032,ACCT 2301,Principles of Accounting I - Financial,TH,1430,1550,Bayou Building 2311,Susan M Sorensen,Spring 2023,Face to Face,Opened
+10033,ACCT 2301,Principles of Accounting I - Financial,MWF,1000,1050,Bayou Building 1218,Susan M Sorensen,Spring 2023,< 50% online,Opened
+10034,ACCT 2301,Principles of Accounting I - Financial,H,1900,2150,Bayou Building 2122,Chika Onyema,Spring 2023,< 50% online,Opened
+10035,ACCT 2302,Principles of Accounting II - Managerial,TH,830,950,Bayou Building 1313,Md Rajib Hasan,Spring 2023,Face to Face,Opened
+10036,ACCT 2302,Principles of Accounting II - Managerial,MWF,1000,1050,Bayou Building 3332,Md Rajib Hasan,Spring 2023,< 50% online,Opened
+10037,ACCT 2302,Principles of Accounting II - Managerial,H,1900,2150,Bayou Building 1311,Terri K. Aragon,Spring 2023,< 50% online,Opened
+10038,ACCT 3332,Financial Reporting & Analysis,TDB,TDB,TDB,TBA,Michael J Lacina,Spring 2023,100% Online,Opened
+10040,ACCT 3333,Cost Accounting,T,1900,2150,Bayou Building 1124,Michael J Lacina,Spring 2023,< 50% online,Opened
+10041,ACCT 3333,Cost Accounting,TDB,TDB,TDB,TBA,Shanshan Pan,Spring 2023,100% Online,Opened
+10043,ACCT 3341,Intermediate Accounting I,W,1900,2150,Bayou Building 1217,Shanshan Pan,Spring 2023,< 50% online,Opened
+10044,ACCT 3341,Intermediate Accounting I,TDB,TDB,TDB,TBA,Md Rajib Hasan,Spring 2023,100% Online,Opened
+10049,ACCT 3342,Intermediate Accounting II,TDB,TDB,TDB,TBA,Haeyoung Shin,Spring 2023,100% Online,Closed
+10053,ACCT 4331,Federal Taxation Individuals,TDB,TDB,TDB,TBA,Barry R Marks,Spring 2023,100% Online,Closed
+10055,ACCT 4332,Financial Information Systems,W,1900,2150,Bayou Building 1311,Hui Du,Spring 2023,< 50% online,Opened
+10056,ACCT 4332,Financial Information Systems,TDB,TDB,TDB,TBA,Hui Du,Spring 2023,100% online w/F2F,Opened
+10058,ACCT 4341,Auditing I,TDB,TDB,TDB,TBA,Jun Hao,Spring 2023,100% online w/F2F,Closed
+10062,ACCT 4344,Oil & Gas Accounting,M,1900,2150,Bayou Building 1215,"Celine Marie Siewert,
+Michael J Lacina",Spring 2023,< 50% online,Opened
+10063,ACCT 4346,Business Ethics for Accountant,H,1900,2150,Bayou Building 1213,Amanda Bates,Spring 2023,< 50% online,Opened
+10064,ACCT 4346,Business Ethics for Accountant,TDB,TDB,TDB,TBA,Amanda Bates,Spring 2023,100% Online,Closed
+10066,ACCT 4348,Intro to Data Analytics in Accounting,T,1900,2150,Bayou Building 1333,Hui Du,Spring 2023,< 50% online,Opened
+10067,ACCT 4352,Advanced Financial Accounting,M,1900,2150,Bayou Building 1311,Zhaohui Xu,Spring 2023,< 50% online,Opened
+10068,ACCT 4352,Advanced Financial Accounting,TDB,TDB,TDB,TBA,Zhaohui Xu,Spring 2023,100% Online,Closed
+10069,ACCT 4352,Advanced Financial Accounting,TDB,TDB,TDB,TBA,Zhaohui Xu,Spring 2023,100% Online,Closed
+10070,ACCT 4353,Federal Taxation of Business Entities,T,1900,2150,Bayou Building 1211,William Scott Youngblood,Spring 2023,< 50% online,Opened
+10071,ACCT 4361,International Accounting,H,1900,2150,Bayou Building 1302,Lin Yi,Spring 2023,< 50% online,Opened
+20565,ACCT 5131,Acct For Administration Cntrl,M,1900,2150,Bayou Building 2311,Lin Yi,Spring 2023,< 50% online,Opened
+20566,ACCT 5131,Acct For Administration Cntrl,TDB,TDB,TDB,TBA,Lin Yi,Spring 2023,100% Online,Opened
+10073,ACCT 5133,Financial Accounting I,W,1900,2150,Bayou Building 1217,Shanshan Pan,Spring 2023,< 50% online,Opened
+10074,ACCT 5133,Financial Accounting I,TDB,TDB,TDB,TBA,Md Rajib Hasan,Spring 2023,100% Online,Closed
+10078,ACCT 5134,Financial Accounting II,TDB,TDB,TDB,TBA,Haeyoung Shin,Spring 2023,100% Online,Closed
+10080,ACCT 5137,Principles Of Auditing,TDB,TDB,TDB,TBA,Jun Hao,Spring 2023,100% Online,Opened
+10082,ACCT 5231,Individual Income Tax,M,1900,2150,Bayou Building 1219,Barry R Marks,Spring 2023,< 50% online,Opened
+10083,ACCT 5234,Corporate and Pass Through Entity Taxation,W,1900,2150,Bayou Building 1219,Susan M Sorensen,Spring 2023,< 50% online,Opened
+10084,ACCT 5333,Fundamentals of Databases and Business Intelligence,W,1900,2150,SSCB 1100,Naveed Saleem,Spring 2023,Face to Face,Closed
+10085,ACCT 5334,Advanced Database Applications Development,M,1900,2150,Student Services Bld 3311,Naveed Saleem,Spring 2023,Face to Face,Opened
+10087,ACCT 5336,Systems Analysis and Design,W,1600,1850,Bayou Building 1333,Douglas J Steel,Spring 2023,Face to Face,Opened
+10088,ACCT 5432,Acct For Govt & Not Profit,H,1900,2150,Bayou Building 1215,Barry R Marks,Spring 2023,< 50% online,Opened
+10089,ACCT 5438,Fundamentals of Data Analytics,T,1900,2150,Bayou Building 1333,Hui Du,Spring 2023,< 50% online,Opened
+10090,ACCT 5631,Data Warehousing and Data Mining,T,1300,1550,Bayou Building 2524,Charitha Hettiarachchi,Spring 2023,Face to Face,Opened
+10091,ACCT 5632,Advanced Data Analytics in ERP System,H,1300,1550,SSCB 1100,Nanfei Sun,Spring 2023,Face to Face,Opened
+10092,ACCT 5633,Data Analytics Application Development,M,1600,1850,SSCB 1100,Jian Lin,Spring 2023,Face to Face,Opened
+10093,ACCT 6731,Financial Statement and Accounting Information Quality Analysis Seminar,T,1900,2150,Bayou Building 1135,Haeyoung Shin,Spring 2023,< 50% online,Opened
+10094,ACCT 6732,Seminar in Fraud Examination and Audit Risk,M,1900,2150,Bayou Building 1217,Jun Hao,Spring 2023,< 50% online,Opened
+10095,ACCT 6735,Oil & Gas Accounting,M,1900,2150,Bayou Building 1215,"Celine Marie Siewert,
+Michael J Lacina",Spring 2023,< 50% online,Opened
+19383,ADSU 5010,Professional Preparation Seminar,TDB,TDB,TDB,TBA,Jennifer Grace,Spring 2023,100% Online,Opened
+21098,ADSU 6233,Principalship,TDB,TDB,TDB,TBA,Queinnise A Miller,Spring 2023,100% Online,Closed
+21101,ADSU 6436,School Resource Management,TDB,TDB,TDB,TBA,John M Decman,Spring 2023,100% Online,Opened
+21103,ADSU 6437,School Law,TDB,TDB,TDB,TBA,John M Decman,Spring 2023,100% Online,Opened
+25572,ADSU 6735,Leadership Research Seminar,TDB,TDB,TDB,TBA,Jennifer Grace,Spring 2023,100% Online,Opened
+19391,ADSU 6739,Graduate Practicum,TDB,TDB,TDB,TBA,John M Decman,Spring 2023,100% Online,Opened
+20288,ANTH 2346,General Anthropology,TDB,TDB,TDB,TBA,Christine M Kovic,Spring 2023,100% Online,Closed
+20290,ANTH 3311,Contemporary Cultural Anthropology,TDB,TDB,TDB,TBA,Deepa S Reddy,Spring 2023,100% Online,Closed
+20292,ANTH 3311,Contemporary Cultural Anthropology,TDB,TDB,TDB,TBA,Alicia Marie Patino,Spring 2023,100% Online,Closed
+20899,ANTH 3311,Contemporary Cultural Anthropology,TDB,TDB,TDB,TBA,Maria F Curtis,Spring 2023,100% Online,Opened
+20295,ANTH 3330,Interdisciplinary Perspectives in Global Health,TDB,TDB,TDB,TBA,Dawit Okubatsion Woldu,Spring 2023,100% Online,Closed
+20315,ANTH 3357,Topics in African Studies,W,900,1150,Bayou Building 2230,Dawit Okubatsion Woldu,Spring 2023,< 50% online,Opened
+20297,ANTH 3361,Anthropology of Food,TDB,TDB,TDB,TBA,Susann Marie Glenn,Spring 2023,100% Online,Closed
+20901,ANTH 3362,Medicine and Culture,TDB,TDB,TDB,TBA,Dawit Okubatsion Woldu,Spring 2023,100% Online,Opened
+20314,ANTH 4301,Studies in Cultural Diversity,H,1300,1550,Student Services Bld 2310,Maria F Curtis,Spring 2023,< 50% online,Opened
+20299,ANTH 4302,Applied Anthropology,TDB,TDB,TDB,TBA,Dawit Okubatsion Woldu,Spring 2023,100% Online,Opened
+20310,ANTH 4334,Native Americans,TDB,TDB,TDB,TBA,Maria F Curtis,Spring 2023,100% Online,Closed
+20301,ANTH 4341,Gender and Sexuality in Global Perspectives,TDB,TDB,TDB,TBA,Deepa S Reddy,Spring 2023,100% Online,Opened
+20303,ANTH 4342,"Human Rights, Social Justice, Health",T,1600,1850,Bayou Building 1213,Christine M Kovic,Spring 2023,< 50% online,Opened
+20306,ANTH 4352,World Prehistory and Archaeology,TDB,TDB,TDB,TBA,Scotty Moore,Spring 2023,100% Online,Opened
+20311,ANTH 5334,Native American Cultures,TDB,TDB,TDB,TBA,Maria F Curtis,Spring 2023,100% Online,Closed
+20316,ANTH 5537,Topics in African Studies,W,900,1150,Bayou Building 2230,Dawit Okubatsion Woldu,Spring 2023,< 50% online,Opened
+20308,ANTH 5931,Research Topics in Anthropology,M,1900,2150,Bayou Building 1133,Christine M Kovic,Spring 2023,< 50% online,Opened
+20428,ARTS 1303,World Art Survey I,TDB,TDB,TDB,TBA,Sarah Kielt Costello,Spring 2023,100% Online,Opened
+20430,ARTS 1304,World Art Survey II,TDB,TDB,TDB,TBA,Jessica T Kubala,Spring 2023,100% Online,Opened
+20002,ARTS 1311,Design Foundations,TH,1300,1550,Arbor North 1200.15,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Closed
+20003,ARTS 1316,Drawing Foundations,W,1600,1850,Arbor 1320.04,Marjorie Carol Paben,Spring 2023,100% F2F w/supplmtnl web,Closed
+20004,ARTS 1316,Drawing Foundations,M,1600,1850,Arbor 1320.04,Lauren E Kussro,Spring 2023,100% F2F w/supplmtnl web,Closed
+20005,ARTS 1316,Drawing Foundations,W,1900,2150,Arbor 1320.04,Janet Morton Reynolds,Spring 2023,100% F2F w/supplmtnl web,Closed
+20006,ARTS 1325,Drawing for Non-Art Majors,W,1600,1850,Arbor 1320.04,Marjorie Carol Paben,Spring 2023,100% F2F w/supplmtnl web,Closed
+20007,ARTS 1325,Drawing for Non-Art Majors,M,1600,1850,Arbor 1320.04,Lauren E Kussro,Spring 2023,100% F2F w/supplmtnl web,Closed
+20008,ARTS 1325,Drawing for Non-Art Majors,W,1900,2150,Arbor 1320.04,Janet Morton Reynolds,Spring 2023,100% F2F w/supplmtnl web,Closed
+20009,ARTS 2316,Painting,MW,1300,1550,Arbor 1150.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Opened
+20011,ARTS 2371,Digital Photography 1,W,1300,1550,Student Services Bld 220114,Angela Duron-Larson,Spring 2023,< 50% online,Opened
+20012,ARTS 2371,Digital Photography 1,W,1900,2150,Student Services Bld 220114,Angela Duron-Larson,Spring 2023,< 50% online,Opened
+20013,ARTS 2371,Digital Photography 1,T,830,1120,SSCB� 220113,Leslie Plaza Johnson,Spring 2023,< 50% online,Opened
+20014,ARTS 2371,Digital Photography 1,H,830,1120,Student Services Bld 220114,Leslie Plaza Johnson,Spring 2023,< 50% online,Opened
+20015,ARTS 2371,Digital Photography 1,H,1600,1850,Student Services Bld 220114,Daniel Seth Kraus,Spring 2023,< 50% online,Closed
+20017,ARTS 2379,Arts and the Child,T,1800,2050,Arbor 1315.02,David Anthony Moya,Spring 2023,100% F2F w/supplmtnl web,Opened
+20018,ARTS 2379,Arts and the Child,T,1800,2050,Arbor 1310.06,Victoria Suzanne Williams,Spring 2023,100% F2F w/supplmtnl web,Opened
+20019,ARTS 2379,Arts and the Child,T,1800,2050,Arbor 1310.02,Henry A Darragh,Spring 2023,100% F2F w/supplmtnl web,Closed
+20020,ARTS 3310,Sculpture,MW,900,1150,Arbor North 1200.15,Jason D Makepeace,Spring 2023,100% F2F w/supplmtnl web,Closed
+20021,ARTS 3320,Ceramics,TH,830,1120,Arbor North 1200.08,Clay F Leonard,Spring 2023,100% F2F w/supplmtnl web,Closed
+20022,ARTS 3331,Intermediate Drawing,TH,830,1120,Arbor 1150.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Opened
+20023,ARTS 3333,Life Drawing,F,900,1250,Arbor 1320.04,Mark Greenwalt,Spring 2023,100% F2F w/supplmtnl web,Closed
+20024,ARTS 3333,Life Drawing,F,1400,1750,Arbor 1320.04,Nohelia Bolivar Vargas,Spring 2023,100% F2F w/supplmtnl web,Closed
+20010,ARTS 3335,Intermediate Painting,MW,1300,1550,Arbor 1150.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Closed
+20026,ARTS 3340,Printmaking,TH,1900,2150,Arbor 1320.03,Lauren E Kussro,Spring 2023,100% F2F w/supplmtnl web,Closed
+20027,ARTS 3341,Fibers,MW,1300,1550,Arbor North 1200.08,Marjorie Carol Paben,Spring 2023,100% F2F w/supplmtnl web,Closed
+25808,ARTS 3351,Art 1950-Present,TDB,TDB,TDB,TBA,Jessica T Kubala,Spring 2023,100% Online,Closed
+20030,ARTS 3352,Traditional Photography,F,900,1250,Arbor 1305.02,Daniel Seth Kraus,Spring 2023,100% F2F w/supplmtnl web,Opened
+20033,ARTS 3360,Graphic Design,T,1900,2150,Student Services Bld 220114,Wale Akingbade,Spring 2023,> or equal to 50% Online,Opened
+20034,ARTS 3360,Graphic Design,M,900,1150,Student Services Bld 220114,Stuart Larson,Spring 2023,< 50% online,Closed
+20036,ARTS 4301,Methods in Secondary Art Education,TH,1300,1550,Arbor 1315.02,David Anthony Moya,Spring 2023,100% F2F w/supplmtnl web,Closed
+20037,ARTS 4310,Advanced Sculpture,MW,1600,1850,Arbor North 1200.15,Jason D Makepeace,Spring 2023,100% F2F w/supplmtnl web,Opened
+20445,ARTS 4315,Art of the Ancient Greek World,M,1600,1850,Bayou Building 1333,Sarah Kielt Costello,Spring 2023,< 50% online,Closed
+20039,ARTS 4320,Advanced Ceramics,TH,1300,1550,Arbor North 1200.08,Clay F Leonard,Spring 2023,100% F2F w/supplmtnl web,Closed
+21159,ARTS 4331,Advanced Drawing,MW,900,1150,Arbor 1320.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Closed
+20043,ARTS 4335,Advanced Painting,MW,900,1150,Arbor 1320.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Closed
+20047,ARTS 4339,Silkscreen Printing,TH,1300,1550,Arbor 1320.03,Lauren E Kussro,Spring 2023,100% F2F w/supplmtnl web,Closed
+20028,ARTS 4341,Advanced Fibers,MW,1300,1550,Arbor North 1200.08,Marjorie Carol Paben,Spring 2023,100% F2F w/supplmtnl web,Opened
+20048,ARTS 4348,Information Design,W,1600,1850,Student Services Bld 220114,Monica Edwards,Spring 2023,< 50% online,Opened
+20031,ARTS 4350,Advanced Traditional Photography,F,900,1250,Arbor 1305.02,Daniel Seth Kraus,Spring 2023,100% F2F w/supplmtnl web,Closed
+20050,ARTS 4351,Advanced Digital Photography,W,1600,1850,SSCB� 220113,Daniel Seth Kraus,Spring 2023,< 50% online,Closed
+20053,ARTS 4358,History and Theory of Graphic Design,W,900,1150,Bayou Building 1326,Stuart Larson,Spring 2023,< 50% online,Closed
+20055,ARTS 4369,Digital Illustration,T,830,1120,Student Services Bld 220114,Stuart Larson,Spring 2023,< 50% online,Closed
+20057,ARTS 4390,Senior Seminar in Art,M,1300,1550,Student Services Bld 220114,Clay F Leonard,Spring 2023,100% F2F w/supplmtnl web,Closed
+20059,ARTS 4391,Selected Topics in Art,T,1900,2150,Bayou Building 2104,Eric Despard,Spring 2023,100% F2F w/supplmtnl web,Closed
+20060,ARTS 4391,Selected Topics in Art,TH,1600,1850,Arbor 1315.02,Janet Morton Reynolds,Spring 2023,< 50% online,Opened
+25989,ARTS 4391,Selected Topics in Art,TDB,TDB,TDB,TBA,Sarah Kielt Costello,Spring 2023,100% Online,Closed
+20038,ARTS 5231,Sculpture and Ceramic Studio,MW,1600,1850,Arbor North 1200.15,Jason D Makepeace,Spring 2023,100% F2F w/supplmtnl web,Opened
+20040,ARTS 5231,Sculpture and Ceramic Studio,TH,1300,1550,Arbor North 1200.08,Clay F Leonard,Spring 2023,100% F2F w/supplmtnl web,Opened
+20450,ARTS 5234,Art of the Ancient Greek World,M,1600,1850,Bayou Building 1333,Sarah Kielt Costello,Spring 2023,< 50% online,Opened
+20044,ARTS 5331,Painting-Drawing-Printmaking,MW,900,1150,Arbor 1320.01,Lauren E Yandell,Spring 2023,100% F2F w/supplmtnl web,Closed
+20046,ARTS 5331,Painting-Drawing-Printmaking,TH,1300,1550,Arbor 1320.03,Lauren E Kussro,Spring 2023,100% F2F w/supplmtnl web,Opened
+19981,ASTR 1104,Lab for Solar System,H,1300,1550,STEM 1200,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+19982,ASTR 1104,Lab for Solar System,W,1900,2150,STEM 1200,Derek Smith,Spring 2023,100% F2F w/supplmtnl web,Opened
+19988,ASTR 1304,Solar System,MWF,1100,1150,STEM 1203,Wes Kelly,Spring 2023,100% F2F w/supplmtnl web,Opened
+21194,BIOL 1106,Lab for Biology for Science Majors I,W,900,1150,Bayou Building 3313,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21196,BIOL 1106,Lab for Biology for Science Majors I,W,1300,1550,Bayou Building 3313,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21198,BIOL 1107,Laboratory for Biology for Science Majors II,H,1300,1550,Bayou Building 3209,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21200,BIOL 1107,Laboratory for Biology for Science Majors II,H,1700,1950,Bayou Building 3209,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21203,BIOL 1107,Laboratory for Biology for Science Majors II,F,900,1150,Bayou Building 3209,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Closed
+21206,BIOL 1107,Laboratory for Biology for Science Majors II,F,1300,1550,Bayou Building 3209,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21216,BIOL 1108,Laboratory for Biology for Non-Science Major I,W,900,1150,Bayou Building 3209,Luke Roland Choate,Spring 2023,100% F2F w/supplmtnl web,Opened
+21217,BIOL 1108,Laboratory for Biology for Non-Science Major I,W,1300,1550,Bayou Building 3209,Luke Roland Choate,Spring 2023,100% F2F w/supplmtnl web,Opened
+21218,BIOL 1306,Biology for Science Majors I,TH,1600,1720,Bayou Building 3326,Luke Roland Choate,Spring 2023,100% F2F w/supplmtnl web,Opened
+21219,BIOL 1307,Biology for Science Majors II,TH,1000,1120,STEM 1203,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+21220,BIOL 1308,Biology for Non-Science Majors I,TH,1300,1420,Bayou Building 1218,Luke Roland Choate,Spring 2023,100% F2F w/supplmtnl web,Opened
+21221,BIOL 2102,Lab for Anatomy & Physiology II,M,1300,1550,BAYOU 3604,Catherine Yvonne Obrien,Spring 2023,100% F2F w/supplmtnl web,Opened
+21222,BIOL 2121,Laboratory for Microbiology for Science Majors,W,900,1150,Bayou Building 3211,Michael Geary LaMontagne,Spring 2023,100% F2F w/supplmtnl web,Opened
+21223,BIOL 2121,Laboratory for Microbiology for Science Majors,W,1300,1550,Bayou Building 3211,Michael Geary LaMontagne,Spring 2023,100% F2F w/supplmtnl web,Closed
+21224,BIOL 2121,Laboratory for Microbiology for Science Majors,H,900,1150,Bayou Building 3211,Caroline Grace Kmiecik,Spring 2023,100% F2F w/supplmtnl web,Opened
+21226,BIOL 2302,Anatomy & Physiology II,TH,1000,1120,Bayou Building 2106,Catherine Yvonne Obrien,Spring 2023,100% F2F w/supplmtnl web,Opened
+21227,BIOL 2321,Microbiology for Science Majors,TH,1300,1420,Bayou Building 3332,Michael Geary LaMontagne,Spring 2023,100% F2F w/supplmtnl web,Opened
+21228,BIOL 3141,Molecular Genetics Laboratory,M,1300,1550,Bayou Building 3313,Jennifer Anne McNaspy,Spring 2023,100% F2F w/supplmtnl web,Opened
+21229,BIOL 3141,Molecular Genetics Laboratory,M,900,1150,Bayou Building 3313,Luke Roland Choate,Spring 2023,100% F2F w/supplmtnl web,Opened
+21230,BIOL 3173,Human Anatomy Laboratory,T,1100,1250,BAYOU 3604,Stephen Michael Gruber,Spring 2023,100% F2F w/supplmtnl web,Closed
+21231,BIOL 3173,Human Anatomy Laboratory,T,1300,1450,BAYOU 3604,Richard L Puzdrowski,Spring 2023,100% F2F w/supplmtnl web,Opened
+21232,BIOL 3173,Human Anatomy Laboratory,T,1500,1650,BAYOU 3604,Richard L Puzdrowski,Spring 2023,100% F2F w/supplmtnl web,Opened
+21236,BIOL 3307,Cell Biology,MW,1000,1120,Bayou Building 1333,Scott Buckel,Spring 2023,100% F2F w/supplmtnl web,Opened
+25498,BIOL 3316,Introduction to Herpetology,T,1900,2150,Bayou Building 3615,Stanley Richard Mays,Spring 2023,100% F2F w/supplmtnl web,Opened
+21237,BIOL 3341,Molecular Genetics,TH,1000,1120,Bayou Building 3326,Larry H Rohde,Spring 2023,100% F2F w/supplmtnl web,Opened
+21238,BIOL 3373,Human Anatomy,M,1300,1550,Bayou Building 3332,Stephen Michael Gruber,Spring 2023,100% F2F w/supplmtnl web,Opened
+21239,BIOL 4115,Biology Practicum,TDB,TDB,TDB,TBA,Trish Trubl,Spring 2023,100% F2F w/supplmtnl web,Opened
+26711,BIOL 4115,Biology Practicum,TDB,TDB,TDB,TBA,Michael Geary LaMontagne,Spring 2023,100% F2F w/supplmtnl web,Opened
+21245,BIOL 4241,Laboratory For Physiology,H,1800,2150,BAYOU 3604,Stephen Michael Gruber,Spring 2023,100% F2F w/supplmtnl web,Closed
+21246,BIOL 4241,Laboratory For Physiology,H,1300,1650,BAYOU 3604,Stephen Michael Gruber,Spring 2023,100% F2F w/supplmtnl web,Opened
+21247,BIOL 4241,Laboratory For Physiology,H,900,1250,BAYOU 3604,Stephen Michael Gruber,Spring 2023,100% F2F w/supplmtnl web,Closed
+21260,BIOL 4242,Laboratory For Biochemistry,M,1200,1550,Bayou Building 3520,Scott Buckel,Spring 2023,100% F2F w/supplmtnl web,Opened
+21262,BIOL 4242,Laboratory For Biochemistry,T,1200,1550,Bayou Building 3520,Scott Buckel,Spring 2023,100% F2F w/supplmtnl web,Opened
+21263,BIOL 4252,Molecular Biology Laboratory,T,1200,1550,Bayou Building 3108,Mohammad B Rashid,Spring 2023,100% F2F w/supplmtnl web,Opened
+21264,BIOL 4254,Laboratory for Eukaryotic Gene,W,1200,1550,Bayou Building 3108,Lory Zoe Santiago-Vazquez,Spring 2023,100% F2F w/supplmtnl web,Opened
+21265,BIOL 4278,Seminar in Biology,W,1300,1450,Bayou Building 1135,Brian Stephens,Spring 2023,100% F2F w/supplmtnl web,Opened
+24422,BIOL 4278,Seminar in Biology,W,1600,1750,Bayou Building 1213,Brian Stephens,Spring 2023,100% F2F w/supplmtnl web,Closed
+23477,BIOL 4311,Ecology,M,1900,2150,Bayou Building 2512,Cindy Howard,Spring 2023,> or equal to 50% Online,Opened
+23478,BIOL 4315,Biology Practicum,TDB,TDB,TDB,TBA,Cindy Howard,Spring 2023,100% F2F w/supplmtnl web,Opened
+25439,BIOL 4325,Environmental Toxicology,MW,1600,1720,Bayou Building 3326,Cindy Howard,Spring 2023,100% F2F w/supplmtnl web,Opened
+23482,BIOL 4341,Biochemistry I,TH,1000,1120,Bayou Building 2512,William R Mills,Spring 2023,100% F2F w/supplmtnl web,Opened
+23483,BIOL 4342,Biochemistry II,MW,1130,1250,Bayou Building 2512,William R Mills,Spring 2023,100% F2F w/supplmtnl web,Opened
+23484,BIOL 4343,Plant Physiology,TH,1600,1720,Bayou Building 2512,Brian Stephens,Spring 2023,100% F2F w/supplmtnl web,Closed
+21250,BIOL 4345,Human Physiology,M,1600,1850,Bayou Building 2512,Leonard James Giblin,Spring 2023,100% F2F w/supplmtnl web,Closed
+21248,BIOL 4346,Pathophysiology,H,1600,1850,Bayou Building 2234,Richard L Puzdrowski,Spring 2023,100% F2F w/supplmtnl web,Opened
+21244,BIOL 4347,Cellular Physiology,T,1300,1550,STEM 2101,Leonard James Giblin,Spring 2023,100% F2F w/supplmtnl web,Opened
+21243,BIOL 4348,Developmental Biology,W,1900,2150,Bayou Building 2236,Larry H Rohde,Spring 2023,100% F2F w/supplmtnl web,Opened
+21242,BIOL 4351,Molecular Biology I,M,1600,1850,Bayou Building 2236,Mohammad B Rashid,Spring 2023,100% F2F w/supplmtnl web,Opened
+21241,BIOL 4355,Tissue Culture,M,1900,2150,Bayou Building 3108,Larry H Rohde,Spring 2023,100% F2F w/supplmtnl web,Closed
+21240,BIOL 4361,Immunology,H,900,1150,Bayou Building 3332,Mohammad B Rashid,Spring 2023,100% F2F w/supplmtnl web,Closed
+23564,BIOL 5334,Microbial Ecology,MW,1730,1850,Bayou Building 3324,Michael Geary LaMontagne,Spring 2023,100% F2F w/supplmtnl web,Opened
+23565,BIOL 5436,Physiological Basis of Disease,H,1600,1850,Bayou Building 3615,Leonard James Giblin,Spring 2023,100% F2F w/supplmtnl web,Opened
+25438,BIOL 5534,Conservation Biology,TDB,TDB,TDB,TBA,Jenny Wrast Oakley,Spring 2023,100% Online,Opened
+23566,BIOL 5731,Advanced Cancer Biology,M,1900,2150,Bayou Building 2234,Leonard James Giblin,Spring 2023,100% F2F w/supplmtnl web,Closed
+25523,BIOL 5736,Bioethics,M,1600,1850,Bayou Building 1104,William R Mills,Spring 2023,> or equal to 50% Online,Closed
+23569,BIOL 6838,Research Project And Seminar,M,1600,1850,Bayou Building 3615,Brian Stephens,Spring 2023,> or equal to 50% Online,Opened
+26959,BIOL 6838,Research Project And Seminar,T,1900,2150,TBA,Scott Buckel,Spring 2023,> or equal to 50% Online,Opened
+21168,BIOT 5011,Methods in Biotechnology Discussion,H,1700,1750,Bayou Building 3108,Minal Yashwant Bhadane,Spring 2023,> or equal to 50% Online,Opened
+21170,BIOT 5021,Methods of Biotechnology,H,1800,2150,Bayou Building 3108,Minal Yashwant Bhadane,Spring 2023,100% F2F w/supplmtnl web,Opened
+21174,BIOT 5111,Advanced Methods of Biotechnology I Discussion,M,1100,1150,Bayou Building 3108,Martha Ariza,Spring 2023,> or equal to 50% Online,Closed
+21176,BIOT 5112,Advanced Methods of Biotechnology II Discussion,T,1300,1350,SSCB� 2302,Martha Ariza,Spring 2023,> or equal to 50% Online,Opened
+21175,BIOT 5121,Advanced Methods of Biotechnology I,M,1200,1550,Bayou Building 3108,Martha Ariza,Spring 2023,100% F2F w/supplmtnl web,Opened
+21177,BIOT 5122,Advanced Methods of Biotechnology II,T,830,1220,Bayou Building 1311,Martha Ariza,Spring 2023,100% F2F w/supplmtnl web,Opened
+21181,BIOT 5530,Research Methods in Biotechnology,W,1900,2150,Bayou Building 1104,Lory Zoe Santiago-Vazquez,Spring 2023,> or equal to 50% Online,Opened
+21184,BIOT 5736,Bioethics,M,1600,1850,Bayou Building 1104,William R Mills,Spring 2023,100% F2F w/supplmtnl web,Opened
+21188,BIOT 5915,Cooperative Education Work Term,TDB,TDB,TDB,TBA,Lory Zoe Santiago-Vazquez,Spring 2023,100% F2F w/supplmtnl web,Opened
+21173,BIOT 5933,Laboratory Topics in Biotechnology,H,830,1310,Bayou Building 3108,Martha Ariza,Spring 2023,100% F2F w/supplmtnl web,Closed
+21189,BIOT 6021,Biotechnology Practicum,TDB,TDB,TDB,TBA,Mohammad B Rashid,Spring 2023,100% F2F w/supplmtnl web,Opened
+21190,BIOT 6031,Biotechnology Practicum,TDB,TDB,TDB,TBA,Mohammad B Rashid,Spring 2023,100% F2F w/supplmtnl web,Opened
+21191,BIOT 6838,Research Project and Seminar,W,1900,2150,Bayou Building 1104,Lory Zoe Santiago-Vazquez,Spring 2023,< 50% online,Opened
+20082,CENG 2112,Lab For Digital Circuits,M,900,1150,Delta Building 128,Miguel Angel Pagan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20083,CENG 2112,Lab For Digital Circuits,T,1300,1550,Delta Building 128,Miguel Angel Pagan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20084,CENG 2112,Lab For Digital Circuits,H,1900,2150,Delta Building 128,Miguel Angel Pagan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20098,CENG 2312,Digital Circuits,MW,1430,1550,DELTA 140,Miguel Angel Pagan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20099,CENG 2312,Digital Circuits,TH,1600,1720,Delta Building 136,Miguel Angel Pagan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20107,CENG 2371,Microcontroller Programming,MW,1300,1420,DELTA 140,Ishaq H Unwala,Spring 2023,100% F2F w/supplmtnl web,Opened
+20085,CENG 3113,Lab For Linear Circuits,M,1900,2150,Delta Building 126,"Unal ""Zak"" Sakoglu",Spring 2023,100% F2F w/supplmtnl web,Opened
+20088,CENG 3116,Lab for Electronics,W,1900,2150,Delta Building 126,Xiaokun Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20090,CENG 3131,Lab For Telecom And Networks,T,1900,2150,Delta Building 126,Jiang Lu,Spring 2023,100% F2F w/supplmtnl web,Closed
+20091,CENG 3131,Lab For Telecom And Networks,H,1300,1550,Delta Building 128,Jiang Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20092,CENG 3151,Lab For Computer Architecture,T,830,1120,Delta Building 126,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Closed
+20093,CENG 3151,Lab For Computer Architecture,H,830,1120,Delta Building 126,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Opened
+20096,CENG 3264,Engineering Design and Project Management,W,1300,1550,Delta Building 126,Jiang Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20100,CENG 3313,Linear Circuits,MW,1730,1850,DELTA 140,"Unal ""Zak"" Sakoglu",Spring 2023,100% F2F w/supplmtnl web,Opened
+20102,CENG 3316,Electronics,MW,1600,1720,Delta Building 136,Xiaokun Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20104,CENG 3331,Intro To Telecom And Networks,TH,1600,1720,Delta Building D241,Jiang Lu,Spring 2023,100% F2F w/supplmtnl web,Closed
+20105,CENG 3351,Computer Architecture,TH,1300,1420,Delta Building 136,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Opened
+20094,CENG 4113,Lab for Microprocsr Intrfacing,W,1900,2150,Delta Building 133,Ishaq H Unwala,Spring 2023,100% F2F w/supplmtnl web,Opened
+20108,CENG 4266,Senior Project,W,900,1150,Delta Building 126,Luong An Nguyen,Spring 2023,100% F2F w/supplmtnl web,Opened
+20109,CENG 4266,Senior Project,W,900,1150,Delta Building 128,Xiaokun Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20111,CENG 4313,Microprocessor Interfacing,MW,1730,1850,Delta Building 136,Ishaq H Unwala,Spring 2023,100% F2F w/supplmtnl web,Opened
+20112,CENG 4331,Analysis and Design of Linear Systems,MW,1600,1720,DELTA 140,"Unal ""Zak"" Sakoglu",Spring 2023,100% F2F w/supplmtnl web,Opened
+20113,CENG 4354,Digital System Design,TH,1430,1550,Delta Building 136,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Closed
+20116,CENG 4391,Selected Topics In Comp Enginr,H,1600,1850,DELTA 158B,Liwen Shih,Spring 2023,100% F2F w/supplmtnl web,Closed
+26272,CENG 4391,Selected Topics In Comp Enginr,W,1600,1850,DELTA 158B,Thomas L Harman,Spring 2023,100% F2F w/supplmtnl web,Closed
+26851,CENG 5133,Computer Architecture Design,M,1300,1550,Delta Building 234,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Closed
+20119,CENG 5334,Fault Tolerant Computing,T,1900,2150,Delta Building 136,Ishaq H Unwala,Spring 2023,100% F2F w/supplmtnl web,Opened
+26233,CENG 5437,Mobile Robots,W,1600,1850,DELTA 158B,Thomas L Harman,Spring 2023,100% F2F w/supplmtnl web,Closed
+20118,CENG 5533,Quantum Computing,H,1600,1850,DELTA 158B,Liwen Shih,Spring 2023,100% F2F w/supplmtnl web,Opened
+20120,CENG 5534,Advanced Digital System Design,M,1900,2150,DELTA 140,Xiaokun Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+26781,CENG 5915,Cooperative Education Work Trm,TDB,TDB,TDB,TBA,Hakduran Koc,Spring 2023,Face to Face,Opened
+26274,CENG 6332,High Perf Comptr Architecture,T,1300,1550,DELTA 158B,Liwen Shih,Spring 2023,100% F2F w/supplmtnl web,Opened
+20122,CENG 6533,Robotics,H,1900,2150,Delta Building 136,Luong An Nguyen,Spring 2023,100% F2F w/supplmtnl web,Opened
+26288,CENG 6534,Digital Sys Synthesis & Opti,T,1600,1850,DELTA 140,Hakduran Koc,Spring 2023,100% F2F w/supplmtnl web,Opened
+20124,CENG 6838,Research Project and Seminar,W,1300,1550,DELTA 158B,Liwen Shih,Spring 2023,100% F2F w/supplmtnl web,Opened
+26727,CENG 6838,Research Project and Seminar,M,1300,1550,Delta Building 237,Jiang Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+19775,CHEM 1111,Laboratory for General Chemistry I,F,900,1150,STEM 3131,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+19776,CHEM 1111,Laboratory for General Chemistry I,M,1300,1550,STEM 3131,Peter A Abanda,Spring 2023,100% F2F w/supplmtnl web,Opened
+19777,CHEM 1111,Laboratory for General Chemistry I,M,1600,1850,STEM 3131,Peter A Abanda,Spring 2023,100% F2F w/supplmtnl web,Opened
+19778,CHEM 1111,Laboratory for General Chemistry I,W,1300,1550,STEM 3131,Nawal Sharma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19779,CHEM 1111,Laboratory for General Chemistry I,W,1600,1850,STEM 3131,Nawal Sharma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19783,CHEM 1112,Laboratory for General Chemistry II,M,1300,1550,STEM 3127,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+19785,CHEM 1112,Laboratory for General Chemistry II,M,1600,1850,STEM 3127,Yi Su,Spring 2023,100% F2F w/supplmtnl web,Opened
+19786,CHEM 1112,Laboratory for General Chemistry II,W,1300,1550,STEM 3127,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+25429,CHEM 1112,Laboratory for General Chemistry II,M,900,1150,STEM 3127,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+25513,CHEM 1112,Laboratory for General Chemistry II,W,900,1150,STEM 2115,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+19789,CHEM 1311,General Chemistry I,TH,1430,1550,STEM 1203,Jack Y Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+25700,CHEM 1311,General Chemistry I,TH,830,950,STEM 2115,Nawal Sharma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19792,CHEM 1312,General Chemistry II,TH,830,950,STEM 1203,Yi Su,Spring 2023,100% F2F w/supplmtnl web,Opened
+19794,CHEM 1312,General Chemistry II,TH,1300,1420,STEM 1203,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+19796,CHEM 2123,Lab for Organic Chemistry I,M,900,1150,STEM 3117,Revathy Kulasekharan,Spring 2023,100% F2F w/supplmtnl web,Closed
+19798,CHEM 2123,Lab for Organic Chemistry I,M,1300,1550,STEM 3117,Revathy Kulasekharan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19800,CHEM 2125,Lab for Organic Chemistry II,W,900,1150,STEM 3117,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+19801,CHEM 2125,Lab for Organic Chemistry II,W,1600,1850,STEM 3117,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+19802,CHEM 2125,Lab for Organic Chemistry II,F,900,1150,STEM 3117,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+19804,CHEM 2323,Organic Chemistry I,TH,1000,1120,STEM 2105,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+19807,CHEM 2325,Organic Chemistry II,TH,1000,1120,STEM 2115,Zerong Wang,Spring 2023,100% F2F w/supplmtnl web,Opened
+19808,CHEM 2325,Organic Chemistry II,TH,1730,1850,STEM 2105,Zerong Wang,Spring 2023,100% F2F w/supplmtnl web,Opened
+26707,CHEM 2377,Life and the Universe,TDB,TDB,TDB,TBA,Alexandra Jeanette MacDermott,Spring 2023,100% Online,Opened
+25280,CHEM 3320,Survey Of Physical Chemistry,T,1900,2150,STEM 2101,Alexandra Jeanette MacDermott,Spring 2023,100% F2F w/supplmtnl web,Opened
+25777,CHEM 4115,Chemistry Practicum (ATA),TDB,TDB,TDB,TBA,Nataliya Aleksandrovna Markina,Spring 2023,100% F2F w/supplmtnl web,Opened
+25779,CHEM 4115,Chemistry Practicum (ATA),TDB,TDB,TDB,TBA,Monica Khural,Spring 2023,100% F2F w/supplmtnl web,Opened
+19811,CHEM 4268,Laboratory for Instrumental Analysis,F,1300,1650,STEM 3119,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+19905,CHEM 4311,Chemical Origins,TDB,TDB,TDB,TBA,Alexandra Jeanette MacDermott,Spring 2023,100% Online,Opened
+19810,CHEM 4322,Physical Chemistry II,TH,1730,1850,STEM 2101,Alexandra Jeanette MacDermott,Spring 2023,100% F2F w/supplmtnl web,Opened
+20570,CHEM 4341,Biochemistry I,TH,1000,1120,Bayou Building 2512,William R Mills,Spring 2023,100% F2F w/supplmtnl web,Opened
+19825,CHEM 4342,Biochemistry II,MW,1130,1250,Bayou Building 2512,William R Mills,Spring 2023,100% F2F w/supplmtnl web,Opened
+19814,CHEM 4363,Forensic Chemistry,T,1300,1550,STEM 2105,Yi Su,Spring 2023,100% F2F w/supplmtnl web,Opened
+19812,CHEM 4367,Instrumental Analysis,TH,1600,1720,STEM 2105,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+19818,CHEM 4371,Advanced Spectroscopic Analysis,W,1300,1550,STEM 3133,Jack Y Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+26084,CHEM 4372,Undergraduate Research I and Seminar,W,1600,1850,STEM 3133,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+19823,CHEM 4379,Undergraduate Research II,W,1600,1850,STEM 3133,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+25191,CHEM 4391,Selected Topics In Chemistry,TDB,TDB,TDB,TBA,Zerong Wang,Spring 2023,100% Online,Opened
+19817,CHEM 5132,Principles of Chemical Engineering,TDB,TDB,TDB,TBA,Zerong Wang,Spring 2023,100% Online,Opened
+19820,CHEM 5235,Kinetics and Thermodynamics,W,1900,2150,STEM 2105,Yi Su,Spring 2023,100% F2F w/supplmtnl web,Opened
+19822,CHEM 5335,Advanced Inorganic Chemistry,H,1900,2150,STEM 2115,Jack Y Lu,Spring 2023,100% F2F w/supplmtnl web,Opened
+19821,CHEM 5337,Physical Organic Chemistry,M,1600,1850,STEM 2115,Zerong Wang,Spring 2023,100% F2F w/supplmtnl web,Opened
+26085,CHEM 6837,Research Project I and Seminar,W,1600,1850,STEM 3133,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+19824,CHEM 6838,Research Project II and Seminar,W,1600,1850,STEM 3133,Charuksha Thameera Walgama,Spring 2023,100% F2F w/supplmtnl web,Opened
+20457,CINF 1370,Introduction to Computer Information Systems,TH,1130,1250,Delta Building 202,Ross B. Niswanger,Spring 2023,100% F2F w/supplmtnl web,Opened
+20481,CINF 3321,Information Systems Theory and Practice,W,1300,1550,Delta Building 202,Ross B. Niswanger,Spring 2023,100% F2F w/supplmtnl web,Opened
+20492,CINF 3331,Business Data Communications,MW,1300,1420,Delta� Building 119A,Xinying Liu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20493,CINF 4321,Enterprise Resource Planning Systems,T,1300,1550,Delta Building 204,Xinying Liu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20501,CINF 4324,Modern System Analysis and Design,M,1600,1850,Delta Building 204,Xinying Liu,Spring 2023,100% F2F w/supplmtnl web,Opened
+23470,CINF 4364,Computer Systems Administration,M,1600,1850,DELTA 158B,Krishani D Abeysekera,Spring 2023,100% F2F w/supplmtnl web,Closed
+20842,CINF 4388,Senior Project in Computer Information Systems,W,1600,1850,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Opened
+20844,CINF 4388,Senior Project in Computer Information Systems,W,1900,2150,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20525,CINF 4391,Advanced Topics in Computer Information Systems,H,1900,2150,Delta Building 204,Wei Wei,Spring 2023,100% F2F w/supplmtnl web,Opened
+20510,CINF 5234,Advanced Modern Systems Analysis and Design,H,1600,1850,DELTA 140,Ross B. Niswanger,Spring 2023,100% F2F w/supplmtnl web,Opened
+20529,CINF 5432,Data Warehousing and Business Intelligence,H,1300,1550,Delta Building 237,Wei Wei,Spring 2023,100% F2F w/supplmtnl web,Opened
+20128,COMM 1307,Introduction to Mass Communication,TH,1130,1250,Bayou Building 1133,Andrea Michea Baldwin,Spring 2023,100% F2F w/supplmtnl web,Closed
+20133,COMM 1315,Public Speaking,MWF,1000,1050,Bayou Building 2236,Brent C Kice,Spring 2023,100% F2F w/supplmtnl web,Opened
+20134,COMM 1315,Public Speaking,TH,830,950,Bayou Building 1135,Andrea Michea Baldwin,Spring 2023,100% F2F w/supplmtnl web,Opened
+20135,COMM 1315,Public Speaking,TH,1000,1120,Bayou Building 1135,Andrea Michea Baldwin,Spring 2023,100% F2F w/supplmtnl web,Closed
+20136,COMM 1315,Public Speaking,TH,1130,1250,Bayou Building 1135,Donna Bright Noll,Spring 2023,100% F2F w/supplmtnl web,Closed
+20137,COMM 1315,Public Speaking,TH,1300,1420,Bayou Building 1439,Donna Bright Noll,Spring 2023,100% F2F w/supplmtnl web,Closed
+20138,COMM 1315,Public Speaking,M,1900,2150,Bayou Building 1135,Justin W Murphy,Spring 2023,100% F2F w/supplmtnl web,Opened
+20139,COMM 3320,Principles of Public Relations,H,830,1120,Bayou Building 2524,Anna Klyueva,Spring 2023,100% F2F w/supplmtnl web,Opened
+20140,COMM 3321,Media Writing,W,900,1150,Bayou Building 1335,Debra Ellen Clark,Spring 2023,100% F2F w/supplmtnl web,Closed
+20141,COMM 3322,Social Media Analytics,T,1300,1550,SSCB� 220113,Brandon Christopher Harris,Spring 2023,100% F2F w/supplmtnl web,Closed
+20142,COMM 3341,Storytelling and Oral Communication,M,1600,1850,Student Services Bld 3303,Andrea Michea Baldwin,Spring 2023,100% F2F w/supplmtnl web,Opened
+20146,COMM 3350,Visual Communication,W,1300,1550,SSCB� 220113,Leo Chan,Spring 2023,> or equal to 50% Online,Opened
+20148,COMM 3351,Mass Media and Society,W,1600,1850,Bayou Building 1133,Brandon Christopher Harris,Spring 2023,< 50% online,Opened
+20149,COMM 3352,Media Law,M,1300,1550,Bayou Building 1333,Brent C Kice,Spring 2023,100% F2F w/supplmtnl web,Opened
+20860,COMM 3353,Persuasive Communication: Case Studies & Strategy,TDB,TDB,TDB,TBA,Debra Ellen Clark,Spring 2023,100% Online,Opened
+20157,COMM 4061,Communication Portfolio,TDB,TDB,TDB,TBA,Leo Chan,Spring 2023,100% Online,Closed
+20858,COMM 4301,Global Issues in Film,TDB,TDB,TDB,TBA,Debra Ellen Clark,Spring 2023,100% Online,Closed
+20159,COMM 4323,Public Relations Campaigns,T,1600,1850,Student Services Bld 220114,Anna Klyueva,Spring 2023,< 50% online,Opened
+20161,COMM 4324,Strategic Social Media,H,1600,1850,SSCB� 220113,Brandon Christopher Harris,Spring 2023,< 50% online,Opened
+20162,COMM 4351,3D Animation,W,1900,2150,Student Services Bld 220101,Anne M Henry,Spring 2023,> or equal to 50% Online,Opened
+20168,COMM 4354,Video Production 1,T,1900,2150,SSCB� 220113,Michael C Brims,Spring 2023,> or equal to 50% Online,Opened
+20171,COMM 4358,Publication Design,W,1600,1850,Student Services Bld 220101,Brenda F Faxel,Spring 2023,< 50% online,Opened
+20172,COMM 4358,Publication Design,TDB,TDB,TDB,TBA,Kara Brittain,Spring 2023,100% Online,Closed
+20173,COMM 4359,Studio-Based Video Production,H,1900,2150,SSCB� 220113,Michael C Brims,Spring 2023,> or equal to 50% Online,Opened
+20174,COMM 4379,Communication Internship,F,1300,1550,Bayou Building 1211,Leo Chan,Spring 2023,100% F2F w/supplmtnl web,Opened
+23492,COMM 4391,Selected Topics in Communication,M,1900,2150,SSCB� 220113,Michael C Brims,Spring 2023,> or equal to 50% Online,Closed
+19483,COUN 4305,Addictions and Diversity,T,1300,1550,Bayou Building 1311,Ashley Louise Kula,Spring 2023,< 50% online,Opened
+25538,COUN 6533,Crisis Intervention,W,1600,1850,Pearland 111,Diane Renee Smedley,Spring 2023,Face to Face,Opened
+20307,CRCL 5035,Health and Human Rights,M,1900,2150,Bayou Building 1133,Christine M Kovic,Spring 2023,< 50% online,Opened
+20381,CRCL 5037,Theories and Practice of Mediation,T,1600,1850,Bayou Building 1215,John Mike McMullen,Spring 2023,< 50% online,Opened
+20313,CRCL 5132,Women of Color,TDB,TDB,TDB,TBA,Maria F Curtis,Spring 2023,100% Online,Closed
+20407,CRCL 5631,Qualitative Research Methods,H,1600,1850,Bayou Building 1124,Jennifer Arney Cuevas,Spring 2023,> or equal to 50% Online,Opened
+20317,CRCL 5931,Research Topics in Cross-Cultural Studies,H,1300,1550,Student Services Bld 2310,Maria F Curtis,Spring 2023,< 50% online,Opened
+20318,CRCL 5931,Research Topics in Cross-Cultural Studies,W,900,1150,Bayou Building 2230,Dawit Okubatsion Woldu,Spring 2023,< 50% online,Opened
+20319,CRIM 1301,Introduction to Criminal Justice,TDB,TDB,TDB,TBA,Hae Rim Jin,Spring 2023,100% Online,Opened
+20320,CRIM 3312,Criminology,TDB,TDB,TDB,TBA,Hae Rim Jin,Spring 2023,100% Online,Closed
+20904,CRIM 3312,Criminology,TDB,TDB,TDB,TBA,Hae Rim Jin,Spring 2023,100% Online,Opened
+20322,CRIM 3330,Ethics in Criminal Justice,W,900,1150,Bayou Building 1213,Veronica Segovia,Spring 2023,> or equal to 50% Online,Opened
+20323,CRIM 3333,Victimology,TH,1000,1120,Bayou Building 1213,Hae Rim Jin,Spring 2023,> or equal to 50% Online,Opened
+20324,CRIM 4313,Juvenile Delinquency,W,1900,2150,Bayou Building 1211,Everette Penn,Spring 2023,< 50% online,Opened
+20908,CRIM 4331,Prison and Society,TDB,TDB,TDB,TBA,Henda Yao Hsu,Spring 2023,100% Online,Opened
+20325,CRIM 4333,Probation and Parole,TDB,TDB,TDB,TBA,Nancy Belden,Spring 2023,100% Online,Closed
+20327,CRIM 4334,Criminal Law,TDB,TDB,TDB,TBA,Nancy Belden,Spring 2023,100% Online,Opened
+20330,CRIM 4335,Race and Justice,TDB,TDB,TDB,TBA,Everette Penn,Spring 2023,100% Online,Opened
+20333,CRIM 4384,Statistics,H,1600,1850,Bayou Building 1217,Kimberly Dawn Dodson,Spring 2023,< 50% online,Opened
+20334,CRIM 4384,Statistics,TDB,TDB,TDB,TBA,Kimberly Dawn Dodson,Spring 2023,100% Online,Opened
+20336,CRIM 4390,Contemporary Issues in Criminology,TDB,TDB,TDB,TBA,Everette Penn,Spring 2023,100% Online,Opened
+20340,CRIM 5037,Criminological Research and Statistics II,H,1900,2150,Bayou Building 1217,Kimberly Dawn Dodson,Spring 2023,< 50% online,Opened
+20341,CRIM 5133,Advanced Juvenile Delinquency,TDB,TDB,TDB,TBA,Henda Yao Hsu,Spring 2023,100% Online,Closed
+20342,CRIM 5931,Research Topics in Criminology,TDB,TDB,TDB,TBA,Henda Yao Hsu,Spring 2023,100% Online,Opened
+20788,CSCI 1320,C Programming,TH,1000,1120,Delta Building 202,Sayed Banawan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19531,CSCI 1470,Computer Science I,TH,1000,1150,Delta Building 204,Sadegh Davari,Spring 2023,100% F2F w/supplmtnl web,Closed
+20810,CSCI 1470,Computer Science I,TH,1600,1750,Delta Building 203,"Charles E Phillips,",Spring 2023,< 50% online,Opened
+20811,CSCI 1471,Computer Science II,MW,1300,1450,Delta Building 204,Hisham Al-Mubaid,Spring 2023,100% F2F w/supplmtnl web,Opened
+20812,CSCI 1471,Computer Science II,TH,1000,1150,Delta Building 203,"Charles E Phillips,",Spring 2023,100% F2F w/supplmtnl web,Opened
+20815,CSCI 2305,Data Structures for Science & Engineering,TH,1300,1420,Delta Building 242,Sayed Banawan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20768,CSCI 2315,Data Structures,TH,1000,1120,Delta Building D241,Ahmed Ahed Abukmail,Spring 2023,100% F2F w/supplmtnl web,Opened
+20772,CSCI 2315,Data Structures,TH,1300,1420,Delta Building 203,"Charles E Phillips,",Spring 2023,100% F2F w/supplmtnl web,Closed
+20816,CSCI 2331,Computer Organization and Assembly Language,MW,1300,1420,Delta Building 136,Sayed Banawan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20819,CSCI 3352,Adv Data Structr & Algorithms,MW,930,1050,Delta Building 242,Said Bettayeb,Spring 2023,100% F2F w/supplmtnl web,Closed
+20888,CSCI 4312,Network Protocols,W,900,1150,Delta Building D214,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Opened
+20887,CSCI 4316,Advanced Enterprise Java & Framework,TH,1600,1720,Delta Building 242,Khondker Shajadul Hasan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20817,CSCI 4320,Web Application Development,W,1600,1850,Delta Building 204,Pradeep Buddharaju,Spring 2023,100% F2F w/supplmtnl web,Closed
+20818,CSCI 4320,Web Application Development,H,1600,1850,Delta� Building 119A,Pradeep Buddharaju,Spring 2023,100% F2F w/supplmtnl web,Closed
+20821,CSCI 4333,Design Of Database Systems,MW,1300,1420,Delta Building D241,Kwok-Bun Yue,Spring 2023,100% F2F w/supplmtnl web,Closed
+20822,CSCI 4333,Design Of Database Systems,MW,1600,1720,Delta Building 242,Kwok-Bun Yue,Spring 2023,100% F2F w/supplmtnl web,Closed
+20781,CSCI 4336,Introduction to Machine Learning,TH,1130,1250,Delta Building D241,Ahmed Ahed Abukmail,Spring 2023,100% F2F w/supplmtnl web,Closed
+20886,CSCI 4350,Comptr Grphics & Intrfce Desgn,F,1300,1550,Delta Building 136,Terry Feagin,Spring 2023,100% F2F w/supplmtnl web,Closed
+20829,CSCI 4354,Operating Systems,TH,1430,1550,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20785,CSCI 4355,Programming Language Concepts,TH,1300,1420,Delta Building D241,Ahmed Ahed Abukmail,Spring 2023,100% F2F w/supplmtnl web,Closed
+20761,CSCI 4364,Computer Systems Administration,M,1600,1850,DELTA 158B,Krishani D Abeysekera,Spring 2023,100% F2F w/supplmtnl web,Closed
+20765,CSCI 4379,Internship in Computer Science,TDB,TDB,TDB,TBA,Sadegh Davari,Spring 2023,100% F2F w/supplmtnl web,Opened
+20836,CSCI 4388,Senior Project in Comp Science,W,1600,1850,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20837,CSCI 4388,Senior Project in Comp Science,W,1900,2150,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20831,CSCI 5132,Internet Protocols,MW,930,1050,Delta Building 234,Sayed Banawan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20881,CSCI 5134,Concurrent Programming and Software Modeling,T,1900,2150,Delta Building D241,Hisham Al-Mubaid,Spring 2023,100% F2F w/supplmtnl web,Opened
+20864,CSCI 5233,Computer Security and Cryptography,T,1300,1550,Delta Building D201,T. Andrew Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20889,CSCI 5234,Web Security,H,1300,1550,Delta Building D201,T. Andrew Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20861,CSCI 5333,Data Base Management System,TH,1300,1420,DELTA 140,Khondker Shajadul Hasan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20862,CSCI 5333,Data Base Management System,M,1300,1550,Delta Building 242,Khondker Shajadul Hasan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20875,CSCI 5336,Machine Learning,M,1600,1850,Delta Building D241,Hisham Al-Mubaid,Spring 2023,100% F2F w/supplmtnl web,Closed
+26792,CSCI 5336,Machine Learning,W,1600,1850,Delta Building 234,Hisham Al-Mubaid,Spring 2023,Face to Face,Opened
+20833,CSCI 5432,Design & Analysis Algorithms,T,900,1150,Delta Building 242,Said Bettayeb,Spring 2023,100% F2F w/supplmtnl web,Opened
+20892,CSCI 5531,Advanced Operating Systems,TH,1600,1720,Delta Building 237,T. Andrew Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20869,CSCI 5737,Mobile Applications Development,W,1900,2150,DELTA 158A,Pradeep Buddharaju,Spring 2023,100% F2F w/supplmtnl web,Closed
+20853,CSCI 5739,Internship in Computer Science,TDB,TDB,TDB,TBA,Sadegh Davari,Spring 2023,100% F2F w/supplmtnl web,Opened
+19534,CSCI 5833,Data Mining Tools and Techniques,W,1600,1850,Delta Building 237,Gary D Boetticher,Spring 2023,100% F2F w/supplmtnl web,Opened
+25807,CSCI 5915,Cooperative Education Work Trm,TDB,TDB,TDB,TBA,Sadegh Davari,Spring 2023,100% F2F w/supplmtnl web,Opened
+19532,CSCI 5931,Research Topics Comp Science,MW,930,1050,Delta Building 203,Yalong Wu,Spring 2023,100% F2F w/supplmtnl web,Opened
+19533,CSCI 5931,Research Topics Comp Science,MW,1130,1250,Delta Building 203,Yalong Wu,Spring 2023,Face to Face,Opened
+20857,CSCI 6530,Research Methods In Comp Sci,T,1600,1850,Delta� Building 119A,Terry Feagin,Spring 2023,100% F2F w/supplmtnl web,Opened
+20859,CSCI 6530,Research Methods In Comp Sci,H,1300,1550,Delta Building 119B,Terry Feagin,Spring 2023,100% F2F w/supplmtnl web,Opened
+20865,CSCI 6838,Research Project And Seminar,T,900,1150,Delta Building 150,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Closed
+20866,CSCI 6838,Research Project And Seminar,T,1300,1550,Delta Building 150,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Closed
+25804,CSCI 6838,Research Project And Seminar,H,900,1150,Delta Building 150,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Closed
+25805,CSCI 6838,Research Project And Seminar,H,1300,1550,Delta Building 150,Pradeep Buddharaju,Spring 2023,100% F2F w/supplmtnl web,Closed
+26747,CSCI 6838,Research Project And Seminar,M,1300,1550,Delta Building 150,Said Bettayeb,Spring 2023,100% F2F w/supplmtnl web,Closed
+26767,CSCI 6838,Research Project And Seminar,W,1900,2150,Delta Building 234,Gary D Boetticher,Spring 2023,100% F2F w/supplmtnl web,Opened
+19542,DASC 5133,Introduction to Data Science,M,1600,1850,Delta Building 237,Yalong Wu,Spring 2023,100% F2F w/supplmtnl web,Opened
+19543,DASC 5133,Introduction to Data Science,W,900,1150,Delta Building 204,Wei Wei,Spring 2023,Face to Face,Opened
+19545,DASC 5231,Visualization in Data Science,H,1000,1250,Delta Building 242,Gary D Boetticher,Spring 2023,100% F2F w/supplmtnl web,Opened
+25665,DASC 5333,Database Systems for Data Science,MW,1300,1420,Delta Building D241,Kwok-Bun Yue,Spring 2023,100% F2F w/supplmtnl web,Opened
+25666,DASC 5333,Database Systems for Data Science,MW,1600,1720,Delta Building 242,Kwok-Bun Yue,Spring 2023,100% F2F w/supplmtnl web,Opened
+25312,DASC 6838,Research Project and Seminar,T,900,1150,Delta Building 150,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Closed
+25313,DASC 6838,Research Project and Seminar,T,1300,1550,Delta Building 150,Kewei Sha,Spring 2023,100% F2F w/supplmtnl web,Closed
+26774,DASC 6838,Research Project and Seminar,W,1900,2150,Delta Building 234,Gary D Boetticher,Spring 2023,100% F2F w/supplmtnl web,Closed
+20062,DMST 5231,Advanced Digital Media Design,T,830,1120,Student Services Bld 220114,Stuart Larson,Spring 2023,< 50% online,Closed
+20177,DMST 5232,Media and Communication Research Methods,M,1900,2150,Bayou Building 1302,Anna Klyueva,Spring 2023,100% F2F w/supplmtnl web,Opened
+20164,DMST 5235,Animation,W,1900,2150,Student Services Bld 220101,Anne M Henry,Spring 2023,> or equal to 50% Online,Opened
+20169,DMST 5534,Video Production 1,T,1900,2150,SSCB� 220113,Michael C Brims,Spring 2023,> or equal to 50% Online,Opened
+20175,DMST 5536,Studio-Based Video Production,H,1900,2150,SSCB� 220113,Michael C Brims,Spring 2023,> or equal to 50% Online,Opened
+20176,DMST 6739,Graduate Internship,F,1300,1550,Bayou Building 1211,Leo Chan,Spring 2023,100% F2F w/supplmtnl web,Opened
+10128,DSCI 3321,Statistics I,TH,1000,1120,Bayou Building 1313,Ken Black,Spring 2023,Face to Face,Closed
+10129,DSCI 3321,Statistics I,TH,1300,1420,Bayou Building 1313,Ken Black,Spring 2023,Face to Face,Opened
+10130,DSCI 3321,Statistics I,W,1900,2150,Bayou Building 1218,Ken Black,Spring 2023,Face to Face,Opened
+10131,DSCI 3321,Statistics I,TDB,TDB,TDB,TBA,Lifei Sheng,Spring 2023,100% Online,Closed
+10133,DSCI 3321,Statistics I,TDB,TDB,TDB,TBA,Lifei Sheng,Spring 2023,100% Online,Opened
+10135,DSCI 3321,Statistics I,TDB,TDB,TDB,TBA,A Glen Houston,Spring 2023,100% Online,Opened
+10136,DSCI 3331,Quantitative Methods for Management,M,1300,1550,STEM 1203,Faiza Zalila,Spring 2023,< 50% online,Opened
+10138,DSCI 3331,Quantitative Methods for Management,H,1900,2150,Bayou Building 1313,Lifei Sheng,Spring 2023,Face to Face,Closed
+10139,DSCI 3331,Quantitative Methods for Management,TDB,TDB,TDB,TBA,Faiza Zalila,Spring 2023,100% Online,Closed
+10141,DSCI 3331,Quantitative Methods for Management,TDB,TDB,TDB,TBA,Ahsanul Huq,Spring 2023,100% Online,Closed
+20614,DSCI 5231,Business Analytics II,TDB,TDB,TDB,TBA,Vicky Gu,Spring 2023,100% Online,Opened
+20583,DSCI 5431,Management Science & Operation,H,1900,2150,Bayou Building 1333,Vicky Gu,Spring 2023,< 50% online,Opened
+20616,DSCI 5431,Management Science & Operation,TDB,TDB,TDB,TBA,Vicky Gu,Spring 2023,100% Online,Opened
+21092,ECED 1303,Children and Families,TDB,TDB,TDB,TBA,Terry Ann Chvala,Spring 2023,100% Online,Opened
+26779,ECED 1303,Children and Families,TDB,TDB,TDB,TBA,Precious L Parks,Spring 2023,100% Online,Opened
+19720,ECED 1311,Historical and Recent Trends in Early Childhood Education,TDB,TDB,TDB,TBA,Terry Ann Chvala,Spring 2023,100% Online,Opened
+19721,ECED 1354,Developmental Theories of Young Children,TH,1130,1250,Bayou Building 1439,Rebecca L Huss-Keeler,Spring 2023,> or equal to 50% Online,Opened
+21093,ECED 1354,Developmental Theories of Young Children,TDB,TDB,TDB,TBA,Shanna L Graves,Spring 2023,100% Online,Closed
+19722,ECED 4100,EC-3 Teacher Seminar,M,1600,1850,Bayou Building 2104,Rita Louise Goudeau,Spring 2023,> or equal to 50% Online,Opened
+19726,ECED 4302,Integrated Curriculum for Young Children,M,1600,1850,Arbor 1310.03,Kellye Patricia Sipes,Spring 2023,< 50% online,Opened
+19728,ECED 4302,Integrated Curriculum for Young Children,H,1900,2150,Arbor 1310.03,Kelly Theresa Tryer,Spring 2023,< 50% online,Closed
+19729,ECED 4302,Integrated Curriculum for Young Children,H,1300,1550,Arbor 1310.03,Neelofer A Tajani,Spring 2023,< 50% online,Opened
+19730,ECED 4303,Child Guidance & Classroom Management for Young Children,TDB,TDB,TDB,TBA,Shanna L Graves,Spring 2023,100% Online,Closed
+19732,ECED 4304,"Facilitating Children's Development through Fine Arts, Health & Physical Education",M,1900,2150,Arbor 1310.05,Kellye Patricia Sipes,Spring 2023,> or equal to 50% Online,Closed
+19733,ECED 4304,"Facilitating Children's Development through Fine Arts, Health & Physical Education",H,1300,1550,Arbor 1310.05,Meagan Friedman,Spring 2023,> or equal to 50% Online,Opened
+19734,ECED 4304,"Facilitating Children's Development through Fine Arts, Health & Physical Education",T,1300,1550,Arbor 1310.06,Preeti Jain,Spring 2023,> or equal to 50% Online,Opened
+25576,ECED 4307,Mathematics and Science in Early Childhood Education,T,1900,2150,Bayou Building 1439,Jennifer Dawn Coughran,Spring 2023,< 50% online,Opened
+19746,ECED 4308,Creativity in Early Childhood,TDB,TDB,TDB,TBA,Amy Wood,Spring 2023,100% Online,Closed
+21091,ECED 4309,Advocacy and Parent Engagement,TDB,TDB,TDB,TBA,Amber Leigh Brown,Spring 2023,100% Online,Opened
+19747,ECED 4311,Reading Development in Young Children,H,830,1120,Arbor 1310.06,Rebecca L Huss-Keeler,Spring 2023,> or equal to 50% Online,Opened
+19748,ECED 4311,Reading Development in Young Children,W,1900,2150,Arbor 1310.03,Amy Beth Dickey,Spring 2023,> or equal to 50% Online,Opened
+19750,ECED 4311,Reading Development in Young Children,T,1600,1850,Bayou Building 1228,Janice Perrin,Spring 2023,> or equal to 50% Online,Opened
+19751,ECED 4314,Observational/Developmental Assessment of Young Children,T,1300,1550,Bayou Building 1228,Pooja Gupta,Spring 2023,> or equal to 50% Online,Opened
+19753,ECED 4325,Early Childhood Program Development & Management I - Leadership Strategies & Staff Development,TDB,TDB,TDB,TBA,Jacinth Claudia Chapman,Spring 2023,100% Online,Opened
+19755,ECED 4328,Early Childhood Curriculum and Pedagogy,T,1300,1550,Arbor 1310.03,Amy Wood,Spring 2023,< 50% online,Opened
+19765,ECED 4377,Practicum,TDB,TDB,TDB,TBA,Rebecca L Huss-Keeler,Spring 2023,100% F2F w/supplmtnl web,Opened
+25483,ECED 5033,Guidance and Classroom Management for EC6,TDB,TDB,TDB,TBA,Shanna L Graves,Spring 2023,100% Online,Opened
+19771,ECED 5131,Curriculum in Early Childhood Education,TDB,TDB,TDB,TBA,Neelofer A Tajani,Spring 2023,100% Online,Opened
+19784,ECED 5132,Literacy Dvmnt In Early Chldh,TDB,TDB,TDB,TBA,Amber Leigh Brown,Spring 2023,100% Online,Opened
+21094,ECED 5133,Mathematics and Science Teaching and Learning in Early Childhood,TDB,TDB,TDB,TBA,Preeti Jain,Spring 2023,100% Online,Opened
+19793,ECED 5337,Administration and Management of Programs for Young Children II,TDB,TDB,TDB,TBA,Neelofer A Tajani,Spring 2023,100% Online,Opened
+19832,ECED 6739,Early Childhood Education,TDB,TDB,TDB,TBA,Rebecca L Huss-Keeler,Spring 2023,100% Online,Opened
+20699,ECON 2301,Principles of Macroeconomics,TH,1000,1120,Student Services Bld 2310,Anne Anders,Spring 2023,< 50% online,Opened
+20700,ECON 2301,Principles of Macroeconomics,TDB,TDB,TDB,TBA,Anne Anders,Spring 2023,100% Online,Opened
+20703,ECON 2301,Principles of Macroeconomics,T,1900,2150,Bayou Building 2236,Allyssa Ann Wadsworth,Spring 2023,Face to Face,Opened
+20676,ECON 2301,Principles of Macroeconomics,TDB,TDB,TDB,TBA,Jason E Murasko,Spring 2023,100% Online,Opened
+20711,ECON 2302,Principles of Microeconomics,TH,1300,1420,Bayou Building 2311,Stephen J Cotten,Spring 2023,Face to Face,Opened
+20712,ECON 2302,Principles of Microeconomics,TDB,TDB,TDB,TBA,Stephen J Cotten,Spring 2023,100% Online,Opened
+20679,ECON 2302,Principles of Microeconomics,TDB,TDB,TDB,TBA,Anne Anders,Spring 2023,100% Online,Opened
+20723,ECON 3311,Money And Banking,T,1600,1850,Bayou Building 2234,Jason E Murasko,Spring 2023,Face to Face,Closed
+20724,ECON 3311,Money And Banking,H,1300,1550,Bayou Building 2234,Allyssa Ann Wadsworth,Spring 2023,Face to Face,Opened
+20726,ECON 3311,Money And Banking,TDB,TDB,TDB,TBA,Allyssa Ann Wadsworth,Spring 2023,100% Online,Closed
+20728,ECON 3311,Money And Banking,TDB,TDB,TDB,TBA,Jason E Murasko,Spring 2023,100% Online,Closed
+20730,ECON 3311,Money And Banking,TDB,TDB,TDB,TBA,Jonathan Bolston,Spring 2023,100% Online,Opened
+20688,ECON 3311,Money And Banking,TDB,TDB,TDB,TBA,Stephen J Cotten,Spring 2023,100% Online,Opened
+10160,ECON 3371,Public Finance,W,1900,2150,Bayou Building 1335,Stephen J Cotten,Spring 2023,< 50% online,Opened
+20584,ECON 5136,Managerial Economics,W,1900,2150,Bayou Building 2512,Jason E Murasko,Spring 2023,< 50% online,Opened
+20618,ECON 5136,Managerial Economics,TDB,TDB,TDB,TBA,Anne Anders,Spring 2023,100% Online,Closed
+19487,EDCI 7031,Quantitative Research I,W,1600,1850,Bayou Building 1439,Renee E. Lastrapes,Spring 2023,< 50% online,Opened
+19488,EDCI 7035,Intercultural Communication,W,1900,2150,Bayou Building 2237,Christian Winn,Spring 2023,> or equal to 50% Online,Opened
+19489,EDCI 7137,Advanced Models of Teaching STEM Education,W,1900,2150,Bayou Building 1326,Omah M. Williams-Duncan,Spring 2023,< 50% online,Opened
+19490,EDCI 7331,Advanced Qualitative Methods,W,1600,1850,Bayou Building 1335,Jane McIntosh Cooper,Spring 2023,< 50% online,Opened
+19492,EDLS 7030,Dispute Resolution,W,1900,2150,Bayou Building 2106,Randal Kent O'Brien,Spring 2023,< 50% online,Opened
+19495,EDLS 7031,Quantitative Research I,W,1600,1850,Bayou Building 1439,Renee E. Lastrapes,Spring 2023,< 50% online,Opened
+25824,EDLS 7133,Professional Writing Workshop,H,1600,1850,Arbor 1310.07,Roberta Diane Raymond,Spring 2023,< 50% online,Opened
+19503,EDLS 7331,Advanced Qualitative Methods,W,1600,1850,Bayou Building 3607,Jane McIntosh Cooper,Spring 2023,< 50% online,Opened
+21059,EDLS 7530,Learning Theory and Instruction,TDB,TDB,TDB,TBA,Sheila E Schatzke,Spring 2023,100% Online,Opened
+21066,EDLS 7533,Systematic Design of Technology-based Instruction,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+21079,EDLS 7537,Technology and eLearning,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+21082,EDLS 7538,Interactive Distance Learning,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+26735,EDLS 7939,Doctoral Independent Study in Educational Leadership,TDB,TDB,TDB,TBA,Roberta Diane Raymond,Spring 2023,100% online w/F2F,Opened
+19499,EDLS 8132,Transition and Change Management,W,1600,1850,Bayou Building 2235,Queinnise A Miller,Spring 2023,< 50% online,Opened
+19497,EDLS 8330,Human Resources Administration,W,1900,2150,Bayou Building 1228,Antonio Corrales,Spring 2023,< 50% online,Opened
+25874,EDLS 8939,Dissertation,TDB,TDB,TDB,TBA,Rebecca L Huss-Keeler,Spring 2023,Face to Face,Opened
+26232,EDLS 8939,Dissertation,TDB,TDB,TDB,TBA,Antonio Corrales,Spring 2023,Face to Face,Closed
+26670,EDLS 8939,Dissertation,TDB,TDB,TDB,TBA,Roberta Diane Raymond,Spring 2023,Face to Face,Opened
+26669,EDLS 8969,Dissertation,TDB,TDB,TDB,TBA,Jennifer Grace,Spring 2023,Face to Face,Opened
+19507,EDUC 4310,Theories of Educational Psychology,M,900,1150,Bayou Building 1219,Lee Cox,Spring 2023,< 50% online,Opened
+19508,EDUC 4310,Theories of Educational Psychology,M,1300,1550,Bayou Building 1219,Paul A Wagner,Spring 2023,> or equal to 50% Online,Opened
+19510,EDUC 4310,Theories of Educational Psychology,T,1300,1550,Bayou Building 1302,Paul A Wagner,Spring 2023,> or equal to 50% Online,Opened
+19511,EDUC 4310,Theories of Educational Psychology,T,1300,1550,Bayou Building 1104,Robert Morris Jones,Spring 2023,< 50% online,Opened
+19512,EDUC 4310,Theories of Educational Psychology,W,1300,1550,Bayou Building 1104,Robert Morris Jones,Spring 2023,< 50% online,Opened
+19513,EDUC 4310,Theories of Educational Psychology,H,1300,1550,Bayou Building 1104,Robert Morris Jones,Spring 2023,< 50% online,Opened
+19514,EDUC 4310,Theories of Educational Psychology,TDB,TDB,TDB,TBA,Eric M. Carr,Spring 2023,100% Online,Closed
+21085,EDUC 4310,Theories of Educational Psychology,TDB,TDB,TDB,TBA,Paul A Wagner,Spring 2023,100% Online,Closed
+21086,EDUC 6032,Applied Statistics,TDB,TDB,TDB,TBA,Staci Elizabeth Mizell,Spring 2023,100% Online,Opened
+21088,EDUC 6033,Research Design And Analysis,TDB,TDB,TDB,TBA,Staci Elizabeth Mizell,Spring 2023,100% Online,Opened
+19967,EMGT 5130,New Business Development,TDB,TDB,TDB,TBA,Young Jeong,Spring 2023,100% Online,Opened
+19948,EMGT 5231,Engineering Management Planning,H,1600,1850,Delta Building 119B,Gene Shan,Spring 2023,< 50% online,Closed
+19949,EMGT 5231,Engineering Management Planning,TDB,TDB,TDB,TBA,Gene Shan,Spring 2023,100% Online,Opened
+19951,EMGT 5330,Service and Operations Management,T,1600,1850,Delta Building 119B,Young Jeong,Spring 2023,< 50% online,Opened
+19952,EMGT 5330,Service and Operations Management,TDB,TDB,TDB,TBA,Young Jeong,Spring 2023,100% Online,Closed
+19954,EMGT 5430,Professional Project Management,M,1600,1850,Delta Building 119B,Young Jeong,Spring 2023,< 50% online,Closed
+19955,EMGT 5430,Professional Project Management,TDB,TDB,TDB,TBA,Young Jeong,Spring 2023,100% Online,Opened
+23464,EMGT 5531,Technology Planning and Management,W,1600,1850,Delta Building 119B,Ipek Bozkurt,Spring 2023,< 50% online,Closed
+23465,EMGT 5531,Technology Planning and Management,TDB,TDB,TDB,TBA,Ipek Bozkurt,Spring 2023,100% Online,Closed
+19962,EMGT 5630,Quantitative Decision Making for EMGT,TDB,TDB,TDB,TBA,Ipek Bozkurt,Spring 2023,100% Online,Closed
+23467,EMGT 5730,Fundamentals of Enterprise Resource Planning Software,T,1600,1850,Delta Building 119B,Gene Shan,Spring 2023,< 50% online,Opened
+23468,EMGT 5730,Fundamentals of Enterprise Resource Planning Software,TDB,TDB,TDB,TBA,Gene Shan,Spring 2023,100% Online,Opened
+19978,EMGT 5731,Business Analytics,M,1600,1850,Delta Building 119B,Gene Shan,Spring 2023,< 50% online,Closed
+19979,EMGT 5731,Business Analytics,TDB,TDB,TDB,TBA,Gene Shan,Spring 2023,100% Online,Closed
+19985,EMGT 6837,Engineering Management Capstone Project,H,1600,1850,Delta Building 119B,Ipek Bozkurt,Spring 2023,< 50% online,Opened
+19986,EMGT 6837,Engineering Management Capstone Project,TDB,TDB,TDB,TBA,Ipek Bozkurt,Spring 2023,100% Online,Opened
+19561,ENGR 1201,Introduction to Engineering,TH,830,950,Student Services Bld 220112,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Closed
+19563,ENGR 2302,Dynamics,MW,1000,1120,STEM 2103,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19564,ENGR 2304,Computing for Engineers,TH,1130,1220,Student Services Bld 220112,Mohsen Daghooghi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19565,ENGR 2304,Computing for Engineers,H,1600,1850,Student Services Bld 2201.03,Mohsen Daghooghi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19566,ENGR 2305,Electrical Circuits I,MW,1430,1550,STEM 2103,"Unal ""Zak"" Sakoglu",Spring 2023,100% F2F w/supplmtnl web,Opened
+19567,ENGR 2305,Electrical Circuits I,TH,1430,1550,STEM 2103,Luong An Nguyen,Spring 2023,100% F2F w/supplmtnl web,Opened
+23490,ENSC 1102,Laboratory for Environmental Science II,T,1300,1550,STEM 2113,Sachiyo T Mukherji,Spring 2023,< 50% online,Opened
+25662,ENSC 1302,Environmental Science II,TH,1000,1120,Bayou Building 1133,Sachiyo T Mukherji,Spring 2023,< 50% online,Opened
+23499,ENSC 3301,Energy in the Environment,H,1300,1550,STEM 2113,Sachiyo T Mukherji,Spring 2023,< 50% online,Opened
+23500,ENSC 3333,Environmental Geology,TDB,TDB,TDB,TBA,Dongmin Sun,Spring 2023,100% Online,Closed
+23502,ENSC 4251,Laboratory for Environmental Analysis,H,1800,2150,Bayou Building 3335,Yu-Hui Zhang,Spring 2023,< 50% online,Opened
+25663,ENSC 4307,Geographic Information Systems,W,1300,1550,Bayou Building 3324,Marc Mokrech,Spring 2023,100% F2F w/supplmtnl web,Opened
+23504,ENSC 4315,Environmental Science Practicum,TDB,TDB,TDB,TBA,Cindy Howard,Spring 2023,100% Online,Opened
+23505,ENSC 4323,Soils in the Environment,M,1900,2150,STEM 2105,Dongmin Sun,Spring 2023,100% F2F w/supplmtnl web,Opened
+25487,ENSC 4325,Environmental Toxicology,MW,1600,1720,Bayou Building 3326,Cindy Howard,Spring 2023,100% F2F w/supplmtnl web,Opened
+25488,ENSC 4332,Advanced Environmental Science,M,1300,1550,STEM 2113,Sachiyo T Mukherji,Spring 2023,< 50% online,Opened
+25664,ENSC 4335,Applied GIS,F,1300,1550,Bayou Building 1130,Marc Mokrech,Spring 2023,100% F2F w/supplmtnl web,Opened
+23640,ENSC 4344,Air Quality and Pollution Control,TDB,TDB,TDB,TBA,Chunlong Zhang,Spring 2023,100% Online,Opened
+23516,ENSC 4355,Environmental Sampling and Monitoring,W,1900,2150,Bayou Building 2524,Chunlong Zhang,Spring 2023,100% F2F w/supplmtnl web,Opened
+23517,ENSC 5431,Contaminant Fate and Transport,TDB,TDB,TDB,TBA,Sachiyo T Mukherji,Spring 2023,100% Online,Opened
+23518,ENSC 5431,Contaminant Fate and Transport,TDB,TDB,TDB,TBA,Sachiyo T Mukherji,Spring 2023,100% Online,Opened
+23519,ENSC 5530,Research Methods: Environ Sci,H,1900,2150,Bayou Building 2104,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23520,ENSC 5530,Research Methods: Environ Sci,TDB,TDB,TDB,TBA,Daniel Bryant Imrecke,Spring 2023,100% Online,Opened
+26599,ENSC 5915,Cooperative Educ In Envir Sci,TDB,TDB,TDB,TBA,Cindy Howard,Spring 2023,Face to Face,Opened
+23507,ENSC 5931,Topics In Environmental Sci,TDB,TDB,TDB,TBA,Chunlong Zhang,Spring 2023,100% Online,Opened
+23527,ENSC 6731,Graduate Seminar,H,1900,2150,Bayou Building 2106,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23528,ENSC 6731,Graduate Seminar,TDB,TDB,TDB,TBA,Daniel Bryant Imrecke,Spring 2023,100% Online,Opened
+23529,ENSC 6838,Research Project And Seminar,H,1900,2150,Bayou Building 2524,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23530,ENSC 6838,Research Project And Seminar,TDB,TDB,TDB,TBA,Daniel Bryant Imrecke,Spring 2023,100% Online,Opened
+10015,ENVR 4312,Water Management Principles,TDB,TDB,TDB,TBA,Lisa B Gossett,Spring 2023,100% Online,Opened
+10013,ENVR 4313,Techniques Of Envr Assessment,H,1900,2150,Bayou Building 1104,Kathleen Garland,Spring 2023,< 50% online,Opened
+10014,ENVR 4332,The Process Of Envr Permitting,T,1900,2150,Bayou Building 1104,Lisa B Gossett,Spring 2023,< 50% online,Opened
+10016,ENVR 4336,Administrative Practice & Ethical Issues,W,1900,2150,Bayou Building 2122,"Danna Small,
+Lisa B Gossett",Spring 2023,< 50% online,Opened
+10017,ENVR 4391,Selected Topics In Envr Mgmt,TDB,TDB,TDB,TBA,Kathleen Garland,Spring 2023,100% Online,Opened
+20630,ENVR 5132,Global Sustainability and Strategic Advantage,TDB,TDB,TDB,TBA,Dina M Abdel-Zaher,Spring 2023,100% Online,Opened
+10021,ENVR 5532,Water Management,TDB,TDB,TDB,TBA,Lisa B Gossett,Spring 2023,100% Online,Opened
+10019,ENVR 5533,Pollution Control Technology,S,800,1050,Bayou Building 1104,Angela E Summers,Spring 2023,< 50% online,Opened
+10020,ENVR 5534,Permits And Procedures,T,1900,2150,Bayou Building 1104,Lisa B Gossett,Spring 2023,< 50% online,Opened
+10022,ENVR 5537,Managing Contaminated Sites,TDB,TDB,TDB,TBA,Kathleen Garland,Spring 2023,100% Online,Opened
+10023,ENVR 6132,Environmental Impact Assmnt,M,1900,2150,Bayou Building 1104,Kathleen Garland,Spring 2023,< 50% online,Opened
+20483,EXHS 5131,Applied Exercise Physiology: Neuromuscular,M,1900,2150,REC 264,Jason Richard Bentley,Spring 2023,< 50% online,Closed
+20484,EXHS 5138,Exercise in Chronic Disease: Musculoskeletal and Neurologic,T,1900,2150,REC 264,Jenny English Amonette,Spring 2023,< 50% online,Opened
+20487,EXHS 5231,Technology in Human Performance,W,1900,2150,REC 263,William Emil Amonette,Spring 2023,< 50% online,Closed
+20486,EXHS 6033,Laboratory Techniques and Research Design,T,1600,1850,REC 264,Jason Richard Bentley,Spring 2023,100% F2F w/supplmtnl web,Opened
+20490,EXHS 6038,Biostatistics 2,W,1600,1850,SSCB 2201.02,Julianna M. Dean,Spring 2023,> or equal to 50% Online,Opened
+20488,EXHS 6131,Exercise Pharmacology,H,1900,2150,REC 264,John Thomas Cottingham,Spring 2023,< 50% online,Opened
+20491,EXHS 6739,Graduate Internship,F,1300,1550,REC 264,Isabelle Soraya Kusters,Spring 2023,100% F2F w/supplmtnl web,Opened
+19307,FINC 3301,Personal Money Management,M,1900,2150,Bayou Building 1313,Jason Warren Ceyanes,Spring 2023,100% F2F w/supplmtnl web,Opened
+19308,FINC 3301,Personal Money Management,TDB,TDB,TDB,TBA,Daniel G Perdue,Spring 2023,100% Online,Opened
+20751,FINC 3301,Personal Money Management,TDB,TDB,TDB,TBA,Daniel G Perdue,Spring 2023,100% Online,Opened
+19311,FINC 3331,Business Finance,M,1600,1850,Bayou Building 3332,Yvette M Bendeck,Spring 2023,< 50% online,Closed
+19312,FINC 3331,Business Finance,T,1900,2150,Bayou Building 1218,Yvette M Bendeck,Spring 2023,< 50% online,Opened
+19313,FINC 3331,Business Finance,TDB,TDB,TDB,TBA,Ivelina Pavlova-Stout,Spring 2023,100% Online,Closed
+20759,FINC 3331,Business Finance,TDB,TDB,TDB,TBA,Jeff Whitworth,Spring 2023,100% Online,Opened
+19315,FINC 3333,Intermediate Financial Mgmt,W,1300,1550,Bayou Building 1211,Ivelina Pavlova-Stout,Spring 2023,100% F2F w/supplmtnl web,Opened
+26522,FINC 3353,Investments,TDB,TDB,TDB,TBA,Daniel G Perdue,Spring 2023,100% Online,Opened
+19317,FINC 4331,Contemporary Finc Institutions,T,1300,1550,Bayou Building 2234,Yvette M Bendeck,Spring 2023,100% F2F w/supplmtnl web,Opened
+19318,FINC 4341,Structure of Financial Statements,H,1900,2150,Bayou Building 1218,Melissa A. Williams,Spring 2023,< 50% online,Opened
+19319,FINC 4351,International Financial Operations,M,1900,2150,Bayou Building 1211,Ivelina Pavlova-Stout,Spring 2023,< 50% online,Opened
+20587,FINC 5133,Corporate Finance,TDB,TDB,TDB,TBA,Timothy B Michael,Spring 2023,100% Online,Closed
+20620,FINC 5133,Corporate Finance,T,1900,2150,Bayou Building 3332,Jeff Whitworth,Spring 2023,< 50% online,Opened
+20589,FINC 5231,Quantitative Methods in Finance,TDB,TDB,TDB,TBA,Melissa A. Williams,Spring 2023,100% Online,Opened
+19320,FINC 5332,Financial Statements,H,1900,2150,Bayou Building 1218,Melissa A. Williams,Spring 2023,< 50% online,Closed
+20621,FINC 6131,Commercial Banking,TDB,TDB,TDB,TBA,Timothy B Michael,Spring 2023,100% Online,Opened
+20593,FINC 6231,Investment Management,TDB,TDB,TDB,TBA,Daniel G Perdue,Spring 2023,100% Online,Opened
+20623,FINC 6233,Options And Futures,TDB,TDB,TDB,TBA,Jeff Whitworth,Spring 2023,100% Online,Opened
+19321,FINC 6531,International Finance,M,1900,2150,Bayou Building 1211,Ivelina Pavlova-Stout,Spring 2023,< 50% online,Opened
+27041,FINC 6731,Seminar In Finance,W,1900,2150,Bayou Building 3326,Timothy B Michael,Spring 2023,< 50% online,Opened
+27042,FINC 6731,Seminar In Finance,TDB,TDB,TDB,TBA,Timothy B Michael,Spring 2023,100% Online,Opened
+20067,GAME 1302,Foundations of Games 2,T,1300,1550,Bayou Building 3615,Steven C Sutherland,Spring 2023,100% F2F w/supplmtnl web,Opened
+20069,GAME 2332,Gaming Interaction,H,1300,1550,Bayou Building 1326,Monica Villescas Trevathan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20345,GEOG 4301,Urban Geography,TDB,TDB,TDB,TBA,Quentin A Stubbs,Spring 2023,100% Online,Opened
+20347,GEOG 4312,Human Geography,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Closed
+20895,GEOG 4312,Human Geography,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Opened
+20348,GEOG 4314,Teaching Geography,TDB,TDB,TDB,TBA,Ann Elizabeth Linsley,Spring 2023,100% Online,Opened
+20893,GEOG 4321,Fundamentals of Geographic Information Systems,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Opened
+20349,GEOG 4322,Advanced Geographic Information Systems,M,1900,2150,Student Services Bld 220101,Jeffrey William Lash,Spring 2023,< 50% online,Opened
+25432,GEOG 4322,Advanced Geographic Information Systems,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Opened
+20894,GEOG 5134,Introduction to Geographic Information Systems,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Opened
+20350,GEOG 5135,Advanced Geographic Information Systems,M,1900,2150,Student Services Bld 220101,Jeffrey William Lash,Spring 2023,< 50% online,Opened
+25433,GEOG 5135,Advanced Geographic Information Systems,TDB,TDB,TDB,TBA,Jeffrey William Lash,Spring 2023,100% Online,Opened
+23533,GEOL 1104,Laboratory for Historical Geology,M,1300,1550,STEM 2107,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23535,GEOL 1304,Historical Geology,MWF,1100,1150,STEM 2105,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23544,GEOL 3333,Environmental Geology,TDB,TDB,TDB,TBA,Dongmin Sun,Spring 2023,100% Online,Closed
+25490,GEOL 4145,Laboratory for Structural Geology,H,1300,1550,STEM 2107,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+25492,GEOL 4345,Structural Geology,T,1300,1550,STEM 2107,Daniel Bryant Imrecke,Spring 2023,100% F2F w/supplmtnl web,Opened
+23547,GEOL 4375,Petroleum Geology,T,1900,2150,STEM 2105,Dongmin Sun,Spring 2023,100% F2F w/supplmtnl web,Opened
+19347,HADM 3311,Foundations Of Healthcare Administration Leadership,TDB,TDB,TDB,TBA,Ashish Chandra,Spring 2023,100% Online,Opened
+19353,HADM 3333,Healthcare Economics,TDB,TDB,TDB,TBA,M. Femi Ayadi,Spring 2023,100% Online,Opened
+19348,HADM 3351,Physician Group Practice Management,TDB,TDB,TDB,TBA,Pam Potter,Spring 2023,100% Online,Opened
+19349,HADM 4312,Healthcare Planning & Mktg,TDB,TDB,TDB,TBA,Ashish Chandra,Spring 2023,100% Online,Opened
+19350,HADM 4316,Medical Reimbursement,TDB,TDB,TDB,TBA,Pam Potter,Spring 2023,100% Online,Opened
+19351,HADM 4326,Hospital Operations,TDB,TDB,TDB,TBA,Shivani Gupta,Spring 2023,100% Online,Opened
+19352,HADM 4332,Legal Dimen Of Healthcare Adm,TDB,TDB,TDB,TBA,Elizabeth Whitson McKinley,Spring 2023,100% Online,Opened
+19355,HADM 4341,HR in Healthcare Administration,TDB,TDB,TDB,TBA,Phillip J Decker,Spring 2023,100% Online,Opened
+19357,HADM 4351,Financial Dimensions of Healthcare Administration II,TDB,TDB,TDB,TBA,Jordan P Mitchell,Spring 2023,100% Online,Closed
+20642,HADM 5033,Leadership of Organizations in Healthcare,TDB,TDB,TDB,TBA,Phillip J Decker,Spring 2023,100% Online,Opened
+20605,HADM 5131,Hlthcare Human Resources Mgmt,TDB,TDB,TDB,TBA,Phillip J Decker,Spring 2023,100% Online,Opened
+20607,HADM 5232,Finc Mgmt of Healthcare Orgs,TDB,TDB,TDB,TBA,Shivani Gupta,Spring 2023,100% Online,Opened
+20643,HADM 5233,Financial Management of Healthcare Organizations II,TDB,TDB,TDB,TBA,Jordan P Mitchell,Spring 2023,100% Online,Opened
+20608,HADM 5333,Healthcare Economics,TDB,TDB,TDB,TBA,M. Femi Ayadi,Spring 2023,100% Online,Closed
+20828,HADM 5333,Healthcare Economics,TDB,TDB,TDB,TBA,Shivani Gupta,Spring 2023,100% Online,Opened
+20644,HADM 5335,Planning & Marketing Healthcare Services,TDB,TDB,TDB,TBA,Ashish Chandra,Spring 2023,100% Online,Closed
+20609,HADM 5432,Healthcare Predictive,TDB,TDB,TDB,TBA,Jordan P Mitchell,Spring 2023,100% Online,Opened
+20610,HADM 5531,Group Practice Management,T,1600,1850,Bayou Building 3332,J. Mark Clardy,Spring 2023,Face to Face,Opened
+20645,HADM 5731,Healthcare Quality,TDB,TDB,TDB,TBA,Raymond Joseph Khoury,Spring 2023,100% Online,Closed
+20646,HADM 6132,Legl Aspects Of Hlthcare Systm,TDB,TDB,TDB,TBA,Elizabeth Whitson McKinley,Spring 2023,100% Online,Opened
+20647,HADM 6235,Integrated Delivery Systems,TDB,TDB,TDB,TBA,J. Mark Clardy,Spring 2023,100% Online,Opened
+20611,HADM 6738,Seminar in Healthcare Policy & Leadership,M,1900,2150,Bayou Building 2311,"Raymond Joseph Khoury,
+Phillip J Decker",Spring 2023,< 50% online,Closed
+19360,HADM 6739,Internship in Healthcare Administration,TDB,TDB,TDB,TBA,M. Femi Ayadi,Spring 2023,< 50% online,Opened
+27166,HADM 6739,Internship in Healthcare Administration,TDB,TDB,TDB,TBA,M. Femi Ayadi,Spring 2023,< 50% online,Opened
+20666,HIST 1301,United States History I,MWF,1500,1550,Bayou Building 2311,Joseph Allen Stromberg,Spring 2023,100% F2F w/supplmtnl web,Opened
+20667,HIST 1301,United States History I,TH,1300,1420,Bayou Building 2512,William P Powers,Spring 2023,100% F2F w/supplmtnl web,Opened
+20577,HIST 1302,United States History II,TDB,TDB,TDB,TBA,Barbara Hales,Spring 2023,100% Online,Opened
+20668,HIST 1302,United States History II,MWF,1600,1650,Bayou Building 2311,Joseph Allen Stromberg,Spring 2023,100% F2F w/supplmtnl web,Opened
+20659,HIST 2322,World Civilization II,TH,1130,1250,Bayou Building 2230,Cengiz Sisman,Spring 2023,> or equal to 50% Online,Opened
+20654,HIST 3301,Ancient World,T,830,1120,Bayou Building 1215,Jeremy L Piercy,Spring 2023,100% F2F w/supplmtnl web,Opened
+20655,HIST 3309,Renaissance and Reformation,W,900,1150,Bayou Building 1215,Jeremy L Piercy,Spring 2023,100% F2F w/supplmtnl web,Opened
+20572,HIST 3316,Historical Studies,H,900,1150,Bayou Building 1335,Neal T Dugre,Spring 2023,100% F2F w/supplmtnl web,Opened
+20662,HIST 3330,Civil War and Reconstruction,M,900,1150,Bayou Building 1133,Pearl Joy Young,Spring 2023,100% F2F w/supplmtnl web,Closed
+20651,HIST 3337,U.S. during the Cold War,T,1300,1550,Bayou Building 1217,Adam J Hodges,Spring 2023,100% F2F w/supplmtnl web,Opened
+20656,HIST 4301,Studies in European History,T,1600,1850,Bayou Building 1218,Jeremy L Piercy,Spring 2023,100% F2F w/supplmtnl web,Opened
+20575,HIST 4305,Nazi and Third Reich,M,1600,1850,Bayou Building 1335,Barbara Hales,Spring 2023,> or equal to 50% Online,Opened
+20657,HIST 4309,Studies in Latin American History,H,1600,1850,Bayou Building 1311,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+20658,HIST 4309,Studies in Latin American History,W,1600,1850,Bayou Building 1313,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+20574,HIST 4312,Studies in Early American History,M,1300,1550,Bayou Building 2234,Neal T Dugre,Spring 2023,100% F2F w/supplmtnl web,Opened
+20663,HIST 4313,Studies in U.S. History,M,1600,1850,Bayou Building 1311,Pearl Joy Young,Spring 2023,100% F2F w/supplmtnl web,Opened
+20652,HIST 4319,U.S. Labor History,H,1300,1550,Bayou Building 1217,Adam J Hodges,Spring 2023,100% F2F w/supplmtnl web,Opened
+20660,HIST 4326,Middle East and the United States,T,830,1120,Bayou Building 2230,Cengiz Sisman,Spring 2023,> or equal to 50% Online,Opened
+20576,HIST 5330,Memory and Representation in Holocaust Cinema,T,1900,2150,Bayou Building 1335,Barbara Hales,Spring 2023,> or equal to 50% Online,Closed
+20664,HIST 5430,Studies in Women's History,W,1900,2150,Bayou Building 1124,Pearl Joy Young,Spring 2023,100% F2F w/supplmtnl web,Opened
+20661,HIST 5931,Research Topics in History,H,1900,2150,Bayou Building 2230,Cengiz Sisman,Spring 2023,> or equal to 50% Online,Closed
+20786,HLTH 2301,Introduction to Exercise Science,TH,1130,1250,REC 264,Julianna M. Dean,Spring 2023,> or equal to 50% Online,Opened
+20787,HLTH 2303,Personal Health and Fitness,MW,1600,1720,SSCB 3310,Jason Royce Abshire,Spring 2023,> or equal to 50% Online,Opened
+20789,HLTH 3301,"Health, Emergency Care and First Aid",TDB,TDB,TDB,TBA,Denise B Cazes,Spring 2023,100% online w/F2F,Closed
+20790,HLTH 3301,"Health, Emergency Care and First Aid",TDB,TDB,TDB,TBA,Felicia Ann Thomas,Spring 2023,100% Online,Opened
+20791,HLTH 3301,"Health, Emergency Care and First Aid",TDB,TDB,TDB,TBA,Felicia Ann Thomas,Spring 2023,100% Online,Closed
+26802,HLTH 3301,"Health, Emergency Care and First Aid",TDB,TDB,TDB,TBA,Daniel Allen Nowalk Jr.,Spring 2023,100% Online,Closed
+20792,HLTH 3302,Health and Physical Education - EC-6 Survey,W,1600,1850,STEM 2115,Cindy G Gravely,Spring 2023,100% F2F w/supplmtnl web,Opened
+20793,HLTH 3303,Nutrition and Weight Management,T,1600,1850,REC 263,Denise B Cazes,Spring 2023,< 50% online,Opened
+20794,HLTH 3303,Nutrition and Weight Management,TDB,TDB,TDB,TBA,Alfred Eugene Coleman,Spring 2023,100% Online,Closed
+20795,HLTH 3304,Principles of Physical Fitness,TDB,TDB,TDB,TBA,Julianna M. Dean,Spring 2023,100% Online,Closed
+20796,HLTH 3304,Principles of Physical Fitness,TDB,TDB,TDB,TBA,Daniel Allen Nowalk Jr.,Spring 2023,100% Online,Closed
+20797,HLTH 3309,Evidence-Based Practice,TDB,TDB,TDB,TBA,Olympia Watts,Spring 2023,100% Online,Closed
+20798,HLTH 3316,Applied Kinesiology,H,1900,2150,REC 263,Paul Fullmer,Spring 2023,100% F2F w/supplmtnl web,Closed
+20799,HLTH 3317,Motor Development and Learning,TDB,TDB,TDB,TBA,Jenny English Amonette,Spring 2023,100% Online,Closed
+20800,HLTH 3319,Introduction to Public Health,TDB,TDB,TDB,TBA,Isabelle Soraya Kusters,Spring 2023,100% Online,Closed
+25650,HLTH 3319,Introduction to Public Health,TDB,TDB,TDB,TBA,Isabelle Soraya Kusters,Spring 2023,100% Online,Closed
+20801,HLTH 4301,Physiology of Exercise,M,1600,1850,REC 264,Jason Richard Bentley,Spring 2023,100% F2F w/supplmtnl web,Closed
+20802,HLTH 4302,Biomechanics,T,1900,2150,REC 263,Paul Fullmer,Spring 2023,100% F2F w/supplmtnl web,Closed
+20803,HLTH 4305,Seminar in Sports Medicine,M,1900,2150,REC 263,Charles Tyler Morrison,Spring 2023,100% F2F w/supplmtnl web,Opened
+20804,HLTH 4308,Resistive Exercise:  Theory and Practice,T,830,1120,REC 264,William Emil Amonette,Spring 2023,< 50% online,Closed
+20806,HLTH 4312,Methods in Physical Education II,H,1600,1850,REC 264,Cindy G Gravely,Spring 2023,100% F2F w/supplmtnl web,Opened
+20807,HLTH 4370,Undergraduate Lab Practicum,W,1600,1850,REC 264,Denise B Cazes,Spring 2023,100% F2F w/supplmtnl web,Opened
+20808,HLTH 4370,Undergraduate Lab Practicum,H,1300,1550,REC 264,Denise B Cazes,Spring 2023,100% F2F w/supplmtnl web,Closed
+20809,HLTH 4379,Internship,F,900,1150,REC 263,Isabelle Soraya Kusters,Spring 2023,100% F2F w/supplmtnl web,Opened
+10003,HMRS 5131,Human Resource Mgmt Processes,TDB,TDB,TDB,TBA,Laura Guerrero,Spring 2023,100% Online,Opened
+10005,HMRS 5435,"Employee Plan,Staff,Selection",TDB,TDB,TDB,TBA,"Deidre Renee Bradley,
+Donna Stringer",Spring 2023,100% Online,Opened
+10007,HMRS 5437,Human Resource Info Systems,TDB,TDB,TDB,TBA,"Cynde Lee Ferris,
+Donna Stringer",Spring 2023,100% Online,Opened
+10009,HMRS 5533,HR Metrics and Performance Management,TDB,TDB,TDB,TBA,M Alix Valenti,Spring 2023,100% Online,Closed
+10011,HMRS 6735,Seminar in Human Resource Management,TDB,TDB,TDB,TBA,Donna Stringer,Spring 2023,100% Online,Opened
+20431,HUMN 1301,Humanities,TDB,TDB,TDB,TBA,Daniel Silvermintz,Spring 2023,100% Online,Closed
+25809,HUMN 3351,Art 1950-Present,TDB,TDB,TDB,TBA,Jessica T Kubala,Spring 2023,100% Online,Closed
+20436,HUMN 3375,Ideas in Transition,TDB,TDB,TDB,TBA,Carole Jean Poindexter-Sylvers,Spring 2023,100% Online,Closed
+20437,HUMN 3375,Ideas in Transition,T,1900,2150,Bayou Building 1217,Daniel Silvermintz,Spring 2023,> or equal to 50% Online,Opened
+20438,HUMN 3375,Ideas in Transition,H,1600,1850,Bayou Building 1218,Julio C. Covarrubias-Cabeza,Spring 2023,100% F2F w/supplmtnl web,Opened
+20439,HUMN 3375,Ideas in Transition,H,1900,2150,Bayou Building 1211,Adrian Stephen Hal Russell,Spring 2023,100% F2F w/supplmtnl web,Opened
+20446,HUMN 4315,Art of the Ancient Greek World,M,1600,1850,Bayou Building 1333,Sarah Kielt Costello,Spring 2023,< 50% online,Closed
+20463,HUMN 4326,Studies in Film,M,1600,1850,Bayou Building 1335,Barbara Hales,Spring 2023,> or equal to 50% Online,Opened
+25988,HUMN 4364,Museum Studies,TDB,TDB,TDB,TBA,Sarah Kielt Costello,Spring 2023,100% Online,Closed
+20580,HUMN 4391,Selected Topics in Humanities,H,1600,1850,Bayou Building 1311,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+20464,HUMN 5236,Studies in Film,T,1900,2150,Bayou Building 1335,Barbara Hales,Spring 2023,> or equal to 50% Online,Opened
+20460,HUMN 5431,Issues in Art History II: Renaissance to the Present,W,1900,2150,Bayou Building 1133,Christina Novakov-Ritchey,Spring 2023,100% F2F w/supplmtnl web,Opened
+24658,HUMN 5931,Research Topics in Humanities,W,1900,2150,Bayou Building 1124,Pearl Joy Young,Spring 2023,100% F2F w/supplmtnl web,Opened
+19517,INST 3313,Survey of Instructional Technologies,M,900,1150,Arbor 1310.05,Rhonda J Ritter,Spring 2023,< 50% online,Opened
+19518,INST 3313,Survey of Instructional Technologies,H,1900,2150,Arbor 1310.05,Patrick Finnerty,Spring 2023,< 50% online,Opened
+19519,INST 3313,Survey of Instructional Technologies,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+19520,INST 3313,Survey of Instructional Technologies,TDB,TDB,TDB,TBA,Laura Nicholas Reeves,Spring 2023,100% Online,Opened
+19521,INST 3313,Survey of Instructional Technologies,TDB,TDB,TDB,TBA,Sheila E Schatzke,Spring 2023,100% Online,Opened
+19522,INST 3313,Survey of Instructional Technologies,TDB,TDB,TDB,TBA,Marla Hazlyn Welch,Spring 2023,100% Online,Opened
+19523,INST 3313,Survey of Instructional Technologies,TDB,TDB,TDB,TBA,Amy Scott Lejeune,Spring 2023,100% Online,Opened
+19525,INST 4357,Multimedia for Instruction,TDB,TDB,TDB,TBA,Terri Armendariz,Spring 2023,100% Online,Opened
+21060,INST 5130,Learning Theory and Instruction,TDB,TDB,TDB,TBA,Sheila E Schatzke,Spring 2023,100% Online,Opened
+21062,INST 5131,Trends and Issue in Instructional Technology,TDB,TDB,TDB,TBA,Caroline M Crawford,Spring 2023,100% Online,Opened
+21064,INST 5233,Performance Technology,TDB,TDB,TDB,TBA,Jennifer Joyce Willis-Opalenik,Spring 2023,100% Online,Opened
+21067,INST 5333,Sys Design Of Tech-Based Instr,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+21072,INST 6031,Applications of Technology,TDB,TDB,TDB,TBA,Caroline M Crawford,Spring 2023,100% Online,Opened
+21076,INST 6037,Advanced Technology Applications,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+21080,INST 6137,Tech And eLearning,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+21083,INST 6437,Interactive Distance Education,TDB,TDB,TDB,TBA,Michelle Giles,Spring 2023,100% Online,Opened
+10098,ISAM 1305,Business Computer Applications,TDB,TDB,TDB,TBA,Junior M.R Bowen,Spring 2023,100% Online,Opened
+10100,ISAM 1305,Business Computer Applications,TH,1000,1120,SSCB� 2311,Douglas J Steel,Spring 2023,< 50% online,Opened
+10101,ISAM 3303,Info Systems For Mgmt,TDB,TDB,TDB,TBA,Michael Yu-Chi Wu,Spring 2023,100% Online,Closed
+10103,ISAM 3303,Info Systems For Mgmt,TDB,TDB,TDB,TBA,Raja Rajeswari Athuru,Spring 2023,100% Online,Opened
+10105,ISAM 3303,Info Systems For Mgmt,M,1300,1550,SSCB 1100,Charitha Hettiarachchi,Spring 2023,Face to Face,Opened
+10107,ISAM 3303,Info Systems For Mgmt,W,1600,1850,SSCB� 2311,Imali Anushka Arthanayaka,Spring 2023,Face to Face,Opened
+10108,ISAM 3304,Introduction to Business Applications Programming,M,1600,1850,SSCB� 2311,Nanfei Sun,Spring 2023,Face to Face,Closed
+10109,ISAM 3333,Applications Development with C#,H,1900,2150,SSCB 1100,Chaitanya Belwal,Spring 2023,Face to Face,Opened
+10110,ISAM 4331,Introduction to Business Internet Applications Development,M,1900,2150,SSCB 1100,Michael Yu-Chi Wu,Spring 2023,Face to Face,Opened
+10111,ISAM 4365,Analysis and Design of Information Systems,W,1300,1550,Student Services Bld 2310,Charitha Hettiarachchi,Spring 2023,Face to Face,Opened
+10112,ISAM 4366,Introduction to Computer Network Management,W,1900,2150,Student Services Bld 2310,Jian Lin,Spring 2023,Face to Face,Opened
+10113,ISAM 4391,Special Topics in Management Information Systems,T,1300,1550,Bayou Building 2524,Charitha Hettiarachchi,Spring 2023,Face to Face,Opened
+10114,ISAM 4391,Special Topics in Management Information Systems,H,1300,1550,SSCB 1100,Nanfei Sun,Spring 2023,Face to Face,Opened
+10115,ISAM 5030,Fundamentals of Business Programming Applications,M,1600,1850,SSCB� 2311,Nanfei Sun,Spring 2023,Face to Face,Opened
+10116,ISAM 5330,Management Information Systems,T,1600,1850,SSCB� 2311,Gokhan Gercek,Spring 2023,Face to Face,Opened
+26721,ISAM 5330,Management Information Systems,T,1900,2150,Student Services Bld 2310,Nanfei Sun,Spring 2023,Face to Face,Opened
+10117,ISAM 5331,Fundamentals of Databases,W,1900,2150,SSCB 1100,Naveed Saleem,Spring 2023,Face to Face,Opened
+10118,ISAM 5332,Data Warehousing and Data Mining,T,1300,1550,Bayou Building 2524,Charitha Hettiarachchi,Spring 2023,Face to Face,Opened
+10119,ISAM 5338,Internet Application Development,H,1600,1850,SSCB 1100,Douglas J Steel,Spring 2023,Face to Face,Opened
+10120,ISAM 5339,Fundamentals of Computer Networking,H,1900,2150,Student Services Bld 2310,Gokhan Gercek,Spring 2023,Face to Face,Opened
+10121,ISAM 5430,Advanced Application Development with C#,W,1300,1550,SSCB� 2311,Michael Yu-Chi Wu,Spring 2023,Face to Face,Opened
+10122,ISAM 5632,Advanced Database Applications Development,M,1900,2150,Student Services Bld 3311,Naveed Saleem,Spring 2023,Face to Face,Opened
+10123,ISAM 5635,Systems Analysis and Design,W,1600,1850,Bayou Building 1333,Douglas J Steel,Spring 2023,Face to Face,Opened
+10124,ISAM 5636,Advanced Computer Networking,M,1300,1550,Student Services Bld 2310,Gokhan Gercek,Spring 2023,Face to Face,Opened
+10125,ISAM 5638,Advanced Applications Programming with Java,T,1900,2150,SSCB� 2311,Jian Lin,Spring 2023,Face to Face,Opened
+10126,ISAM 5734,Advanced Data Analytics in ERP System,H,1300,1550,SSCB 1100,Nanfei Sun,Spring 2023,Face to Face,Opened
+10127,ISAM 5735,Data Analytics Application Development,M,1600,1850,SSCB 1100,Jian Lin,Spring 2023,Face to Face,Opened
+20675,ITEC 2313,Scripting I,H,1300,1550,Delta Building 204,Lisa Louise Lacher,Spring 2023,< 50% online,Closed
+20691,ITEC 2351,Web Fundamentals,T,1300,1550,Delta Building 202,Arturo Perez,Spring 2023,100% F2F w/supplmtnl web,Opened
+20695,ITEC 2381,Forensics Fundamentals,H,1600,1850,Delta Building 202,Arturo Perez,Spring 2023,100% F2F w/supplmtnl web,Opened
+20704,ITEC 3312,Scripting II,H,1600,1850,Delta Building 204,Lisa Louise Lacher,Spring 2023,< 50% online,Closed
+20705,ITEC 3365,Network Fundamentals,W,1300,1550,Delta Building 203,Joshua Todd Baker,Spring 2023,100% F2F w/supplmtnl web,Opened
+20710,ITEC 3388,Cyber Security I,H,1300,1550,Delta Building 202,Arturo Perez,Spring 2023,100% F2F w/supplmtnl web,Opened
+20714,ITEC 4313,Emerging Information Technology,W,1900,2150,Delta Building 203,Lisa Louise Lacher,Spring 2023,< 50% online,Closed
+20719,ITEC 4342,IT Project Management,H,1600,1850,Delta Building 234,Kathy Lynn Rogers,Spring 2023,100% F2F w/supplmtnl web,Opened
+20722,ITEC 4351,Web Design,T,1600,1850,Delta Building 202,Arturo Perez,Spring 2023,100% F2F w/supplmtnl web,Opened
+20747,ITEC 4366,Computer Security & Disaster Recovery,M,1600,1850,Delta Building 203,Joshua Todd Baker,Spring 2023,100% F2F w/supplmtnl web,Opened
+20736,ITEC 4379,Internship in Information Technology,TDB,TDB,TDB,TBA,Lisa Louise Lacher,Spring 2023,100% F2F w/supplmtnl web,Opened
+20741,ITEC 4382,Registry & Internet Forensics,W,1600,1850,Delta� Building 119A,Krishani D Abeysekera,Spring 2023,100% F2F w/supplmtnl web,Opened
+20743,ITEC 4383,Cyber Security II,W,1600,1850,Delta Building 203,Joshua Todd Baker,Spring 2023,100% F2F w/supplmtnl web,Opened
+20847,ITEC 4388,Senior Project in Information Technology,W,1600,1850,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20848,ITEC 4388,Senior Project in Information Technology,W,1900,2150,Delta Building D241,Alfredo J Perez-Davila,Spring 2023,100% F2F w/supplmtnl web,Closed
+20757,ITEC 4391,Selected Topics in Information Technology,M,1300,1550,Delta Building 203,Joshua Todd Baker,Spring 2023,100% F2F w/supplmtnl web,Opened
+10161,LEGL 3301,Business Law,M,1900,2150,STEM 2115,Vanessa L. Johnson,Spring 2023,Face to Face,Opened
+10162,LEGL 3301,Business Law,TDB,TDB,TDB,TBA,Vanessa L. Johnson,Spring 2023,100% Online,Closed
+10164,LEGL 3301,Business Law,TDB,TDB,TDB,TBA,Vanessa L. Johnson,Spring 2023,100% Online,Opened
+10166,LEGL 3307,Legal Writing and Appellate Process,T,1600,1850,Bayou Building 2236,Jonathan Robert Everhart,Spring 2023,< 50% online,Opened
+10167,LEGL 4354,Property Transactions,H,1600,1850,Bayou Building 2236,Robert Prim,Spring 2023,< 50% online,Opened
+10168,LEGL 4356,Torts,W,1900,2150,Bayou Building 1213,W. Russ Jones,Spring 2023,Face to Face,Opened
+10169,LEGL 4359,"Wills, Probate and Estate Administration",TDB,TDB,TDB,TBA,Jonathan Robert Everhart,Spring 2023,100% Online,Closed
+10170,LEGL 4359,"Wills, Probate and Estate Administration",TDB,TDB,TDB,TBA,Jonathan Robert Everhart,Spring 2023,100% Online,Opened
+10171,LEGL 4365,Mock Trial,W,1600,1850,Bayou Building 2236,Winifred Bandy Weber,Spring 2023,Face to Face,Opened
+10172,LEGL 4375,Professional Development for Legal Studies Students,T,1900,2150,Bayou Building 1213,Jonathan Robert Everhart,Spring 2023,Face to Face,Opened
+21120,LITR 2321,British Literature,M,1600,1850,Student Services Bld 2310,Nina E Cook,Spring 2023,100% F2F w/supplmtnl web,Opened
+21122,LITR 3301,Literary Studies: Genres and  Perspectives,TH,1130,1250,Bayou Building 2524,Elizabeth Klett,Spring 2023,100% F2F w/supplmtnl web,Opened
+21123,LITR 3302,Principles of Composition,M,1900,2150,SSCB� 2311,Michelle Dawn Harrold,Spring 2023,100% F2F w/supplmtnl web,Opened
+21124,LITR 3334,Mythology,TH,1000,1120,Bayou Building 3615,Jennifer S Lowe,Spring 2023,100% F2F w/supplmtnl web,Opened
+21125,LITR 3338,Modern Fantasy Literature,M,900,1150,Student Services Bld 2310,David D Day,Spring 2023,100% F2F w/supplmtnl web,Opened
+21126,LITR 3371,Creative Writing,W,1600,1850,Bayou Building 3615,Jennifer Maritza McCauley,Spring 2023,100% F2F w/supplmtnl web,Opened
+21127,LITR 4321,Jane Austen,TH,1300,1420,Student Services Bld 3311,Elizabeth Klett,Spring 2023,100% F2F w/supplmtnl web,Opened
+21128,LITR 4335,American Modernism,T,1600,1850,Bayou Building 1439,Jennifer Maritza McCauley,Spring 2023,100% F2F w/supplmtnl web,Opened
+21129,LITR 4360,Topics in Film and Media Studies,M,1300,1550,Bayou Building 1439,Michael Carroll Clody,Spring 2023,100% F2F w/supplmtnl web,Opened
+21131,LITR 5430,Creative Writing,M,1900,2150,Student Services Bld 2308,Jennifer Maritza McCauley,Spring 2023,100% F2F w/supplmtnl web,Opened
+21133,LITR 5434,British Literature: Pre-Restoration,T,1900,2150,Student Services Bld 2308,Michael Carroll Clody,Spring 2023,100% F2F w/supplmtnl web,Opened
+21134,LITR 5435,British Literature: Restoration to the Present,W,1900,2150,Student Services Bld 2308,Elizabeth Klett,Spring 2023,100% F2F w/supplmtnl web,Closed
+25298,LLAS 4309,Topics in Latina/o and Latin American Studies,H,1600,1850,Bayou Building 1311,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+25299,LLAS 4309,Topics in Latina/o and Latin American Studies,W,1600,1850,Student Services Bld 2305,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+19608,LLLS 4311,Foundations Literacy Skills,M,1300,1550,Arbor 1310.07,Malene A. Golding,Spring 2023,< 50% online,Closed
+19609,LLLS 4311,Foundations Literacy Skills,H,1900,2150,Bayou Building 1439,Michelle Diane Meadows,Spring 2023,< 50% online,Opened
+19610,LLLS 4311,Foundations Literacy Skills,M,1600,1850,Arbor 1310.06,Elizabeth Raye Walsh,Spring 2023,< 50% online,Closed
+19611,LLLS 4311,Foundations Literacy Skills,W,1900,2150,Arbor 1310.09,Vanessa Ann Flores,Spring 2023,< 50% online,Closed
+19613,LLLS 4313,Corrective & Remedial Reading,M,1300,1550,Arbor 1310.09,Lillian B McEnery,Spring 2023,< 50% online,Closed
+19614,LLLS 4313,Corrective & Remedial Reading,T,1900,2150,Arbor 1310.09,Michelle Diane Meadows,Spring 2023,< 50% online,Opened
+19616,LLLS 4332,Diagn & Prescriptive Reading,M,1600,1850,Arbor 1310.09,Lillian B McEnery,Spring 2023,< 50% online,Closed
+19617,LLLS 4332,Diagn & Prescriptive Reading,T,1600,1850,Arbor 1310.09,Rose Marie Toman,Spring 2023,< 50% online,Opened
+19618,LLLS 4344,Literacy Methods For EC-6,H,1300,1550,Arbor 1310.09,Heather A Pule,Spring 2023,< 50% online,Opened
+19621,LLLS 4344,Literacy Methods For EC-6,M,900,1150,Arbor 1310.09,Roberta Diane Raymond,Spring 2023,< 50% online,Opened
+19622,LLLS 4344,Literacy Methods For EC-6,T,1600,1850,Bayou Building 1211,Angelia Cole Durand,Spring 2023,< 50% online,Opened
+19623,LLLS 4344,Literacy Methods For EC-6,H,1900,2150,Arbor 1310.09,Rosie Ann Sanchez,Spring 2023,< 50% online,Closed
+19625,LLLS 4345,Survey of Children Literature,M,1600,1850,Bayou Building 1326,Denise Bowman,Spring 2023,< 50% online,Opened
+19626,LLLS 4345,Survey of Children Literature,TDB,TDB,TDB,TBA,Sharon Lynn Zallis-Youngblood,Spring 2023,100% Online,Closed
+19627,LLLS 4345,Survey of Children Literature,TDB,TDB,TDB,TBA,Morgan Waites Tolleson Fanning,Spring 2023,100% Online,Closed
+19630,LLLS 4346,Literacy Methods for 4-8,T,1600,1850,Arbor 1310.05,Heather A Pule,Spring 2023,< 50% online,Opened
+19631,LLLS 4348,Selecting Literature for The Very Young Child,TDB,TDB,TDB,TBA,Morgan Waites Tolleson Fanning,Spring 2023,100% Online,Closed
+19633,LLLS 4351,Content Area Literacy,H,1900,2150,Bayou Building 2237,Dolly Eiren Liburd,Spring 2023,< 50% online,Closed
+19649,LLLS 4364,Methods in Scndry Eng/Lang Art,H,1600,1850,Arbor 1310.09,Heather A Pule,Spring 2023,< 50% online,Opened
+19635,LLLS 5131,Integrating the Language Arts,T,1600,1850,Bayou Building 1211,Angelia Cole Durand,Spring 2023,< 50% online,Opened
+19636,LLLS 5531,Critical Reading And Thinking,H,1900,2150,Bayou Building 2237,Dolly Eiren Liburd,Spring 2023,< 50% online,Opened
+19638,LLLS 5633,Teaching Methods for English/Reading Language Arts for Grades 4-8,T,1600,1850,Arbor 1310.05,Heather A Pule,Spring 2023,< 50% online,Opened
+19639,LLLS 6333,Genre Studies in Children's & Young Adult Literature,H,1600,1850,Arbor 1310.07,Roberta Diane Raymond,Spring 2023,< 50% online,Opened
+19641,LLLS 6732,Asmnt & Remed/Read La Literacy,H,1900,2150,Arbor 1310.07,Matt Panozzo,Spring 2023,< 50% online,Opened
+19758,MATH 1314,College Algebra,TH,1000,1120,Bayou Building 2122,Teresa D Rivas,Spring 2023,100% F2F w/supplmtnl web,Opened
+19759,MATH 1314,College Algebra,MW,1300,1420,Bayou Building 3326,Teresa D Rivas,Spring 2023,100% F2F w/supplmtnl web,Opened
+19773,MATH 1324,Mathematics for Business & Social Sciences,MW,1100,1220,Bayou Building 1218,Michael Heerey,Spring 2023,100% F2F w/supplmtnl web,Opened
+19774,MATH 1324,Mathematics for Business & Social Sciences,TH,1730,1850,Bayou Building 2311,Michael Heerey,Spring 2023,> or equal to 50% Online,Opened
+19828,MATH 1332,Contemporary Mathematics,TH,1130,1250,Bayou Building 2122,Michael Heerey,Spring 2023,100% F2F w/supplmtnl web,Opened
+19829,MATH 1350,Mathematics for Teachers I,TH,1300,1420,Bayou Building 3315,Catherine Gaines,Spring 2023,100% F2F w/supplmtnl web,Opened
+19831,MATH 1351,Mathematics for Teachers II,TH,1000,1120,Bayou Building 3315,Catherine Gaines,Spring 2023,100% F2F w/supplmtnl web,Opened
+19834,MATH 2305,Discrete Mathematics,TH,1300,1420,Bayou Building 3326,Nancy Ramirez,Spring 2023,100% F2F w/supplmtnl web,Opened
+26644,MATH 2305,Discrete Mathematics,MW,1600,1720,Bayou Building 2524,Nancy Ramirez,Spring 2023,100% F2F w/supplmtnl web,Opened
+19835,MATH 2315,Calculus III,TH,1600,1720,Bayou Building 2311,Manki Cho,Spring 2023,100% F2F w/supplmtnl web,Opened
+19925,MATH 2318,Linear Algebra,TH,1600,1720,Bayou Building 2122,Nancy Ramirez,Spring 2023,100% F2F w/supplmtnl web,Closed
+19929,MATH 2318,Linear Algebra,MW,1100,1220,Bayou Building 2122,Manki Cho,Spring 2023,100% F2F w/supplmtnl web,Opened
+19932,MATH 2320,Differential Equations,MW,1300,1420,Bayou Building 2311,LieJune Shiau,Spring 2023,100% F2F w/supplmtnl web,Opened
+19935,MATH 2412,Pre-Calculus Mathematics,MTWH,1000,1050,Bayou Building 1211,Nelson L Carter,Spring 2023,100% F2F w/supplmtnl web,Opened
+19939,MATH 2412,Pre-Calculus Mathematics,MTWH,1300,1350,Bayou Building 2236,Michael Heerey,Spring 2023,100% F2F w/supplmtnl web,Opened
+19941,MATH 2413,Calculus I,MTWH,1100,1150,Bayou Building 2236,Nelson L Carter,Spring 2023,100% F2F w/supplmtnl web,Opened
+19942,MATH 2413,Calculus I,MTWH,1500,1550,Bayou Building 2122,Nancy Ramirez,Spring 2023,100% F2F w/supplmtnl web,Opened
+19946,MATH 2414,Calculus II,MTWH,1400,1450,Bayou Building 2236,Yipeng Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+19947,MATH 2414,Calculus II,MTWH,1000,1050,SSCB 3310,Manki Cho,Spring 2023,100% F2F w/supplmtnl web,Closed
+19959,MATH 3300,Introduction to Modern Algebra and Number Theory,MW,1730,1850,Bayou Building 2524,Jingjing Ma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19976,MATH 3304,Algebra Through Technology,TH,1600,1720,Bayou Building 3400,Thomas B Fox,Spring 2023,100% F2F w/supplmtnl web,Opened
+19977,MATH 3305,Euclidian/Non-Euclidian Geom,TH,1730,1850,Bayou Building 3400,Thomas B Fox,Spring 2023,100% F2F w/supplmtnl web,Opened
+19984,MATH 3331,Advanced Calculus,TH,1600,1720,Bayou Building 2235,Yipeng Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+19989,MATH 4322,Introduction to Abstract Algebra,MW,1900,2020,Bayou Building 3315,Jingjing Ma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19992,MATH 4325,Theory Of Models and Applications,MW,1600,1720,Bayou Building 2234,LieJune Shiau,Spring 2023,100% F2F w/supplmtnl web,Opened
+19995,MATH 4341,Intro To Analysis,TH,1900,2020,Bayou Building 2235,Zokhrab Mustafaev,Spring 2023,100% F2F w/supplmtnl web,Opened
+20025,MATH 4344,Intro To Probability,TH,1730,1850,Bayou Building 2122,Yingfu Li,Spring 2023,100% F2F w/supplmtnl web,Opened
+20029,MATH 4348,Introduction to Financial Mathematics for Exam FM,MW,1730,1850,Bayou Building 2234,Yipeng Yang,Spring 2023,100% F2F w/supplmtnl web,Opened
+20035,MATH 5034,Geometry Seminar,T,1900,2150,Bayou Building 3315,Nelson L Carter,Spring 2023,100% F2F w/supplmtnl web,Opened
+20042,MATH 5330,Mathematical Software and Modeling Simulation,MW,1730,1850,Bayou Building 3400,LieJune Shiau,Spring 2023,100% F2F w/supplmtnl web,Opened
+20274,MATH 6837,Research Project I,TDB,TDB,TDB,TBA,Jingjing Ma,Spring 2023,100% F2F w/supplmtnl web,Opened
+20275,MATH 6838,Research Project II,TDB,TDB,TDB,TBA,Jingjing Ma,Spring 2023,100% F2F w/supplmtnl web,Opened
+19592,MENG 1204,Engineering Graphics for Mechanical Engineers,F,900,950,STEM 2103,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19593,MENG 1204,Engineering Graphics for Mechanical Engineers,M,1600,1850,STEM 1112,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19594,MENG 1204,Engineering Graphics for Mechanical Engineers,W,1600,1850,STEM 1112,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19595,MENG 1204,Engineering Graphics for Mechanical Engineers,F,1000,1050,STEM 2103,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Closed
+19596,MENG 1204,Engineering Graphics for Mechanical Engineers,W,1300,1550,STEM 1112,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Closed
+19598,MENG 3211,Mechanical Engineering Lab II,F,1000,1050,STEM 2105,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19599,MENG 3211,Mechanical Engineering Lab II,M,1300,1550,STEM 1109,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19600,MENG 3211,Mechanical Engineering Lab II,F,1200,1250,STEM 2101,Angel R Alvarez-Hernandez,Spring 2023,100% F2F w/supplmtnl web,Opened
+19601,MENG 3211,Mechanical Engineering Lab II,T,1730,1950,STEM 1109,Angel R Alvarez-Hernandez,Spring 2023,100% F2F w/supplmtnl web,Opened
+19602,MENG 3211,Mechanical Engineering Lab II,H,1730,1950,STEM 1109,Angel R Alvarez-Hernandez,Spring 2023,100% F2F w/supplmtnl web,Opened
+19672,MENG 3310,Introduction to Fluid Mechanics,TH,1300,1420,STEM 2103,Mohsen Daghooghi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19671,MENG 3314,Design Methodology,MW,1000,1120,STEM 2101,Youssef Khalid Alaoui Hamidi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19673,MENG 3316,Heat Transfer,MW,830,950,STEM 2101,Mohsen Daghooghi,Spring 2023,100% F2F w/supplmtnl web,Opened
+25786,MENG 3316,Heat Transfer,TH,1600,1720,STEM 2103,Eugene Kenneth Ungar,Spring 2023,100% F2F w/supplmtnl web,Opened
+19675,MENG 3334,Thermodynamics,TH,1000,1120,STEM 2103,Eugene Kenneth Ungar,Spring 2023,100% F2F w/supplmtnl web,Opened
+19657,MENG 3344,Introduction to Manufacturing Processes,MW,1730,1820,STEM 1203,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Opened
+19658,MENG 3344,Introduction to Manufacturing Processes,T,830,1120,STEM 1111,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Closed
+19659,MENG 3344,Introduction to Manufacturing Processes,H,830,1120,STEM 1111,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Opened
+19678,MENG 4241,Senior Design Project II,TH,1300,1550,STEM 1115,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19679,MENG 4241,Senior Design Project II,TH,1600,1850,STEM 1113,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19663,MENG 4302,Introduction to Mechatronics,TH,1030,1120,STEM 3133,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19664,MENG 4302,Introduction to Mechatronics,W,830,1120,STEM 1109,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+26351,MENG 4331,Design of Machine Elements,MW,1300,1420,STEM 2103,Ariful Bhuiyan,Spring 2023,100% F2F w/supplmtnl web,Opened
+19665,MENG 4341,Mechanical Engineering Capstone II,F,1100,1150,STEM 2103,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19666,MENG 4341,Mechanical Engineering Capstone II,T,1600,1950,STEM 1115,Jeffrey R Mountain,Spring 2023,100% F2F w/supplmtnl web,Opened
+19677,MENG 4344,Composite Materials,MW,1130,1250,STEM 2101,Youssef Khalid Alaoui Hamidi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19571,MENG 4391,Selected Topics in Mechanical Engineering,TH,830,950,STEM 2101,Mohsen Daghooghi,Spring 2023,100% F2F w/supplmtnl web,Opened
+19572,MENG 4391,Selected Topics in Mechanical Engineering,MW,830,950,STEM 2103,Eugene Kenneth Ungar,Spring 2023,100% F2F w/supplmtnl web,Opened
+19764,MENG 4391,Selected Topics in Mechanical Engineering,MW,1900,2020,STEM 3133,Kazi Md Masum Billah,Spring 2023,100% F2F w/supplmtnl web,Opened
+20078,MGMT 1301,Business Principles,TH,1130,1250,Bayou Building 1217,Charles A Crocker,Spring 2023,< 50% online,Opened
+20079,MGMT 1301,Business Principles,TDB,TDB,TDB,TBA,Skylar J Rolf,Spring 2023,100% Online,Closed
+10201,MGMT 3301,Mgmt Theory And Practice,W,1900,2150,Bayou Building 2234,Skylar J Rolf,Spring 2023,< 50% online,Opened
+10202,MGMT 3301,Mgmt Theory And Practice,TDB,TDB,TDB,TBA,Nelly Carmen Brierty,Spring 2023,100% Online,Closed
+10204,MGMT 3301,Mgmt Theory And Practice,TH,1130,1250,Bayou Building 1218,Dina M Abdel-Zaher,Spring 2023,< 50% online,Opened
+10205,MGMT 3301,Mgmt Theory And Practice,TDB,TDB,TDB,TBA,Nelly Carmen Brierty,Spring 2023,100% Online,Opened
+10207,MGMT 3301,Mgmt Theory And Practice,TDB,TDB,TDB,TBA,Skylar J Rolf,Spring 2023,100% Online,Opened
+10209,MGMT 3313,Organizational Comm,H,1900,2150,Bayou Building 2236,Laura Guerrero,Spring 2023,< 50% online,Opened
+10210,MGMT 3331,Human Resource Management,T,1900,2150,Bayou Building 2234,Farzaneh Noghani,Spring 2023,< 50% online,Opened
+10211,MGMT 3331,Human Resource Management,TDB,TDB,TDB,TBA,Farzaneh Noghani,Spring 2023,100% Online,Closed
+10213,MGMT 3341,"Human Resource Plan,Staff,Sel",TDB,TDB,TDB,TBA,Roxane Renee Johnson,Spring 2023,100% Online,Opened
+10215,MGMT 3351,Wage And Salary Administration,W,1900,2150,Bayou Building 1313,Donna Stringer,Spring 2023,< 50% online,Opened
+10216,MGMT 4312,Strategic Management,M,1900,2150,Bayou Building 1333,Vivien Jancenelle,Spring 2023,< 50% online,Opened
+10218,MGMT 4312,Strategic Management,TDB,TDB,TDB,TBA,Robert McGlashan,Spring 2023,100% Online,Opened
+10220,MGMT 4312,Strategic Management,TDB,TDB,TDB,TBA,Dorothy M Kirkman,Spring 2023,100% Online,Closed
+10222,MGMT 4312,Strategic Management,TDB,TDB,TDB,TBA,Dorothy M Kirkman,Spring 2023,100% Online,Closed
+10224,MGMT 4334,Leading Teams,TDB,TDB,TDB,TBA,Clifton O Mayfield,Spring 2023,100% Online,Opened
+10228,MGMT 4354,Organizational Behavior Theory and Application,TDB,TDB,TDB,TBA,Silvana Chambers,Spring 2023,100% Online,Opened
+10230,MGMT 4356,Employee Training and Organizational Development,TDB,TDB,TDB,TBA,Farzaneh Noghani,Spring 2023,100% Online,Opened
+10024,MGMT 4391,Select Topics Mgmt,W,1900,2150,Bayou Building 2122,"Danna Small,
+Lisa B Gossett",Spring 2023,< 50% online,Opened
+25007,MGMT 5031,Survey of Business Principles,TDB,TDB,TDB,TBA,"Ahsanul Huq,
+Melissa A. Williams",Spring 2023,100% Online,Opened
+20598,MGMT 5032,Human Behavior in Organization,TDB,TDB,TDB,TBA,Silvana Chambers,Spring 2023,100% Online,Closed
+20636,MGMT 5032,Human Behavior in Organization,W,1900,2150,Bayou Building 1333,Silvana Chambers,Spring 2023,< 50% online,Opened
+20854,MGMT 5131,The Global Environment of Business,TDB,TDB,TDB,TBA,Dina M Abdel-Zaher,Spring 2023,100% Online,Opened
+20856,MGMT 5131,The Global Environment of Business,M,1900,2150,Bayou Building 1335,Alex Martynov,Spring 2023,< 50% online,Opened
+20632,MGMT 5133,Teamwork & Leadership Skills: Theory and Practice,T,1900,2150,Bayou Building 1302,Clifton O Mayfield,Spring 2023,< 50% online,Opened
+20600,MGMT 5434,Negotiation Skills and Strategies,W,1900,2150,Bayou Building 1333,Derrick Glenn Parker,Spring 2023,< 50% online,Opened
+20633,MGMT 5636,Management Of Technology,TDB,TDB,TDB,TBA,Dorothy M Kirkman,Spring 2023,100% Online,Opened
+20637,MGMT 6135,Data Visualization and Communication,TDB,TDB,TDB,TBA,Donna Stringer,Spring 2023,100% Online,Opened
+20601,MGMT 6237,Comparative Leadership,TDB,TDB,TDB,TBA,Clifton O Mayfield,Spring 2023,100% Online,Opened
+20640,MGMT 6334,Global Sustainability and Strategic Advantage,TDB,TDB,TDB,TBA,Dina M Abdel-Zaher,Spring 2023,100% Online,Opened
+20603,MGMT 6731,Strategic Management Seminar,TDB,TDB,TDB,TBA,Alex Martynov,Spring 2023,100% Online,Closed
+20639,MGMT 6731,Strategic Management Seminar,H,1900,2150,Bayou Building 1333,Alex Martynov,Spring 2023,< 50% online,Opened
+10174,MKTG 3301,Principles of Marketing,TH,1430,1550,Bayou Building 1313,Lynn Place,Spring 2023,100% F2F w/supplmtnl web,Closed
+10175,MKTG 3301,Principles of Marketing,W,1300,1550,Bayou Building 1218,Lynn Place,Spring 2023,100% F2F w/supplmtnl web,Opened
+10176,MKTG 3301,Principles of Marketing,TDB,TDB,TDB,TBA,S. Altan Erdem,Spring 2023,100% Online,Closed
+10178,MKTG 3301,Principles of Marketing,TDB,TDB,TDB,TBA,Fang Yu-Buck,Spring 2023,100% Online,Opened
+10180,MKTG 3301,Principles of Marketing,TDB,TDB,TDB,TBA,Ryan William Paul,Spring 2023,100% Online,Closed
+10182,MKTG 3301,Principles of Marketing,M,1900,2150,Bayou Building 1218,S. Altan Erdem,Spring 2023,< 50% online,Closed
+20870,MKTG 3301,Principles of Marketing,TDB,TDB,TDB,TBA,L. Jean Walker,Spring 2023,100% Online,Opened
+10183,MKTG 3313,Marketing Channels & Distribution,TDB,TDB,TDB,TBA,S. Altan Erdem,Spring 2023,100% Online,Closed
+10185,MKTG 3331,Integrated Mktg Communication,W,1600,1850,Bayou Building 2122,Lynn Place,Spring 2023,100% F2F w/supplmtnl web,Opened
+10186,MKTG 3343,Consumer Behavior,TDB,TDB,TDB,TBA,Fang Yu-Buck,Spring 2023,100% Online,Closed
+10188,MKTG 3348,Retail Management,T,1600,1850,Bayou Building 1313,Lynn Place,Spring 2023,100% F2F w/supplmtnl web,Opened
+10189,MKTG 3351,Marketing Research,H,1600,1850,Bayou Building 1313,Fang Yu-Buck,Spring 2023,< 50% online,Opened
+10190,MKTG 3360,Social Media Marketing,TDB,TDB,TDB,TBA,Leroy Robinson,Spring 2023,100% Online,Closed
+10192,MKTG 4335,Brands and Brand Management,TDB,TDB,TDB,TBA,L. Jean Walker,Spring 2023,100% Online,Opened
+20595,MKTG 5332,Executive Decisions in Marketg,T,1900,2150,Bayou Building 1326,L. Jean Walker,Spring 2023,< 50% online,Opened
+20628,MKTG 5332,Executive Decisions in Marketg,TDB,TDB,TDB,TBA,L. Jean Walker,Spring 2023,100% Online,Opened
+25611,MSCI 1220,Introduction to Leadership II,W,1000,1200,TBA,"Susan Mangum,
+Roland Thomas",Spring 2023,Face to Face,Opened
+25800,MSCI 1220,Introduction to Leadership II,F,730,930,TBA,Susan Mangum,Spring 2023,Face to Face,Opened
+25801,MSCI 1220,Introduction to Leadership II,F,730,930,TBA,Susan Mangum,Spring 2023,Face to Face,Opened
+25802,MSCI 2220,Foundations of Leadership II,F,730,930,TBA,Susan Mangum,Spring 2023,Face to Face,Opened
+25803,MSCI 3320,Adv Military Science,F,730,930,TBA,Susan Mangum,Spring 2023,Face to Face,Closed
+25427,NCBI    1,NCB Integrated Reading and Writing,TDB,TDB,TDB,TBA,Regan Alexandria Joswiak,Spring 2023,100% F2F w/supplmtnl web,Opened
+20063,NCBM    1,NCB Math,MW,1000,1120,Bayou Building 3400,Teresa D Rivas,Spring 2023,100% F2F w/supplmtnl web,Opened
+26708,NCBM    1,NCB Math,TH,1300,1420,Bayou Building 3400,Teresa D Rivas,Spring 2023,100% F2F w/supplmtnl web,Opened
+20552,NURS 3311,History and Theories of Nursing,TDB,TDB,TDB,TBA,Nisha Cherian,Spring 2023,100% Online,Opened
+19546,OSHE 3340,Tech Of Safety Engineer&Analys,W,1900,2150,STEM 2103,William Mark Young,Spring 2023,< 50% online,Opened
+19688,OSHE 4324,Fire Safety Engineering,M,1900,2150,STEM 2103,Patricia Ann Reed,Spring 2023,< 50% online,Opened
+19689,OSHE 4333,Construction & General Industry Safety,T,1900,2150,STEM 2103,Magdy Akladios,Spring 2023,< 50% online,Opened
+19690,OSHE 4422,Indst Hygiene Sampling Anly,H,1600,2150,STEM 2109,Robert N Phalen,Spring 2023,< 50% online,Opened
+19718,OSHE 5530,Research Methods: INDH,W,1900,2150,STEM 2101,Robert N Phalen,Spring 2023,< 50% online,Opened
+19725,OSHE 6242,Analy Method For Eval Of H & H,H,1600,2150,STEM 2109,Robert N Phalen,Spring 2023,< 50% online,Opened
+19731,OSHE 6332,Safety Engineering,M,1900,2150,STEM 2109,Magdy Akladios,Spring 2023,< 50% online,Opened
+19760,OSHE 6333,Standards of Construction & General Industries,T,1900,2150,STEM 2103,Magdy Akladios,Spring 2023,100% Online,Opened
+27146,OSHE 6333,Standards of Construction & General Industries,T,1900,2150,TBA,Magdy Akladios,Spring 2023,< 50% online,Opened
+19762,OSHE 6838,Research Project,W,1900,2150,STEM 2101,Robert N Phalen,Spring 2023,< 50% online,Opened
+20443,PHIL 3331,Ethics,M,1600,1850,Bayou Building 1217,Daniel Silvermintz,Spring 2023,> or equal to 50% Online,Opened
+20444,PHIL 3331,Ethics,T,1600,1850,Bayou Building 1311,Julio C. Covarrubias-Cabeza,Spring 2023,100% F2F w/supplmtnl web,Opened
+20461,PHIL 4314,The Great Philosophers I,W,1600,1850,Bayou Building 3332,Keith M Parsons,Spring 2023,100% F2F w/supplmtnl web,Closed
+20441,PHIL 4391,Selected Topics in Philosophy,H,1600,1850,Bayou Building 1218,Julio C. Covarrubias-Cabeza,Spring 2023,100% F2F w/supplmtnl web,Opened
+19990,PHYS 1101,Laboratory for College Physics I,M,1300,1550,STEM 1101,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+19993,PHYS 1102,Laboratory for College Physics II,TDB,TDB,TDB,TBA,Walter H Thompson,Spring 2023,100% Online,Closed
+19994,PHYS 1102,Laboratory for College Physics II,TDB,TDB,TDB,TBA,Walter H Thompson,Spring 2023,100% Online,Opened
+19996,PHYS 1102,Laboratory for College Physics II,W,1300,1550,STEM 1103,Wes Kelly,Spring 2023,100% F2F w/supplmtnl web,Opened
+19998,PHYS 1301,College Physics I,MW,1730,1850,SSCB 3310,Paul A Withey,Spring 2023,100% F2F w/supplmtnl web,Opened
+20000,PHYS 1302,College Physics II,TDB,TDB,TDB,TBA,Walter H Thompson,Spring 2023,100% Online,Closed
+20001,PHYS 1302,College Physics II,TH,1000,1120,STEM 2101,Tej Bahadur Limbu,Spring 2023,100% F2F w/supplmtnl web,Opened
+23668,PHYS 2125,Laboratory for University Physics I,TH,1730,1850,STEM 1200,Serkan Caliskan,Spring 2023,100% F2F w/supplmtnl web,Opened
+25437,PHYS 2125,Laboratory for University Physics I,MW,1030,1150,STEM 1200,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+23670,PHYS 2126,Laboratory for University Physics II,MW,1730,1850,STEM 1200,Evan Thomas Richards,Spring 2023,100% F2F w/supplmtnl web,Opened
+23672,PHYS 2126,Laboratory for University Physics II,TH,1030,1150,STEM 1200,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+23669,PHYS 2325,University Physics I,TH,1600,1720,STEM 1200,Serkan Caliskan,Spring 2023,100% F2F w/supplmtnl web,Opened
+25281,PHYS 2325,University Physics I,MW,900,1020,STEM 1200,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+23673,PHYS 2326,University Physics II,TH,900,1020,STEM 1200,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+25283,PHYS 2326,University Physics II,MW,1600,1720,STEM 1200,Evan Thomas Richards,Spring 2023,100% F2F w/supplmtnl web,Opened
+20072,PHYS 3103,Laboratory for Modern Physics,T,1300,1550,STEM 1105,Tej Bahadur Limbu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20073,PHYS 3303,Modern Physics,MW,1730,1850,STEM 2101,Tej Bahadur Limbu,Spring 2023,100% F2F w/supplmtnl web,Opened
+20075,PHYS 3312,Mathematical Methods for Scientists and Engineers II,TH,1600,1720,STEM 2101,Anne Catherine Reilly,Spring 2023,< 50% online,Opened
+20143,PHYS 3321,Intermediate Mechanics,MW,1600,1720,SSCB 3306,Paul A Withey,Spring 2023,100% F2F w/supplmtnl web,Opened
+26922,PHYS 3343,Quantum Theory II,TH,1900,2020,STEM 3133,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20147,PHYS 4115,Physics Practicum,TDB,TDB,TDB,TBA,Linhdung Pham,Spring 2023,100% F2F w/supplmtnl web,Opened
+20151,PHYS 4202,Computational Physics,T,1300,1550,Student Services Bld 220114,David Garrison,Spring 2023,100% F2F w/supplmtnl web,Opened
+20152,PHYS 4371,Research Seminar I,M,1900,2150,STEM 1203,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20153,PHYS 4372,Research Seminar II,M,1900,2150,STEM 1203,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20154,PHYS 5311,Recitation for Electrodynamics,W,1900,1950,STEM 1110,Serkan Caliskan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20156,PHYS 5331,Electrodynamics,MW,1730,1850,STEM 1110,Serkan Caliskan,Spring 2023,100% F2F w/supplmtnl web,Opened
+20160,PHYS 5612,Recitation for Quantum Mechanics II,H,1900,1950,STEM 1110,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20165,PHYS 5632,Quantum Mechanics II,TH,1730,1850,STEM 1110,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20166,PHYS 6837,Research and Project Seminar I,M,1900,2150,STEM 1203,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20167,PHYS 6838,Research Project And Seminar II,M,1900,2150,STEM 1203,Samina S Masood,Spring 2023,100% F2F w/supplmtnl web,Opened
+20351,POLS 2305,Federal Government,W,1600,1850,Bayou Building 2512,Alicia A. Forde,Spring 2023,> or equal to 50% Online,Opened
+20352,POLS 2305,Federal Government,TDB,TDB,TDB,TBA,Ozlem Sisman,Spring 2023,100% Online,Opened
+20353,POLS 2305,Federal Government,TDB,TDB,TDB,TBA,Audrey Christine Ewer,Spring 2023,100% Online,Opened
+20911,POLS 2305,Federal Government,TDB,TDB,TDB,TBA,Se-Hyoung Yi,Spring 2023,100% Online,Opened
+20354,POLS 2306,Texas Government,TH,1000,1120,Bayou Building 2311,Se-Hyoung Yi,Spring 2023,< 50% online,Opened
+20355,POLS 2306,Texas Government,TDB,TDB,TDB,TBA,Se-Hyoung Yi,Spring 2023,100% Online,Closed
+25638,POLS 2306,Texas Government,TDB,TDB,TDB,TBA,John Joseph Theis,Spring 2023,100% Online,Opened
+20356,POLS 3301,Contemporary Issues in Political Science,TDB,TDB,TDB,TBA,Se-Hyoung Yi,Spring 2023,100% Online,Opened
+20358,PSLD 4340,Current Issues in Representative Bureaucracy,TDB,TDB,TDB,TBA,Rita Nicole Thomas,Spring 2023,100% Online,Opened
+20360,PSLD 4344,Public Service Leadership,TDB,TDB,TDB,TBA,Julio Angel Ortiz,Spring 2023,100% Online,Opened
+20362,PSLD 4345,Strategic Planning,TDB,TDB,TDB,TBA,Julio Angel Ortiz,Spring 2023,100% Online,Opened
+20364,PSLD 4347,Managerial Issues in Diversity,TDB,TDB,TDB,TBA,Comeka C. Anderson Diaz,Spring 2023,100% Online,Opened
+20366,PSLD 4348,Crisis and Emergency Management,TDB,TDB,TDB,TBA,Comeka C. Anderson Diaz,Spring 2023,100% Online,Opened
+20423,PSYC 1100,Learning Frameworks,T,830,1020,Bayou Building 1439,Julio C. Covarrubias-Cabeza,Spring 2023,100% F2F w/supplmtnl web,Opened
+20424,PSYC 1100,Learning Frameworks,W,800,950,Bayou Building 1219,Thais Sant'Ana,Spring 2023,100% F2F w/supplmtnl web,Opened
+20425,PSYC 1100,Learning Frameworks,W,1500,1650,Bayou Building 1219,Adam J Hodges,Spring 2023,100% F2F w/supplmtnl web,Opened
+20426,PSYC 1100,Learning Frameworks,H,1630,1820,Bayou Building 1215,Anne M Gessler,Spring 2023,100% F2F w/supplmtnl web,Closed
+20427,PSYC 1100,Learning Frameworks,F,1300,1450,Bayou Building 1104,Anne M Gessler,Spring 2023,100% F2F w/supplmtnl web,Opened
+25891,PSYC 1100,Learning Frameworks,M,1800,1950,Bayou Building 2237,Brianna Etoria,Spring 2023,< 50% online,Opened
+20721,PSYC 2301,Introduction to Psychology,TDB,TDB,TDB,TBA,Beth A Hentges,Spring 2023,100% Online,Opened
+20732,PSYC 2314,Lifespan Growth and Development,T,900,1150,Bayou Building 2234,Jaxenne Daniels,Spring 2023,< 50% online,Opened
+20733,PSYC 2314,Lifespan Growth and Development,TDB,TDB,TDB,TBA,Jaxenne Daniels,Spring 2023,100% Online,Closed
+20678,PSYC 2317,Statistical Methods in Psychology,TDB,TDB,TDB,TBA,Christopher P Ward,Spring 2023,100% Online,Opened
+20408,SENG 4310,Intro to Systems Engineering,M,1900,2150,Delta Building 136,James Bruster Dabney,Spring 2023,100% F2F w/supplmtnl web,Opened
+20409,SENG 5130,Systems Engineering Processes,T,1600,1850,Delta Building 234,James C Helm,Spring 2023,100% F2F w/supplmtnl web,Opened
+20412,SENG 5233,Systems Eng Analysis & Modeling,T,1900,2150,Delta Building 234,James Bruster Dabney,Spring 2023,100% F2F w/supplmtnl web,Opened
+20413,SENG 5335,Healthcare Systems Engineering,W,1600,1850,Delta Building 202,James Bruster Dabney,Spring 2023,100% F2F w/supplmtnl web,Opened
+20414,SENG 6837,Systems Eng Capstone Project,M,1600,1850,Delta Building 150,James Bruster Dabney,Spring 2023,100% F2F w/supplmtnl web,Opened
+19909,SILC 4301,Spanish For Bilingual Teachers,T,1600,1850,Bayou Building 1217,Judith Marquez,Spring 2023,> or equal to 50% Online,Opened
+19910,SILC 4301,Spanish For Bilingual Teachers,H,1300,1550,Bayou Building 1219,Judith Marquez,Spring 2023,> or equal to 50% Online,Opened
+19911,SILC 4302,Intro Study Of Languages,M,1600,1850,Bayou Building 1228,Judith Marquez,Spring 2023,> or equal to 50% Online,Opened
+19913,SILC 4310,Foundations of Bilingual and ESL Education,M,1300,1550,Bayou Building 1218,Viola Vela,Spring 2023,> or equal to 50% Online,Opened
+19914,SILC 4311,ESL Methods,T,1600,1850,Bayou Building 1219,Betsave Gonzalez,Spring 2023,> or equal to 50% Online,Opened
+19916,SILC 4312,Content-based ESL,W,1600,1850,Bayou Building 1228,Angelica Maria Ramos Ribeiro,Spring 2023,< 50% online,Opened
+19917,SILC 4313,Language Learning,T,1300,1550,Bayou Building 1219,Laurie Weaver,Spring 2023,> or equal to 50% Online,Closed
+20179,SILC 4315,Theories Of American Pluralism,TDB,TDB,TDB,TBA,Leslie Michel Gauna,Spring 2023,100% Online,Opened
+20180,SILC 4315,Theories Of American Pluralism,T,830,1120,Bayou Building 3332,sylvia Holub,Spring 2023,> or equal to 50% Online,Closed
+20181,SILC 4315,Theories Of American Pluralism,TDB,TDB,TDB,TBA,Diana Wandix-White,Spring 2023,100% Online,Closed
+20182,SILC 4315,Theories Of American Pluralism,M,900,1150,Bayou Building 1215,Diana Wandix-White,Spring 2023,> or equal to 50% Online,Opened
+20183,SILC 4315,Theories Of American Pluralism,TDB,TDB,TDB,TBA,Debbie Richelle Nicholson,Spring 2023,100% Online,Opened
+20185,SILC 4315,Theories Of American Pluralism,W,1300,1550,Bayou Building 1213,Viola Vela,Spring 2023,> or equal to 50% Online,Closed
+19919,SILC 4316,Bilingual Curriculum In Content Areas,H,1600,1850,Bayou Building 1228,Cynthia Suarez,Spring 2023,> or equal to 50% Online,Opened
+25482,SILC 4318,Linguistic Diversity in Young Children,T,1600,1850,Bayou Building 2237,Angelica Maria Ramos Ribeiro,Spring 2023,100% F2F w/supplmtnl web,Opened
+20186,SILC 6030,Foundations of Multicultural Education,TDB,TDB,TDB,TBA,Diana Wandix-White,Spring 2023,100% Online,Opened
+21053,SILC 6031,"Social Justice Leadership, Policy and Advocacy",TDB,TDB,TDB,TBA,Lisa A Jones,Spring 2023,100% Online,Opened
+21055,SILC 6033,Reflection in Social Justice Education,TDB,TDB,TDB,TBA,Lisa A Jones,Spring 2023,100% Online,Opened
+21057,SILC 6034,Current Issues in Diverse Communities,TDB,TDB,TDB,TBA,Lisa A Jones,Spring 2023,100% Online,Opened
+20404,SOCI 1306,Social Problems,TH,1000,1120,Bayou Building 1218,Annie Swank,Spring 2023,> or equal to 50% Online,Opened
+20382,SOCI 3352,Urban Sociology,TDB,TDB,TDB,TBA,John Mike McMullen,Spring 2023,100% Online,Closed
+20368,SOCI 4312,"Social Structure: Class, Power, Status",TDB,TDB,TDB,TBA,Jennifer Arney Cuevas,Spring 2023,100% Online,Closed
+20370,SOCI 4312,"Social Structure: Class, Power, Status",TDB,TDB,TDB,TBA,Courtney Fox-Johnson,Spring 2023,100% Online,Closed
+20912,SOCI 4312,"Social Structure: Class, Power, Status",TDB,TDB,TDB,TBA,Jennifer Arney Cuevas,Spring 2023,100% Online,Closed
+20401,SOCI 4316,Women and the Law,TDB,TDB,TDB,TBA,Audrey Christine Ewer,Spring 2023,100% Online,Closed
+20373,SOCI 4322,Theories of Society,W,1600,1850,Bayou Building 1217,Stephen Michael Cherry,Spring 2023,< 50% online,Opened
+20385,SOCI 4323,Religion in Society,TDB,TDB,TDB,TBA,William S Kilgore,Spring 2023,100% Online,Closed
+20379,SOCI 4328,Social Conflict and Mediation,T,1600,1850,Bayou Building 1215,John Mike McMullen,Spring 2023,< 50% online,Opened
+20375,SOCI 4335,Social Change and Social Movements,H,1300,1550,Bayou Building 1211,Stephen Michael Cherry,Spring 2023,< 50% online,Opened
+20397,SOCI 4355,Minorities in America,TDB,TDB,TDB,TBA,William S Kilgore,Spring 2023,100% Online,Closed
+20377,SOCI 4384,Statistics,TDB,TDB,TDB,TBA,John Mike McMullen,Spring 2023,100% Online,Opened
+20380,SOCI 5433,Social Conflict and Mediation,T,1600,1850,Bayou Building 1215,John Mike McMullen,Spring 2023,< 50% online,Opened
+20376,SOCI 5732,Graduate Seminar in  Social Problems,H,1900,2150,Bayou Building 1130,Stephen Michael Cherry,Spring 2023,< 50% online,Opened
+20384,SOCI 5931,Research Topics in Sociology,W,1600,1850,Bayou Building 2237,Amy Lucas,Spring 2023,< 50% online,Opened
+20405,SOCI 6432,Qualitative Research Methods,H,1600,1850,Bayou Building 1124,Jennifer Arney Cuevas,Spring 2023,> or equal to 50% Online,Closed
+20782,SOCI 6730,Advanced Non-Experimental Research and Statistics,M,1900,2150,Bayou Building 3607,Robert A Bartsch,Spring 2023,< 50% online,Closed
+20279,SPED 2301,Introduction to Special Populations,M,1300,1550,Bayou Building 1215,Gaye Annette McDaniel,Spring 2023,100% F2F w/supplmtnl web,Opened
+20916,SPED 2301,Introduction to Special Populations,TDB,TDB,TDB,TBA,Marlene Morgan,Spring 2023,100% Online,Opened
+20917,SPED 2301,Introduction to Special Populations,TDB,TDB,TDB,TBA,Marlene Morgan,Spring 2023,100% Online,Opened
+20930,SPED 2301,Introduction to Special Populations,TDB,TDB,TDB,TBA,Elizabeth Anne Beavers,Spring 2023,100% Online,Opened
+20918,SPED 4300,Survey Of Exceptionalities,TDB,TDB,TDB,TBA,Randy Lee Seevers,Spring 2023,< 50% online,Closed
+20920,SPED 4300,Survey Of Exceptionalities,W,900,1150,Bayou Building 1439,Ismael Capelo,Spring 2023,100% F2F w/supplmtnl web,Opened
+20921,SPED 4300,Survey Of Exceptionalities,H,1900,2150,Bayou Building 2234,Lisa Nicole Lemons,Spring 2023,100% F2F w/supplmtnl web,Opened
+20922,SPED 4300,Survey Of Exceptionalities,TDB,TDB,TDB,TBA,Randy Lee Seevers,Spring 2023,100% Online,Closed
+20931,SPED 4300,Survey Of Exceptionalities,TDB,TDB,TDB,TBA,Randy Lee Seevers,Spring 2023,100% Online,Closed
+20923,SPED 4312,Diagnostic Instruction for Learners with Special Needs,T,1300,1550,Arbor 1310.05,Elizabeth Anne Beavers,Spring 2023,< 50% online,Opened
+20924,SPED 4312,Diagnostic Instruction for Learners with Special Needs,T,1900,2150,Arbor 1310.05,"Elizabeth Anne Beavers,
+Gaye Annette McDaniel",Spring 2023,100% F2F w/supplmtnl web,Opened
+20925,SPED 4321,Implementing Pos Bhvrl Support,W,1900,2150,Bayou Building 2230,Ismael Capelo,Spring 2023,100% F2F w/supplmtnl web,Opened
+20926,SPED 4332,Early Childhood Special Educ,M,1900,2150,Arbor 1310.03,Elizabeth Anne Beavers,Spring 2023,100% F2F w/supplmtnl web,Opened
+20071,STAT 3308,Computational Statistics,TH,1000,1120,Bayou Building 3400,Sadhana Weerasinghe,Spring 2023,100% F2F w/supplmtnl web,Opened
+20074,STAT 3308,Computational Statistics,MW,1300,1420,Bayou Building 2230,Sadhana Weerasinghe,Spring 2023,100% F2F w/supplmtnl web,Opened
+20076,STAT 3308,Computational Statistics,TH,1300,1420,Bayou Building 2122,Sadhana Weerasinghe,Spring 2023,Face to Face,Opened
+20077,STAT 3308,Computational Statistics,MW,1730,1850,Bayou Building 1218,Nicholas J Arend,Spring 2023,100% F2F w/supplmtnl web,Opened
+20131,STAT 3334,Prob & Stat for Scients & Engs,MW,930,1050,Bayou Building 2122,Sadhana Weerasinghe,Spring 2023,100% F2F w/supplmtnl web,Closed
+20132,STAT 3334,Prob & Stat for Scients & Engs,MW,1300,1420,Bayou Building 2122,Kalanka P Jayalath,Spring 2023,100% F2F w/supplmtnl web,Opened
+20150,STAT 4315,Applied Statistical Methods,TH,1600,1720,Bayou Building 3324,Yingfu Li,Spring 2023,100% F2F w/supplmtnl web,Opened
+20155,STAT 4344,Introduction to Probability,TH,1730,1850,Bayou Building 2122,Yingfu Li,Spring 2023,100% F2F w/supplmtnl web,Opened
+20158,STAT 5135,Applied Statistical Methods,TH,1600,1720,Bayou Building 3324,Yingfu Li,Spring 2023,100% F2F w/supplmtnl web,Opened
+20191,STAT 5538,Categorical Data Analysis,W,1900,2150,Bayou Building 3324,Yingfu Li,Spring 2023,100% F2F w/supplmtnl web,Opened
+25913,STAT 5635,Applied Time Series Analysis,M,1900,2150,Bayou Building 3324,Kalanka P Jayalath,Spring 2023,100% F2F w/supplmtnl web,Opened
+26881,STAT 6837,Stat Research & Consulting,TDB,TDB,TDB,TBA,Kalanka P Jayalath,Spring 2023,100% F2F w/supplmtnl web,Opened
+19943,SWEN 4342,Software Engineering,T,1300,1550,Delta Building 234,Soma Datta,Spring 2023,100% F2F w/supplmtnl web,Closed
+19944,SWEN 4342,Software Engineering,H,1300,1550,Delta� Building 119A,James C Helm,Spring 2023,< 50% online,Closed
+19945,SWEN 4342,Software Engineering,TDB,TDB,TDB,TBA,Daniel Wayne Drew,Spring 2023,100% Online,Closed
+26830,SWEN 4342,Software Engineering,F,1300,1550,Delta� Building 119A,James C Helm,Spring 2023,< 50% online,Closed
+19928,SWEN 4346,Software Testing,TDB,TDB,TDB,TBA,Daniel Wayne Drew,Spring 2023,100% Online,Opened
+19927,SWEN 5135,Configuration Management,W,1900,2150,Delta Building 204,Todd Wayne Dunnavant,Spring 2023,< 50% online,Closed
+19933,SWEN 5139,Data Science and R in Software Engineering,M,1300,1550,Delta Building D214,Soma Datta,Spring 2023,< 50% online,Opened
+19934,SWEN 5139,Data Science and R in Software Engineering,TDB,TDB,TDB,TBA,Soma Datta,Spring 2023,100% Online,Opened
+19926,SWEN 5233,Software Architecture,W,1900,2150,Delta Building 204,Todd Wayne Dunnavant,Spring 2023,< 50% online,Closed
+19923,SWEN 5236,Engineering Software I,M,1900,2150,Delta Building 204,Thomas J Dillon,Spring 2023,< 50% online,Opened
+19924,SWEN 5237,Engineering Software II,M,1900,2150,Delta Building 204,Thomas J Dillon,Spring 2023,< 50% online,Opened
+19930,SWEN 5239,Agile Software Development,M,1300,1550,Delta Building D214,Soma Datta,Spring 2023,< 50% online,Closed
+19931,SWEN 5239,Agile Software Development,TDB,TDB,TDB,TBA,Soma Datta,Spring 2023,100% Online,Closed
+19936,SWEN 5432,Software Engineering Life Cycle,TDB,TDB,TDB,TBA,Sharon Andrews White,Spring 2023,100% Online,Opened
+19937,SWEN 6837,Software Engineering Capstone Project,T,1300,1550,Delta Building D214,Sharon Andrews White,Spring 2023,< 50% online,Opened
+19938,SWEN 6837,Software Engineering Capstone Project,T,1600,1850,Delta Building D214,Sharon Andrews White,Spring 2023,> or equal to 50% Online,Opened
+20841,SWRK 2361,Introduction to Social Work,M,1300,1550,Bayou Building 1213,Maria Isabel Wilson,Spring 2023,< 50% online,Opened
+20843,SWRK 3304,Issues and Ethics in Social Work,M,1600,1850,Bayou Building 1302,Laura Willa Kanter,Spring 2023,< 50% online,Opened
+20851,SWRK 3314,Diversity and Human Behavior in the Social Environment,H,1300,1550,Bayou Building 1215,Maria Isabel Wilson,Spring 2023,< 50% online,Opened
+20849,SWRK 3317,Social Welfare and Policy Services,T,1900,2150,Bayou Building 2237,Heather Kanenberg,Spring 2023,< 50% online,Opened
+20850,SWRK 3317,Social Welfare and Policy Services,H,830,1120,Bayou Building 1215,Laura Willa Kanter,Spring 2023,< 50% online,Opened
+20852,SWRK 3324,"Oppression, Diversity, and Social Justice",H,1600,1850,Bayou Building 1219,Laura Willa Kanter,Spring 2023,< 50% online,Opened
+20845,SWRK 4328,Social Work Practice II,T,1300,1550,Bayou Building 1215,Maria Isabel Wilson,Spring 2023,< 50% online,Opened
+20846,SWRK 4338,Social Work Practice III,T,1600,1850,Bayou Building 3615,Laura Willa Kanter,Spring 2023,< 50% online,Opened
+20715,SWRK 4363,Experimental Methods and Statistics,H,1600,1850,Student Services Bld 220112,Georgina L Moreno,Spring 2023,< 50% online,Opened
+20716,SWRK 4363,Experimental Methods and Statistics,M,900,1150,Bayou Building 3607,Jaxenne Daniels,Spring 2023,< 50% online,Opened
+20717,SWRK 4363,Experimental Methods and Statistics,TDB,TDB,TDB,TBA,Jaxenne Daniels,Spring 2023,100% Online,Closed
+20718,SWRK 4363,Experimental Methods and Statistics,H,1300,1550,Bayou Building 3607,Amanda M Johnston,Spring 2023,< 50% online,Opened
+20685,SWRK 4370,Nonexperimental Methods and Statistics,TDB,TDB,TDB,TBA,Christine Walther,Spring 2023,100% Online,Closed
+20696,SWRK 4370,Nonexperimental Methods and Statistics,W,1600,1850,Student Services Bld 220112,Steven Travis,Spring 2023,< 50% online,Closed
+20697,SWRK 4370,Nonexperimental Methods and Statistics,T,1600,1850,Student Services Bld 220112,Nicholas J Shaman,Spring 2023,< 50% online,Opened
+20698,SWRK 4370,Nonexperimental Methods and Statistics,T,1900,2150,Bayou Building 1311,cristina maria cabanas garcia,Spring 2023,< 50% online,Opened
+20838,SWRK 4629,Social Work Internship II,M,900,1150,Bayou Building 1124,Roberta M Leal,Spring 2023,< 50% online,Closed
+20839,SWRK 4629,Social Work Internship II,M,1600,1850,Bayou Building 1219,Roberta M Leal,Spring 2023,< 50% online,Opened
+20932,TCED 1101,Inquiry Approaches to Teaching Mathematics and Science Step I,M,1600,1720,Arbor South 1500.01,Takisha Monique Bolden-Gastile,Spring 2023,< 50% online,Opened
+25314,TCED 1102,Inquiry Based Lesson Design in Mathematics and Science Step II,M,1730,1850,Arbor South 1500.01,Takisha Monique Bolden-Gastile,Spring 2023,< 50% online,Opened
+20934,TCED 1301,Exploring Teaching as a Profession,TH,1000,1120,Bayou Building 1219,Kent A Divoll,Spring 2023,100% F2F w/supplmtnl web,Opened
+20935,TCED 1301,Exploring Teaching as a Profession,T,1600,1850,Bayou Building 1333,Vicki Hileman Gaido,Spring 2023,100% F2F w/supplmtnl web,Opened
+20936,TCED 2301,Knowing and Learning,W,1300,1550,Bayou Building 1133,Paul A Wagner,Spring 2023,> or equal to 50% Online,Opened
+25236,TCED 3300,Perspectives on Science and Math,M,1300,1550,Arbor South 1500.01,Takisha Monique Bolden-Gastile,Spring 2023,> or equal to 50% Online,Opened
+20939,TCED 4100,Core Subjects Teacher Seminar,M,1300,1550,Bayou Building 1133,Christine Frances Callahan,Spring 2023,> or equal to 50% Online,Opened
+20940,TCED 4100,Core Subjects Teacher Seminar,T,1300,1550,Bayou Building 1133,Christine Frances Callahan,Spring 2023,> or equal to 50% Online,Opened
+20942,TCED 4100,Core Subjects Teacher Seminar,T,1600,1850,Bayou Building 1133,Christine Frances Callahan,Spring 2023,> or equal to 50% Online,Opened
+20943,TCED 4100,Core Subjects Teacher Seminar,M,900,1150,Bayou Building 1439,Rita Louise Goudeau,Spring 2023,> or equal to 50% Online,Opened
+20949,TCED 4100,Core Subjects Teacher Seminar,F,900,1150,Bayou Building 1104,Rita Louise Goudeau,Spring 2023,> or equal to 50% Online,Opened
+20950,TCED 4100,Core Subjects Teacher Seminar,H,1900,2150,Bayou Building 1228,Deani G. Quick,Spring 2023,> or equal to 50% Online,Closed
+20951,TCED 4102,Secondary (4-8 & 7-12) Content Teacher Seminar,M,1600,1850,Bayou Building 1133,Christine Frances Callahan,Spring 2023,> or equal to 50% Online,Opened
+20952,TCED 4102,Secondary (4-8 & 7-12) Content Teacher Seminar,T,1900,2150,Bayou Building 1133,Christine Frances Callahan,Spring 2023,> or equal to 50% Online,Opened
+20937,TCED 4300,Project Based Instruction,W,1600,1850,Arbor South 1500.01,Stephen Michael Gruber,Spring 2023,< 50% online,Opened
+20953,TCED 4303,Creating Positive Learning Environments in EC-6,M,900,1150,Bayou Building 1228,Joan Mauldin,Spring 2023,< 50% online,Opened
+20954,TCED 4303,Creating Positive Learning Environments in EC-6,M,1900,2150,Bayou Building 2235,Terri Jo Burchfield,Spring 2023,> or equal to 50% Online,Closed
+20955,TCED 4303,Creating Positive Learning Environments in EC-6,H,1300,1550,Bayou Building 1228,Kent A Divoll,Spring 2023,100% F2F w/supplmtnl web,Opened
+20956,TCED 4303,Creating Positive Learning Environments in EC-6,T,1900,2150,SSCB 3310,Ann B. Stiles,Spring 2023,< 50% online,Opened
+20957,TCED 4303,Creating Positive Learning Environments in EC-6,T,1300,1550,Bayou Building 1335,Ann B. Stiles,Spring 2023,< 50% online,Opened
+20959,TCED 4304,Creating Positive Learning Environments in 4-8,W,1600,1850,Bayou Building 2230,Kent A Divoll,Spring 2023,100% F2F w/supplmtnl web,Closed
+20961,TCED 4306,Creating Positive Learning Environments in 8-12,W,1600,1850,Bayou Building 2230,Kent A Divoll,Spring 2023,100% F2F w/supplmtnl web,Closed
+20963,TCED 4321,Social Studies Methods for EC-6,M,900,1150,Arbor 1310.07,Debby Shulsky,Spring 2023,< 50% online,Opened
+20965,TCED 4321,Social Studies Methods for EC-6,M,1600,1850,Arbor 1310.07,Debby Shulsky,Spring 2023,< 50% online,Opened
+20967,TCED 4321,Social Studies Methods for EC-6,M,1900,2150,Arbor 1310.07,Monique Renee Johnson,Spring 2023,< 50% online,Closed
+20968,TCED 4321,Social Studies Methods for EC-6,T,1900,2150,Arbor 1310.07,Debby Shulsky,Spring 2023,< 50% online,Opened
+20973,TCED 4322,Science Methods for EC-6,T,900,1150,Arbor South 1500.01,Omah M. Williams-Duncan,Spring 2023,< 50% online,Opened
+20976,TCED 4322,Science Methods for EC-6,H,1300,1550,Arbor South 1500.01,Carol Curtis Waters,Spring 2023,< 50% online,Opened
+25647,TCED 4322,Science Methods for EC-6,H,1900,2150,Arbor South 1500.01,Gelyn Matugas Roble,Spring 2023,< 50% online,Opened
+20980,TCED 4323,Mathematics Methods for EC-6,M,900,1150,Arbor 1310.06,Linda Summers Sansing,Spring 2023,< 50% online,Opened
+20981,TCED 4323,Mathematics Methods for EC-6,M,1300,1550,Arbor 1310.06,Linda Summers Sansing,Spring 2023,< 50% online,Opened
+20982,TCED 4323,Mathematics Methods for EC-6,M,1900,2150,Arbor 1310.06,Susan Lynn Chapman,Spring 2023,> or equal to 50% Online,Opened
+20985,TCED 4323,Mathematics Methods for EC-6,H,1900,2150,Arbor 1310.06,Susan Lynn Chapman,Spring 2023,> or equal to 50% Online,Closed
+20979,TCED 4332,Science Methods for Grades 4-8,W,1900,2150,Arbor South 1500.01,Selene Verhofstad,Spring 2023,< 50% online,Opened
+20986,TCED 4362,Methods In Secondary Science,W,1900,2150,Arbor South 1500.01,Selene Verhofstad,Spring 2023,< 50% online,Opened
+20987,TCED 5030,Models of Teaching,H,1600,1850,Arbor South 1500.01,Carol Curtis Waters,Spring 2023,< 50% online,Opened
+20988,TCED 5034,Mgmt Strt for Crtg a Pos Learn,W,1600,1850,Bayou Building 2230,Kent A Divoll,Spring 2023,< 50% online,Opened
+20989,TCED 5038,Prof Dev for Enhancg Tchr Lead,M,1600,1850,Bayou Building 1135,Tina L Farrell,Spring 2023,> or equal to 50% Online,Opened
+20990,TCED 5134,Introduction to Models of Teaching,H,1600,1850,Arbor South 1500.01,Carol Curtis Waters,Spring 2023,< 50% online,Opened
+20994,TCED 5330,Fostering Critical Inquiry: Introduction to Action Research,T,1600,1850,Bayou Building 1130,Omah M. Williams-Duncan,Spring 2023,< 50% online,Opened
+21160,WGST 1301,Gender Matters: Introduction to Women's and Gender Studies,M,900,1150,Bayou Building 1213,Angela Swilley Kelling,Spring 2023,100% F2F w/supplmtnl web,Opened
+20270,WGST 4308,Perspectives in Women's and Gender Studies,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Closed
+20271,WGST 4308,Perspectives in Women's and Gender Studies,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Closed
+20312,WGST 4312,Women of Color,TDB,TDB,TDB,TBA,Maria F Curtis,Spring 2023,100% Online,Closed
+20740,WGST 4348,Development of Gender and Racial Identity,T,1300,1550,Bayou Building 1211,Beth A Hentges,Spring 2023,< 50% online,Opened
+21136,WGST 4360,Women in Literature,TH,1300,1420,Student Services Bld 3311,Elizabeth Klett,Spring 2023,100% F2F w/supplmtnl web,Opened
+20302,WGST 4391,Selected Topics in Women's and Gender Studies,TDB,TDB,TDB,TBA,Deepa S Reddy,Spring 2023,100% Online,Closed
+20775,WGST 5438,Development of Gender and Racial Identity,T,1300,1550,Bayou Building 1124,Beth A Hentges,Spring 2023,< 50% online,Opened
+20665,WGST 5931,Research Topics in Women's and Gender Studies,W,1900,2150,Bayou Building 1124,Pearl Joy Young,Spring 2023,100% F2F w/supplmtnl web,Opened
+21135,WGST 5931,Research Topics in Women's and Gender Studies,W,1900,2150,Student Services Bld 2308,Elizabeth Klett,Spring 2023,100% F2F w/supplmtnl web,Opened
+20189,WRIT 1301,Composition I,MWF,900,950,Bayou Building 1302,Rae E Longest,Spring 2023,< 50% online,Opened
+20190,WRIT 1301,Composition I,MWF,1000,1050,Bayou Building 1302,Rae E Longest,Spring 2023,< 50% online,Closed
+20193,WRIT 1302,Composition II,MW,1430,1550,Student Services Bld 2304,Sharon Worley,Spring 2023,< 50% online,Opened
+20194,WRIT 1302,Composition II,MW,1600,1720,Student Services Bld 2304,Sharon Worley,Spring 2023,< 50% online,Opened
+20195,WRIT 1302,Composition II,TDB,TDB,TDB,TBA,Zachary Ryan Vandezande,Spring 2023,100% Online,Closed
+20196,WRIT 1302,Composition II,TDB,TDB,TDB,TBA,Zachary Ryan Vandezande,Spring 2023,100% Online,Opened
+20197,WRIT 1302,Composition II,TH,1300,1420,Bayou Building 1333,Alana Dyan Hatley,Spring 2023,> or equal to 50% Online,Opened
+20198,WRIT 1302,Composition II,TH,1430,1550,Bayou Building 1333,Alana Dyan Hatley,Spring 2023,> or equal to 50% Online,Opened
+20199,WRIT 1302,Composition II,T,1300,1550,Student Services Bld 2304,Lorie Louise Jacobs,Spring 2023,> or equal to 50% Online,Opened
+20200,WRIT 1302,Composition II,TDB,TDB,TDB,TBA,Lorie Louise Jacobs,Spring 2023,100% Online,Closed
+20201,WRIT 1302,Composition II,TH,1000,1120,SSCB� 2302,Christal Rene Seahorn,Spring 2023,< 50% online,Closed
+20202,WRIT 1302,Composition II,TH,1130,1250,SSCB� 2302,Christal Rene Seahorn,Spring 2023,< 50% online,Opened
+20204,WRIT 2311,Intro to Professional Writing,TH,1130,1250,Student Services Bld 2304,Dragana Djordjevic,Spring 2023,< 50% online,Opened
+20205,WRIT 3304,Writing for Education,T,830,1120,Student Services Bld 2305,Jan Lynn Bethany,Spring 2023,< 50% online,Opened
+20206,WRIT 3304,Writing for Education,T,1300,1550,Student Services Bld 2305,Jan Lynn Bethany,Spring 2023,< 50% online,Closed
+24672,WRIT 3304,Writing for Education,TDB,TDB,TDB,TBA,Lorie Louise Jacobs,Spring 2023,100% Online,Closed
+20207,WRIT 3305,Writing for Humanities,TH,1300,1420,Student Services Bld 2306,Chloe M Diepenbrock,Spring 2023,> or equal to 50% Online,Opened
+20208,WRIT 3305,Writing for Humanities,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Opened
+20209,WRIT 3305,Writing for Humanities,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Opened
+20210,WRIT 3305,Writing for Humanities,TDB,TDB,TDB,TBA,Michael S Carson,Spring 2023,100% Online,Opened
+20211,WRIT 3306,Writing for Social Sciences,TH,1300,1420,SSCB 2303,Hunter W Stephenson,Spring 2023,100% F2F w/supplmtnl web,Opened
+20212,WRIT 3306,Writing for Social Sciences,TH,1000,1120,SSCB 2303,Hunter W Stephenson,Spring 2023,100% F2F w/supplmtnl web,Opened
+20213,WRIT 3306,Writing for Social Sciences,TH,1130,1250,SSCB 2303,Hunter W Stephenson,Spring 2023,100% F2F w/supplmtnl web,Opened
+20223,WRIT 3307,Advanced Writing,TDB,TDB,TDB,TBA,Philip R Jones,Spring 2023,100% Online,Closed
+20224,WRIT 3307,Advanced Writing,TDB,TDB,TDB,TBA,Sylvia Mary Neely,Spring 2023,100% Online,Closed
+20225,WRIT 3307,Advanced Writing,TDB,TDB,TDB,TBA,Sylvia Mary Neely,Spring 2023,100% Online,Closed
+20226,WRIT 3307,Advanced Writing,W,1900,2150,SSCB� 2302,Jeffrey Scott Clayton,Spring 2023,100% F2F w/supplmtnl web,Opened
+20227,WRIT 3307,Advanced Writing,TDB,TDB,TDB,TBA,Kathryn M Peterson,Spring 2023,100% Online,Opened
+20228,WRIT 3307,Advanced Writing,H,1300,1550,SSCB� 2302,Kathryn M Peterson,Spring 2023,> or equal to 50% Online,Closed
+20229,WRIT 3307,Advanced Writing,W,1600,1850,Bayou Building 2104,Christina Cedillo,Spring 2023,> or equal to 50% Online,Closed
+20230,WRIT 3307,Advanced Writing,H,1600,1850,Bayou Building 2104,Christina Cedillo,Spring 2023,> or equal to 50% Online,Closed
+20236,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Susan E McCauley,Spring 2023,100% Online,Opened
+20237,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Susan E McCauley,Spring 2023,100% Online,Opened
+20238,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Donnetta H Suchon,Spring 2023,100% Online,Opened
+20239,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Donnetta H Suchon,Spring 2023,100% Online,Closed
+20241,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Jan Lynn Bethany,Spring 2023,100% Online,Opened
+20242,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Leticia French,Spring 2023,100% Online,Closed
+20243,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Closed
+20244,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Opened
+20245,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Leticia French,Spring 2023,100% Online,Opened
+20246,WRIT 3312,Written Communications in Business,TDB,TDB,TDB,TBA,Leticia French,Spring 2023,100% Online,Closed
+20250,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Lisa Ann Frase,Spring 2023,100% Online,Opened
+20251,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Lisa Ann Frase,Spring 2023,100% Online,Opened
+20252,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Amy Leigh Sasser,Spring 2023,100% Online,Opened
+20254,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Christina Cedillo,Spring 2023,100% Online,Opened
+20255,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Kelley Frierson,Spring 2023,100% Online,Opened
+20256,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Kelley Frierson,Spring 2023,100% Online,Opened
+20259,WRIT 3315,Advanced Technical Writing,TH,1000,1120,Bayou Building 2104,Alana Dyan Hatley,Spring 2023,> or equal to 50% Online,Opened
+20260,WRIT 3315,Advanced Technical Writing,TH,1130,1250,Bayou Building 2104,Alana Dyan Hatley,Spring 2023,> or equal to 50% Online,Closed
+23495,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Dragana Djordjevic,Spring 2023,100% Online,Opened
+25602,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Dragana Djordjevic,Spring 2023,100% Online,Opened
+25605,WRIT 3315,Advanced Technical Writing,T,1900,2150,Student Services Bld 2305,Amy Leigh Sasser,Spring 2023,> or equal to 50% Online,Opened
+26778,WRIT 3315,Advanced Technical Writing,TDB,TDB,TDB,TBA,Dragana Djordjevic,Spring 2023,100% Online,Opened
+20261,WRIT 4310,Writing for the Public: Developing Non-Profit Communication Strategies,TDB,TDB,TDB,TBA,Leticia French,Spring 2023,100% Online,Opened
+20265,WRIT 4312,The Rhetoric of Popular Culture,TH,1300,1420,Student Services Bld 2306,Chloe M Diepenbrock,Spring 2023,> or equal to 50% Online,Opened
+20266,WRIT 4312,The Rhetoric of Popular Culture,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Opened
+20267,WRIT 4312,The Rhetoric of Popular Culture,TDB,TDB,TDB,TBA,Mary L Hedengren,Spring 2023,100% Online,Closed

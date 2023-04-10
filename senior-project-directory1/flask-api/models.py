@@ -3,6 +3,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Identity
 from sqlalchemy.orm import DeclarativeBase, relationship
 from werkzeug.security import generate_password_hash, check_password_hash
 
+
 #instantiate database
 db = SQLAlchemy()
 
@@ -12,7 +13,7 @@ class Student(db.Model):
     stuid = db.Column(db.Integer,primary_key = True)
     email = db.Column(db.String(200), unique = True, nullable = False)
     password_hash = db.Column(db.String(200), nullable = False)
-    major = db.Column(db.Integer,db.ForeignKey('degree_plan.dp_id'), nullable = True)
+    major = db.Column(db.Integer,db.ForeignKey('degree_plan.dp_id'), nullable = False)
     gpa = db.Column(db.Float, nullable = True)
     #relationship between degree plan and student tables
     plans = relationship("Degree_Plan", backref = 'student', foreign_keys=[major])
@@ -35,11 +36,16 @@ class Course_Offering(db.Model):
     __tablename__ = 'course_offering'
     crn = db.Column(db.Integer, primary_key = True)
     course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
-    time = db.Column(db.Time, nullable = False)
+    course_code = db.Column(db.String(50), nullable = False)
+    name = db.Column(db.String(100), nullable = False)
     days = db.Column(db.String(5), nullable = False)
-    prof = db.Column(db.String(50), nullable = False)
-    semester = db.Column(db.String(50), nullable = False)
+    start_time = db.Column(db.String(50), nullable = False)
+    end_time = db.Column(db.String(50), nullable = False)
     room_num = db.Column(db.String (50), nullable = False)
+    instructor = db.Column(db.String(50), nullable = False)
+    semester = db.Column(db.String(50), nullable = False)
+    mode = db.Column(db.String(50), nullable = False)
+    status = db.Column(db.String(50), nullable = False)
     course = relationship("Course", backref = 'course_offering', foreign_keys = [course_id] ) 
 
 #model of the course_history table
@@ -59,6 +65,7 @@ class Courses_Needed(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     course_id = db.Column(db.Integer,db.ForeignKey('course.course_id'), nullable = False)
     dp_id = db.Column(db.Integer,db.ForeignKey('degree_plan.dp_id'), nullable = False)
+    hours = db.Column(db.Integer, nullable = False)
     type = db.Column(db.String(10), nullable = False)
     #need two relationships because the foreign keys come from different tables. it can only belong to the same relationship if the key is coming from the same table
     course = relationship("Course", backref = 'courses_needed', foreign_keys = [course_id])
@@ -71,7 +78,8 @@ class Conflict(db.Model):
     cid = db.Column(db.Integer, primary_key = True)
     stuid = db.Column(db.Integer,db.ForeignKey('student.stuid'), nullable = False)
     name = db.Column(db.String(50), nullable = False)
-    time = db.Column(db.Time, nullable = False)
+    start_time = db.Column(db.String(50), nullable = False)
+    end_time = db.Column(db.String(50), nullable = False)
     day = db.Column(db.String(10), nullable = False)
     conflict = relationship("Student", backref = 'conflict', foreign_keys = [stuid])
 
@@ -90,7 +98,7 @@ class Course(db.Model):
     __tablename__ = 'course'
     course_id = db.Column(db.Integer, primary_key = True)
     number = db.Column(db.String(50), nullable = False)
-    name = db.Column(db.String(50), nullable =False)
+    name = db.Column(db.String(100), nullable =False)
 
 #model of the prereqs table
 # class Prereqs(db.Model):
