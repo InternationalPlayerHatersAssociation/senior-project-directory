@@ -133,7 +133,7 @@ function Form() {
               <h4>Step 3</h4><br></br>
         <p>Add your schedule conflicts</p>
         </div>
-          <label htmlFor="conflicts">Schedule Conflicts:</label>
+          <h5 htmlFor="conflicts">Schedule Conflicts:</h5>
           <div className="conflict-inputs">
             <select value={day} onChange={(event) => setDay(event.target.value)}>
               <option value="">Select day</option>
