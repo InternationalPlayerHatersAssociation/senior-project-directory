@@ -5,18 +5,7 @@ import {useState, useEffect} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 import { login } from "../../auth";
-import { Container, Button } from "../../globalStyles";
-import {
-    InfoSec,
-    InfoRow,
-    InfoColumn,
-    TextWrapper,
-    TopLine,
-    Heading,
-    Subtitle,
-    ImgWrapper,
-    Img
-    } from '../InfoSection.elements';
+
 
 import "../Form/Form.css"
 

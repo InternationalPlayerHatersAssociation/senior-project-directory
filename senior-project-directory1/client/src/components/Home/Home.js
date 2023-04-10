@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../auth";
-import {homeObjOne} from './Home.Data';
+import {homeObjOne, homeObjTwo} from './Home.Data';
 import InfoSection from '../InfoSection';
 import {InfoRow} from '../InfoSection.elements';
 import Calendar from "../Calendar/Calendar";
@@ -19,7 +19,10 @@ const LoggedInHome=()=>{
 }
 const LoggedOutHome=()=>{
     return(
+        <>
         <InfoSection {...homeObjOne} />
+
+        </>
     )
 }
 

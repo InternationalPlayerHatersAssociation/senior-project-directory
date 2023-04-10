@@ -1,79 +1,120 @@
-import React, { useState, useEffect } from "react";
-import { useAuth } from "../../auth";
-import "./Form.css"
-import {useForm} from 'react-hook-form';
-import DatePicker from "react-multi-date-picker";
-import {Link, useNavigate} from 'react-router-dom';
+import React, { useState } from 'react';
+import './FormOther.css';
 
+function Form() {
+  const [completedClasses, setCompletedClasses] = useState([]);
+  const [plannedClasses, setPlannedClasses] = useState([]);
+  const [conflicts, setConflicts] = useState([]);
+  const [day, setDay] = useState('');
+  const [startTime, setStartTime] = useState('');
+  const [endTime, setEndTime] = useState('');
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Completed classes:', completedClasses);
+    console.log('Planned classes:', plannedClasses);
+    console.log('Conflicts:', conflicts);
+    console.log('Day:', day);
+    console.log('Start time:', startTime);
+    console.log('End time:', endTime);
+  };
 
-const LoggedInForm=()=>{
-    const [value, setValue] = useState(new Date())
-    const {handleSubmit, formState: {errors}} = useForm()
+  const handleAddCompletedClass = (event) => {
+    event.preventDefault();
+    const input = event.target.previousElementSibling;
+    const classInput = input.value.trim();
+    if (classInput) {
+      setCompletedClasses([...completedClasses, classInput]);
+      input.value = '';
+    }
+  };
 
-    return(
-        <div >
+  const handleAddPlannedClass = (event) => {
+    event.preventDefault();
+    const input = event.target.previousElementSibling;
+    const classInput = input.value.trim();
+    if (classInput) {
+      setPlannedClasses([...plannedClasses, classInput]);
+      input.value = '';
+    }
+  };
 
-        <div className="form"></div>
-        <div className="formContainer">
+  const handleAddConflict = (event) => {
+    event.preventDefault();
+    const conflictInput = `${day}, ${startTime} - ${endTime}`;
+    if (day && startTime && endTime) {
+      setConflicts([...conflicts, conflictInput]);
+      setDay('');
+      setStartTime('');
+      setEndTime('');
+    }
+  };
 
-        <form1>
-        <h2>Student Info </h2><br></br>
-            <div>
-                    <label htmlFor="ClassesTaken">Classes Taken:    </label>
-                    <input placeholder="Placeholder for a list"/>
-
-
-                    
-                    <label htmlFor="ClassesNeeded">Classes Needed:   </label>
-                    <input placeholder="Placeholder for a list"/>
-
-                    <label htmlFor="Conflicts">Schedule Conflicts:   
-                    <br></br><DatePicker 
-                    value={value}
-                    onChange={setValue}/> 
-      
-       </label>
-
-                </div>
-                <input type ="submit1" value={"Submit"} onClick={handleSubmit()} />
-                <br></br>
-            </form1>
-            </div>
-    </div>
-
-    )
+  return (
+    <div className="form-container">
+      <div className="form-header">
+        <h1>Student Information</h1>
+        <p>Enter your courses and planned courses, and any schedule conflicts.</p>
+      </div>
+      <div className="form-steps">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="completed-classes">Completed Classes:</label>
+          <div className="class-inputs">
+            <input type="text" id="completed-classes" placeholder="e.g. CS101" />
+            <button onClick={handleAddCompletedClass}>Add</button>
+          </div>
+          <ul className="class-list">
+            {completedClasses.map((classInput, index) => (
+              <li key={index}>{classInput}</li>
+            ))}
+          </ul>
+          <label htmlFor="planned-classes">Planned Classes:</label>
+          <div className="class-inputs">
+            <input type="text" id="planned-classes" placeholder="e.g. MATH201" />
+            <button onClick={handleAddPlannedClass}>Add</button>
+          </div>
+          <ul className="class-list">
+            {plannedClasses.map((classInput, index) => (
+              <li key={index}>{classInput}</li>
+            ))}
+          </ul>
+          <label htmlFor="conflicts">Schedule Conflicts:</label>
+          <div className="conflict-inputs">
+            <select value={day} onChange={(event) => setDay(event.target.value)}>
+              <option value="">Select day</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+        <input
+          type="time"
+          value={startTime}
+          onChange={(event) => setStartTime(event.target.value)}
+        />
+        <span>-</span>
+        <input
+          type="time"
+          value={endTime}
+          onChange={(event) => setEndTime(event.target.value)}
+        />
+        <button onClick={handleAddConflict}>Add</button>
+      </div>
+      <ul className="conflict-list">
+        {conflicts.map((conflictInput, index) => (
+          <li key={index}>{conflictInput}</li>
+        ))}
+      </ul>
+      <button type="submit" className="submit-button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+);
 }
-const LoggedOutForm=()=>{
-    return(
-        <div >
-        <div className="form"></div>
-        <div className="formContainer">
-        <br></br>
-        <br></br>
-        <form1>
-        <h2>Please <Link to="/login">login</Link> to view your form <br></br>
-            
-        <br></br> <small><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></small>
-        <br></br>
-        <br></br>
-        <br></br> </h2>
-               
-            </form1>
-            </div>
-    </div>
-    )
-}
-
-
-const Form=()=>{
-    const [logged] = useAuth()
-    return(
-        <>
-        {logged? <LoggedInForm/> : <LoggedOutForm/>}
-        </>
-    )
-}
-
 
 export default Form;
