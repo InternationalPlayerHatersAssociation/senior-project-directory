@@ -49,7 +49,25 @@
     justify-content: center;
     margin-bottom: 10px;
   }
+
+
+  .major-select {
+    display: flex;
+
+    margin-bottom: 10px;
+  }
   
+  .major-select input,
+  .major-select select{
+    width: 550px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+
+  }
+
   .class-inputs input,
   .conflict-inputs input,
   .conflict-inputs select {

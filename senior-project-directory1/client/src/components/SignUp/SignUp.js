@@ -142,6 +142,7 @@ const SignUp = ({
         </Form.Group>
         <label htmlFor="choose">Academic Major</label> 
         <Form.Group>
+        <div className="major-select">
           <Form.Select 
             aria-label="Choose Major"
             defaultValue=""
@@ -156,6 +157,7 @@ const SignUp = ({
               </option>
             ))}
           </Form.Select>
+          </div>
         </Form.Group>
         <Form.Group>
         <input type ="submit1" value={"Sign Up"} onClick={handleSubmit(submitForm)} />
