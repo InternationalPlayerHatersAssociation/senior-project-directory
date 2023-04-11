@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link} from 'react-router-dom';
-import { Container, Button, Container2} from '../globalStyles';
+import { Container, Button} from '../globalStyles';
 import {
 InfoSec,
 InfoRow,
@@ -27,7 +27,6 @@ const InfoSection = ({
    img,
    alt,
    start}) => {
-  const [myEvents, setmyEvents] = useState([]);
   return (
     <>
     
