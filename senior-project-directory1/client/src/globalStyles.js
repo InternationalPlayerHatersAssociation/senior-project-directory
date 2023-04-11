@@ -82,4 +82,3 @@ cursor: pointer;
 
 
 export default GlobalStyle;
-export default GlobalStyle;
