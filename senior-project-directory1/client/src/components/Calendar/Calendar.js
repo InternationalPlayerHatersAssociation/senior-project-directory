@@ -39,7 +39,10 @@ const CalendarRender = ({primary,
                          events={myEvents}
                          startAccessor="start"
                          endAccessor="end"
-                         defaultView='month'
+                         defaultView='week'
+                         toolbar ={false}
+                         step = {60}
+                         min = {new Date(2023, 3, 13, 6, 0)}
                           style={{height:550,
                            width:600,
                          
