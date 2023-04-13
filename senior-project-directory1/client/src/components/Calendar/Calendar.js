@@ -43,6 +43,9 @@ const CalendarRender = ({primary,
                          toolbar ={false}
                          step = {60}
                          min = {new Date(2023, 3, 13, 6, 0)}
+                         formats={{
+                          dayFormat: (date, culture, localizer) => localizer.format(date, 'ddd') // hide the date
+                        }}
                           style={{height:550,
                            width:600,
                          
