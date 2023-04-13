@@ -57,12 +57,14 @@ const Login=({
                             {...register('password', {required:true})}/>
                             {errors.email && <p style = {{color:'red'}}><small>Password is required</small></p>}
                         <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)} />
-                        <br></br>
-                        <h2><small><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></small></h2>
+
+                        <h3><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></h3>
 
                     </div>
                 </form1>
+                <br></br>
                 </div>
+                <br></br>
 
         </div>
 

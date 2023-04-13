@@ -87,15 +87,18 @@ function Form() {
 
   const renderStepOne = () => {//done
   return (
-    <div>
-    <div className="form-container">
-      <div className="form-header">
-        <h4>Step 1</h4>
-        <p>Add your completed courses</p>
-      </div>
+    <>
+        <div className="formContainer">
+          
+          <div className="form-header">
+          <form1>
+        <h2>Step 1</h2>
+        </form1>
+            <p>Add your completed courses</p>
+            </div>
       <div className="form-steps">
         <form onSubmit={handleSubmit}>
-          <h5 htmlFor="completed-classes">Courses Complete:</h5>
+          
           <div className="class-inputs">
             <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" />
             <button onClick={handleAddCompletedClass}>Add</button>
@@ -112,13 +115,16 @@ function Form() {
             
           </ul>
           {/*added*/ }
+          <div className='div420'>
           <button type="submit" className="submit-button" onClick={handleNext}>
         Next
       </button>
+      </div>
       </form>
       </div>
+      <br></br><br></br>
       </div>
-      </div>
+      </>
     );
   }
 
@@ -127,12 +133,16 @@ function Form() {
     const renderStepTwo = () => {
     return (
     <>           {/*added*/ }
-        <div className="form-container">
+        <div className="formContainer">
+          
       <div className="form-header">
-            <h4>Step 2</h4>
+      <form1>
+    <h2>Step 2</h2>
+    </form1>
         <p>Add your needed courses</p>
-        </div><br></br>
-          <h5 htmlFor="planned-classes">Courses Needed:</h5>
+        </div>
+        <div className="form-steps">
+          
           <div className="class-inputs">
             <input type="text" id="planned-classes" placeholder="e.g. Senior Project" />
             <button onClick={handleAddPlannedClass}>Add</button>
@@ -156,6 +166,8 @@ function Form() {
       </button>
       </div>
       </div>
+      <br></br><br></br>
+      </div>
       </>
     );
   }; 
@@ -164,12 +176,18 @@ function Form() {
     const renderStepThree = () => {
     return (
     <> 
-            <div className="form-container">
-      <div className="form-header"></div>
-              <h4>Step 3</h4><br></br>
+
+
+              
+            <div className="formContainer">
+      <div className="form-header">
+        <form1>
+              <h2>Step 3</h2>
+              </form1>
         <p>Add your schedule conflicts</p>
         </div>
-          <h5 htmlFor="conflicts">Schedule Conflicts:</h5>
+        <div className="form-steps">
+          
           <div className="conflict-inputs">
             <select value={day} onChange={(event) => setDay(event.target.value)}>
               <option value="">Select day</option>
@@ -210,6 +228,9 @@ function Form() {
         Next
       </button>
       </div>
+      </div>
+      <br></br><br></br>
+      </div>
 
 
       </>
@@ -219,13 +240,19 @@ function Form() {
 const renderStepFour = () => {
 return (
 <>
-<br></br>
-<h4>Step 4</h4><br></br>
-        <p>Review</p><br></br>
+         
+<div className="formContainer">
+      <div className="form-header">
+        <form1>
+              <h2>Step 4</h2>
+              </form1>
+        <p>Review</p>
+        </div>
+        <div className="form-steps">
   <div className="review-container">
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Completed Classes:</h4>
+        <div className='h9'>Completed Courses:</div>
         <ul>
           {completedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
@@ -235,7 +262,7 @@ return (
     </div>
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Planned Classes:</h4>
+      <div className='h9'>Needed Courses:</div>
         <ul>
           {plannedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
@@ -245,7 +272,7 @@ return (
     </div>
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Schedule Conflicts:</h4>
+      <div className='h9'>Schedule Conflicts:</div>
         <ul>
           {conflicts.map((conflict, index) => (
             <li key={index}>{conflict}</li>
@@ -261,14 +288,20 @@ return (
     <button type="submit" className="submit-button">
       Submit
     </button>
+    <div><br></br><br></br></div>
+  </div>
+  </div>
   </div>
 </>
 );
 };
 
  return (
-   <div className="form-container">
-   <h6>Course Planner</h6>
+  <div>
+    <div className='formContainer'>
+  <h3> <img src='../../img/creepy-cat.png' alt='success-image' width='175px' /></h3>
+    
+
    <form onSubmit={handleSubmit}>
    {step === 1 && renderStepOne()}
    {step === 2 && renderStepTwo()}
@@ -276,6 +309,8 @@ return (
    {step === 4 && renderStepFour()}
    </form>
    </div>
+   </div>
+
    );
 }
   

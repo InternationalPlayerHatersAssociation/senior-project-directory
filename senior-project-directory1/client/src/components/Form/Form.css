@@ -31,14 +31,17 @@
     font-weight: 100;
     text-align: center;
     padding-bottom: 10px;
-    font-size: x-large;
+    font-size: medium;
+    color: white;
   }
 
   h5 {
     font-weight: 100;
-    text-align: center;
+    text-align: left;
     padding-bottom: 15px;
-    font-size: xx-large;
+    font-size: medium;
+    color: white;
+    margin-right: 80px;
   }
 
   h6 {
@@ -47,6 +50,23 @@
     padding-bottom: 30px;
     font-size: x-large;
   }
+
+ .h8 {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .h9 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: large;
+
+  }
+
+
 
  sImage {
     display: block;
@@ -95,7 +115,7 @@
     padding: 20px;
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: 7px;
+    letter-spacing: 0px;
   }
   
   input[type="submit1"]:hover {

@@ -11,7 +11,14 @@
   
   .form-header {
     text-align: center;
+    color: white;
 
+  }
+
+  .div420 {
+    display: flex;
+    width:420px;
+    justify-content: center;
   }
   
   .form-header h1 {
@@ -122,6 +129,7 @@
     display: felx;
     text-align: left;
     max-width: 500px;
+    color: white;
 
   }
   
@@ -130,6 +138,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
+    width: 200px;
     background-color: #6d5078;
     color: white;
     font-size: 18px;
@@ -153,8 +162,8 @@
     list-style-type: none;
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ccc;
-    background-color: #bab7c771;
+    border: 1px solid #cccccc8e;
+    background-color: #bab7c79c;
     border-radius: 5px;
     width: 350px;
   }
