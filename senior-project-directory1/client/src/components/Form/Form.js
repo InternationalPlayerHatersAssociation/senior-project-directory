@@ -250,8 +250,6 @@ return (
         </div>
         <div className="form-steps">
   <div className="review-container">
-
-
     <div className="review-list">
       <div className="review-list-section">
         <div className='h9'>Completed Courses:</div>

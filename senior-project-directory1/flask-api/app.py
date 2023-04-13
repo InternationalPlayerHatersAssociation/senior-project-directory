@@ -9,7 +9,7 @@ from convert_course_data import convert_course_data
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:N00k!e99123@localhost:5432/course_model'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:shannon@localhost:5432/course_model'
 app.config['FLASK APP'] = app
 app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
 db.init_app(app)
@@ -48,8 +48,8 @@ def register():
 @app.route('/login', methods = ['POST'])
 def login():
     #get email and password from http request 
-    email = request.args.get('email')
-    password = request.args.get('password')
+    email = request.json.get('email')
+    password = request.json.get('password')
     #if email is not in json data return an error (should probably just check this on the front end before sending)
     if not email or not password:
         return jsonify({'message':'Please enter an email or password'})

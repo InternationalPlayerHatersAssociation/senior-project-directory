@@ -14,6 +14,7 @@ import {
     InfoSec
     } from '../InfoSection.elements';
 import image from '../../Images/kitten2-removebg-preview.png';
+import SolutionList from './SolutionList';
 
 
 const localizer = momentLocalizer(moment);
@@ -57,9 +58,9 @@ const CalendarRender = ({primary,
                  </InfoColumn>
                  <InfoColumn> 
                     <Container>
-                  <ImgWrapper start={start}>
-                    <Img src = {image} alt = 'Kitty' />
-                  </ImgWrapper> 
+
+                    <SolutionList />
+
                   </Container>
                 </InfoColumn>
                  </InfoRow>
