@@ -1,0 +1,805 @@
+number,name
+ACCT 2301,Principles of Accounting I - Financial
+ACCT 2302,Principles of Accounting II - Managerial
+ACCT 3332,Financial Reporting & Analysis
+ACCT 3333,Cost Accounting
+ACCT 3341,Intermediate Accounting I
+ACCT 3342,Intermediate Accounting II
+ACCT 4331,Federal Taxation Individuals
+ACCT 4332,Financial Information Systems
+ACCT 4341,Auditing I
+ACCT 4344,Oil & Gas Accounting
+ACCT 4346,Business Ethics for Accountant
+ACCT 4348,Intro to Data Analytics in Accounting
+ACCT 4352,Advanced Financial Accounting
+ACCT 4353,Federal Taxation of Business Entities
+ACCT 4361,International Accounting
+ACCT 5131,Acct For Administration Cntrl
+ACCT 5133,Financial Accounting I
+ACCT 5134,Financial Accounting II
+ACCT 5137,Principles Of Auditing
+ACCT 5231,Individual Income Tax
+ACCT 5234,Corporate and Pass Through Entity Taxation
+ACCT 5333,Fundamentals of Databases and Business Intelligence
+ACCT 5334,Advanced Database Applications Development
+ACCT 5336,Systems Analysis and Design
+ACCT 5432,Acct For Govt & Not Profit
+ACCT 5438,Fundamentals of Data Analytics
+ACCT 5631,Data Warehousing and Data Mining
+ACCT 5632,Advanced Data Analytics in ERP System
+ACCT 5633,Data Analytics Application Development
+ACCT 6731,Financial Statement and Accounting Information Quality Analysis Seminar
+ACCT 6732,Seminar in Fraud Examination and Audit Risk
+ACCT 6735,Oil & Gas Accounting
+ADSU 5010,Professional Preparation Seminar
+ADSU 6233,Principalship
+ADSU 6436,School Resource Management
+ADSU 6437,School Law
+ADSU 6735,Leadership Research Seminar
+ADSU 6739,Graduate Practicum
+ANTH 2346,General Anthropology
+ANTH 3311,Contemporary Cultural Anthropology
+ANTH 3330,Interdisciplinary Perspectives in Global Health
+ANTH 3357,Topics in African Studies
+ANTH 3361,Anthropology of Food
+ANTH 3362,Medicine and Culture
+ANTH 4301,Studies in Cultural Diversity
+ANTH 4302,Applied Anthropology
+ANTH 4334,Native Americans
+ANTH 4341,Gender and Sexuality in Global Perspectives
+ANTH 4342,"Human Rights, Social Justice, Health"
+ANTH 4352,World Prehistory and Archaeology
+ANTH 5334,Native American Cultures
+ANTH 5537,Topics in African Studies
+ANTH 5931,Research Topics in Anthropology
+ARTS 1303,World Art Survey I
+ARTS 1304,World Art Survey II
+ARTS 1311,Design Foundations
+ARTS 1316,Drawing Foundations
+ARTS 1325,Drawing for Non-Art Majors
+ARTS 2316,Painting
+ARTS 2371,Digital Photography 1
+ARTS 2379,Arts and the Child
+ARTS 3310,Sculpture
+ARTS 3320,Ceramics
+ARTS 3331,Intermediate Drawing
+ARTS 3333,Life Drawing
+ARTS 3335,Intermediate Painting
+ARTS 3340,Printmaking
+ARTS 3341,Fibers
+ARTS 3351,Art 1950-Present
+ARTS 3352,Traditional Photography
+ARTS 3360,Graphic Design
+ARTS 4301,Methods in Secondary Art Education
+ARTS 4310,Advanced Sculpture
+ARTS 4315,Art of the Ancient Greek World
+ARTS 4320,Advanced Ceramics
+ARTS 4331,Advanced Drawing
+ARTS 4335,Advanced Painting
+ARTS 4339,Silkscreen Printing
+ARTS 4341,Advanced Fibers
+ARTS 4348,Information Design
+ARTS 4350,Advanced Traditional Photography
+ARTS 4351,Advanced Digital Photography
+ARTS 4358,History and Theory of Graphic Design
+ARTS 4369,Digital Illustration
+ARTS 4390,Senior Seminar in Art
+ARTS 4391,Selected Topics in Art
+ARTS 5231,Sculpture and Ceramic Studio
+ARTS 5234,Art of the Ancient Greek World
+ARTS 5331,Painting-Drawing-Printmaking
+ASTR 1104,Lab for Solar System
+ASTR 1304,Solar System
+BIOL 1106,Lab for Biology for Science Majors I
+BIOL 1107,Laboratory for Biology for Science Majors II
+BIOL 1108,Laboratory for Biology for Non-Science Major I
+BIOL 1306,Biology for Science Majors I
+BIOL 1307,Biology for Science Majors II
+BIOL 1308,Biology for Non-Science Majors I
+BIOL 2102,Lab for Anatomy & Physiology II
+BIOL 2121,Laboratory for Microbiology for Science Majors
+BIOL 2302,Anatomy & Physiology II
+BIOL 2321,Microbiology for Science Majors
+BIOL 3141,Molecular Genetics Laboratory
+BIOL 3173,Human Anatomy Laboratory
+BIOL 3307,Cell Biology
+BIOL 3316,Introduction to Herpetology
+BIOL 3341,Molecular Genetics
+BIOL 3373,Human Anatomy
+BIOL 4115,Biology Practicum
+BIOL 4241,Laboratory For Physiology
+BIOL 4242,Laboratory For Biochemistry
+BIOL 4252,Molecular Biology Laboratory
+BIOL 4254,Laboratory for Eukaryotic Gene
+BIOL 4278,Seminar in Biology
+BIOL 4311,Ecology
+BIOL 4315,Biology Practicum
+BIOL 4325,Environmental Toxicology
+BIOL 4341,Biochemistry I
+BIOL 4342,Biochemistry II
+BIOL 4343,Plant Physiology
+BIOL 4345,Human Physiology
+BIOL 4346,Pathophysiology
+BIOL 4347,Cellular Physiology
+BIOL 4348,Developmental Biology
+BIOL 4351,Molecular Biology I
+BIOL 4355,Tissue Culture
+BIOL 4361,Immunology
+BIOL 5334,Microbial Ecology
+BIOL 5436,Physiological Basis of Disease
+BIOL 5534,Conservation Biology
+BIOL 5731,Advanced Cancer Biology
+BIOL 5736,Bioethics
+BIOL 6838,Research Project And Seminar
+BIOT 5011,Methods in Biotechnology Discussion
+BIOT 5021,Methods of Biotechnology
+BIOT 5111,Advanced Methods of Biotechnology I Discussion
+BIOT 5112,Advanced Methods of Biotechnology II Discussion
+BIOT 5121,Advanced Methods of Biotechnology I
+BIOT 5122,Advanced Methods of Biotechnology II
+BIOT 5530,Research Methods in Biotechnology
+BIOT 5736,Bioethics
+BIOT 5915,Cooperative Education Work Term
+BIOT 5933,Laboratory Topics in Biotechnology
+BIOT 6021,Biotechnology Practicum
+BIOT 6031,Biotechnology Practicum
+BIOT 6838,Research Project and Seminar
+CENG 2112,Lab For Digital Circuits
+CENG 2312,Digital Circuits
+CENG 2371,Microcontroller Programming
+CENG 3113,Lab For Linear Circuits
+CENG 3116,Lab for Electronics
+CENG 3131,Lab For Telecom And Networks
+CENG 3151,Lab For Computer Architecture
+CENG 3264,Engineering Design and Project Management
+CENG 3313,Linear Circuits
+CENG 3316,Electronics
+CENG 3331,Intro To Telecom And Networks
+CENG 3351,Computer Architecture
+CENG 4113,Lab for Microprocsr Intrfacing
+CENG 4266,Senior Project
+CENG 4313,Microprocessor Interfacing
+CENG 4331,Analysis and Design of Linear Systems
+CENG 4354,Digital System Design
+CENG 4391,Selected Topics In Comp Enginr
+CENG 5133,Computer Architecture Design
+CENG 5334,Fault Tolerant Computing
+CENG 5437,Mobile Robots
+CENG 5533,Quantum Computing
+CENG 5534,Advanced Digital System Design
+CENG 5915,Cooperative Education Work Trm
+CENG 6332,High Perf Comptr Architecture
+CENG 6533,Robotics
+CENG 6534,Digital Sys Synthesis & Opti
+CENG 6838,Research Project and Seminar
+CHEM 1111,Laboratory for General Chemistry I
+CHEM 1112,Laboratory for General Chemistry II
+CHEM 1311,General Chemistry I
+CHEM 1312,General Chemistry II
+CHEM 2123,Lab for Organic Chemistry I
+CHEM 2125,Lab for Organic Chemistry II
+CHEM 2323,Organic Chemistry I
+CHEM 2325,Organic Chemistry II
+CHEM 2377,Life and the Universe
+CHEM 3320,Survey Of Physical Chemistry
+CHEM 4115,Chemistry Practicum (ATA)
+CHEM 4268,Laboratory for Instrumental Analysis
+CHEM 4311,Chemical Origins
+CHEM 4322,Physical Chemistry II
+CHEM 4341,Biochemistry I
+CHEM 4342,Biochemistry II
+CHEM 4363,Forensic Chemistry
+CHEM 4367,Instrumental Analysis
+CHEM 4371,Advanced Spectroscopic Analysis
+CHEM 4372,Undergraduate Research I and Seminar
+CHEM 4379,Undergraduate Research II
+CHEM 4391,Selected Topics In Chemistry
+CHEM 5132,Principles of Chemical Engineering
+CHEM 5235,Kinetics and Thermodynamics
+CHEM 5335,Advanced Inorganic Chemistry
+CHEM 5337,Physical Organic Chemistry
+CHEM 6837,Research Project I and Seminar
+CHEM 6838,Research Project II and Seminar
+CINF 1370,Introduction to Computer Information Systems
+CINF 3321,Information Systems Theory and Practice
+CINF 3331,Business Data Communications
+CINF 4321,Enterprise Resource Planning Systems
+CINF 4324,Modern System Analysis and Design
+CINF 4364,Computer Systems Administration
+CINF 4388,Senior Project in Computer Information Systems
+CINF 4391,Advanced Topics in Computer Information Systems
+CINF 5234,Advanced Modern Systems Analysis and Design
+CINF 5432,Data Warehousing and Business Intelligence
+COMM 1307,Introduction to Mass Communication
+COMM 1315,Public Speaking
+COMM 3320,Principles of Public Relations
+COMM 3321,Media Writing
+COMM 3322,Social Media Analytics
+COMM 3341,Storytelling and Oral Communication
+COMM 3350,Visual Communication
+COMM 3351,Mass Media and Society
+COMM 3352,Media Law
+COMM 3353,Persuasive Communication: Case Studies & Strategy
+COMM 4061,Communication Portfolio
+COMM 4301,Global Issues in Film
+COMM 4323,Public Relations Campaigns
+COMM 4324,Strategic Social Media
+COMM 4351,3D Animation
+COMM 4354,Video Production 1
+COMM 4358,Publication Design
+COMM 4359,Studio-Based Video Production
+COMM 4379,Communication Internship
+COMM 4391,Selected Topics in Communication
+COUN 4305,Addictions and Diversity
+COUN 6533,Crisis Intervention
+CRCL 5035,Health and Human Rights
+CRCL 5037,Theories and Practice of Mediation
+CRCL 5132,Women of Color
+CRCL 5631,Qualitative Research Methods
+CRCL 5931,Research Topics in Cross-Cultural Studies
+CRIM 1301,Introduction to Criminal Justice
+CRIM 3312,Criminology
+CRIM 3330,Ethics in Criminal Justice
+CRIM 3333,Victimology
+CRIM 4313,Juvenile Delinquency
+CRIM 4331,Prison and Society
+CRIM 4333,Probation and Parole
+CRIM 4334,Criminal Law
+CRIM 4335,Race and Justice
+CRIM 4384,Statistics
+CRIM 4390,Contemporary Issues in Criminology
+CRIM 5037,Criminological Research and Statistics II
+CRIM 5133,Advanced Juvenile Delinquency
+CRIM 5931,Research Topics in Criminology
+CSCI 1320,C Programming
+CSCI 1470,Computer Science I
+CSCI 1471,Computer Science II
+CSCI 2305,Data Structures for Science & Engineering
+CSCI 2315,Data Structures
+CSCI 2331,Computer Organization and Assembly Language
+CSCI 3352,Adv Data Structr & Algorithms
+CSCI 4312,Network Protocols
+CSCI 4316,Advanced Enterprise Java & Framework
+CSCI 4320,Web Application Development
+CSCI 4333,Design Of Database Systems
+CSCI 4336,Introduction to Machine Learning
+CSCI 4350,Comptr Grphics & Intrfce Desgn
+CSCI 4354,Operating Systems
+CSCI 4355,Programming Language Concepts
+CSCI 4364,Computer Systems Administration
+CSCI 4379,Internship in Computer Science
+CSCI 4388,Senior Project in Comp Science
+CSCI 5132,Internet Protocols
+CSCI 5134,Concurrent Programming and Software Modeling
+CSCI 5233,Computer Security and Cryptography
+CSCI 5234,Web Security
+CSCI 5333,Data Base Management System
+CSCI 5336,Machine Learning
+CSCI 5432,Design & Analysis Algorithms
+CSCI 5531,Advanced Operating Systems
+CSCI 5737,Mobile Applications Development
+CSCI 5739,Internship in Computer Science
+CSCI 5833,Data Mining Tools and Techniques
+CSCI 5915,Cooperative Education Work Trm
+CSCI 5931,Research Topics Comp Science
+CSCI 6530,Research Methods In Comp Sci
+CSCI 6838,Research Project And Seminar
+DASC 5133,Introduction to Data Science
+DASC 5231,Visualization in Data Science
+DASC 5333,Database Systems for Data Science
+DASC 6838,Research Project and Seminar
+DMST 5231,Advanced Digital Media Design
+DMST 5232,Media and Communication Research Methods
+DMST 5235,Animation
+DMST 5534,Video Production 1
+DMST 5536,Studio-Based Video Production
+DMST 6739,Graduate Internship
+DSCI 3321,Statistics I
+DSCI 3331,Quantitative Methods for Management
+DSCI 5231,Business Analytics II
+DSCI 5431,Management Science & Operation
+ECED 1303,Children and Families
+ECED 1311,Historical and Recent Trends in Early Childhood Education
+ECED 1354,Developmental Theories of Young Children
+ECED 4100,EC-3 Teacher Seminar
+ECED 4302,Integrated Curriculum for Young Children
+ECED 4303,Child Guidance & Classroom Management for Young Children
+ECED 4304,"Facilitating Children's Development through Fine Arts, Health & Physical Education"
+ECED 4307,Mathematics and Science in Early Childhood Education
+ECED 4308,Creativity in Early Childhood
+ECED 4309,Advocacy and Parent Engagement
+ECED 4311,Reading Development in Young Children
+ECED 4314,Observational/Developmental Assessment of Young Children
+ECED 4325,Early Childhood Program Development & Management I - Leadership Strategies & Staff Development
+ECED 4328,Early Childhood Curriculum and Pedagogy
+ECED 4377,Practicum
+ECED 5033,Guidance and Classroom Management for EC6
+ECED 5131,Curriculum in Early Childhood Education
+ECED 5132,Literacy Dvmnt In Early Chldh
+ECED 5133,Mathematics and Science Teaching and Learning in Early Childhood
+ECED 5337,Administration and Management of Programs for Young Children II
+ECED 6739,Early Childhood Education
+ECON 2301,Principles of Macroeconomics
+ECON 2302,Principles of Microeconomics
+ECON 3311,Money And Banking
+ECON 3371,Public Finance
+ECON 5136,Managerial Economics
+EDCI 7031,Quantitative Research I
+EDCI 7035,Intercultural Communication
+EDCI 7137,Advanced Models of Teaching STEM Education
+EDCI 7331,Advanced Qualitative Methods
+EDLS 7030,Dispute Resolution
+EDLS 7031,Quantitative Research I
+EDLS 7133,Professional Writing Workshop
+EDLS 7331,Advanced Qualitative Methods
+EDLS 7530,Learning Theory and Instruction
+EDLS 7533,Systematic Design of Technology-based Instruction
+EDLS 7537,Technology and eLearning
+EDLS 7538,Interactive Distance Learning
+EDLS 7939,Doctoral Independent Study in Educational Leadership
+EDLS 8132,Transition and Change Management
+EDLS 8330,Human Resources Administration
+EDLS 8939,Dissertation
+EDLS 8969,Dissertation
+EDUC 4310,Theories of Educational Psychology
+EDUC 6032,Applied Statistics
+EDUC 6033,Research Design And Analysis
+EMGT 5130,New Business Development
+EMGT 5231,Engineering Management Planning
+EMGT 5330,Service and Operations Management
+EMGT 5430,Professional Project Management
+EMGT 5531,Technology Planning and Management
+EMGT 5630,Quantitative Decision Making for EMGT
+EMGT 5730,Fundamentals of Enterprise Resource Planning Software
+EMGT 5731,Business Analytics
+EMGT 6837,Engineering Management Capstone Project
+ENGR 1201,Introduction to Engineering
+ENGR 2302,Dynamics
+ENGR 2304,Computing for Engineers
+ENGR 2305,Electrical Circuits I
+ENSC 1102,Laboratory for Environmental Science II
+ENSC 1302,Environmental Science II
+ENSC 3301,Energy in the Environment
+ENSC 3333,Environmental Geology
+ENSC 4251,Laboratory for Environmental Analysis
+ENSC 4307,Geographic Information Systems
+ENSC 4315,Environmental Science Practicum
+ENSC 4323,Soils in the Environment
+ENSC 4325,Environmental Toxicology
+ENSC 4332,Advanced Environmental Science
+ENSC 4335,Applied GIS
+ENSC 4344,Air Quality and Pollution Control
+ENSC 4355,Environmental Sampling and Monitoring
+ENSC 5431,Contaminant Fate and Transport
+ENSC 5530,Research Methods: Environ Sci
+ENSC 5915,Cooperative Educ In Envir Sci
+ENSC 5931,Topics In Environmental Sci
+ENSC 6731,Graduate Seminar
+ENSC 6838,Research Project And Seminar
+ENVR 4312,Water Management Principles
+ENVR 4313,Techniques Of Envr Assessment
+ENVR 4332,The Process Of Envr Permitting
+ENVR 4336,Administrative Practice & Ethical Issues
+ENVR 4391,Selected Topics In Envr Mgmt
+ENVR 5132,Global Sustainability and Strategic Advantage
+ENVR 5532,Water Management
+ENVR 5533,Pollution Control Technology
+ENVR 5534,Permits And Procedures
+ENVR 5537,Managing Contaminated Sites
+ENVR 6132,Environmental Impact Assmnt
+EXHS 5131,Applied Exercise Physiology: Neuromuscular
+EXHS 5138,Exercise in Chronic Disease: Musculoskeletal and Neurologic
+EXHS 5231,Technology in Human Performance
+EXHS 6033,Laboratory Techniques and Research Design
+EXHS 6038,Biostatistics 2
+EXHS 6131,Exercise Pharmacology
+EXHS 6739,Graduate Internship
+FINC 3301,Personal Money Management
+FINC 3331,Business Finance
+FINC 3333,Intermediate Financial Mgmt
+FINC 3353,Investments
+FINC 4331,Contemporary Finc Institutions
+FINC 4341,Structure of Financial Statements
+FINC 4351,International Financial Operations
+FINC 5133,Corporate Finance
+FINC 5231,Quantitative Methods in Finance
+FINC 5332,Financial Statements
+FINC 6131,Commercial Banking
+FINC 6231,Investment Management
+FINC 6233,Options And Futures
+FINC 6531,International Finance
+FINC 6731,Seminar In Finance
+GAME 1302,Foundations of Games 2
+GAME 2332,Gaming Interaction
+GEOG 4301,Urban Geography
+GEOG 4312,Human Geography
+GEOG 4314,Teaching Geography
+GEOG 4321,Fundamentals of Geographic Information Systems
+GEOG 4322,Advanced Geographic Information Systems
+GEOG 5134,Introduction to Geographic Information Systems
+GEOG 5135,Advanced Geographic Information Systems
+GEOL 1104,Laboratory for Historical Geology
+GEOL 1304,Historical Geology
+GEOL 3333,Environmental Geology
+GEOL 4145,Laboratory for Structural Geology
+GEOL 4345,Structural Geology
+GEOL 4375,Petroleum Geology
+HADM 3311,Foundations Of Healthcare Administration Leadership
+HADM 3333,Healthcare Economics
+HADM 3351,Physician Group Practice Management
+HADM 4312,Healthcare Planning & Mktg
+HADM 4316,Medical Reimbursement
+HADM 4326,Hospital Operations
+HADM 4332,Legal Dimen Of Healthcare Adm
+HADM 4341,HR in Healthcare Administration
+HADM 4351,Financial Dimensions of Healthcare Administration II
+HADM 5033,Leadership of Organizations in Healthcare
+HADM 5131,Hlthcare Human Resources Mgmt
+HADM 5232,Finc Mgmt of Healthcare Orgs
+HADM 5233,Financial Management of Healthcare Organizations II
+HADM 5333,Healthcare Economics
+HADM 5335,Planning & Marketing Healthcare Services
+HADM 5432,Healthcare Predictive
+HADM 5531,Group Practice Management
+HADM 5731,Healthcare Quality
+HADM 6132,Legl Aspects Of Hlthcare Systm
+HADM 6235,Integrated Delivery Systems
+HADM 6738,Seminar in Healthcare Policy & Leadership
+HADM 6739,Internship in Healthcare Administration
+HIST 1301,United States History I
+HIST 1302,United States History II
+HIST 2322,World Civilization II
+HIST 3301,Ancient World
+HIST 3309,Renaissance and Reformation
+HIST 3316,Historical Studies
+HIST 3330,Civil War and Reconstruction
+HIST 3337,U.S. during the Cold War
+HIST 4301,Studies in European History
+HIST 4305,Nazi and Third Reich
+HIST 4309,Studies in Latin American History
+HIST 4312,Studies in Early American History
+HIST 4313,Studies in U.S. History
+HIST 4319,U.S. Labor History
+HIST 4326,Middle East and the United States
+HIST 5330,Memory and Representation in Holocaust Cinema
+HIST 5430,Studies in Women's History
+HIST 5931,Research Topics in History
+HLTH 2301,Introduction to Exercise Science
+HLTH 2303,Personal Health and Fitness
+HLTH 3301,"Health, Emergency Care and First Aid"
+HLTH 3302,Health and Physical Education - EC-6 Survey
+HLTH 3303,Nutrition and Weight Management
+HLTH 3304,Principles of Physical Fitness
+HLTH 3309,Evidence-Based Practice
+HLTH 3316,Applied Kinesiology
+HLTH 3317,Motor Development and Learning
+HLTH 3319,Introduction to Public Health
+HLTH 4301,Physiology of Exercise
+HLTH 4302,Biomechanics
+HLTH 4305,Seminar in Sports Medicine
+HLTH 4308,Resistive Exercise:  Theory and Practice
+HLTH 4312,Methods in Physical Education II
+HLTH 4370,Undergraduate Lab Practicum
+HLTH 4379,Internship
+HMRS 5131,Human Resource Mgmt Processes
+HMRS 5435,"Employee Plan,Staff,Selection"
+HMRS 5437,Human Resource Info Systems
+HMRS 5533,HR Metrics and Performance Management
+HMRS 6735,Seminar in Human Resource Management
+HUMN 1301,Humanities
+HUMN 3351,Art 1950-Present
+HUMN 3375,Ideas in Transition
+HUMN 4315,Art of the Ancient Greek World
+HUMN 4326,Studies in Film
+HUMN 4364,Museum Studies
+HUMN 4391,Selected Topics in Humanities
+HUMN 5236,Studies in Film
+HUMN 5431,Issues in Art History II: Renaissance to the Present
+HUMN 5931,Research Topics in Humanities
+INST 3313,Survey of Instructional Technologies
+INST 4357,Multimedia for Instruction
+INST 5130,Learning Theory and Instruction
+INST 5131,Trends and Issue in Instructional Technology
+INST 5233,Performance Technology
+INST 5333,Sys Design Of Tech-Based Instr
+INST 6031,Applications of Technology
+INST 6037,Advanced Technology Applications
+INST 6137,Tech And eLearning
+INST 6437,Interactive Distance Education
+ISAM 1305,Business Computer Applications
+ISAM 3303,Info Systems For Mgmt
+ISAM 3304,Introduction to Business Applications Programming
+ISAM 3333,Applications Development with C#
+ISAM 4331,Introduction to Business Internet Applications Development
+ISAM 4365,Analysis and Design of Information Systems
+ISAM 4366,Introduction to Computer Network Management
+ISAM 4391,Special Topics in Management Information Systems
+ISAM 5030,Fundamentals of Business Programming Applications
+ISAM 5330,Management Information Systems
+ISAM 5331,Fundamentals of Databases
+ISAM 5332,Data Warehousing and Data Mining
+ISAM 5338,Internet Application Development
+ISAM 5339,Fundamentals of Computer Networking
+ISAM 5430,Advanced Application Development with C#
+ISAM 5632,Advanced Database Applications Development
+ISAM 5635,Systems Analysis and Design
+ISAM 5636,Advanced Computer Networking
+ISAM 5638,Advanced Applications Programming with Java
+ISAM 5734,Advanced Data Analytics in ERP System
+ISAM 5735,Data Analytics Application Development
+ITEC 2313,Scripting I
+ITEC 2351,Web Fundamentals
+ITEC 2381,Forensics Fundamentals
+ITEC 3312,Scripting II
+ITEC 3365,Network Fundamentals
+ITEC 3388,Cyber Security I
+ITEC 4313,Emerging Information Technology
+ITEC 4342,IT Project Management
+ITEC 4351,Web Design
+ITEC 4366,Computer Security & Disaster Recovery
+ITEC 4379,Internship in Information Technology
+ITEC 4382,Registry & Internet Forensics
+ITEC 4383,Cyber Security II
+ITEC 4388,Senior Project in Information Technology
+ITEC 4391,Selected Topics in Information Technology
+LEGL 3301,Business Law
+LEGL 3307,Legal Writing and Appellate Process
+LEGL 4354,Property Transactions
+LEGL 4356,Torts
+LEGL 4359,"Wills, Probate and Estate Administration"
+LEGL 4365,Mock Trial
+LEGL 4375,Professional Development for Legal Studies Students
+LITR 2321,British Literature
+LITR 3301,Literary Studies: Genres and  Perspectives
+LITR 3302,Principles of Composition
+LITR 3334,Mythology
+LITR 3338,Modern Fantasy Literature
+LITR 3371,Creative Writing
+LITR 4321,Jane Austen
+LITR 4335,American Modernism
+LITR 4360,Topics in Film and Media Studies
+LITR 5430,Creative Writing
+LITR 5434,British Literature: Pre-Restoration
+LITR 5435,British Literature: Restoration to the Present
+LLAS 4309,Topics in Latina/o and Latin American Studies
+LLLS 4311,Foundations Literacy Skills
+LLLS 4313,Corrective & Remedial Reading
+LLLS 4332,Diagn & Prescriptive Reading
+LLLS 4344,Literacy Methods For EC-6
+LLLS 4345,Survey of Children Literature
+LLLS 4346,Literacy Methods for 4-8
+LLLS 4348,Selecting Literature for The Very Young Child
+LLLS 4351,Content Area Literacy
+LLLS 4364,Methods in Scndry Eng/Lang Art
+LLLS 5131,Integrating the Language Arts
+LLLS 5531,Critical Reading And Thinking
+LLLS 5633,Teaching Methods for English/Reading Language Arts for Grades 4-8
+LLLS 6333,Genre Studies in Children's & Young Adult Literature
+LLLS 6732,Asmnt & Remed/Read La Literacy
+MATH 1314,College Algebra
+MATH 1324,Mathematics for Business & Social Sciences
+MATH 1332,Contemporary Mathematics
+MATH 1350,Mathematics for Teachers I
+MATH 1351,Mathematics for Teachers II
+MATH 2305,Discrete Mathematics
+MATH 2315,Calculus III
+MATH 2318,Linear Algebra
+MATH 2320,Differential Equations
+MATH 2412,Pre-Calculus Mathematics
+MATH 2413,Calculus I
+MATH 2414,Calculus II
+MATH 3300,Introduction to Modern Algebra and Number Theory
+MATH 3304,Algebra Through Technology
+MATH 3305,Euclidian/Non-Euclidian Geom
+MATH 3331,Advanced Calculus
+MATH 4322,Introduction to Abstract Algebra
+MATH 4325,Theory Of Models and Applications
+MATH 4341,Intro To Analysis
+MATH 4344,Intro To Probability
+MATH 4348,Introduction to Financial Mathematics for Exam FM
+MATH 5034,Geometry Seminar
+MATH 5330,Mathematical Software and Modeling Simulation
+MATH 6837,Research Project I
+MATH 6838,Research Project II
+MENG 1204,Engineering Graphics for Mechanical Engineers
+MENG 3211,Mechanical Engineering Lab II
+MENG 3310,Introduction to Fluid Mechanics
+MENG 3314,Design Methodology
+MENG 3316,Heat Transfer
+MENG 3334,Thermodynamics
+MENG 3344,Introduction to Manufacturing Processes
+MENG 4241,Senior Design Project II
+MENG 4302,Introduction to Mechatronics
+MENG 4331,Design of Machine Elements
+MENG 4341,Mechanical Engineering Capstone II
+MENG 4344,Composite Materials
+MENG 4391,Selected Topics in Mechanical Engineering
+MGMT 1301,Business Principles
+MGMT 3301,Mgmt Theory And Practice
+MGMT 3313,Organizational Comm
+MGMT 3331,Human Resource Management
+MGMT 3341,"Human Resource Plan,Staff,Sel"
+MGMT 3351,Wage And Salary Administration
+MGMT 4312,Strategic Management
+MGMT 4334,Leading Teams
+MGMT 4354,Organizational Behavior Theory and Application
+MGMT 4356,Employee Training and Organizational Development
+MGMT 4391,Select Topics Mgmt
+MGMT 5031,Survey of Business Principles
+MGMT 5032,Human Behavior in Organization
+MGMT 5131,The Global Environment of Business
+MGMT 5133,Teamwork & Leadership Skills: Theory and Practice
+MGMT 5434,Negotiation Skills and Strategies
+MGMT 5636,Management Of Technology
+MGMT 6135,Data Visualization and Communication
+MGMT 6237,Comparative Leadership
+MGMT 6334,Global Sustainability and Strategic Advantage
+MGMT 6731,Strategic Management Seminar
+MKTG 3301,Principles of Marketing
+MKTG 3313,Marketing Channels & Distribution
+MKTG 3331,Integrated Mktg Communication
+MKTG 3343,Consumer Behavior
+MKTG 3348,Retail Management
+MKTG 3351,Marketing Research
+MKTG 3360,Social Media Marketing
+MKTG 4335,Brands and Brand Management
+MKTG 5332,Executive Decisions in Marketg
+MSCI 1220,Introduction to Leadership II
+MSCI 2220,Foundations of Leadership II
+MSCI 3320,Adv Military Science
+NCBI    1,NCB Integrated Reading and Writing
+NCBM    1,NCB Math
+NURS 3311,History and Theories of Nursing
+OSHE 3340,Tech Of Safety Engineer&Analys
+OSHE 4324,Fire Safety Engineering
+OSHE 4333,Construction & General Industry Safety
+OSHE 4422,Indst Hygiene Sampling Anly
+OSHE 5530,Research Methods: INDH
+OSHE 6242,Analy Method For Eval Of H & H
+OSHE 6332,Safety Engineering
+OSHE 6333,Standards of Construction & General Industries
+OSHE 6838,Research Project
+PHIL 3331,Ethics
+PHIL 4314,The Great Philosophers I
+PHIL 4391,Selected Topics in Philosophy
+PHYS 1101,Laboratory for College Physics I
+PHYS 1102,Laboratory for College Physics II
+PHYS 1301,College Physics I
+PHYS 1302,College Physics II
+PHYS 2125,Laboratory for University Physics I
+PHYS 2126,Laboratory for University Physics II
+PHYS 2325,University Physics I
+PHYS 2326,University Physics II
+PHYS 3103,Laboratory for Modern Physics
+PHYS 3303,Modern Physics
+PHYS 3312,Mathematical Methods for Scientists and Engineers II
+PHYS 3321,Intermediate Mechanics
+PHYS 3343,Quantum Theory II
+PHYS 4115,Physics Practicum
+PHYS 4202,Computational Physics
+PHYS 4371,Research Seminar I
+PHYS 4372,Research Seminar II
+PHYS 5311,Recitation for Electrodynamics
+PHYS 5331,Electrodynamics
+PHYS 5612,Recitation for Quantum Mechanics II
+PHYS 5632,Quantum Mechanics II
+PHYS 6837,Research and Project Seminar I
+PHYS 6838,Research Project And Seminar II
+POLS 2305,Federal Government
+POLS 2306,Texas Government
+POLS 3301,Contemporary Issues in Political Science
+PSLD 4340,Current Issues in Representative Bureaucracy
+PSLD 4344,Public Service Leadership
+PSLD 4345,Strategic Planning
+PSLD 4347,Managerial Issues in Diversity
+PSLD 4348,Crisis and Emergency Management
+PSYC 1100,Learning Frameworks
+PSYC 2301,Introduction to Psychology
+PSYC 2314,Lifespan Growth and Development
+PSYC 2317,Statistical Methods in Psychology
+SENG 4310,Intro to Systems Engineering
+SENG 5130,Systems Engineering Processes
+SENG 5233,Systems Eng Analysis & Modeling
+SENG 5335,Healthcare Systems Engineering
+SENG 6837,Systems Eng Capstone Project
+SILC 4301,Spanish For Bilingual Teachers
+SILC 4302,Intro Study Of Languages
+SILC 4310,Foundations of Bilingual and ESL Education
+SILC 4311,ESL Methods
+SILC 4312,Content-based ESL
+SILC 4313,Language Learning
+SILC 4315,Theories Of American Pluralism
+SILC 4316,Bilingual Curriculum In Content Areas
+SILC 4318,Linguistic Diversity in Young Children
+SILC 6030,Foundations of Multicultural Education
+SILC 6031,"Social Justice Leadership, Policy and Advocacy"
+SILC 6033,Reflection in Social Justice Education
+SILC 6034,Current Issues in Diverse Communities
+SOCI 1306,Social Problems
+SOCI 3352,Urban Sociology
+SOCI 4312,"Social Structure: Class, Power, Status"
+SOCI 4316,Women and the Law
+SOCI 4322,Theories of Society
+SOCI 4323,Religion in Society
+SOCI 4328,Social Conflict and Mediation
+SOCI 4335,Social Change and Social Movements
+SOCI 4355,Minorities in America
+SOCI 4384,Statistics
+SOCI 5433,Social Conflict and Mediation
+SOCI 5732,Graduate Seminar in  Social Problems
+SOCI 5931,Research Topics in Sociology
+SOCI 6432,Qualitative Research Methods
+SOCI 6730,Advanced Non-Experimental Research and Statistics
+SPED 2301,Introduction to Special Populations
+SPED 4300,Survey Of Exceptionalities
+SPED 4312,Diagnostic Instruction for Learners with Special Needs
+SPED 4321,Implementing Pos Bhvrl Support
+SPED 4332,Early Childhood Special Educ
+STAT 3308,Computational Statistics
+STAT 3334,Prob & Stat for Scients & Engs
+STAT 4315,Applied Statistical Methods
+STAT 4344,Introduction to Probability
+STAT 5135,Applied Statistical Methods
+STAT 5538,Categorical Data Analysis
+STAT 5635,Applied Time Series Analysis
+STAT 6837,Stat Research & Consulting
+SWEN 4342,Software Engineering
+SWEN 4346,Software Testing
+SWEN 5135,Configuration Management
+SWEN 5139,Data Science and R in Software Engineering
+SWEN 5233,Software Architecture
+SWEN 5236,Engineering Software I
+SWEN 5237,Engineering Software II
+SWEN 5239,Agile Software Development
+SWEN 5432,Software Engineering Life Cycle
+SWEN 6837,Software Engineering Capstone Project
+SWRK 2361,Introduction to Social Work
+SWRK 3304,Issues and Ethics in Social Work
+SWRK 3314,Diversity and Human Behavior in the Social Environment
+SWRK 3317,Social Welfare and Policy Services
+SWRK 3324,"Oppression, Diversity, and Social Justice"
+SWRK 4328,Social Work Practice II
+SWRK 4338,Social Work Practice III
+SWRK 4363,Experimental Methods and Statistics
+SWRK 4370,Nonexperimental Methods and Statistics
+SWRK 4629,Social Work Internship II
+TCED 1101,Inquiry Approaches to Teaching Mathematics and Science Step I
+TCED 1102,Inquiry Based Lesson Design in Mathematics and Science Step II
+TCED 1301,Exploring Teaching as a Profession
+TCED 2301,Knowing and Learning
+TCED 3300,Perspectives on Science and Math
+TCED 4100,Core Subjects Teacher Seminar
+TCED 4102,Secondary (4-8 & 7-12) Content Teacher Seminar
+TCED 4300,Project Based Instruction
+TCED 4303,Creating Positive Learning Environments in EC-6
+TCED 4304,Creating Positive Learning Environments in 4-8
+TCED 4306,Creating Positive Learning Environments in 8-12
+TCED 4321,Social Studies Methods for EC-6
+TCED 4322,Science Methods for EC-6
+TCED 4323,Mathematics Methods for EC-6
+TCED 4332,Science Methods for Grades 4-8
+TCED 4362,Methods In Secondary Science
+TCED 5030,Models of Teaching
+TCED 5034,Mgmt Strt for Crtg a Pos Learn
+TCED 5038,Prof Dev for Enhancg Tchr Lead
+TCED 5134,Introduction to Models of Teaching
+TCED 5330,Fostering Critical Inquiry: Introduction to Action Research
+WGST 1301,Gender Matters: Introduction to Women's and Gender Studies
+WGST 4308,Perspectives in Women's and Gender Studies
+WGST 4312,Women of Color
+WGST 4348,Development of Gender and Racial Identity
+WGST 4360,Women in Literature
+WGST 4391,Selected Topics in Women's and Gender Studies
+WGST 5438,Development of Gender and Racial Identity
+WGST 5931,Research Topics in Women's and Gender Studies
+WRIT 1301,Composition I
+WRIT 1302,Composition II
+WRIT 2311,Intro to Professional Writing
+WRIT 3304,Writing for Education
+WRIT 3305,Writing for Humanities
+WRIT 3306,Writing for Social Sciences
+WRIT 3307,Advanced Writing
+WRIT 3312,Written Communications in Business
+WRIT 3315,Advanced Technical Writing
+WRIT 4310,Writing for the Public: Developing Non-Profit Communication Strategies
+WRIT 4312,The Rhetoric of Popular Culture
