@@ -250,6 +250,8 @@ return (
         </div>
         <div className="form-steps">
   <div className="review-container">
+
+
     <div className="review-list">
       <div className="review-list-section">
         <div className='h9'>Completed Courses:</div>
@@ -257,19 +259,21 @@ return (
           {completedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
           ))}
-        </ul>
+      </ul>
       </div>
     </div>
+
     <div className="review-list">
       <div className="review-list-section">
       <div className='h9'>Needed Courses:</div>
-        <ul>
+            <ul>
           {plannedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
           ))}
-        </ul>
+      </ul>
       </div>
     </div>
+
     <div className="review-list">
       <div className="review-list-section">
       <div className='h9'>Schedule Conflicts:</div>
