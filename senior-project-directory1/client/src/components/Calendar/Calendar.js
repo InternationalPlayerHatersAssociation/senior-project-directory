@@ -15,6 +15,8 @@ import {
     } from '../InfoSection.elements';
 import image from '../../Images/kitten2-removebg-preview.png';
 import SolutionList from './SolutionList';
+import './SolutionList'
+
 
 
 const localizer = momentLocalizer(moment);
@@ -47,10 +49,17 @@ const CalendarRender = ({primary,
                          formats={{
                           dayFormat: (date, culture, localizer) => localizer.format(date, 'ddd') // hide the date
                         }}
-                          style={{height:550,
-                           width:600,
-                         
-                           color: 'black'}}
+                        style={{
+                          height: 550,
+                          width: 600,
+                          color: 'black',
+                          backgroundColor: 'lightblue', // add a background color
+                          
+                          border: 'none', // add a border
+                          padding: '0px',
+                          borderRadius: '10px', // add border radius
+                          boxShadow: '2px 2px 10px gray' // add a box shadow
+                        }}
                          >
                          </Calendar>
                           </Container2>
@@ -66,6 +75,9 @@ const CalendarRender = ({primary,
                  </InfoRow>
          </Container>
      </InfosSecCal>
+     <div class="fixed-image-container">
+  <img src="./img/embry.PNG" alt="Image description"/>
+</div>
      </>
    );
  }
