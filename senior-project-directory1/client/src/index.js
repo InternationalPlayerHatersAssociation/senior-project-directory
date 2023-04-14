@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import ReactDOM  from 'react-dom'
 /*import 'bootstrap/dist/css/bootstrap.min.css';*/
 import NavBar from './components/Navbar/Navbar';
@@ -7,7 +7,7 @@ import{
     BrowserRouter as Router, 
     Route,
     Routes,
-    Link
+
 } from 'react-router-dom'
 import HomePage from './components/Home/Home';
 import SignUp from './components/SignUp/SignUp';

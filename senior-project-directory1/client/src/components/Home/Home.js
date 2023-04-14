@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../auth";
 import {homeObjOne, homeObjTwo} from './Home.Data';
 import InfoSection from '../InfoSection';
-import {InfoRow} from '../InfoSection.elements';
+
 import Calendar from "../Calendar/Calendar";
 
 
@@ -14,9 +14,7 @@ import Calendar from "../Calendar/Calendar";
 const LoggedInHome=()=>{
     return(
         <>      
-
         <Calendar />
-
         </>
     )
 }

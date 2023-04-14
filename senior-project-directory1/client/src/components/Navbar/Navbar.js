@@ -99,10 +99,6 @@ const NavBar =()=>{
 
 
 
- 
-
-
-
 
     return(
         <>
