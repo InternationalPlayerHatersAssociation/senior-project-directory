@@ -88,9 +88,9 @@ class Class_Choices(db.Model):
     __tablename__ = 'class_choices'
     choice_id = db.Column(db.Integer, primary_key = True)
     stuid = db.Column(db.Integer,db.ForeignKey('student.stuid'), nullable = False)
-    crn = db.Column(db.Integer,db.ForeignKey('course_offering.crn'), nullable = False)
+    course_name = db.Column(db.Integer,db.ForeignKey('course.name'), nullable = False)
     student = relationship("Student", backref = 'class_choices', foreign_keys = [stuid])
-    class_choice = relationship("Course_Offering", backref='class_choices', foreign_keys=[crn])
+    class_choice = relationship("Course", backref='class_choices', foreign_keys=[course_name])
     
 
 #model of the course table

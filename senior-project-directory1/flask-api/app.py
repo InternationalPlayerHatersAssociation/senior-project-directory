@@ -1,5 +1,5 @@
 from flask import Flask, request, session
-from models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices
+from models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices, Course_History
 from flask_jwt_extended import JWTManager, create_access_token, create_refresh_token, jwt_required, get_jwt_identity
 from flask import jsonify
 from flask_cors import CORS
@@ -9,7 +9,7 @@ from convert_course_data import convert_course_data
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:shannon@localhost:5432/course_model'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:N00k!e99123@localhost:5432/course_model'
 app.config['FLASK APP'] = app
 app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
 db.init_app(app)
@@ -89,9 +89,47 @@ def get_majors():
     return jsonify(major_list)
 
 
+@app.route('/save_user_data', methods = ['POST'])
+def save_data():
+    data = request.json
+    class_history = data['history']
+    class_names = data['classes']
+    conflicts_list = data['conflicts']
+    
+    hist = db.session.query(Course_History, Course)\
+        .join(Course, Course_History.course_id == Course.course_id)\
+            .filter(Course_History.stuid == session['stuid']).all()
+    for course in class_history:
+        if course not in hist:
+            cid = db.session.query(Course.course_id).filter(Course.name == course).first()
+            item = Course_History(stuid = session['stuid'],course_id = cid)
+            db.session.add(item)
+    if class_names:
+        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete()
+        for name in class_names:
+            choice = Class_Choices(stuid = session['stuid'], course_name = name)
+            db.session.add(choice)
+    if conflicts_list:
+        db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete()
+        for conflict in conflicts_list:
+            unavailable = Conflict(stuid = session['stuid'], name = "conflict", 
+                                   start_time = conflict['start_time'], end_time = conflict['end_time'], day = conflict.day )
+            db.session.add(unavailable)
+    
+    db.session.commit()
+        
+    
+            
+
+    
+    return jsonify({"message":"Saved classes successfully!"})
+
+
+
 @app.route('/find_combinations', methods=['POST'])
 def find_combinations():
     data = request.json
+    class_history = data['history']
     class_names = data['classes']
     conflicts_list = data['conflicts']
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
