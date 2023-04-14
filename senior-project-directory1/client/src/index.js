@@ -17,6 +17,7 @@ import GlobalStyle from './globalStyles';
 
 
 const App = () => {
+    
     return(
         <Router>
             <GlobalStyle />
