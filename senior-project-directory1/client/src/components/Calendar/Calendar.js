@@ -15,9 +15,34 @@ import {
     } from '../InfoSection.elements';
 import image from '../../Images/kitten2-removebg-preview.png';
 import SolutionList from './SolutionList';
+import './SolutionList'
+import styled from 'styled-components';
+
+
+
 
 
 const localizer = momentLocalizer(moment);
+
+const StyledCalendar = styled(Calendar)`
+  .rbc-time-view {
+    border-radius: 20px;
+    background-color:'#e0e0de' ;
+  }
+  .rbc-timeslot-group {
+
+    min-height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+}
+
+.rbc-today {
+  background-color: #e0e0de; /* replace with your desired color */
+}
+
+
+`;
 
 const CalendarRender = ({primary,
     lightBg,
@@ -26,6 +51,7 @@ const CalendarRender = ({primary,
    const [myEvents] = useState([]);
    return (
      <>
+
      
      <InfosSecCal lightBg={lightBg}>
          <Container>
@@ -35,7 +61,7 @@ const CalendarRender = ({primary,
                  <h1>Your Schedule </h1>
 
                      <Container2>
-                       <Calendar
+                       <StyledCalendar
                          localizer={localizer}
                          events={myEvents}
                          startAccessor="start"
@@ -47,12 +73,20 @@ const CalendarRender = ({primary,
                          formats={{
                           dayFormat: (date, culture, localizer) => localizer.format(date, 'ddd') // hide the date
                         }}
-                          style={{height:550,
-                           width:600,
-                         
-                           color: 'black'}}
+                        style={{
+                          fontFamily: 'Arial, sans-serif', // change font family
+                          height: 550,
+                          width: 600,
+                          color: 'black',
+                          backgroundColor: '#e0e0de',
+                          borderRadius: '20px',
+                          padding: '0px',
+                          fontWeight: 'bold',
+                          boxShadow: '4px 4px 10px black'
+                        }}
+                        
                          >
-                         </Calendar>
+                         </StyledCalendar>
                           </Container2>
                           </TextWrapper>
                  </InfoColumn>
@@ -66,6 +100,9 @@ const CalendarRender = ({primary,
                  </InfoRow>
          </Container>
      </InfosSecCal>
+     <div class="fixed-image-container">
+  <img src="./img/embry.PNG" alt="Image description"/>
+</div>
      </>
    );
  }
