@@ -4,7 +4,7 @@ class Scheduler:
            self.unavailables = unavailables
           
     def time_overlap(self, event1, event2):
-        return not (event1["end"] <= event2["start"] or event2["end"] <= event1["start"])
+        return not (event1["end_time"] <= event2["start_time"] or event2["end_time"] <= event1["start_time"])
         
     def conflict_with_user(self, section):
         for event in self.unavailables.values():

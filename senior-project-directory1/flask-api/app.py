@@ -88,7 +88,7 @@ def get_majors():
     
     return jsonify(major_list)
 
-
+#route for submitting the form
 @app.route('/save_user_data', methods = ['POST'])
 def save_data():
     data = request.json
@@ -122,22 +122,26 @@ def save_data():
         db.session.add_all(unavailable)
         db.session.commit()
 
-        
-    
-            
-
-    
     return jsonify({"message":"Saved classes successfully!"})
 
 
-
-@app.route('/find_combinations', methods=['POST'])
+#route for rendering the 
+@app.route('/find_combinations', methods=['GET'])
 def find_combinations():
-    data = request.json
-    class_history = data['history']
-    class_names = data['classes']
-    conflicts_list = data['conflicts']
+    conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
+    conflicts_list = [row.__dict__.copy() for row in conflict_query]
+    # Remove the '_sa_instance_state' key from each dictionary
+    for d in conflicts_list:
+        d.pop('_sa_instance_state', None)
+        d.pop('cid', None)
+        d.pop('stuid', None)
+        d.pop('name', None)
+    
+    class_query = db.session.query(Class_Choices.course_name).filter(Class_Choices.stuid == session['stuid']).all()
+    class_names = [row[0] for row in class_query]
+    
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
+    print(conflicts)
     # Query the database for the courses
     course_data = []
     for class_name in class_names:

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SolutionList.css';
 
 function SolutionList() {
@@ -17,6 +17,12 @@ function SolutionList() {
       setSelectedSolution(solution);
     }
   };
+
+  useEffect(() => {
+    fetch('/find_combinations')
+    .then(response => response.json())
+    .then(data => console.log(data));
+  }, []);
 
 const handleGenerateCRNs = () => {
   console.log('Generating CRNs...');
