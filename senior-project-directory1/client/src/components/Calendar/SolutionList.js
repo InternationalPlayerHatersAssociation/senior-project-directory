@@ -21,7 +21,8 @@ function SolutionList() {
   useEffect(() => {
     fetch('/find_combinations')
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
   }, []);
 
 const handleGenerateCRNs = () => {

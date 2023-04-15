@@ -99,22 +99,22 @@ def save_data():
     hist = db.session.query(Course_History, Course)\
         .join(Course, Course_History.course_id == Course.course_id)\
             .filter(Course_History.stuid == session['stuid']).all()
-    for course in class_history:
-        if course not in hist:
-            cid = db.session.query(Course.course_id).filter(Course.name == course).one_or_none()
-            item = Course_History(stuid = session['stuid'],course_id = cid[0])
-            db.session.add(item)
-            db.session.commit()
+    if class_history:
+        for course in class_history:
+            if course not in hist:
+                cid = db.session.query(Course.course_id).filter(Course.name == course).one_or_none()
+                item = Course_History(stuid = session['stuid'],course_id = cid[0])
+                db.session.add(item)
+                db.session.commit()
     if class_names:
-        # Delete existing rows for the current user
-        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete(synchronize_session=False)
         # Add new rows to the session
+        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete(synchronize_session=False)
         for name in class_names:
             choice = Class_Choices(stuid=session['stuid'], course_name=name)
             db.session.add(choice)
             db.session.commit()
+    db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session = False)
     if conflicts_list:
-        db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session = False)
         processed_conflicts_list = [process_conflict_string(item) for item in conflicts_list]
         unavailable = [Conflict(stuid=session['stuid'], name="conflict",
                         start_time=conflict['start_time'], end_time=conflict['end_time'], day=conflict['day'])
@@ -139,7 +139,8 @@ def find_combinations():
     
     class_query = db.session.query(Class_Choices.course_name).filter(Class_Choices.stuid == session['stuid']).all()
     class_names = [row[0] for row in class_query]
-    
+    if not class_query:
+        return jsonify({'message':'user has no classes selected'})
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
     print(conflicts)
     # Query the database for the courses
