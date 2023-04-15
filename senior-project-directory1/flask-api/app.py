@@ -4,8 +4,8 @@ from flask_jwt_extended import JWTManager, create_access_token, create_refresh_t
 from flask import jsonify
 from flask_cors import CORS
 from scheduler import Scheduler
-from convert_course_data import convert_course_data
-
+from convert_course_data import convert_course_data, process_conflict_string
+from sqlalchemy.sql import text
 
 
 app = Flask(__name__)
@@ -101,22 +101,27 @@ def save_data():
             .filter(Course_History.stuid == session['stuid']).all()
     for course in class_history:
         if course not in hist:
-            cid = db.session.query(Course.course_id).filter(Course.name == course).first()
-            item = Course_History(stuid = session['stuid'],course_id = cid)
+            cid = db.session.query(Course.course_id).filter(Course.name == course).one_or_none()
+            item = Course_History(stuid = session['stuid'],course_id = cid[0])
             db.session.add(item)
+            db.session.commit()
     if class_names:
-        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete()
+        # Delete existing rows for the current user
+        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete(synchronize_session=False)
+        # Add new rows to the session
         for name in class_names:
-            choice = Class_Choices(stuid = session['stuid'], course_name = name)
+            choice = Class_Choices(stuid=session['stuid'], course_name=name)
             db.session.add(choice)
+            db.session.commit()
     if conflicts_list:
-        db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete()
-        for conflict in conflicts_list:
-            unavailable = Conflict(stuid = session['stuid'], name = "conflict", 
-                                   start_time = conflict['start_time'], end_time = conflict['end_time'], day = conflict.day )
-            db.session.add(unavailable)
-    
-    db.session.commit()
+        db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session = False)
+        processed_conflicts_list = [process_conflict_string(item) for item in conflicts_list]
+        unavailable = [Conflict(stuid=session['stuid'], name="conflict",
+                        start_time=conflict['start_time'], end_time=conflict['end_time'], day=conflict['day'])
+               for conflict in processed_conflicts_list]
+        db.session.add_all(unavailable)
+        db.session.commit()
+
         
     
             
