@@ -41,7 +41,9 @@ const Login=({
     return(
          <div >
             <div className="form"></div>
+
             <div className="formContainer">
+                <br></br><br></br>
            <h3><img src='../../img/Cat-Embroidery.png' alt='success-image' width='175px' /></h3>
 
             <form1>
@@ -56,7 +58,7 @@ const Login=({
                         <input type="password" placeholder="*******************"
                             {...register('password', {required:true})}/>
                             {errors.email && <p style = {{color:'red'}}><small>Password is required</small></p>}
-                        <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)} />
+                        <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)}  />
                         
 
                         <h3><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></h3>
@@ -64,8 +66,9 @@ const Login=({
                     </div>
                 </form1>
                 <br></br>
-                </div>
                 <br></br>
+                </div>
+
 
         </div>
 

@@ -78,11 +78,14 @@ const SignUp = ({
       </>
       ): (
         <>
-      <h2>Sign Up</h2>
+         <br></br>
+         <br></br>
+
+
  
 
       <form1>
-      
+      <h2>Sign Up</h2>
         <Form.Group>
           <p><label htmlFor="email">Email    </label>
           <Form.Control
@@ -167,7 +170,7 @@ const SignUp = ({
           </small></h3><br></br>
         </Form.Group>
 </form1>
-        
+
         </>
 
           )}
