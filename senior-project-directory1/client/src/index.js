@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM  from 'react-dom'
 /*import 'bootstrap/dist/css/bootstrap.min.css';*/
 import NavBar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 /*import './styles/main.css'*/
 import{
     BrowserRouter as Router, 
@@ -27,6 +28,7 @@ const App = () => {
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/form" element={<Form/>}/>
             </Routes>
+            <Footer />
         </Router>
     )
 }
