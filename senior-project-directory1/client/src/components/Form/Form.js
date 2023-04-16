@@ -20,7 +20,7 @@ useEffect(() => {
     .then(response => response.json())
     .then(data => removeDuplicates(data.names));
   };
-}, [filterName]);
+}, []);
 
 const removeDuplicates = (data) => {
   const filteredClasses = [...new Set(data)];
@@ -298,8 +298,8 @@ const handleSubmit = async (event) => {
 const renderStepFour = () => {
 return (
 <>
-         
 <div className="formContainer">
+
       <div className="form-header">
               <h2>Step 4</h2>
         <p>Review</p>
@@ -358,7 +358,9 @@ return (
 
  return (
   <div>
+    
     <div className='formContainer'>
+      <br></br><br></br><br></br>
   <h3> <img src='../../img/creepy-cat.png' alt='success-image' width='175px' /></h3>
     
 

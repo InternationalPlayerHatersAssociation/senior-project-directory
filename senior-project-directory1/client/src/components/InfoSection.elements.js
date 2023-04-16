@@ -23,6 +23,7 @@ export const InfoRow = styled.div`
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
+  
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
@@ -34,6 +35,7 @@ export const InfoColumn = styled.div`
   max-width: 50%;
   flex-basis: 50%;
   position: relative;
+
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
