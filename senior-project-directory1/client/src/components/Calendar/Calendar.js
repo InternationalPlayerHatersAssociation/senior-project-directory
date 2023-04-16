@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import moment from 'moment';
 import { Container, Container2} from '../../globalStyles';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -49,6 +49,14 @@ const CalendarRender = ({primary,
     imgStart, 
     start}) => {
    const [myEvents] = useState([]);
+
+   useEffect(() => {
+    fetch('/find_combinations')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+  }, []);
+
    return (
      <>
 

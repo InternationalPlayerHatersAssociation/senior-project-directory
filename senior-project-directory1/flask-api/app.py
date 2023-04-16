@@ -52,12 +52,12 @@ def login():
     password = request.json.get('password')
     #if email is not in json data return an error (should probably just check this on the front end before sending)
     if not email or not password:
-        return jsonify({'message':'Please enter an email or password'})
+        return jsonify({'message':'Please enter an email or password'}), 401
     #pull occurrence of user out of the database
     student = db.session.query(Student).filter_by(email = email).first()
     #verify password hash, if invalid return invalid
     if  not student or not student.check_password(password):
-        return jsonify({'message':'invalid email or password'})
+        return jsonify({'message':'invalid email or password'}), 401
     #create a json web token for user to access private pages
     access_token = create_access_token(identity = email)
     refresh_token = create_refresh_token(identity = email)
@@ -95,7 +95,9 @@ def save_data():
     class_history = data['history']
     class_names = data['classes']
     conflicts_list = data['conflicts']
-    
+
+    db.session.execute(text(f"DELETE FROM Conflict WHERE stuid = '{session['stuid']}'"))
+    db.session.commit()
     hist = db.session.query(Course_History, Course)\
         .join(Course, Course_History.course_id == Course.course_id)\
             .filter(Course_History.stuid == session['stuid']).all()
@@ -113,7 +115,6 @@ def save_data():
             choice = Class_Choices(stuid=session['stuid'], course_name=name)
             db.session.add(choice)
             db.session.commit()
-    db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session = False)
     if conflicts_list:
         processed_conflicts_list = [process_conflict_string(item) for item in conflicts_list]
         unavailable = [Conflict(stuid=session['stuid'], name="conflict",

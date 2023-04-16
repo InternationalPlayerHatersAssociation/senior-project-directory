@@ -78,7 +78,7 @@ CREATE TABLE "conflict" (
 CREATE TABLE "class_choices" (
     "choice_id" serial   NOT NULL,
     "stuid" int   NOT NULL,
-    "name" varchar(100)   NOT NULL,
+    "course_name" varchar(100)   NOT NULL,
     CONSTRAINT "pk_class_choices" PRIMARY KEY (
         "choice_id"
      )
@@ -122,5 +122,3 @@ REFERENCES "student" ("stuid");
 ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_stuid" FOREIGN KEY("stuid")
 REFERENCES "student" ("stuid");
 
-ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_crn" FOREIGN KEY("crn")
-REFERENCES "course_offering" ("crn");

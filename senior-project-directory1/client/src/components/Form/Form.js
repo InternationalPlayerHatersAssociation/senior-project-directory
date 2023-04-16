@@ -38,12 +38,13 @@ const handleSubmit = async (event) => {
   console.log('End time:', endTime);
 
   try {
-    const response = await fetch('/find_combinations', {
+    const response = await fetch('/save_user_data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        history: completedClasses,
         classes: plannedClasses,
         conflicts: conflicts,
       }),
