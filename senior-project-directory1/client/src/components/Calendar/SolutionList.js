@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './SolutionList.css';
 
-function SolutionList() {
-  const [solutions, setSolutions] = useState([
-    'Solution #1',//replace with req solutions
-    'Solution #2',
-    'Solution #3',
-  ]);
+function SolutionList(props) {
   const [selectedSolution, setSelectedSolution] = useState('');
   const [generatedCRNs, setGeneratedCRNs] = useState([]);
 
-  const handleSolutionClick = (solution) => {
+  const handleSolutionClick = (solution, index) => {
+    props.setSolutionChoice(index);
     if (selectedSolution === solution) {
       setSelectedSolution('');
     } else {
@@ -18,12 +14,6 @@ function SolutionList() {
     }
   };
 
-  useEffect(() => {
-    fetch('/find_combinations')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
-  }, []);
 
 const handleGenerateCRNs = () => {
   console.log('Generating CRNs...');
@@ -35,15 +25,15 @@ return (
   <div className="solution-list-container">
     <h2 className="solution-list-header">Choose a Solution</h2>
     <div className="solution-list">
-      {solutions.map((solution) => (
+      {props.solutions.map((solution, index) => (
         <div
           key={solution}
           className={`solution-list-item ${
             solution === selectedSolution ? 'selected' : ''
           }`}
-          onClick={() => handleSolutionClick(solution)}
+          onClick={() => handleSolutionClick(solution, index)}
         >
-          {solution}
+          {`Solution #${index + 1}`}
         </div>
       ))}
     </div>

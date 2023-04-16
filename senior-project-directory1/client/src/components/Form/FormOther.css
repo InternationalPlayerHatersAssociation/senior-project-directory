@@ -1,159 +1,194 @@
+
+
 .form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  margin: 20px;
-}
-
-.form-header {
-  text-align: center;
-  color: white;
-
-}
-
-.div420 {
-  display: flex;
-  width:420px;
-  justify-content: center;
-}
-
-.form-header h1 {
-  margin: 0;
-}
-
-.form-header p {
-  margin-top: 10px;
-}
-
-.form-steps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form label {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.class-inputs,
-.conflict-inputs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-
-.major-select {
-  display: flex;
-
-  margin-bottom: 10px;
-}
-
-.major-select input,
-.major-select select{
-  width: 550px;
-  height: 40px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-
-}
-
-.class-inputs input,
-.conflict-inputs input,
-.conflict-inputs select {
-  margin-right: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.class-inputs button,
-.conflict-inputs button {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.class-listing {
-  display: flex;
-  align-items: center;
-  justify-content:end;
-
-}
-
-.class-listing button{
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
-  margin-left: 100px;
-  cursor: pointer;
-
-}
-
-
-
-.class-list,
-.conflict-list {
-  list-style:none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-.class-list li,
-.conflict-list li {
-  margin-bottom: 5px;
-  display: felx;
-  text-align: left;
-  max-width: 500px;
-  color: white;
-
-}
-
-.submit-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  width: 200px;
-  background-color: #6d5078;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.submit-button:hover {
-  background-color: #0069d9;
-}
-
-.review-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 20px;
+  }
   
-<<<<<<< HEAD
+  .form-header {
+    text-align: center;
+    color: white;
+
+  }
+
+  .div420 {
+    display: flex;
+    width:420px;
+    justify-content: center;
+  }
+  
+  .form-header h1 {
+    margin: 0;
+  }
+  
+  .form-header p {
+    margin-top: 10px;
+  }
+  
+  .form-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .class-inputs,
+  .conflict-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+
+  .major-select {
+    display: flex;
+
+    margin-bottom: 10px;
+  }
+  
+  .major-select input,
+  .major-select select{
+    width: 550px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+
+  }
+
+  .class-inputs input,
+  .conflict-inputs input,
+  .conflict-inputs select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .class-inputs button,
+  .conflict-inputs button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .class-listing {
+    display: flex;
+    align-items: center;
+    justify-content:end;
+
+  }
+
+  .class-listing button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-left: 100px;
+    cursor: pointer;
+
+  }
+  
+
+
+  .class-list,
+  .conflict-list {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .class-list li,
+  .conflict-list li {
+    margin-bottom: 5px;
+    display: felx;
+    text-align: left;
+    max-width: 500px;
+    color: white;
+
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    background-color: #6d5078;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+  }
+  
+  .review-list {
+    line-height: 0.0;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #cccccc8e;
+    background-color: #bab7c79c;
+    border-radius: 5px;
+    width: 350px;
+    
+  }
+  
+  .review-list-section {
+    border-left: 4px solid #815e8e;
+    padding: 10px;
+  }
+  
+  .review-list-section h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  .review-list-section ul {
+    margin: 5px;
+    padding: 0 0 0 10px;
+
+    
+  }
+  
   .review-list-section li {
     list-style-position: inside;
     list-style-type: disc;
@@ -195,80 +230,3 @@ form label {
   .class-Choice-Button:hover {
     background-color: #a5945f;
   }
-=======
-
-}
-
-.review-list {
-  line-height: 0.0;
-  list-style-type: none;
-  padding: 20px;
-  margin: 20px;
-  border: 1px solid #cccccc8e;
-  background-color: #bab7c79c;
-  border-radius: 5px;
-  width: 350px;
-  
-}
-
-.review-list-section {
-  border-left: 4px solid #815e8e;
-  padding: 10px;
-}
-
-.review-list-section h4 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 15px;
-}
-
-.review-list-section ul {
-  margin: 5px;
-  padding: 0 0 0 10px;
-
-  
-}
-
-.review-list-section li {
-  list-style-position: inside;
-  list-style-type: disc;
-  margin: 5px 0;
-  padding: 8px 0;
-  text-align: left;
-  font-size: small;
-  
-}
-
-.class-Choice-Buttons {
-  display: flex;
-  margin-right: 10px;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  min-height: 10vh;
-  min-width: 10vw;
-
-}
-
-.class-Choice-Button {
-  padding:0px;
-  margin: 3px;
-  width: 6vw;
-  height: 6vh;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  -webkit-line-clamp: 2;
-  -webkit-text-fit: contain;
-  -moz-text-fit: contain;
-  -o-text-fit: contain;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-.class-Choice-Button:hover {
-  background-color: #a5945f;
-}
->>>>>>> f6cb1f886d354acf780de8234dbd6e33059e0dc6

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import { Container, Container2} from '../../globalStyles';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -48,7 +48,65 @@ const CalendarRender = ({primary,
     lightBg,
     imgStart, 
     start}) => {
-   const [myEvents] = useState([]);
+  
+   const [myEvents, setMyEvents] = useState([]);
+   const [solutionChoice, setSolutionChoice] = useState(0)
+   const [solutions, setSolutions] = useState([])
+
+   useEffect(() => {
+     if(solutions.length < 1){
+      fetch('/find_combinations')
+      .then(response => response.json())
+      .then(data => formatEvents(data))
+      .catch(err => console.log(err));
+     }
+     updateEvents();
+  }, [solutionChoice, myEvents]);
+
+  const updateEvents = () => {
+    console.log('');
+  };
+  const convertToEvent = (course) => {
+    const { course_code, name, start_time, end_time, days } = course;
+  
+    const startTime = moment(start_time, 'Hmm');
+    const endTime = moment(end_time, 'Hmm');
+  
+    const daysArray = days.split('').map(day => {
+      switch (day) {
+        case 'M': return 1;
+        case 'T': return 2;
+        case 'W': return 3;
+        case 'R': return 4;
+        case 'F': return 5;
+        case 'H': return 4;
+        default: return -1;
+      }
+    });
+  
+    const events = daysArray.map(dayOfWeek => ({
+      title: `${course_code} - ${name}`,
+      start: moment().day(dayOfWeek).hours(startTime.hours()).minutes(startTime.minutes()).toDate(),
+      end: moment().day(dayOfWeek).hours(endTime.hours()).minutes(endTime.minutes()).toDate(),
+    }));
+  
+    return events;
+  };
+
+
+    const formatEvents = ((data) => {
+      console.log(data);
+      setSolutions(data);
+      const solutions = data[solutionChoice];
+      if (solutions) {
+        const events = solutions.flatMap(course => convertToEvent(course));
+        console.log(events);
+
+        setMyEvents(events);
+      }
+
+    })
+
    return (
      <>
 
@@ -93,7 +151,7 @@ const CalendarRender = ({primary,
                  <InfoColumn> 
                     <Container>
 
-                    <SolutionList />
+                    <SolutionList setSolutionChoice={setSolutionChoice} solutions={solutions}/>
 
                   </Container>
                 </InfoColumn>
