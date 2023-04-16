@@ -54,10 +54,12 @@ const CalendarRender = ({primary,
    const [solutions, setSolutions] = useState([])
 
    useEffect(() => {
+     if(myEvents.length < 1){
       fetch('/find_combinations')
       .then(response => response.json())
       .then(data => formatEvents(data))
       .catch(err => console.log(err));
+     }
      updateEvents();
   }, [solutionChoice, myEvents]);
 
