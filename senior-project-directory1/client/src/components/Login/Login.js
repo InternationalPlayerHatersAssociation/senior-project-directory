@@ -60,7 +60,7 @@ const Login=({
             <form1>
             <h2>Login </h2><br></br>
             {showAlert && (
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className="h8" style={{ display: 'flex', justifyContent: 'center' }}>
                     <Alert
                     variant="danger"
                     onClose={() => setShowAlert(false)}
