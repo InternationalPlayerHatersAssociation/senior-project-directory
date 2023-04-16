@@ -10,8 +10,8 @@ def convert_course_data(course_data):
                 end_time = int(course.end_time)
                 grouped_courses[course.name].append({
                     "crn": course.crn,
-                    "start": start_time,
-                    "end": end_time,
+                    "start_time": start_time,
+                    "end_time": end_time,
                     "day": course.days
                 })
             except ValueError:
