@@ -18,9 +18,14 @@ useEffect(() => {
   if(majorClasses) {
     fetch('/get_major_classes')
     .then(response => response.json())
-    .then(data => setMajorClasses(data.names));
+    .then(data => removeDuplicates(data.names));
   };
-}, []);
+}, [filterName]);
+
+const removeDuplicates = (data) => {
+  const filteredClasses = [...new Set(data)];
+  setMajorClasses(filteredClasses)
+}
 
 
 const handleSubmit = async (event) => {
@@ -33,13 +38,12 @@ const handleSubmit = async (event) => {
   console.log('End time:', endTime);
 
   try {
-    const response = await fetch('/save_user_data', {
+    const response = await fetch('/find_combinations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        history: completedClasses,
         classes: plannedClasses,
         conflicts: conflicts,
       }),
@@ -54,7 +58,7 @@ const handleSubmit = async (event) => {
   } catch (error) {
     console.error('Error submitting form:', error);
   }
-};
+  };
 
   const handleAddPlannedClass = (event) => {
     event.preventDefault();
@@ -69,8 +73,7 @@ const handleSubmit = async (event) => {
 
   const handleAddCompletedClass = (event) => {
     event.preventDefault();
-    const input = event.target.previousElementSibling;
-    const classInput = input.value.trim();
+    const classInput = event.target.value;
     if(classInput) {
       setCompletedClasses([...completedClasses, classInput]);
       setFilterName('');
@@ -122,6 +125,7 @@ const handleSubmit = async (event) => {
   };
 
   const classesToChoose = useMemo(() => {
+
     if (majorClasses.length > 0) {
       const filteredClasses = majorClasses.filter(item =>
         new RegExp(filterName, 'i').test(item)
@@ -129,12 +133,14 @@ const handleSubmit = async (event) => {
   
       if (filteredClasses.length < 10) {
         if(step === 1){
-          return filteredClasses.map(course => (
-            <button key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
+          const notChosen = filteredClasses.filter((item) => !completedClasses.includes(item));
+          return notChosen.map(course => (
+            <button className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
           ));
         } else {
-          return filteredClasses.map(course => (
-            <button key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
+          const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item));
+          return notChosen.map(course => (
+            <button  className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
         ));
         }
 
@@ -158,8 +164,8 @@ const handleSubmit = async (event) => {
             
             <div className="class-inputs">
               <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
-              <>{classesToChoose}</>
             </div>
+            <div className='class-Choice-Buttons'>{classesToChoose}</div>
             <ul className="class-list">
                 {completedClasses.map((classInput) => (
                   <div className="class-listing" key={classInput}>
@@ -198,8 +204,8 @@ const handleSubmit = async (event) => {
           
           <div className="class-inputs">
             <input type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
-            <>{classesToChoose}</>
           </div>
+          <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
             {plannedClasses.map((classInput, index) => (
               <div className="class-listing" key={index}>
@@ -262,6 +268,7 @@ const handleSubmit = async (event) => {
         />
         <button onClick={handleAddConflict}>Add</button>
       </div>
+      <div className='class-Choice-Buttons'>{classesToChoose}</div>
       <ul className="conflict-list">
         {conflicts.map((conflictInput, index) => (
           <div className="class-listing">
