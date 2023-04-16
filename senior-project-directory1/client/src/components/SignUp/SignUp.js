@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Container, Button } from "../../globalStyles";
-import {
-    InfosSecLogin,
-    InfoRow,
-    InfoColumn,
-    TextWrapper,
-    } from '../InfoSection.elements';
+import SignUpSucces from "./SignUpSuccess"
 
 const SignUp = ({
   lightBg}) => {
@@ -69,26 +64,28 @@ const SignUp = ({
   return (
     <div className="container">
       <div className="form">
-      <form1>
-      {show?
+
+      {show?(
       <>
+          <SignUpSucces />
         <Alert variant="success" onClose={() => setShow(false)} dismissible>
-        <p>
+        <h4>
           {serverResponse}
-        </p>
+        </h4>
+<br></br>
         </Alert>
-        <h1>Sign Up</h1>
 
       </>
-      : <h2>Sign Up</h2>
-      }
+      ): (
+        <>
+         <br></br>
+         <br></br>
 
-      {/* <sImage>
-            <img src='../../img/Cat-Embroidery.png' alt='success-image' width='175px' />
-    </sImage>*/}
+
+ 
 
       <form1>
-      
+      <h2>Sign Up</h2>
         <Form.Group>
           <p><label htmlFor="email">Email    </label>
           <Form.Control
@@ -172,13 +169,13 @@ const SignUp = ({
             Already have an account?<Link to="/login"> Login here.</Link><br></br>
           </small></h3><br></br>
         </Form.Group>
-        </form1>
-        </form1>          </div>
-        
-        </div>
-        
+</form1>
 
+        </>
 
+          )}
+      </div>
+</div>
   );
 };
 

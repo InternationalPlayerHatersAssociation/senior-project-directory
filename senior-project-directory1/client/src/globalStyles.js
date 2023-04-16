@@ -33,7 +33,8 @@ background-color: #fff;
 margin-right: auto;
 margin-left: auto;
 margin-top: 30px;
-
+border-radius: 15px;
+box-shadow: 2 2 2 2;
 
 @media screen and (max-width: 991px) {
     padding-right: auto;

@@ -1,13 +1,14 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import ReactDOM  from 'react-dom'
 /*import 'bootstrap/dist/css/bootstrap.min.css';*/
 import NavBar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 /*import './styles/main.css'*/
 import{
     BrowserRouter as Router, 
     Route,
     Routes,
-    Link
+
 } from 'react-router-dom'
 import HomePage from './components/Home/Home';
 import SignUp from './components/SignUp/SignUp';
@@ -27,6 +28,7 @@ const App = () => {
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/form" element={<Form/>}/>
             </Routes>
+            <Footer />
         </Router>
     )
 }

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './FormOther.css';
+import { v4 as uuidv4 } from 'uuid';
 
 function Form() {
   const [completedClasses, setCompletedClasses] = useState([]);
@@ -8,36 +9,76 @@ function Form() {
   const [day, setDay] = useState('');
   const [startTime, setStartTime] = useState('');
   const [endTime, setEndTime] = useState('');
+  const [majorClasses, setMajorClasses] = useState([]);
+  const [filterName, setFilterName] = useState('');
 //added
   const [step, setStep] = useState(1); // state to keep track of the current step
 //done
- const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Completed classes:', completedClasses);
-    console.log('Planned classes:', plannedClasses);
-    console.log('Conflicts:', conflicts);
-    console.log('Day:', day);
-    console.log('Start time:', startTime);
-    console.log('End time:', endTime);
+useEffect(() => {
+  if(majorClasses) {
+    fetch('/get_major_classes')
+    .then(response => response.json())
+    .then(data => removeDuplicates(data.names));
   };
+}, []);
 
-  const handleAddCompletedClass = (event) => {
-    event.preventDefault();
-    const input = event.target.previousElementSibling;
-    const classInput = input.value.trim();
-    if (classInput) {
-      setCompletedClasses([...completedClasses, classInput]);
-      input.value = '';
+const removeDuplicates = (data) => {
+  const filteredClasses = [...new Set(data)];
+  setMajorClasses(filteredClasses)
+}
+
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+  console.log('Completed classes:', completedClasses);
+  console.log('Planned classes:', plannedClasses);
+  console.log('Conflicts:', conflicts);
+  console.log('Day:', day);
+  console.log('Start time:', startTime);
+  console.log('End time:', endTime);
+
+  try {
+    const response = await fetch('/save_user_data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        history: completedClasses,
+        classes: plannedClasses,
+        conflicts: conflicts,
+        history: completedClasses,
+      }),
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log('Response data:', data);
+    } else {
+      console.error('Error with the response:', response.statusText);
     }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+  }
   };
 
   const handleAddPlannedClass = (event) => {
     event.preventDefault();
-    const input = event.target.previousElementSibling;
-    const classInput = input.value.trim();
-    if (classInput) {
-      setPlannedClasses([...plannedClasses, classInput]);
-      input.value = '';
+    const classToAdd = event.target.value;
+    setPlannedClasses([...plannedClasses, classToAdd]);
+    setFilterName('');
+  };
+
+  const handleInputChange = (e) => {
+    setFilterName(e.target.value);
+  };
+
+  const handleAddCompletedClass = (event) => {
+    event.preventDefault();
+    const classInput = event.target.value;
+    if(classInput) {
+      setCompletedClasses([...completedClasses, classInput]);
+      setFilterName('');
     }
   };
 
@@ -59,10 +100,11 @@ function Form() {
     });
   };
 
-  const handleRemovePlannedClass = (index) => {
+  const handleRemovePlannedClass = (event) => {
+    event.preventDefault();
     setPlannedClasses((prevClasses) => {
       const newClasses = [...prevClasses];
-      newClasses.splice(index, 1);
+      newClasses.splice(event.target.value, 1);
       return newClasses;
     });
   };
@@ -75,74 +117,103 @@ function Form() {
     });
   };
   
-  
-//added
   const handleNext = () => {
     setStep(step + 1);
+    setFilterName('');
   };
 
   const handleBack = () => {
     setStep(step - 1);
   };
 
+  const classesToChoose = useMemo(() => {
+
+    if (majorClasses.length > 0) {
+      const filteredClasses = majorClasses.filter(item =>
+        new RegExp(filterName, 'i').test(item)
+      );
+  
+      if (filteredClasses.length < 10) {
+        if(step === 1){
+          const notChosen = filteredClasses.filter((item) => !completedClasses.includes(item));
+          return notChosen.map(course => (
+            <button className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
+          ));
+        } else {
+          const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item));
+          return notChosen.map(course => (
+            <button  className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
+        ));
+        }
+
+      }
+    }
+  
+    return <></>;
+  }, [majorClasses, filterName]);
+
   const renderStepOne = () => {//done
-  return (
-    <div>
-    <div className="form-container">
-      <div className="form-header">
-        <h4>Step 1</h4>
-        <p>Add your completed courses</p>
-      </div>
-      <div className="form-steps">
-        <form onSubmit={handleSubmit}>
-          <h5 htmlFor="completed-classes">Courses Complete:</h5>
-          <div className="class-inputs">
-            <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" />
-            <button onClick={handleAddCompletedClass}>Add</button>
-          </div>
-          <ul className="class-list">
-              {completedClasses.map((classInput) => (
-                <div className="class-listing" key={classInput}>
-                  <li>
-                    {classInput}
-                    <button onClick={() => handleRemoveCompletedClass(classInput)}>Remove</button>
-                  </li>
-                </div>
-              ))}
+
+    return (
+      <>
+          <div className="formContainer">
             
-          </ul>
-          {/*added*/ }
-          <button type="submit" className="submit-button" onClick={handleNext}>
-        Next
-      </button>
-      </form>
-      </div>
-      </div>
-      </div>
-    );
+            <div className="form-header">
+          <h2>Step 1</h2>
+              <p>Add your completed courses</p>
+              </div>
+        <div className="form-steps">
+            
+            <div className="class-inputs">
+              <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
+            </div>
+            <div className='class-Choice-Buttons'>{classesToChoose}</div>
+            <ul className="class-list">
+                {completedClasses.map((classInput) => (
+                  <div className="class-listing" key={classInput}>
+                    <li>
+                      {classInput}
+                      <button onClick={() => handleRemoveCompletedClass(classInput)}>Remove</button>
+                    </li>
+                  </div>
+                ))}
+              
+            </ul>
+            {/*added*/ }
+            <div className='div420'>
+            <button type="submit" className="submit-button" onClick={handleNext}>
+          Next
+        </button>
+        </div>
+        </div>
+        <br></br><br></br>
+        </div>
+      </>
+      );
   }
 
+  const renderStepTwo = () => {
 
-
-    const renderStepTwo = () => {
     return (
     <>           {/*added*/ }
-        <div className="form-container">
+      <div className="formContainer">
+          
       <div className="form-header">
-            <h4>Step 2</h4>
+    <h2>Step 2</h2>
         <p>Add your needed courses</p>
-        </div><br></br>
-          <h5 htmlFor="planned-classes">Courses Needed:</h5>
+        </div>
+        <div className="form-steps">
+          
           <div className="class-inputs">
-            <input type="text" id="planned-classes" placeholder="e.g. Senior Project" />
-            <button onClick={handleAddPlannedClass}>Add</button>
+            <input type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
           </div>
+          <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
             {plannedClasses.map((classInput, index) => (
               <div className="class-listing" key={index}>
                 <li>
                   {classInput}
-                  <button onClick={() => handleRemovePlannedClass(index)}>Remove</button>
+                  <button value={index} onClick={handleRemovePlannedClass}>Remove</button>
                 </li>
               </div>
             ))}
@@ -156,20 +227,25 @@ function Form() {
       </button>
       </div>
       </div>
+      <br></br><br></br>
+      </div>
       </>
     );
   }; 
 
-
-    const renderStepThree = () => {
+  const renderStepThree = () => {
     return (
     <> 
-            <div className="form-container">
-      <div className="form-header"></div>
-              <h4>Step 3</h4><br></br>
+
+
+              
+            <div className="formContainer">
+      <div className="form-header">
+              <h2>Step 3</h2>
         <p>Add your schedule conflicts</p>
         </div>
-          <h5 htmlFor="conflicts">Schedule Conflicts:</h5>
+        <div className="form-steps">
+          
           <div className="conflict-inputs">
             <select value={day} onChange={(event) => setDay(event.target.value)}>
               <option value="">Select day</option>
@@ -194,6 +270,7 @@ function Form() {
         />
         <button onClick={handleAddConflict}>Add</button>
       </div>
+      <div className='class-Choice-Buttons'>{classesToChoose}</div>
       <ul className="conflict-list">
         {conflicts.map((conflictInput, index) => (
           <div className="class-listing">
@@ -210,42 +287,53 @@ function Form() {
         Next
       </button>
       </div>
+      </div>
+      <br></br><br></br>
+      </div>
 
 
       </>
 );
-}
+  };
 
 const renderStepFour = () => {
 return (
 <>
-<br></br>
-<h4>Step 4</h4><br></br>
-        <p>Review</p><br></br>
+<div className="formContainer">
+
+      <div className="form-header">
+              <h2>Step 4</h2>
+        <p>Review</p>
+        </div>
+        <div className="form-steps">
   <div className="review-container">
+
+
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Completed Classes:</h4>
+        <div className='h9'>Completed Courses:</div>
         <ul>
           {completedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
           ))}
-        </ul>
+      </ul>
       </div>
     </div>
+
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Planned Classes:</h4>
-        <ul>
+      <div className='h9'>Needed Courses:</div>
+            <ul>
           {plannedClasses.map((classInput, index) => (
             <li key={index}>{classInput}</li>
           ))}
-        </ul>
+      </ul>
       </div>
     </div>
+
     <div className="review-list">
       <div className="review-list-section">
-        <h4>Schedule Conflicts:</h4>
+      <div className='h9'>Schedule Conflicts:</div>
         <ul>
           {conflicts.map((conflict, index) => (
             <li key={index}>{conflict}</li>
@@ -261,14 +349,22 @@ return (
     <button type="submit" className="submit-button">
       Submit
     </button>
+    <div><br></br><br></br></div>
+  </div>
+  </div>
   </div>
 </>
 );
-};
+  };
 
  return (
-   <div className="form-container">
-   <h6>Course Planner</h6>
+  <div>
+    
+    <div className='formContainer'>
+      <br></br><br></br><br></br>
+  <h3> <img src='../../img/creepy-cat.png' alt='success-image' width='175px' /></h3>
+    
+
    <form onSubmit={handleSubmit}>
    {step === 1 && renderStepOne()}
    {step === 2 && renderStepTwo()}
@@ -276,6 +372,8 @@ return (
    {step === 4 && renderStepFour()}
    </form>
    </div>
+   </div>
+
    );
 }
   

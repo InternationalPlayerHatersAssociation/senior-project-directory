@@ -46,7 +46,7 @@ CREATE TABLE "course_history" (
     "id" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "course_id" int  NOT NULL,
-    "grade" varchar(2)   NOT NULL,
+    "grade" varchar(2)   NULL,
     CONSTRAINT "pk_course_history" PRIMARY KEY (
         "id"
      )
@@ -67,8 +67,8 @@ CREATE TABLE "conflict" (
     "cid" serial   NOT NULL,
     "stuid" int   NOT NULL,
     "name" varchar(50)   NOT NULL,
-    "start_time" varchar(50)   NOT NULL,
-    "end_time" varchar(50)   NOT NULL,
+    "start_time" int   NOT NULL,
+    "end_time" int   NOT NULL,
     "day" varchar(10)   NOT NULL,
     CONSTRAINT "pk_conflict" PRIMARY KEY (
         "cid"
@@ -78,7 +78,7 @@ CREATE TABLE "conflict" (
 CREATE TABLE "class_choices" (
     "choice_id" serial   NOT NULL,
     "stuid" int   NOT NULL,
-    "crn" int   NOT NULL,
+    "course_name" varchar(100)   NOT NULL,
     CONSTRAINT "pk_class_choices" PRIMARY KEY (
         "choice_id"
      )
@@ -122,5 +122,3 @@ REFERENCES "student" ("stuid");
 ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_stuid" FOREIGN KEY("stuid")
 REFERENCES "student" ("stuid");
 
-ALTER TABLE "class_choices" ADD CONSTRAINT "fk_class_choices_crn" FOREIGN KEY("crn")
-REFERENCES "course_offering" ("crn");

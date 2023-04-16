@@ -10,8 +10,8 @@ def convert_course_data(course_data):
                 end_time = int(course.end_time)
                 grouped_courses[course.name].append({
                     "crn": course.crn,
-                    "start": start_time,
-                    "end": end_time,
+                    "start_time": start_time,
+                    "end_time": end_time,
                     "day": course.days
                 })
             except ValueError:
@@ -26,4 +26,25 @@ def convert_course_data(course_data):
             result[index + 1] = {i + 1: section for i, section in enumerate(course_sections)}
 
     return result
+
+
+def process_conflict_string(conflict_string):
+    days = {
+        "Monday": "M",
+        "Tuesday": "T",
+        "Wednesday": "W",
+        "Thursday": "H",
+        "Friday": "F",
+    }
+
+    day, times = conflict_string.split(", ")
+    start_time, end_time = times.split(" - ")
+    start_time = int(start_time.replace(":", ""))
+    end_time = int(end_time.replace(":", ""))
+
+    return {
+        "day": days[day],
+        "start_time": start_time,
+        "end_time": end_time,
+    }
 

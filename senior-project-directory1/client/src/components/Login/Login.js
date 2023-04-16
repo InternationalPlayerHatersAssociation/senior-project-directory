@@ -5,6 +5,8 @@ import {useState, useEffect} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 import { login } from "../../auth";
+import Alert from "react-bootstrap/Alert";
+import styles from './Login.module.css'; 
 
 
 import "../Form/Form.css"
@@ -13,7 +15,8 @@ import "../Form/Form.css"
 const Login=({
     lightBg})=>{
     const {register, handleSubmit, watch,reset, formState: {errors}} = useForm()
-
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
     const navigate = useNavigate()
 
     const loginUser=(data)=>{
@@ -26,13 +29,22 @@ const Login=({
             body:JSON.stringify(data)
         }
         fetch('/login', requestOptions)
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Invalid email or password');
+            }
+            return res.json();
+        })
         .then(data => {
             console.log(data.access_token)
             login(data.access_token)
             navigate('../', {replace:true})
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+                    console.log(err)
+                    setShowAlert(true);
+                    setAlertMessage(err.message);
+        })
 
         reset()
 
@@ -41,11 +53,26 @@ const Login=({
     return(
          <div >
             <div className="form"></div>
+
             <div className="formContainer">
+                <br></br><br></br>
            <h3><img src='../../img/Cat-Embroidery.png' alt='success-image' width='175px' /></h3>
+           
 
             <form1>
             <h2>Login </h2><br></br>
+            {showAlert && (
+                <div className="h8" style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Alert
+                    variant="danger"
+                    onClose={() => setShowAlert(false)}
+                    dismissible
+                    style={{ width: '100%' }}
+                    >
+                    {alertMessage}
+                    </Alert>
+                </div>
+                )}
             <div>
                         <label htmlFor="email">Email    </label>
                         <input placeholder="youremail@gmail.com"
@@ -56,13 +83,17 @@ const Login=({
                         <input type="password" placeholder="*******************"
                             {...register('password', {required:true})}/>
                             {errors.email && <p style = {{color:'red'}}><small>Password is required</small></p>}
-                        <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)} />
-                        <br></br>
-                        <h2><small><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></small></h2>
+                        <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)}  />
+                        
+
+                        <h3><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></h3>
 
                     </div>
                 </form1>
+                <br></br>
+                <br></br>
                 </div>
+
 
         </div>
 
