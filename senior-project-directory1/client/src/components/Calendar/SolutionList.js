@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SolutionList.css';
+import {Link} from 'react-router-dom';
 
 function SolutionList(props) {
   const [selectedSolution, setSelectedSolution] = useState('');
@@ -46,6 +47,8 @@ return (
         ))}
       </div>
     )}
+    <br></br> <br></br>
+    <h3><small>click <Link to="/form">here</Link> to edit your classes and schedule conflicts.</small></h3>
   </div>
 );
         }
