@@ -33,12 +33,61 @@ const StyledCalendar = styled(Calendar)`
 
     min-height: 40px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column no wrap;
     border-radius: 20px;
 }
+.rbc-event-label {
+  font-size: 0px;
+}
+.rbc-event {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0;
+  padding: $event-padding;
+  background-color: $event-bg;
+  border-radius: $event-border-radius;
+  color: $event-color;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 10px;
 
+  .rbc-slot-selecting & {
+    cursor: inherit;
+    pointer-events: none;
+  }
+
+  &.rbc-selected {
+    background-color: darken($event-bg, 10%);
+  }
+
+  &:focus {
+    outline: 5px auto $event-outline;
+  }
+}
+
+.rbc-time-slot {
+  border-top: 1px solid lighten($cell-border, 10%);
+  height: 60px;
+}
 .rbc-today {
   background-color: #e0e0de; /* replace with your desired color */
+}
+::-webkit-scrollbar {
+  width: 10px; // Change the width here
+  height: 10px; // Change the height here
+  background-color: #f5f5f5; // Change the background color here
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa; // Change the thumb color here
+  border-radius: 5px; // Change the border radius here
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5; // Change the track color here
+  border-radius: 5px; // Change the border radius here
 }
 
 
@@ -55,16 +104,20 @@ const CalendarRender = ({primary,
 
    useEffect(() => {
      if(myEvents.length < 1){
+       console.log('Fetching');
       fetch('/find_combinations')
       .then(response => response.json())
       .then(data => formatEvents(data))
       .catch(err => console.log(err));
      }
      updateEvents();
-  }, [solutionChoice, myEvents]);
+  }, [solutionChoice]);
 
   const updateEvents = () => {
-    console.log('');
+    if(solutions[solutionChoice]){
+      const events = solutions[solutionChoice].flatMap(course => convertToEvent(course));
+      setMyEvents(events);
+    }
   };
   const convertToEvent = (course) => {
     const { course_code, name, start_time, end_time, days } = course;
@@ -126,8 +179,9 @@ const CalendarRender = ({primary,
                          endAccessor="end"
                          defaultView='week'
                          toolbar ={false}
-                         step = {60}
-                         min = {new Date(2023, 3, 13, 6, 0)}
+                         step = {30}
+                         min = {new Date(2023, 3, 13, 8, 0)}
+                         max = {new Date(2023, 3, 13, 23, 0)}
                          formats={{
                           dayFormat: (date, culture, localizer) => localizer.format(date, 'ddd') // hide the date
                         }}
@@ -140,7 +194,8 @@ const CalendarRender = ({primary,
                           borderRadius: '20px',
                           padding: '0px',
                           fontWeight: 'bold',
-                          boxShadow: '4px 4px 10px black'
+                          boxShadow: '4px 4px 10px black',
+                          overflowY: 'auto',
                         }}
                         
                          >

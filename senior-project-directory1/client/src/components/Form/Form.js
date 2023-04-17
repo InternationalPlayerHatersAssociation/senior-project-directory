@@ -30,6 +30,7 @@ const removeDuplicates = (data) => {
 
 const handleSubmit = async (event) => {
   event.preventDefault();
+  console.log('I am submitting')
   console.log('Completed classes:', completedClasses);
   console.log('Planned classes:', plannedClasses);
   console.log('Conflicts:', conflicts);
@@ -165,7 +166,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
             
             <div className="class-inputs">
-              <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
+              <input autoComplete="off" type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
             </div>
             <div className='class-Choice-Buttons'>{classesToChoose}</div>
             <ul className="class-list">
@@ -205,7 +206,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
           
           <div className="class-inputs">
-            <input type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
+            <input autoComplete="off" type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
           </div>
           <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
