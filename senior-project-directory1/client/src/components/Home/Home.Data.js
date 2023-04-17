@@ -50,7 +50,7 @@ export const homeObjFour = {
     imgStart: '', 
     lightTopLine: true, 
     lightTextDesc: true,  
-    description: 'Isreal is a PressPaws data scraper. He developed the scrip that allowed our database to be populated with all available UHCL courses. He plans to be a software engineer or developer after graduation.', 
+    description: 'Isreal is a PressPaws data scraper. He developed the script that allowed our database to be populated with all available UHCL courses. He plans to be a software engineer or developer after graduation.', 
     headline: 'Israel Gutierrez Delgado', 
     lightText: true, 
     topLine: "Data Engineer",
