@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import './FormOther.css';
 import { v4 as uuidv4 } from 'uuid';
+import Alert from 'react-bootstrap/Alert';
+import { useNavigate } from 'react-router-dom';
 
 function Form() {
   const [completedClasses, setCompletedClasses] = useState([]);
@@ -11,6 +13,10 @@ function Form() {
   const [endTime, setEndTime] = useState('');
   const [majorClasses, setMajorClasses] = useState([]);
   const [filterName, setFilterName] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const navigate = useNavigate();
+
 //added
   const [step, setStep] = useState(1); // state to keep track of the current step
 //done
@@ -30,13 +36,6 @@ const removeDuplicates = (data) => {
 
 const handleSubmit = async (event) => {
   event.preventDefault();
-  console.log('I am submitting')
-  console.log('Completed classes:', completedClasses);
-  console.log('Planned classes:', plannedClasses);
-  console.log('Conflicts:', conflicts);
-  console.log('Day:', day);
-  console.log('Start time:', startTime);
-  console.log('End time:', endTime);
 
   try {
     const response = await fetch('/save_user_data', {
@@ -52,16 +51,22 @@ const handleSubmit = async (event) => {
       }),
     });
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Response data:', data);
-    } else {
-      console.error('Error with the response:', response.statusText);
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`${errorData.message}`);
     }
+
+    const data = await response.json();
+    console.log('Response data:', data);
+    setErrorMessage('');
+    navigate('../', {replace:true});
   } catch (error) {
     console.error('Error submitting form:', error);
+    setErrorMessage(error.message);
+    setShowAlert(true);
+  
   }
-  };
+};
 
   const handleAddPlannedClass = (event) => {
     event.preventDefault();
@@ -301,9 +306,20 @@ const renderStepFour = () => {
 return (
 <>
 <div className="formContainer">
-
       <div className="form-header">
               <h2>Step 4</h2>
+              {showAlert && (
+                <div className="h8" style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Alert
+                    variant="danger"
+                    onClose={() => setShowAlert(false)}
+                    dismissible
+                    style={{ width: '100%' }}
+                    >
+                    {errorMessage}
+                    </Alert>
+                </div>
+                )}
         <p>Review</p>
         </div>
         <div className="form-steps">
@@ -347,7 +363,7 @@ return (
     <button type="submit" className="submit-button" onClick={handleBack}>
       Back
     </button>
-    <button type="submit" className="submit-button">
+    <button type="submit" className="submit-button" >
       Submit
     </button>
     <div><br></br><br></br></div>
