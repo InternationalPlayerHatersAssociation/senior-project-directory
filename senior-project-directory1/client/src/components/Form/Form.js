@@ -143,12 +143,12 @@ const handleSubmit = async (event) => {
         if(step === 1){
           const notChosen = filteredClasses.filter((item) => !completedClasses.includes(item));
           return notChosen.map(course => (
-            <button className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
+            <button title={course} className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
           ));
         } else {
           const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item));
           return notChosen.map(course => (
-            <button  className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
+            <button title={course}   className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
         ));
         }
 
@@ -171,7 +171,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
             
             <div className="class-inputs">
-              <input autoComplete="off" type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
+              <input className="search-bar" autoComplete="off" type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
             </div>
             <div className='class-Choice-Buttons'>{classesToChoose}</div>
             <ul className="class-list">
@@ -211,7 +211,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
           
           <div className="class-inputs">
-            <input autoComplete="off" type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
+            <input className="search-bar" autoComplete="off" type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
           </div>
           <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
@@ -274,7 +274,7 @@ const handleSubmit = async (event) => {
           value={endTime}
           onChange={(event) => setEndTime(event.target.value)}
         />
-        <button onClick={handleAddConflict}>Add</button>
+        <button className='conflict-inputs-button' onClick={handleAddConflict}>Add</button>
       </div>
       <div className='class-Choice-Buttons'>{classesToChoose}</div>
       <ul className="conflict-list">
@@ -331,7 +331,7 @@ return (
         <div className='h9'>Completed Courses:</div>
         <ul>
           {completedClasses.map((classInput, index) => (
-            <li key={index}>{classInput}</li>
+            <li className='review-list-item' key={index}>{classInput}</li>
           ))}
       </ul>
       </div>
@@ -342,7 +342,7 @@ return (
       <div className='h9'>Needed Courses:</div>
             <ul>
           {plannedClasses.map((classInput, index) => (
-            <li key={index}>{classInput}</li>
+            <li className='review-list-item' key={index}>{classInput}</li>
           ))}
       </ul>
       </div>
@@ -353,7 +353,7 @@ return (
       <div className='h9'>Schedule Conflicts:</div>
         <ul>
           {conflicts.map((conflict, index) => (
-            <li key={index}>{conflict}</li>
+            <li className='review-list-item' key={index}>{conflict}</li>
           ))}
           </ul>
       </div>

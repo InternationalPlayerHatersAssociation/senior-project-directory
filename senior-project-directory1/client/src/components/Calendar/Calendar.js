@@ -104,7 +104,6 @@ const CalendarRender = ({primary,
    const [errorMessage, setErrorMessage] = useState('');
 
    useEffect(() => {
-<<<<<<< HEAD
      if(myEvents.length < 1){
        console.log('Fetching');
       fetch('/find_combinations')
@@ -114,26 +113,6 @@ const CalendarRender = ({primary,
      }
      updateEvents();
   }, [solutionChoice]);
-=======
-    if (myEvents.length < 1) {
-      fetch('/find_combinations')
-        .then(response => {
-          if (!response.ok) {
-            return response.text().then(text => {
-              throw new Error(`Error ${response.status}: ${text}`);
-            });
-          }
-          return response.json();
-        })
-        .then(data => formatEvents(data))
-        .catch(err => {
-          console.log(err.message);
-          setErrorMessage(err.message);
-        });
-    }
-    updateEvents();
-  }, [solutionChoice, myEvents]);
->>>>>>> 31b7d56c08c20f8533ce0839c263dc63994ce907
 
   const updateEvents = () => {
     if(solutions[solutionChoice]){

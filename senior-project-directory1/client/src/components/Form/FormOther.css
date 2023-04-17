@@ -95,6 +95,15 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
+
+  .conflict-inputs-button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
   
   .class-listing {
     display: flex;
@@ -110,6 +119,7 @@
     background-color: white;
     margin-left: 100px;
     cursor: pointer;
+    font-size: large;
 
   }
   
@@ -128,9 +138,9 @@
     margin-bottom: 5px;
     display: felx;
     text-align: left;
-    max-width: 500px;
+    max-width: 1000px;
     color: white;
-
+    font-size: large;
   }
   
   .submit-button {
@@ -168,6 +178,12 @@
     border-radius: 5px;
     width: 350px;
     
+  }
+
+  .review-list-item {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
   }
   
   .review-list-section {
@@ -211,17 +227,18 @@
   }
 
   .class-Choice-Button {
+    font-size: large;
     padding: .5em;
     margin: 3px;
-    width: 6vw;
+    width: 7vw;
     min-height: 3em;
-    max-height: 4em; /* Set the max-height to match the number of lines */
+    max-height: 5.5em; /* Set the max-height to match the number of lines */
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to display */
+    -webkit-line-clamp: 3; /* number of lines to display */
     -webkit-box-orient: vertical;
     line-height: 1.5em; /* Adjust the line-height */
     word-break: break-word;
@@ -231,4 +248,11 @@
   
   .class-Choice-Button:hover {
     background-color: #a5945f;
+  }
+
+  .search-bar{
+    font-size: large;
+    width: 20vw;
+    height: 4vh;
+
   }
