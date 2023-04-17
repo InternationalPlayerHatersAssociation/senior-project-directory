@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SolutionList.css';
+import {Link} from 'react-router-dom';
 
 function SolutionList(props) {
   const [selectedSolution, setSelectedSolution] = useState('');
@@ -7,27 +8,30 @@ function SolutionList(props) {
 
   const handleSolutionClick = (solution, index) => {
     props.setSolutionChoice(index);
+    console.log('Here is the solution value:',selectedSolution);
     if (selectedSolution === solution) {
       setSelectedSolution('');
     } else {
       setSelectedSolution(solution);
     }
+    setGeneratedCRNs([]);
   };
 
 
 const handleGenerateCRNs = () => {
-  console.log('Generating CRNs...');
-  const crns = selectedSolution ? [`CRN1-${selectedSolution}`, `CRN2-${selectedSolution}`] : [];
-  setGeneratedCRNs(crns);
+  const courseNames = selectedSolution.map(course => `${course.name} - ${course.crn}`);
+  setGeneratedCRNs(courseNames);
 };
 
+console.log(props.solutions);
+const solutions = (Array.isArray(props.solutions) ? props.solutions : []);
 return (
   <div className="solution-list-container">
     <h2 className="solution-list-header">Choose a Solution</h2>
     <div className="solution-list">
-      {props.solutions.map((solution, index) => (
+      {solutions.map((solution, index) => (
         <div
-          key={solution}
+          key={index}
           className={`solution-list-item ${
             solution === selectedSolution ? 'selected' : ''
           }`}
@@ -46,6 +50,8 @@ return (
         ))}
       </div>
     )}
+    <br></br> <br></br>
+    <h3><small>click <Link to="/form">here</Link> to edit your classes and schedule conflicts.</small></h3>
   </div>
 );
         }

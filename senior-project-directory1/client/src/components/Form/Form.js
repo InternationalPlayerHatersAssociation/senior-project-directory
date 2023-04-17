@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import './FormOther.css';
 import { v4 as uuidv4 } from 'uuid';
+import Alert from 'react-bootstrap/Alert';
+import { useNavigate } from 'react-router-dom';
 
 function Form() {
   const [completedClasses, setCompletedClasses] = useState([]);
@@ -11,6 +13,10 @@ function Form() {
   const [endTime, setEndTime] = useState('');
   const [majorClasses, setMajorClasses] = useState([]);
   const [filterName, setFilterName] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const navigate = useNavigate();
+
 //added
   const [step, setStep] = useState(1); // state to keep track of the current step
 //done
@@ -30,12 +36,6 @@ const removeDuplicates = (data) => {
 
 const handleSubmit = async (event) => {
   event.preventDefault();
-  console.log('Completed classes:', completedClasses);
-  console.log('Planned classes:', plannedClasses);
-  console.log('Conflicts:', conflicts);
-  console.log('Day:', day);
-  console.log('Start time:', startTime);
-  console.log('End time:', endTime);
 
   try {
     const response = await fetch('/save_user_data', {
@@ -51,16 +51,22 @@ const handleSubmit = async (event) => {
       }),
     });
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Response data:', data);
-    } else {
-      console.error('Error with the response:', response.statusText);
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`${errorData.message}`);
     }
+
+    const data = await response.json();
+    console.log('Response data:', data);
+    setErrorMessage('');
+    navigate('../', {replace:true});
   } catch (error) {
     console.error('Error submitting form:', error);
+    setErrorMessage(error.message);
+    setShowAlert(true);
+  
   }
-  };
+};
 
   const handleAddPlannedClass = (event) => {
     event.preventDefault();
@@ -137,12 +143,12 @@ const handleSubmit = async (event) => {
         if(step === 1){
           const notChosen = filteredClasses.filter((item) => !completedClasses.includes(item));
           return notChosen.map(course => (
-            <button className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
+            <button title={course} className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
           ));
         } else {
           const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item));
           return notChosen.map(course => (
-            <button  className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
+            <button title={course}   className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
         ));
         }
 
@@ -165,7 +171,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
             
             <div className="class-inputs">
-              <input type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
+              <input className="search-bar" autoComplete="off" type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
             </div>
             <div className='class-Choice-Buttons'>{classesToChoose}</div>
             <ul className="class-list">
@@ -205,7 +211,7 @@ const handleSubmit = async (event) => {
         <div className="form-steps">
           
           <div className="class-inputs">
-            <input type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
+            <input className="search-bar" autoComplete="off" type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
           </div>
           <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
@@ -268,7 +274,7 @@ const handleSubmit = async (event) => {
           value={endTime}
           onChange={(event) => setEndTime(event.target.value)}
         />
-        <button onClick={handleAddConflict}>Add</button>
+        <button className='conflict-inputs-button' onClick={handleAddConflict}>Add</button>
       </div>
       <div className='class-Choice-Buttons'>{classesToChoose}</div>
       <ul className="conflict-list">
@@ -300,9 +306,20 @@ const renderStepFour = () => {
 return (
 <>
 <div className="formContainer">
-
       <div className="form-header">
               <h2>Step 4</h2>
+              {showAlert && (
+                <div className="h8" style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Alert
+                    variant="danger"
+                    onClose={() => setShowAlert(false)}
+                    dismissible
+                    style={{ width: '100%' }}
+                    >
+                    {errorMessage}
+                    </Alert>
+                </div>
+                )}
         <p>Review</p>
         </div>
         <div className="form-steps">
@@ -314,7 +331,7 @@ return (
         <div className='h9'>Completed Courses:</div>
         <ul>
           {completedClasses.map((classInput, index) => (
-            <li key={index}>{classInput}</li>
+            <li className='review-list-item' key={index}>{classInput}</li>
           ))}
       </ul>
       </div>
@@ -325,7 +342,7 @@ return (
       <div className='h9'>Needed Courses:</div>
             <ul>
           {plannedClasses.map((classInput, index) => (
-            <li key={index}>{classInput}</li>
+            <li className='review-list-item' key={index}>{classInput}</li>
           ))}
       </ul>
       </div>
@@ -336,7 +353,7 @@ return (
       <div className='h9'>Schedule Conflicts:</div>
         <ul>
           {conflicts.map((conflict, index) => (
-            <li key={index}>{conflict}</li>
+            <li className='review-list-item' key={index}>{conflict}</li>
           ))}
           </ul>
       </div>
@@ -346,7 +363,7 @@ return (
     <button type="submit" className="submit-button" onClick={handleBack}>
       Back
     </button>
-    <button type="submit" className="submit-button">
+    <button type="submit" className="submit-button" >
       Submit
     </button>
     <div><br></br><br></br></div>
