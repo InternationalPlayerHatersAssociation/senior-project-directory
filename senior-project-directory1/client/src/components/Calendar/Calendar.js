@@ -52,15 +52,26 @@ const CalendarRender = ({primary,
    const [myEvents, setMyEvents] = useState([]);
    const [solutionChoice, setSolutionChoice] = useState(0)
    const [solutions, setSolutions] = useState([])
+   const [errorMessage, setErrorMessage] = useState('');
 
    useEffect(() => {
-     if(myEvents.length < 1){
+    if (myEvents.length < 1) {
       fetch('/find_combinations')
-      .then(response => response.json())
-      .then(data => formatEvents(data))
-      .catch(err => console.log(err));
-     }
-     updateEvents();
+        .then(response => {
+          if (!response.ok) {
+            return response.text().then(text => {
+              throw new Error(`Error ${response.status}: ${text}`);
+            });
+          }
+          return response.json();
+        })
+        .then(data => formatEvents(data))
+        .catch(err => {
+          console.log(err.message);
+          setErrorMessage(err.message);
+        });
+    }
+    updateEvents();
   }, [solutionChoice, myEvents]);
 
   const updateEvents = () => {

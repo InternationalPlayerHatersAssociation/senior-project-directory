@@ -9,7 +9,7 @@ from sqlalchemy.sql import text
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/course_model'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:N00k!e99123@localhost:5432/course_model'
 app.config['FLASK APP'] = app
 app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
 db.init_app(app)
@@ -70,7 +70,7 @@ def login():
 @app.route('/logout')
 def logout():
     session.clear()  # Clear the entire session
-    return jsonify({"message":"User has been logged out."})
+    return jsonify({"message":"User has been logged out."}), 200
 
 #create a refrese token to keep user logged in, in case the auth token expires
 @app.route('/refresh', methods = ["POST"])
@@ -78,7 +78,7 @@ def logout():
 def post():
     current_user = get_jwt_identity()
     new_access_token = create_access_token(identity=current_user)
-    return jsonify({'access_token':new_access_token})
+    return jsonify({'access_token':new_access_token}), 200
 
 #route that gets all majors to populate the dropdown list
 @app.route('/majors', methods=["GET"])
@@ -86,7 +86,7 @@ def get_majors():
     majors = db.session.query(Degree_Plan.dpt_code).all()
     major_list = [major[0] for major in majors]
     
-    return jsonify(major_list)
+    return jsonify(major_list), 200
 
 #route for submitting the form
 @app.route('/save_user_data', methods = ['POST'])
@@ -95,8 +95,7 @@ def save_data():
     class_history = data['history']
     class_names = data['classes']
     conflicts_list = data['conflicts']
-
-    db.session.execute(text(f"DELETE FROM Conflict WHERE stuid = '{session['stuid']}'"))
+    db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session=False)
     db.session.commit()
     hist = db.session.query(Course_History, Course)\
         .join(Course, Course_History.course_id == Course.course_id)\
@@ -122,8 +121,22 @@ def save_data():
                for conflict in processed_conflicts_list]
         db.session.add_all(unavailable)
         db.session.commit()
-
-    return jsonify({"message":"Saved classes successfully!"})
+    #call algorithm to check for invalid combos
+    conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
+    conflicts_list2 = [row.__dict__.copy() for row in conflict_query]
+    conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list2)}
+    # Query the database for the courses
+    course_data = []
+    for class_name in class_names:
+        course_data.extend(db.session.query(Course_Offering).filter_by(name=class_name).all())
+    formatted_classes = convert_course_data(course_data)
+    scheduler = Scheduler(formatted_classes, conflicts)
+    valid_combos = scheduler.get_valid_combinations()
+    #return the error message if there are no valid combos
+    if not valid_combos:
+        return({'message' : 'No valid schedules. Please adjust inputs!'}), 400
+    
+    return jsonify({"message":"Saved classes successfully!"}), 200
 
 
 #route for rendering the 
@@ -151,7 +164,8 @@ def find_combinations():
     formatted_classes = convert_course_data(course_data)
     scheduler = Scheduler(formatted_classes, conflicts)
     valid_combos = scheduler.get_valid_combinations()
-    
+    if not valid_combos:
+        return jsonify({'message' : 'There are no possible schedules here, please choose different courses..'}), 400
     #Construct the JSON response
     response_data = []
     for combo in valid_combos:
@@ -162,7 +176,7 @@ def find_combinations():
             row.pop('_sa_instance_state', None)
         response_data.append(rows)
 
-    return jsonify(response_data)
+    return jsonify(response_data), 200
 
 #get classes belonging to users majors
 @app.route('/get_major_classes', methods = ['GET'])
@@ -174,7 +188,7 @@ def get_classes():
     
     names = [course.name for _, course in classes]
     
-    return jsonify(names = names)
+    return jsonify(names = names), 200
     
     
         
