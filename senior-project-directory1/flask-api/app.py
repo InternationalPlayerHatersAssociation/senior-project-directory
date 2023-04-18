@@ -6,13 +6,21 @@ from flask_cors import CORS
 from scheduler import Scheduler
 from convert_course_data import convert_course_data, process_conflict_string
 from sqlalchemy.sql import text
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
+db_host = os.environ['DB_HOST']
+db_port = os.environ['DB_PORT']
+db_name = os.environ['DB_NAME']
+db_user = os.environ['DB_USER']
+db_password = os.environ['DB_PASSWORD']
+secret_key = os.environ['SECRET_KEY']
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/course_model'
-app.config['FLASK APP'] = app
-app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
+app.config['SECRET_KEY'] = secret_key
 jwt = JWTManager(app)
 CORS(app)
 
