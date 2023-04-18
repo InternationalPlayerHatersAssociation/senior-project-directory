@@ -142,7 +142,16 @@ def save_data():
     valid_combos = scheduler.get_valid_combinations()
     #return the error message if there are no valid combos
     if not valid_combos:
-        return({'message' : 'No valid schedules. Please adjust inputs!'}), 400
+        conflicting = scheduler.get_conflicting_crns()
+        print(conflicting)
+        conflict_names = []
+        for conflict in conflicting:
+            name = db.session.query(Course_Offering.name).filter(Course_Offering.crn == conflict).scalar()
+            if name not in conflict_names:
+                conflict_names.append(name)
+        conflict_names_str = ", ".join(conflict_names)
+        print(conflict_names_str)
+        return {'message' : f'No valid schedules due to conflicts in courses: {conflict_names_str}. Please adjust inputs!'}, 400
     
     return jsonify({"message":"Saved classes successfully!"}), 200
 
