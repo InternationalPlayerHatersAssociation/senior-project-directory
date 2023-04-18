@@ -63,6 +63,8 @@ class Scheduler:
             if self.check_valid_combination(combo):
                 valid_combos.append(combo)
         return valid_combos
+
+    
     
     # choice is the index of the chosen class combination
     # combos is the list of all valid combinations

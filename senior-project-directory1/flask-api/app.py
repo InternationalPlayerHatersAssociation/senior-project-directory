@@ -195,7 +195,6 @@ def get_classes():
     .all()
     
     names = [course.name for _, course in classes]
-    
     return jsonify(names = names), 200
     
     

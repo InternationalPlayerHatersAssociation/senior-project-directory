@@ -61,7 +61,7 @@ def main():
         )
     
     csv_file_path = "CINF.csv"
-    degree_plan = 2
+    degree_plan = 3
 
     read_csv_and_insert_data(csv_file_path, degree_plan, conn)
     add_matching_courses(conn, degree_plan)
