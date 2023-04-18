@@ -75,7 +75,7 @@ def login():
     return jsonify({"access_token": access_token, "refresh_token": refresh_token})
 
 #destroy session token
-@app.route('/logout')
+@app.route('/logout', methods = ['GET'])
 def logout():
     session.clear()  # Clear the entire session
     return jsonify({"message":"User has been logged out."}), 200

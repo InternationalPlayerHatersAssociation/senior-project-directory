@@ -23,6 +23,23 @@ const LoggedInLinks=()=>{
       useEffect(() => {
         showButton();
       }, []);
+      
+      const destroySession = async () => {
+        try{
+        const response = await fetch("/logout");
+        if (response.ok){
+          console.log(response);
+        }}catch(error){
+          console.error(error);
+        }
+        
+      
+      };
+
+      const wrapper = () => {
+        destroySession();
+        logout();
+      }
     
       window.addEventListener('resize', showButton);
     return(
@@ -32,11 +49,11 @@ const LoggedInLinks=()=>{
     <NavItem><NavLinks to='/form'>Edit Form</NavLinks></NavItem>   
     <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/" onClick={()=>{logout()}}>
+                  <NavBtnLink to="/" onClick={()=>{wrapper()}}>
                     <Button primary>Logout</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/" onClick={()=>{logout()}}>
+                  <NavBtnLink to="/" onClick={()=>{wrapper()}}>
                     <Button fontBig primary>
                       Logout
                     </Button>
