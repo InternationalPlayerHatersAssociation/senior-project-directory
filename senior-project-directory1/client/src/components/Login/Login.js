@@ -83,7 +83,7 @@ const Login=({
                         <input type="password" placeholder="*******************"
                             {...register('password', {required:true})}/>
                             {errors.email && <p style = {{color:'red'}}><small>Password is required</small></p>}
-                        <input type ="submit1" value={"Login"} onClick={handleSubmit(loginUser)}  />
+                        <input type ="submit1" value={"Login"} readOnly onClick={handleSubmit(loginUser)}  />
                         
 
                         <h3><small>Don't have an account?<Link to="/signup"> Register here.</Link></small></h3>

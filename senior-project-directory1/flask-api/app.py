@@ -6,13 +6,21 @@ from flask_cors import CORS
 from scheduler import Scheduler
 from convert_course_data import convert_course_data, process_conflict_string
 from sqlalchemy.sql import text
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
+db_host = os.environ['DB_HOST']
+db_port = os.environ['DB_PORT']
+db_name = os.environ['DB_NAME']
+db_user = os.environ['DB_USER']
+db_password = os.environ['DB_PASSWORD']
+secret_key = os.environ['SECRET_KEY']
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/course_model'
-app.config['FLASK APP'] = app
-app.config['SECRET_KEY'] = '1d387a4ec8206070645d8c87'
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
+app.config['SECRET_KEY'] = secret_key
 jwt = JWTManager(app)
 CORS(app)
 
@@ -67,7 +75,7 @@ def login():
     return jsonify({"access_token": access_token, "refresh_token": refresh_token})
 
 #destroy session token
-@app.route('/logout')
+@app.route('/logout', methods = ['GET'])
 def logout():
     session.clear()  # Clear the entire session
     return jsonify({"message":"User has been logged out."}), 200
@@ -121,7 +129,6 @@ def save_data():
                for conflict in processed_conflicts_list]
         db.session.add_all(unavailable)
         db.session.commit()
-    #call algorithm to check for invalid combos
     conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
     conflicts_list2 = [row.__dict__.copy() for row in conflict_query]
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list2)}
@@ -134,7 +141,14 @@ def save_data():
     valid_combos = scheduler.get_valid_combinations()
     #return the error message if there are no valid combos
     if not valid_combos:
-        return({'message' : 'No valid schedules. Please adjust inputs!'}), 400
+        conflicting = scheduler.get_conflicting_crns()
+        conflict_names = []
+        for conflict in conflicting:
+            name = db.session.query(Course_Offering.name).filter(Course_Offering.crn == conflict).scalar()
+            if name not in conflict_names:
+                conflict_names.append(name)
+        conflict_names_str = ", ".join(conflict_names)
+        return {'message' : f'No valid schedules due to conflicts in courses: {conflict_names_str}. Please adjust inputs!'}, 400
     
     return jsonify({"message":"Saved classes successfully!"}), 200
 
@@ -156,7 +170,6 @@ def find_combinations():
     if not class_query:
         return jsonify({'message':'user has no classes selected'})
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
-    print(conflicts)
     # Query the database for the courses
     course_data = []
     for class_name in class_names:
@@ -187,7 +200,6 @@ def get_classes():
     .all()
     
     names = [course.name for _, course in classes]
-    
     return jsonify(names = names), 200
     
     

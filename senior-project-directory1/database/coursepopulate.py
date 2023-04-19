@@ -1,36 +1,34 @@
-import psycopg2
 import csv
-# import os
+import psycopg2
 
-# print(os.getcwd()) # prints the current working directory
-
-# for root, dirs, files in os.walk("."):
-#     for filename in files:
-#         if filename == "Courses.csv":
-#             print(os.path.join(root, filename)) # prints the path of the file
-
+# Connect to the PostgreSQL database
 connection = psycopg2.connect(
     dbname="course_model",
     user="postgres",
     password="N00k!e99123",
     host="localhost",
-    port="5432"   
+    port="5432"
 )
-
 cursor = connection.cursor()
 
-table_name = "course"
-csv_file_path = "/Users/maxxfieldsmith/senior-project-directory/senior-project-directory1/flask-api/Courses.csv"
+connection.commit()
 
-with open(csv_file_path, "r") as csv_file:
+# Open the CSV file and read its contents
+with open("Courses.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file)
 
-    header = next(csv_reader)
+    # Skip the header if the CSV has one
+    next(csv_reader)
 
+    # Insert each row into the 'course' table
     for row in csv_reader:
-            insert_query = f"INSERT INTO {table_name} ({', '.join(header)}) VALUES ({', '.join(['%s']*len(header))})"
-            cursor.execute(insert_query, row)
-    
+        (number,name) = row
+        cursor.execute("INSERT INTO course (number, name) VALUES (%s, %s)", (number, name))
+
+# Commit the changes and close the database connection
 connection.commit()
 cursor.close()
 connection.close()
+
+print("CSV data has been successfully inserted into the 'course' table.")
+
