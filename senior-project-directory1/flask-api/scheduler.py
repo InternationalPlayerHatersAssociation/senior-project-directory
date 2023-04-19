@@ -25,17 +25,19 @@ class Scheduler:
                 return True
         return False
     
-    def check_valid_combination(self, combination):  # Reset the conflicting CRN list for each combination
+    def check_valid_combination(self, combination):
+        has_conflict = False
         for i in range(0, len(combination)):  # i is index of class, value at i is index of section
             if self.conflict_with_user(self.classes[i + 1][combination[i]]):
                 self.conflicting_crns.append(self.classes[i + 1][combination[i]]['crn'])
-                return False
+                has_conflict = True
             for j in range(i + 1, len(combination)):
                 if self.check_conflict(self.classes[i + 1][combination[i]], self.classes[j + 1][combination[j]]):
                     self.conflicting_crns.append(self.classes[i + 1][combination[i]]['crn'])
                     self.conflicting_crns.append(self.classes[j + 1][combination[j]]['crn'])
-                    return False
-        return True
+                    has_conflict = True
+        return not has_conflict
+
         
         
     
@@ -72,7 +74,8 @@ class Scheduler:
         return valid_combos
     
     def get_conflicting_crns(self):
-        return self.conflicting_crns
+        return list(set(self.conflicting_crns))
+
     
     
     # choice is the index of the chosen class combination
