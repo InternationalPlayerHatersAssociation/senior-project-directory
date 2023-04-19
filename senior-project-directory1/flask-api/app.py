@@ -129,7 +129,6 @@ def save_data():
                for conflict in processed_conflicts_list]
         db.session.add_all(unavailable)
         db.session.commit()
-    #call algorithm to check for invalid combos
     conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
     conflicts_list2 = [row.__dict__.copy() for row in conflict_query]
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list2)}
@@ -143,14 +142,12 @@ def save_data():
     #return the error message if there are no valid combos
     if not valid_combos:
         conflicting = scheduler.get_conflicting_crns()
-        print(conflicting)
         conflict_names = []
         for conflict in conflicting:
             name = db.session.query(Course_Offering.name).filter(Course_Offering.crn == conflict).scalar()
             if name not in conflict_names:
                 conflict_names.append(name)
         conflict_names_str = ", ".join(conflict_names)
-        print(conflict_names_str)
         return {'message' : f'No valid schedules due to conflicts in courses: {conflict_names_str}. Please adjust inputs!'}, 400
     
     return jsonify({"message":"Saved classes successfully!"}), 200
@@ -173,7 +170,6 @@ def find_combinations():
     if not class_query:
         return jsonify({'message':'user has no classes selected'})
     conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
-    print(conflicts)
     # Query the database for the courses
     course_data = []
     for class_name in class_names:
