@@ -95,7 +95,6 @@ def get_majors():
 
 #route for submitting the form
 @app.route('/save_user_data', methods=['POST'])
-@jwt_required()
 def save_data():
     data = request.json
     class_history, class_names, conflicts_list = data['history'], data['classes'], data['conflicts']
@@ -108,7 +107,6 @@ def save_data():
     conflicts = get_conflicts()
     course_data = get_course_data_by_class_names(class_names)
     formatted_classes = convert_course_data(course_data)
-
     scheduler = Scheduler(formatted_classes, conflicts)
     valid_combos = scheduler.get_valid_combinations()
 
