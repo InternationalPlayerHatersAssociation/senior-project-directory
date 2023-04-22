@@ -10,7 +10,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-#set up environment variables
 db_host = os.environ['DB_HOST']
 db_port = os.environ['DB_PORT']
 db_name = os.environ['DB_NAME']
@@ -18,7 +17,6 @@ db_user = os.environ['DB_USER']
 db_password = os.environ['DB_PASSWORD']
 secret_key = os.environ['SECRET_KEY']
 
-#set up app
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
@@ -34,8 +32,10 @@ def helloworld():
 #registration route to add user to database
 @app.route('/register', methods = ['POST'])
 def register():
-    data = request.json
-    email, password, major = data.get('email'), data.get('password'), data.get('major')\
+    #get email and password from http request (change this to request.json when integrating front end, args is only for testing)
+    email = request.json.get('email')
+    password = request.json.get('password')
+    major = request.json.get('major')
     #check if user exists
     if db.session.query(Student).filter_by(email = email).first():
         return jsonify({'message':'User exists! Please try another email or login.'})
@@ -49,29 +49,30 @@ def register():
     #commit student to database
     db.session.add_all([student])
     db.session.commit()
-    
+    #not sure if this is the correct thing to return
     return jsonify({'message':'User has been registered successfully!'})
 
 #login route to verify username and password in the database
 @app.route('/login', methods = ['POST'])
 def login():
-    data = request.json
-    email, password = data.get('email'), data.get('password')
-
+    #get email and password from http request 
+    email = request.json.get('email')
+    password = request.json.get('password')
+    #if email is not in json data return an error (should probably just check this on the front end before sending)
     if not email or not password:
-        return jsonify({'message': 'Please enter an email or password'}), 401
-
-    student = db.session.query(Student).filter_by(email=email).first()
-
-    if not student or not student.check_password(password):
-        return jsonify({'message': 'invalid email or password'}), 401
-
-    access_token = create_access_token(identity=email)
-    refresh_token = create_refresh_token(identity=email)
+        return jsonify({'message':'Please enter an email or password'}), 401
+    #pull occurrence of user out of the database
+    student = db.session.query(Student).filter_by(email = email).first()
+    #verify password hash, if invalid return invalid
+    if  not student or not student.check_password(password):
+        return jsonify({'message':'invalid email or password'}), 401
+    #create a json web token for user to access private pages
+    access_token = create_access_token(identity = email)
+    refresh_token = create_refresh_token(identity = email)
     session['stuid'] = student.stuid
     session['major'] = student.major
-
-    return jsonify({"access_token": access_token, "refresh_token": refresh_token}), 200
+    #if user is valid provide token to access private pages
+    return jsonify({"access_token": access_token, "refresh_token": refresh_token})
 
 #destroy session token
 @app.route('/logout', methods = ['GET'])
@@ -82,12 +83,12 @@ def logout():
 #create a refrese token to keep user logged in, in case the auth token expires
 @app.route('/refresh', methods = ["POST"])
 @jwt_required(refresh = True)
-def refresh():
+def post():
     current_user = get_jwt_identity()
     new_access_token = create_access_token(identity=current_user)
     return jsonify({'access_token':new_access_token}), 200
 
-#route that gets all majors to populate the dropdown list on reg page
+#route that gets all majors to populate the dropdown list
 @app.route('/majors', methods=["GET"])
 def get_majors():
     majors = db.session.query(Degree_Plan.dpt_code).all()
@@ -96,51 +97,99 @@ def get_majors():
     return jsonify(major_list), 200
 
 #route for submitting the form
-@app.route('/save_user_data', methods=['POST'])
+@app.route('/save_user_data', methods = ['POST'])
 def save_data():
     data = request.json
-    class_history, class_names, conflicts_list = data['history'], data['classes'], data['conflicts']
-    #update database
-    delete_existing_conflicts()
-    update_class_history(class_history)
-    update_class_choices(class_names)
-    update_conflicts(conflicts_list)
-    #check for invalid combinations
-    conflicts = get_conflicts()
-    course_data = get_course_data_by_class_names(class_names)
+    class_history = data['history']
+    class_names = data['classes']
+    conflicts_list = data['conflicts']
+    db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session=False)
+    db.session.commit()
+    hist = db.session.query(Course_History, Course)\
+        .join(Course, Course_History.course_id == Course.course_id)\
+            .filter(Course_History.stuid == session['stuid']).all()
+    if class_history:
+        for course in class_history:
+            if course not in hist:
+                cid = db.session.query(Course.course_id).filter(Course.name == course).one_or_none()
+                item = Course_History(stuid = session['stuid'],course_id = cid[0])
+                db.session.add(item)
+                db.session.commit()
+    if class_names:
+        # Add new rows to the session
+        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete(synchronize_session=False)
+        for name in class_names:
+            choice = Class_Choices(stuid=session['stuid'], course_name=name)
+            db.session.add(choice)
+            db.session.commit()
+    if conflicts_list:
+        processed_conflicts_list = [process_conflict_string(item) for item in conflicts_list]
+        unavailable = [Conflict(stuid=session['stuid'], name="conflict",
+                        start_time=conflict['start_time'], end_time=conflict['end_time'], day=conflict['day'])
+               for conflict in processed_conflicts_list]
+        db.session.add_all(unavailable)
+        db.session.commit()
+    conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
+    conflicts_list2 = [row.__dict__.copy() for row in conflict_query]
+    conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list2)}
+    # Query the database for the courses
+    course_data = []
+    for class_name in class_names:
+        course_data.extend(db.session.query(Course_Offering).filter_by(name=class_name).all())
     formatted_classes = convert_course_data(course_data)
-    
     scheduler = Scheduler(formatted_classes, conflicts)
     valid_combos = scheduler.get_valid_combinations()
-
+    #return the error message if there are no valid combos
     if not valid_combos:
-        return handle_invalid_combos(scheduler)
+        conflicting = scheduler.get_conflicting_crns()
+        conflict_names = []
+        for conflict in conflicting:
+            name = db.session.query(Course_Offering.name).filter(Course_Offering.crn == conflict).scalar()
+            if name not in conflict_names:
+                conflict_names.append(name)
+        conflict_names_str = ", ".join(conflict_names)
+        return {'message' : f'No valid schedules due to conflicts in courses: {conflict_names_str}. Please adjust inputs!'}, 400
+    
+    return jsonify({"message":"Saved classes successfully!"}), 200
 
-    return jsonify({"message": "Saved classes successfully!"}), 200
 
-
-
-#calculates combinations of classes in user database
+#route for rendering the 
 @app.route('/find_combinations', methods=['GET'])
 def find_combinations():
-    conflicts = get_conflicts()
-    class_names = get_class_names()
+    conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
+    conflicts_list = [row.__dict__.copy() for row in conflict_query]
+    # Remove the '_sa_instance_state' key from each dictionary
+    for d in conflicts_list:
+        d.pop('_sa_instance_state', None)
+        d.pop('cid', None)
+        d.pop('stuid', None)
+        d.pop('name', None)
     
-    if not class_names:
-        return jsonify({'message': 'user has no classes selected'})
-    
-    course_data = get_course_data_by_class_names(class_names)
+    class_query = db.session.query(Class_Choices.course_name).filter(Class_Choices.stuid == session['stuid']).all()
+    class_names = [row[0] for row in class_query]
+    if not class_query:
+        return jsonify({'message':'user has no classes selected'})
+    conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
+    # Query the database for the courses
+    course_data = []
+    for class_name in class_names:
+        course_data.extend(db.session.query(Course_Offering).filter_by(name=class_name).all())
     formatted_classes = convert_course_data(course_data)
     scheduler = Scheduler(formatted_classes, conflicts)
     valid_combos = scheduler.get_valid_combinations()
-    
     if not valid_combos:
-        return jsonify({'message': 'There are no possible schedules here, please choose different courses..'}), 400
+        return jsonify({'message' : 'There are no possible schedules here, please choose different courses..'}), 400
+    #Construct the JSON response
+    response_data = []
+    for combo in valid_combos:
+        crns = scheduler.generate_crns(valid_combos.index(combo), valid_combos)
+        crn_list = [int(crn) for crn in crns.split(',')]
+        rows = [course.__dict__ for course in course_data if course.crn in crn_list]
+        for row in rows:
+            row.pop('_sa_instance_state', None)
+        response_data.append(rows)
 
-    response_data = construct_json_response(valid_combos, course_data, scheduler)
-    return jsonify([conflicts, response_data]), 200
-
-
+    return jsonify(response_data), 200
 
 #get classes belonging to users majors
 @app.route('/get_major_classes', methods = ['GET'])
@@ -152,95 +201,10 @@ def get_classes():
     
     names = [course.name for _, course in classes]
     return jsonify(names = names), 200
-
-
-
     
     
         
-#refactored functions for readability
-def delete_existing_conflicts():
-    db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).delete(synchronize_session=False)
-    db.session.commit()
-
-
-def update_class_history(class_history):
-    hist = db.session.query(Course_History, Course)\
-        .join(Course, Course_History.course_id == Course.course_id)\
-        .filter(Course_History.stuid == session['stuid']).all()
-
-    if class_history:
-        for course in class_history:
-            if course not in hist:
-                cid = db.session.query(Course.course_id).filter(Course.name == course).one_or_none()
-                item = Course_History(stuid=session['stuid'], course_id=cid[0])
-                db.session.add(item)
-                db.session.commit()
-
-
-def update_class_choices(class_names):
-    if class_names:
-        db.session.query(Class_Choices).filter(Class_Choices.stuid == session['stuid']).delete(synchronize_session=False)
-        for name in class_names:
-            choice = Class_Choices(stuid=session['stuid'], course_name=name)
-            db.session.add(choice)
-            db.session.commit()
-
-
-def update_conflicts(conflicts_list):
-    if conflicts_list:
-        processed_conflicts_list = [process_conflict_string(item) for item in conflicts_list]
-        unavailable = [Conflict(stuid=session['stuid'], name="conflict",
-                                start_time=conflict['start_time'], end_time=conflict['end_time'], day=conflict['day'])
-                       for conflict in processed_conflicts_list]
-        db.session.add_all(unavailable)
-        db.session.commit()
-
-
-def get_conflicts():
-    conflict_query = db.session.query(Conflict).filter(Conflict.stuid == session['stuid']).all()
-    conflicts_list = [row.__dict__.copy() for row in conflict_query]
-
-    for conflict in conflicts_list:
-        conflict.pop('_sa_instance_state', None)
-
-    return {i + 1: conflict for i, conflict in enumerate(conflicts_list)}
-
-
-def get_course_data_by_class_names(class_names):
-    course_data = []
-    for class_name in class_names:
-        course_data.extend(db.session.query(Course_Offering).filter_by(name=class_name).all())
-    return course_data
-
-
-def handle_invalid_combos(scheduler):
-    conflicting = scheduler.get_conflicting_crns()
-    conflict_names = []
-
-    for conflict in conflicting:
-        name = db.session.query(Course_Offering.name).filter(Course_Offering.crn == conflict).scalar()
-        if name not in conflict_names:
-            conflict_names.append(name)
-
-    conflict_names_str = ", ".join(conflict_names)
-    return {'message': f'No valid schedules due to conflicts in courses: {conflict_names_str}. Please adjust inputs!'}, 400    
-
-def get_class_names():
-    class_query = db.session.query(Class_Choices.course_name).filter(Class_Choices.stuid == session['stuid']).all()
-    return [row[0] for row in class_query]
-
-
-def construct_json_response(valid_combos, course_data, scheduler):
-    response_data = []
-    for combo in valid_combos:
-        crns = scheduler.generate_crns(valid_combos.index(combo), valid_combos)
-        crn_list = [int(crn) for crn in crns.split(',')]
-        rows = [course.__dict__ for course in course_data if course.crn in crn_list]
-        for row in rows:
-            row.pop('_sa_instance_state', None)
-        response_data.append(rows)
-    return response_data   
+        
     
 
     

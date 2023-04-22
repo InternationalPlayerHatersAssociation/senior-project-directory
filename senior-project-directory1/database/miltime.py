@@ -60,8 +60,8 @@ def convert_csv_times(input_file, output_file, start_time_col_name, end_time_col
 
             writer.writerow(row)
 
-input_file = 'UHCLCatalog.csv'
-output_file = 'UHCLCat.csv'
+input_file = 'UHCLCatalogFall2023.csv'
+output_file = 'UHCLCatF23.csv'
 start_time_col_name = 'start_time'  # Replace with the name of the start time column in your CSV file
 end_time_col_name = 'end_time'      # Replace with the name of the end time column in your CSV file
 day_col_name = 'days'                # Replace with the name of the day column in your CSV file

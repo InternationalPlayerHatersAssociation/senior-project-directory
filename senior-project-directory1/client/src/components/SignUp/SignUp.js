@@ -157,7 +157,7 @@ const SignUp = ({
           </div>
         </Form.Group>
         <Form.Group>
-        <input type ="submit1" value={"Sign Up"} onClick={handleSubmit(submitForm)} />
+        <input type ="submit1" value={"Sign Up"} readOnly onClick={handleSubmit(submitForm)} />
           {errors.major && (
             <p style={{ color: "red" }}>
               <small>Major is required</small>
