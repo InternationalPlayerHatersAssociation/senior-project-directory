@@ -10,6 +10,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+#set up environment variables
 db_host = os.environ['DB_HOST']
 db_port = os.environ['DB_PORT']
 db_name = os.environ['DB_NAME']
@@ -17,6 +18,7 @@ db_user = os.environ['DB_USER']
 db_password = os.environ['DB_PASSWORD']
 secret_key = os.environ['SECRET_KEY']
 
+#set up app
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
@@ -85,7 +87,7 @@ def refresh():
     new_access_token = create_access_token(identity=current_user)
     return jsonify({'access_token':new_access_token}), 200
 
-#route that gets all majors to populate the dropdown list
+#route that gets all majors to populate the dropdown list on reg page
 @app.route('/majors', methods=["GET"])
 def get_majors():
     majors = db.session.query(Degree_Plan.dpt_code).all()
@@ -118,7 +120,7 @@ def save_data():
 
 
 
-
+#calculates combinations of classes in user database
 @app.route('/find_combinations', methods=['GET'])
 def find_combinations():
     conflicts = get_conflicts()
@@ -136,7 +138,7 @@ def find_combinations():
         return jsonify({'message': 'There are no possible schedules here, please choose different courses..'}), 400
 
     response_data = construct_json_response(valid_combos, course_data, scheduler)
-    return jsonify(response_data), 200
+    return jsonify([conflicts, response_data]), 200
 
 
 
@@ -150,6 +152,9 @@ def get_classes():
     
     names = [course.name for _, course in classes]
     return jsonify(names = names), 200
+
+
+
     
     
         
