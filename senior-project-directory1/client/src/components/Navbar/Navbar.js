@@ -124,7 +124,7 @@ const NavBar =()=>{
         <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
                 <NavIcon />
-                    Schedule Creation App
+                    Class Schedule Creator
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

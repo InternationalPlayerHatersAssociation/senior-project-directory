@@ -15,6 +15,7 @@ function Form() {
   const [filterName, setFilterName] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
+  const [searchSize, setSearchSize] = useState(15);
   const navigate = useNavigate();
 
 //added
@@ -30,6 +31,7 @@ useEffect(() => {
 
 const removeDuplicates = (data) => {
   const filteredClasses = [...new Set(data)];
+  filteredClasses.sort()
   setMajorClasses(filteredClasses)
 }
 
@@ -107,7 +109,6 @@ const handleSubmit = async (event) => {
   };
 
   const handleRemovePlannedClass = (event) => {
-    event.preventDefault();
     setPlannedClasses((prevClasses) => {
       const newClasses = [...prevClasses];
       newClasses.splice(event.target.value, 1);
@@ -132,6 +133,22 @@ const handleSubmit = async (event) => {
     setStep(step - 1);
   };
 
+  const handleShowAll = (event) => {
+    event.preventDefault();
+    console.log("CLICKES");
+    if (searchSize === 15) {
+      setSearchSize(999);
+    }
+    else{
+      setSearchSize(15);
+    }
+  };
+
+  const getRandomButtonClass = () => {
+    const randomNumber = Math.floor(Math.random() * 4) + 1;
+    return `button-1`;
+  };
+
   const classesToChoose = useMemo(() => {
 
     if (majorClasses.length > 0) {
@@ -139,14 +156,14 @@ const handleSubmit = async (event) => {
         new RegExp(filterName, 'i').test(item)
       );
   
-      if (filteredClasses.length < 10) {
+      if (filteredClasses.length < searchSize) {
         if(step === 1){
           const notChosen = filteredClasses.filter((item) => !completedClasses.includes(item));
           return notChosen.map(course => (
             <button title={course} className='class-Choice-Button' key={uuidv4()} onClick={handleAddCompletedClass} value={course}>{course}</button>
           ));
         } else {
-          const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item));
+          const notChosen = filteredClasses.filter((item) => !plannedClasses.includes(item) && !completedClasses.includes(item));
           return notChosen.map(course => (
             <button title={course}   className='class-Choice-Button' key={uuidv4()} onClick={handleAddPlannedClass} value={course}>{course}</button>
         ));
@@ -156,7 +173,7 @@ const handleSubmit = async (event) => {
     }
   
     return <></>;
-  }, [majorClasses, filterName]);
+  }, [majorClasses, filterName, searchSize, completedClasses, plannedClasses]);
 
   const renderStepOne = () => {//done
 
@@ -173,6 +190,7 @@ const handleSubmit = async (event) => {
             <div className="class-inputs">
               <input className="search-bar" autoComplete="off" type="text" id="completed-classes" placeholder="e.g. Digital Circuits" onChange={handleInputChange} value={filterName}/>
             </div>
+            <button className="submit-button" onClick={handleShowAll} >{(searchSize === 15) ? "Show All" : "Hide"}</button>
             <div className='class-Choice-Buttons'>{classesToChoose}</div>
             <ul className="class-list">
                 {completedClasses.map((classInput) => (
@@ -185,7 +203,6 @@ const handleSubmit = async (event) => {
                 ))}
               
             </ul>
-            {/*added*/ }
             <div className='div420'>
             <button type="submit" className="submit-button" onClick={handleNext}>
           Next
@@ -213,6 +230,7 @@ const handleSubmit = async (event) => {
           <div className="class-inputs">
             <input className="search-bar" autoComplete="off" type="text" id="planned-classes" placeholder="e.g. Senior Project" onChange={handleInputChange} value={filterName}/>
           </div>
+          <button className="submit-button" onClick={handleShowAll} >{(searchSize === 15) ? "Show All" : "Hide"}</button>
           <div className='class-Choice-Buttons'>{classesToChoose}</div>
           <ul className="class-list">
             {plannedClasses.map((classInput, index) => (
@@ -276,7 +294,6 @@ const handleSubmit = async (event) => {
         />
         <button className='conflict-inputs-button' onClick={handleAddConflict}>Add</button>
       </div>
-      <div className='class-Choice-Buttons'>{classesToChoose}</div>
       <ul className="conflict-list">
         {conflicts.map((conflictInput, index) => (
           <div className="class-listing">
@@ -335,7 +352,9 @@ return (
           ))}
       </ul>
       </div>
+      <button className='edit-button' onClick={() => {setStep(1)}}>Edit Completed</button>
     </div>
+
 
     <div className="review-list">
       <div className="review-list-section">
@@ -346,6 +365,7 @@ return (
           ))}
       </ul>
       </div>
+      <button className='edit-button' onClick={() => {setStep(2)}} >Edit Needed</button>
     </div>
 
     <div className="review-list">
@@ -357,6 +377,7 @@ return (
           ))}
           </ul>
       </div>
+      <button className='edit-button' onClick={() => {setStep(3)}} >Edit Conflicts</button>
     </div>
   </div>
   <div>

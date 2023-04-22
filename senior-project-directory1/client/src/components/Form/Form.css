@@ -144,6 +144,16 @@
   input[type="submit1"] {
     -webkit-appearance: none;
   }
+
+  .edit-button {
+    display: table;
+    margin: auto auto;
+    width: 10vw;
+    height: 2.5vh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
   
 
   

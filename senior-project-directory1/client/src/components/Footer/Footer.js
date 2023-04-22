@@ -31,7 +31,7 @@ function Footer() {
 <br></br>
           <SocialLogo to='/'>
             <SocialIcon />
-           Class Schedule App
+           Class Schedule Creator
           </SocialLogo>
 
 
