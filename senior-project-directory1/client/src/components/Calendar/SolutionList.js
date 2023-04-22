@@ -51,7 +51,7 @@ return (
       </div>
     )}
     <br></br> <br></br>
-    <h3><small>click <Link to="/form">here</Link> to edit your classes and schedule conflicts.</small></h3>
+    <h3 style={{margin: '10px'}}><small>click <Link to="/form">here</Link> to edit your classes and schedule conflicts.</small></h3>
   </div>
 );
         }

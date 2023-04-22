@@ -24,8 +24,9 @@ const CalendarRender = ({
   }) => {
   
    const [myEvents, setMyEvents] = useState([]);
-   const [solutionChoice, setSolutionChoice] = useState(0)
-   const [solutions, setSolutions] = useState([])
+   const [solutionChoice, setSolutionChoice] = useState(0);
+   const [solutions, setSolutions] = useState([]);
+   const [myConflictEvents, setMyConflictEvents] = useState([]);
 
    useEffect(() => {
      if(myEvents.length < 1){
@@ -40,7 +41,7 @@ const CalendarRender = ({
   const updateEvents = () => {
     if(solutions[solutionChoice]){
       const events = solutions[solutionChoice].flatMap(course => convertToEvent(course));
-      setMyEvents(events);
+      setMyEvents([...events,...myConflictEvents]);
     }
   };
   const convertToEvent = (course) => {
@@ -65,24 +66,78 @@ const CalendarRender = ({
       title: `${course_code} - ${name}`,
       start: moment().day(dayOfWeek).hours(startTime.hours()).minutes(startTime.minutes()).toDate(),
       end: moment().day(dayOfWeek).hours(endTime.hours()).minutes(endTime.minutes()).toDate(),
+      color: '#6d5078',
     }));
   
     return events;
   };
 
+    const convertToConflict = ((conflict) => {
+      const { day, name, start_time, end_time } = conflict;
+
+      const startTime = moment(start_time, 'Hmm');
+      const endTime = moment(end_time, 'Hmm');
+
+      const daysArray = day.split('').map(d => {
+        switch (d) {
+          case 'M': return 1;
+          case 'T': return 2;
+          case 'W': return 3;
+          case 'R': return 4;
+          case 'F': return 5;
+          case 'H': return 4;
+          default: return -1;
+        }
+
+      });
+
+      const conflicts = daysArray.map((dayOfWeek, index) => ({
+        title: `Conflict Entry`,
+        start: moment().day(dayOfWeek).hours(startTime.hours()).minutes(startTime.minutes()).toDate(),
+        end: moment().day(dayOfWeek).hours(endTime.hours()).minutes(endTime.minutes()).toDate(),
+        color: 'salmon',
+      }));
+    
+      return conflicts;
+    })
+
 
     const formatEvents = ((data) => {
-      console.log(data);
-      setSolutions(data);
-      const solutions = data[solutionChoice];
+
+      setSolutions(data[1]);
+      const conflicts = Object.values(data[0]);
+      console.log("conflicts are:",conflicts);
+      const solutions = data[1][solutionChoice];
+      console.log("solutions are:", solutions);
       if (solutions) {
         const events = solutions.flatMap(course => convertToEvent(course));
-        console.log(events);
+        const conflictEvents = conflicts.flatMap(con => convertToConflict(con));
 
-        setMyEvents(events);
+        console.log("Final events are", events);
+        console.log("Final Conflicts are", conflictEvents);
+        setMyConflictEvents(conflictEvents);
+        setMyEvents([...events, ...conflictEvents]);
       }
 
     })
+
+    const eventStyleGetter = (event, start, end, isSelected) => {
+      const backgroundColor = event.color;
+      const style = {
+        backgroundColor,
+        borderRadius: '5px',
+        opacity: 0.8,
+        color: 'white',
+        border: '0px',
+        display: 'block',
+        boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
+        'text-align': 'left',
+        'font-size': '12px',
+      };
+      return {
+        style,
+      };
+    };
 
    return (
      <>
@@ -121,7 +176,7 @@ const CalendarRender = ({
                           boxShadow: '4px 4px 10px black',
                           overflowY: 'auto',
                         }}
-                        
+                        eventPropGetter={eventStyleGetter}
                          >
                          </StyledCalendar>
                           </Container2>
