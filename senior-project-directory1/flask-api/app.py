@@ -107,6 +107,7 @@ def save_data():
     conflicts = get_conflicts()
     course_data = get_course_data_by_class_names(class_names)
     formatted_classes = convert_course_data(course_data)
+    
     scheduler = Scheduler(formatted_classes, conflicts)
     valid_combos = scheduler.get_valid_combinations()
 
@@ -120,13 +121,12 @@ def save_data():
 
 @app.route('/find_combinations', methods=['GET'])
 def find_combinations():
-    conflicts_list = get_conflicts()
+    conflicts = get_conflicts()
     class_names = get_class_names()
     
     if not class_names:
         return jsonify({'message': 'user has no classes selected'})
     
-    conflicts = {i+1: conflict for i, conflict in enumerate(conflicts_list)}
     course_data = get_course_data_by_class_names(class_names)
     formatted_classes = convert_course_data(course_data)
     scheduler = Scheduler(formatted_classes, conflicts)
