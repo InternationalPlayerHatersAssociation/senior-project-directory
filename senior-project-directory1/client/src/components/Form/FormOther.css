@@ -216,17 +216,55 @@
   }
   
   .class-Choice-Buttons {
+    margin-top: 5px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-right: 10px;
     padding: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     min-height: 10vh;
     min-width: 10vw;
-
+    width: 75vw;
+    max-height: 50vh;
+    overflow-y: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Set the color and styles of the scrollbar thumb */
+  .class-Choice-Buttons::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Set the color and styles of the scrollbar track */
+  .class-Choice-Buttons::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  /* Hide the scrollbar in Firefox */
+  .class-Choice-Buttons::-moz-scrollbar {
+    display: none;
+  }
+  
+  /* Hide the scrollbar in WebKit-based browsers */
+  .class-Choice-Buttons::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 5px;
+  }
+  
+  /* Show the scrollbar when there is overflow */
+  .class-Choice-Buttons:hover::-webkit-scrollbar {
+    display: block;
+    border-radius: 5px;
   }
 
-  .class-Choice-Button {
+  .class-Choice-Button{
     font-size: large;
     padding: .5em;
     margin: 3px;
@@ -243,8 +281,6 @@
     line-height: 1.5em; /* Adjust the line-height */
     word-break: break-word;
   }
-  
-
   
   .class-Choice-Button:hover {
     background-color: #a5945f;
