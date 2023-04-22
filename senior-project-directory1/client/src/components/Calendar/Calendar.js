@@ -63,7 +63,7 @@ const CalendarRender = ({
     });
   
     const events = daysArray.map(dayOfWeek => ({
-      title: `${course_code} - ${name}`,
+      title: `${name}`,
       start: moment().day(dayOfWeek).hours(startTime.hours()).minutes(startTime.minutes()).toDate(),
       end: moment().day(dayOfWeek).hours(endTime.hours()).minutes(endTime.minutes()).toDate(),
       color: '#6d5078',
@@ -129,10 +129,14 @@ const CalendarRender = ({
         opacity: 0.8,
         color: 'white',
         border: '0px',
-        display: 'block',
         boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
-        'text-align': 'left',
-        'font-size': '12px',
+        'font-size': '10px',
+        'overflow': 'hidden',
+        'display': '-webkit-box',
+        '-webkit-line-clamp': '2', /* number of lines to display */
+        '-webkit-box-orient': 'inline-axis',
+        'line-height': '0' ,/* Adjust the line-height */
+        'word-break': 'break-word',
       };
       return {
         style,
@@ -162,7 +166,14 @@ const CalendarRender = ({
                          min = {new Date(2023, 3, 13, 8, 0)}
                          max = {new Date(2023, 3, 13, 23, 0)}
                          formats={{
-                          dayFormat: (date, culture, localizer) => localizer.format(date, 'ddd') // hide the date
+                          dayFormat: (date, culture, localizer) => {
+                            const day = localizer.format(date, 'E');
+                            if (day === 'Sat' || day === 'Sun') {
+                              return ''; // hide Saturday and Sunday
+                            } else {
+                              return localizer.format(date, 'ddd'); // hide the date
+                            }
+                          }
                         }}
                         style={{
                           fontFamily: 'Arial, sans-serif', // change font family

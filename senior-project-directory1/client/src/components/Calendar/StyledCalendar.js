@@ -16,6 +16,22 @@ const StyledCalendar = styled(Calendar)`
 .rbc-event-label {
   font-size: 0px;
 }
+.rbc-event-title {
+  white-space: nowrap;
+}
+
+.weekdays-only .rbc-row-bg .rbc-off-range-bg,
+.weekdays-only .rbc-row-content .rbc-off-range {
+  display: none;
+}
+
+.weekdays-only .rbc-header.rbc-off-range {
+  display: none;
+}
+
+.weekdays-only .rbc-calendar {
+  border-collapse: separate;
+}
 .rbc-event {
   border: none;
   box-sizing: border-box;

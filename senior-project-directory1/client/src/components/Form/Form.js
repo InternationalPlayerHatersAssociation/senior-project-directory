@@ -101,7 +101,8 @@ const handleSubmit = async (event) => {
     }
   };
 
-  const handleRemoveCompletedClass = (classInput) => {
+  const handleRemoveCompletedClass = (classInput, event) => {
+    event.preventDefault();
     setCompletedClasses((prevClasses) => {
       const newClasses = prevClasses.filter((c) => c !== classInput);
       return newClasses;
@@ -109,6 +110,7 @@ const handleSubmit = async (event) => {
   };
 
   const handleRemovePlannedClass = (event) => {
+    event.preventDefault();
     setPlannedClasses((prevClasses) => {
       const newClasses = [...prevClasses];
       newClasses.splice(event.target.value, 1);
@@ -116,7 +118,8 @@ const handleSubmit = async (event) => {
     });
   };
 
-  const handleRemoveConflict = (index) => {
+  const handleRemoveConflict = (index, event) => {
+    event.preventDefault();
     setConflicts((prevConflicts) => {
       const newConflicts = [...prevConflicts];
       newConflicts.splice(index, 1);
