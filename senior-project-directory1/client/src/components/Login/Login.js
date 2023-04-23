@@ -28,7 +28,7 @@ const Login=({
             },
             body:JSON.stringify(data)
         }
-        fetch('/login', requestOptions)
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, requestOptions)
         .then(res => {
             if (!res.ok) {
                 throw new Error('Invalid email or password');

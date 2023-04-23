@@ -40,7 +40,7 @@ const handleSubmit = async (event) => {
   event.preventDefault();
 
   try {
-    const response = await fetch('/save_user_data', {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/save_user_data`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,8 +48,7 @@ const handleSubmit = async (event) => {
       body: JSON.stringify({
         history: completedClasses,
         classes: plannedClasses,
-        conflicts: conflicts,
-        history: completedClasses,
+        conflicts: conflicts
       }),
     });
 

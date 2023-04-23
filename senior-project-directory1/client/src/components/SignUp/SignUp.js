@@ -35,7 +35,7 @@ const SignUp = ({
         },
         body: JSON.stringify(body),
       };
-      fetch("/register", requestOptions)
+      fetch(`${process.env.REACT_APP_BACKEND_URL}/register`, requestOptions)
         .then((res) => res.json())
         .then((data) =>{ 
             console.log(data)
@@ -51,6 +51,8 @@ const SignUp = ({
   };
   //grab majors from api to display in checklist
   useEffect(() => {
+    console.log('Backend URL:', process.env.REACT_APP_BACKEND_URL);
+
     // Fetch data from API endpoint
     fetch("/majors")
       .then((res) => res.json())

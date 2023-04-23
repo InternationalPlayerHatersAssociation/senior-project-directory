@@ -26,7 +26,7 @@ const LoggedInLinks=()=>{
       
       const destroySession = async () => {
         try{
-        const response = await fetch("/logout");
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/logout`);
         if (response.ok){
           console.log(response);
         }}catch(error){
