@@ -19,7 +19,7 @@ db_password = os.environ['DB_PASSWORD']
 secret_key = os.environ['SECRET_KEY']
 
 #set up app
-app = Flask(__name__, static_folder='/build', template_folder='/build')
+app = Flask(__name__, static_folder='client/build', template_folder='client/build')
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
 app.config['SECRET_KEY'] = secret_key
