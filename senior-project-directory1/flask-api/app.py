@@ -2,7 +2,7 @@ from flask import Flask, request, session
 from models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices, Course_History
 from flask_jwt_extended import JWTManager, create_access_token, create_refresh_token, jwt_required, get_jwt_identity
 from flask import jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from scheduler import Scheduler
 from convert_course_data import convert_course_data, process_conflict_string
 from sqlalchemy.sql import text
@@ -33,6 +33,7 @@ def helloworld():
 
 #registration route to add user to database
 @app.route('/register', methods = ['POST'])
+@cross_origin
 def register():
     data = request.json
     email, password, major = data.get('email'), data.get('password'), data.get('major')\
@@ -54,6 +55,7 @@ def register():
 
 #login route to verify username and password in the database
 @app.route('/login', methods = ['POST'])
+@cross_origin
 def login():
     data = request.json
     email, password = data.get('email'), data.get('password')
@@ -75,12 +77,14 @@ def login():
 
 #destroy session token
 @app.route('/logout', methods = ['GET'])
+@cross_origin
 def logout():
     session.clear()  # Clear the entire session
     return jsonify({"message":"User has been logged out."}), 200
 
 #create a refrese token to keep user logged in, in case the auth token expires
 @app.route('/refresh', methods = ["POST"])
+@cross_origin
 @jwt_required(refresh = True)
 def refresh():
     current_user = get_jwt_identity()
@@ -89,6 +93,7 @@ def refresh():
 
 #route that gets all majors to populate the dropdown list on reg page
 @app.route('/majors', methods=["GET"])
+@cross_origin
 def get_majors():
     majors = db.session.query(Degree_Plan.dpt_code).all()
     major_list = [major[0] for major in majors]
@@ -97,6 +102,7 @@ def get_majors():
 
 #route for submitting the form
 @app.route('/save_user_data', methods=['POST'])
+@cross_origin
 def save_data():
     data = request.json
     class_history, class_names, conflicts_list = data['history'], data['classes'], data['conflicts']
@@ -122,6 +128,7 @@ def save_data():
 
 #calculates combinations of classes in user database
 @app.route('/find_combinations', methods=['GET'])
+@cross_origin
 def find_combinations():
     conflicts = get_conflicts()
     class_names = get_class_names()
@@ -144,6 +151,7 @@ def find_combinations():
 
 #get classes belonging to users majors
 @app.route('/get_major_classes', methods = ['GET'])
+@cross_origin
 def get_classes():
     classes = db.session.query(Courses_Needed, Course)\
     .join(Course, Courses_Needed.course_id == Course.course_id)\
