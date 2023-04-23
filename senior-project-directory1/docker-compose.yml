@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+
+  backend:
+    build:
+      context: ./flask-api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+
+
+
