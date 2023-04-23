@@ -30,7 +30,7 @@ const CalendarRender = ({
 
    useEffect(() => {
      if(myEvents.length < 1){
-      fetch(`${process.env.REACT_APP_BACKEND_URL}/find_combinations`)
+      fetch('/find_combinations')
       .then(response => response.json())
       .then(data => formatEvents(data))
       .catch(err => console.log(err));

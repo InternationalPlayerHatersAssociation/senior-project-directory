@@ -35,7 +35,7 @@ const SignUp = ({
         },
         body: JSON.stringify(body),
       };
-      fetch(`${process.env.REACT_APP_BACKEND_URL}/register`, requestOptions)
+      fetch('/register', requestOptions)
         .then((res) => res.json())
         .then((data) =>{ 
             console.log(data)
