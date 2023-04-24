@@ -1,11 +1,11 @@
 from flask import Flask, request, session
-from models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices, Course_History
+from .models import db, Student, Degree_Plan, Course, Courses_Needed, Course_Offering, Conflict, Class_Choices, Course_History
 from flask_jwt_extended import JWTManager, create_access_token, create_refresh_token, jwt_required, get_jwt_identity
 from flask import jsonify
 from flask_cors import CORS, cross_origin
-from scheduler import Scheduler
+from .scheduler import Scheduler
 from flask.helpers import send_from_directory
-from convert_course_data import convert_course_data, process_conflict_string
+from .convert_course_data import convert_course_data, process_conflict_string
 from sqlalchemy.sql import text
 import os
 from dotenv import load_dotenv
