@@ -163,10 +163,15 @@ def get_classes():
     return jsonify(names = names), 200
 
 
-@app.route('/')
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
 @cross_origin()
-def serve():
-    return send_from_directory(app.static_folder, 'index.html')
+def catch_all(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
 
 @app.errorhandler(404)
 def not_found(e):
