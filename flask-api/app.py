@@ -20,7 +20,7 @@ db_password = os.environ['DB_PASSWORD']
 secret_key = os.environ['SECRET_KEY']
 
 #set up app
-app = Flask(__name__, static_folder='client/build', template_folder='client/build')
+app = Flask(__name__, static_folder='client/build', static_url_path='/')
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 db.init_app(app)
 app.config['SECRET_KEY'] = secret_key
@@ -167,6 +167,10 @@ def get_classes():
 @cross_origin()
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file('index.html')
     
     
         
@@ -257,4 +261,4 @@ def construct_json_response(valid_combos, course_data, scheduler):
 
     
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))
