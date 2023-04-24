@@ -399,7 +399,7 @@ return (
     
     <div className='formContainer'>
       <br></br><br></br><br></br>
-  <h3> <img src='../../img/creepy-cat.png' alt='success-image' width='175px' /></h3>
+  <h3> <img src='../../img/creepy-cat.PNG' alt='success-image' width='175px' /></h3>
     
 
    <form onSubmit={handleSubmit}>
