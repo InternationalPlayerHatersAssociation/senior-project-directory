@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImgWrapper } from '../InfoSection.elements'
-import successImage from '/img/tux.PNG';
+
 
 
 const SignUpSuccess = () => {
@@ -9,7 +9,7 @@ const SignUpSuccess = () => {
     <br></br>
     <br></br>
 
-<h3><img src={successImage} alt='success-image' width='175px' /></h3>
+<h3><img src='../../img/tux.PNG' alt='success-image' width='175px' /></h3>
 
     </>
   )
