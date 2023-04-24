@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImgWrapper } from '../InfoSection.elements'
-import successImage from '../Images/tux.png';
+import successImage from '/img/tux.PNG';
 
 
 const SignUpSuccess = () => {
