@@ -7,7 +7,7 @@ const SignUpSuccess = () => {
     <br></br>
     <br></br>
 
-<h3><img src='../../img/tux.png' alt='success-image' width='175px' /></h3>
+<h3><img src='/img/tux.png' alt='success-image' width='175px' /></h3>
 
     </>
   )
