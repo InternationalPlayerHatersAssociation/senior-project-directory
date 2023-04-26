@@ -27,7 +27,7 @@ const StyledCalendar = styled(Calendar)`
   color: $event-color;
   cursor: pointer;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 10px;
 
   .rbc-slot-selecting & {
