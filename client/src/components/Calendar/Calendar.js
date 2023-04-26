@@ -63,7 +63,7 @@ const CalendarRender = ({
     });
   
     const events = daysArray.map(dayOfWeek => ({
-      title: `${course_code} - ${name}`,
+      title: `${course_code}`,
       start: moment().day(dayOfWeek).hours(startTime.hours()).minutes(startTime.minutes()).toDate(),
       end: moment().day(dayOfWeek).hours(endTime.hours()).minutes(endTime.minutes()).toDate(),
       color: '#6d5078',
