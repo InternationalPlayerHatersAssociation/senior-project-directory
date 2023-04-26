@@ -231,7 +231,6 @@
     overflow-y: auto;
     border-radius: 5px;
     margin-top: 10px;
-    font-size: 15px;
   }
   
   /* Set the color and styles of the scrollbar thumb */
@@ -266,7 +265,7 @@
   }
 
   .class-Choice-Button{
-    font-size: large;
+    font-size: 13px;
     padding: .5em;
     margin: 3px;
     width: 7vw;
