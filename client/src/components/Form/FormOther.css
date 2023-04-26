@@ -231,6 +231,7 @@
     overflow-y: auto;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 15px;
   }
   
   /* Set the color and styles of the scrollbar thumb */
